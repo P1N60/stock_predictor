@@ -1,0 +1,786 @@
+Prediction for best performing tickers:
+C (Citigroup Inc.): 101.22%
+CYH (Community Health Systems): 53.04%
+CMU (Colonial Muni Income Trust): 42.20%
+HIO (Western Asset High): 40.04%
+GB (Greatbatch): 38.92%
+DTF (Duff & Phelps Utilities Tax-Free Income): 38.17%
+DMO (Western Asset Mortgage Defined Opp): 37.29%
+APO (Apollo Global Management LLc C): 36.41%
+AJG (Arthur J. Gallagher & Co.): 35.67%
+JPC (Nuveen Preferred And Convertible): 35.48%
+HTD (John Hancock Tax Advantaged Dividend): 34.96%
+FMX (Fomento Economico Mexicano S.A.B. De): 34.51%
+DHT (Dht Holdings): 33.87%
+CBL (Cbl & Associated Properties): 33.77%
+GPI (Group 1 Automotive): 33.36%
+CVI (Cvr Energy Inc.): 32.67%
+IBM (International Business Machines Corp.): 32.34%
+AON (Aon Plc): 31.52%
+AI (Arlington Asset Investment Corp): 31.32%
+LLY (Eli Lilly And Company): 30.92%
+ASC (Ardmore Shipping Corporation): 30.24%
+ASA (Asa Gold And Precious Metals): 29.58%
+ISD (Prudential Short Duration High): 29.14%
+LEN (Lennar Corp.): 29.14%
+CRM (Salesforce.Com Inc): 28.95%
+IR (Ingersoll-Rand Plc [Ireland]): 28.80%
+ODC (Oil-Dri Corporation Of America): 28.70%
+AG (First Majestic Silver): 27.97%
+HEQ (John Hancock Hedged Eqty & Inc): 27.89%
+HP (Helmerich & Payne): 27.23%
+HI (Hillenbrand Inc): 27.14%
+HMN (Horace Mann Educators Corp.): 27.07%
+ARI (Apollo Commercial Real Estate): 26.68%
+KNX (Knight Transportation): 26.67%
+HPS (John Hancock Preferred Income Fund III): 26.66%
+FCT (Senior Floating Rate II): 26.63%
+CBU (Communitiy Bank System): 26.45%
+LMT (Lockheed Martin Corp.): 26.38%
+DPZ (Domino's Pizza Inc): 25.84%
+KAI (Kadant Inc): 25.67%
+GTY (Getty Realty Corp.): 25.65%
+FMY (First Trust/Fidac Mortgage Income Fund): 25.64%
+NTG (Tortoise MLP Fund): 25.56%
+CL (Colgate-Palmolive Company): 25.36%
+OHI (Omega Healthcare Investors): 25.08%
+FCX (Freeport-Mcmoran Copper & Gold): 25.06%
+LEO (Dreyfus Strategic Municipals): 24.89%
+LND (Brasilagro Brazi ADR): 24.50%
+DRD (Drdgold Limited): 24.44%
+LIN (Lin Media Llc): 24.41%
+CHH (Choice Hotels International): 24.30%
+CCZ (Comcast Corp.): 24.25%
+IX (Orix Corp Ads): 24.23%
+OFG (Oriental Financial Group): 23.85%
+ATR (Aptargroup): 23.74%
+BFS (Saul Centers): 23.69%
+BMI (Badger Meter): 23.58%
+NPO (Enpro Industries): 23.24%
+FDS (Factset Research Systems Inc.): 23.18%
+CFR (Cullen/Frost Bankers): 23.09%
+KOP (Koppers Holdings Inc.): 23.07%
+BIOA (Bioamber Inc.): 22.86%
+FDX (Fedex Corp.): 22.84%
+CP (Canadian Pacific Railway): 22.75%
+BK (Bank Of New York Mellon Corp.): 22.72%
+IGA (ING Global Advantage And Premium): 22.66%
+JHS (John Hancock Income Securities Trust): 22.58%
+CIM (Chimera Investment Corp.): 22.53%
+JHI (John Hancock Investors Trust): 22.53%
+NXC (Nuveen California Tax-Free Income): 22.44%
+NCZ (Agic Convertible & II): 22.43%
+CCU (Compania Cervecerias Unidas S.A.): 22.17%
+MAIN (Main Street Capital Corp.): 22.11%
+ATO (Atmos Energy Llc): 22.02%
+NVR (Nvr): 22.00%
+CSV (Carriage Services): 22.00%
+GVA (Granite Construction Inc.): 21.96%
+KAR (Kar Auction Services Inc): 21.96%
+CNH (Cnh Global N.V.): 21.91%
+HPI (John Hancock Preferred): 21.78%
+MAC (Macerich Company): 21.71%
+A (Agilent Technologies): 21.71%
+MCO (Moody's Corp.): 21.67%
+IMAX (Imax Corp.): 21.65%
+AN (Autonation): 21.55%
+BMO (Bank Of Montreal): 21.49%
+MAN (Manpower Inc): 21.38%
+DFP (Flaherty & Crumrine Dynamic): 21.32%
+AMRC (Ameresco Inc): 21.29%
+LNN (Lindsay Corp.): 21.28%
+LZB (La-Z-Boy Inc.): 21.23%
+GIS (General Mills): 21.23%
+CHD (Church & Dwight Company): 21.22%
+AOD (Alpine Total Dynamic Dividend): 21.07%
+BFAM (Bright Horizons Family Solutions Inc.): 21.04%
+CRI (Carter's): 21.02%
+HBM (Hudbay Minerals Inc): 20.95%
+AZO (Autozone): 20.88%
+JCI (Johnson Controls): 20.81%
+NWN (Northwest Natural Gas Company): 20.68%
+CSL (Carlisle Companies Inc.): 20.66%
+INN (Summit Hotel Properties): 20.59%
+NHI (National Health Investors): 20.58%
+BTT (Blackrock Municipal Target Term): 20.55%
+NUW (Nuveen Muni Value Fund): 20.52%
+ARR (Armour Residential R): 20.49%
+JLS (Nuveen Mortgage Opportunity Term Fund): 20.49%
+LXU (Lsb Industries Inc.): 20.49%
+BMY (Bristol-Myers Squibb Company): 20.44%
+CXE (Colonial High Income Muni Trust): 20.44%
+FFA (First Trust Enhanced Equity Income Fund): 20.43%
+FOF (Cohen & Steers Closed-End Opportunity): 20.42%
+BTE (Baytex Energy Corp): 20.39%
+HY (Hyster-Yale Materials Handling): 20.29%
+BSL (Blackstone Gso Senior Floating Rate): 20.19%
+HTGC (Hercules Technology Growth Capital): 20.09%
+ACM (Aecom Technology Corp.): 20.01%
+BUD (Anheuser-Busch Inbev Sa): 19.99%
+NI (Nisource Inc): 19.89%
+AMX (American Movil S.A.B. De C.V.): 19.83%
+CLH (Clean Harbors): 19.83%
+FOR (Forestar Group Inc): 19.81%
+NX (Quanex Building Products Corp.): 19.69%
+JOE (St. Joe Company): 19.69%
+AEM (Agnico-Eagle Mines Limited): 19.62%
+FNF (Fidelity National Financial): 19.60%
+KMT (Kennametal Inc.): 19.60%
+NOW (Servicenow Inc.): 19.54%
+GDO (Western Asset Global Corporate Defined): 19.54%
+BMA (Banco Macro S.A.): 19.49%
+BXMT (Blackstone Mortgage Trust Inc. CI A): 19.45%
+NBB (Nuveen Build America Bond Fund): 19.42%
+LTC (Ltc Properties): 19.41%
+OIA (Invesco Muni Income Trust): 19.36%
+BRT (Brt Realty Trust): 19.33%
+BHLB (Berkshire Hills Bancorp): 19.32%
+COF (Capital One Financial Corp.): 19.30%
+INFY (Infosys Limited): 19.29%
+IFN (India Fund): 19.28%
+DMB (Dreyfus Munipal Bond Indrastr): 19.21%
+HIW (Highwoods Properties): 19.18%
+BME (Blackrock Health Sciences Trust): 19.17%
+HMY (Harmony Gold Mining Co. Ltd): 19.15%
+DDD (3D Systems Corp.): 19.14%
+GMED (Globus Medical Inc.): 19.12%
+BEP (Brookfield Renewable): 19.05%
+BLK (Blackrock): 19.02%
+CALX (Calix Inc): 19.01%
+CPF (Cpb Inc.): 18.99%
+AIR (Aar ): 18.98%
+KEP (Korea Electric Power Corp.): 18.96%
+DKL (Delek Logistics Partners Lp): 18.95%
+FTK (Flotek Industries): 18.94%
+IVR (Invesco Mortgage Capital Inc): 18.90%
+CF (Cf Industries Holdings): 18.87%
+HZO (Marinemax): 18.84%
+HST (Host Marriott Financial Trust): 18.75%
+KEX (Kirby Corp.): 18.73%
+JNJ (Johnson & Johnson): 18.72%
+NBR (Nabors Industries): 18.67%
+CAN (Can Financial Corp.): 18.66%
+FRT (Federal Realty Investment Trust): 18.58%
+CUB (Cubic Corp.): 18.53%
+BWA (Borgwarner Inc.): 18.52%
+NEU (Newmarket Corp.): 18.48%
+NGS (Natural Gas Services Group): 18.43%
+NYT (New York Times Company): 18.41%
+CVS (Cvs Corp.): 18.36%
+BKD (Brookdale Senior Living Inc.): 18.36%
+BCS (Barclays Plc): 18.33%
+NAT (Nordic American Tanker Shipping Limited): 18.30%
+CAG (Conagra Foods): 18.27%
+CIB (Bancolombia S.A.): 18.25%
+AIZ (Assurant): 18.23%
+KR (Kroger Company): 18.07%
+CVX (Chevron Corp.): 18.01%
+HNI (Hon Industries Inc.): 17.96%
+ORI (Old Republic International Corp.): 17.87%
+COTY (Coty Inc): 17.83%
+HPF (John Hancock Pfd II): 17.82%
+NAZ (Nuveen Arizona Premium Fund): 17.73%
+CEE (Central Europe And Russia Fund): 17.67%
+KKR (Kkr): 17.62%
+FDP (Fresh Del Monte Produce): 17.61%
+IRS (Irsa Inversiones Y Representaciones S.A.): 17.40%
+GNT (Gabelli Natural Resources Gold): 17.40%
+NC (Nacco Industries): 17.33%
+CCG (Campus Crest Communities): 17.33%
+KBR (Kbr): 17.31%
+AVD (American Vanguard Corp.): 17.31%
+KOS (Kosmos Energy Ltd.): 17.30%
+BGY (Blackrock International): 17.22%
+DGX (Quest Diagnostics Inc.): 17.22%
+JFR (Nuveen Floating Rate): 17.19%
+BTU (Peabody Energy Corp.): 17.09%
+CMG (Chipotle Mexican Grill): 17.09%
+IP (International Paper Company): 17.08%
+ADC (Agree Realty Corp.): 16.79%
+GM (General Motors Company): 16.76%
+GEO (Geo Group Inc): 16.72%
+NU (Northeast Utilities): 16.65%
+NE (Noble Corp.): 16.64%
+LUV (Southwest Airlines Company): 16.64%
+DCI (Donaldson Company): 16.60%
+FLR (Fluor Corp.): 16.50%
+HRL (Hormel Foods Corp.): 16.48%
+COR (Coresite Realty Corp.): 16.44%
+GRX (The Gabelli Healthcare & Wellness Trust): 16.41%
+FTI (Fmc Technologies): 16.38%
+CMS (Cms Energy Corp.): 16.33%
+HEI (Heico Corp.): 16.33%
+GWW (W.W. Grainger): 16.23%
+DM (Dolan Company): 16.21%
+AER (Aercap Holdings N.V.): 16.20%
+CSX (Csx Corp.): 16.18%
+BGC (General Cable Corp.): 15.97%
+GEL (Genesis Energy L.P.): 15.96%
+CMP (Compass Minerals Intl Inc): 15.94%
+K (Kellogg Company): 15.88%
+DOC (Physicians Realty Trust): 15.87%
+AVK (Advent Claymore Convertible Securities): 15.84%
+AWF (Alliance World Dollar Fund II): 15.82%
+AMG (Affiliated Managers Group  ): 15.78%
+DLX (Deluxe Corp.): 15.66%
+ASR (Grupo Aeroporuario Del Sureste): 15.54%
+GRO (Agria Corp.): 15.54%
+AWK (American Water Works): 15.49%
+HAL (Halliburton Company): 15.46%
+AA (Alcoa Inc.): 15.37%
+HR (Healthcare Realty Trust Inc.): 15.36%
+DHI (D.R. Horton): 15.31%
+NIE (Agic Equity & Convertible): 15.24%
+GPC (Genuine Parts Company): 15.24%
+CRS (Carpenter Technology Corp.): 15.21%
+NVS (Novartis Ag): 15.14%
+DE (Deere & Company): 15.13%
+FICO (Fair Isaac And Company Inc.): 15.09%
+DFS (Discover Financial Services): 15.00%
+GE (General Electric Company): 14.98%
+IPG (Interpublic Group Of Companies): 14.98%
+NMT (Nuveen Massachusetts Premium Fund): 14.96%
+FCN (Fti Consulting): 14.95%
+DTE (Dte Energy Company): 14.92%
+BG (Bunge Limited): 14.90%
+ING (ING Group N.V.): 14.90%
+OB (Onebeacon Insurance Group): 14.89%
+BXC (Bluelinx Holdings Inc.): 14.79%
+LYG (Lloyds Banking Group Plc): 14.79%
+FCF (First Commonwealth Financial Corp.): 14.73%
+AL (Air Lease Corporation Class A C): 14.72%
+BUI (Blackrock Utility And Infrastr): 14.71%
+MANU (Manchester United Ltd.): 14.68%
+NMI (Nuveen Muni): 14.66%
+MAR (Marriot International): 14.66%
+IDA (Idacorp): 14.66%
+CODI (Compass Diversified Holdings): 14.54%
+BVN (Compania Mina Beunaventura S.A.): 14.51%
+AVY (Avery Dennison Corp.): 14.48%
+ADM (Archer-Daniels-Midland Company): 14.48%
+FI (Frank's International N.V.): 14.40%
+HAE (Haemonetics Corp.): 14.37%
+BGH (Babson Capital Global Short Du): 14.37%
+MA (Mastercard Inc.): 14.37%
+NRG (Nrg Energy): 14.33%
+PAA (Plains All American Pipeline L.P.): 14.32%
+BLX (Banco Latinoamericano De Comercio): 14.30%
+FHN (First Tennessee National Corp.): 14.30%
+BDC (Belden Inc): 14.28%
+COO (Cooper Companies): 14.23%
+HII (Huntington Ingalls Industries): 14.20%
+OXM (Oxford Industries): 14.19%
+INGR (Ingredion Inc): 14.19%
+CNK (Cinemark Holdings Inc): 14.18%
+CPAC (Cementos Pacasmayo S.A.A.): 14.17%
+DIN (Dineequity Inc): 14.11%
+BRO (Brown & Brown): 14.10%
+NFG (National Fuel Gas Company): 14.07%
+JCE (Nuveen Core Equity Alpha Fund): 14.03%
+JBI (Lehman Abs Cp 7.857%): 14.03%
+CNL (Cleco Power Llc): 14.02%
+OPK (Opko Health Inc): 14.00%
+HIG (Hartford Financial Services Group): 13.99%
+BRY (Berry Petroleum Company): 13.96%
+OC (Owens Corning Inc): 13.82%
+CHE (Chemed): 13.78%
+GDV (Gabelli Dividend): 13.73%
+CIA (Citizens): 13.68%
+DB (Deutsche Bank Ag): 13.64%
+HQH (H&Q Healthcare Investors): 13.61%
+DDS (Dillard's): 13.54%
+CMI (Cummmins Inc.): 13.49%
+CWT (California Water Service Group Holding): 13.45%
+CPA (Copa Holdings S.A.): 13.41%
+CIG (Comp En De Mn Cemig Ads): 13.41%
+HUM (Humana Inc.): 13.38%
+BXP (Boston Properties): 13.38%
+KFS (Kingsway Financial Services): 13.38%
+G (Genpact Limited): 13.34%
+AM (American Greetings Corp.): 13.31%
+D (Dominion Resources): 13.31%
+GHI (Global High Income Dollar Fund): 13.30%
+NEM (Newmont Mining Corp.): 13.27%
+LNT (Alliant Energy Corp.): 13.21%
+GTN (Gray Television): 13.18%
+NUE (Nucor Corp.): 13.14%
+BYM (Blackrock Muni Income Quality Trust): 13.11%
+NVO (Novo Nordisk A/S): 13.11%
+NMFC (New Mountain Finance Corporati): 13.10%
+NSC (Norfolk Souther Corp.): 13.09%
+KIM (Kimco Realty Corp.): 13.09%
+NJR (Newjersey Resources Corp.): 13.07%
+DQ (Daqq New Energy): 13.06%
+KEY (Keycorp): 13.03%
+MCD (Mcdonald's Corp.): 13.00%
+IDE (ING Infrastructure Industrial): 12.99%
+AMP (Ameriprise Financial Services): 12.98%
+DHX (Dice Holdings): 12.94%
+ABM (Abm Industries Incorporated): 12.94%
+KSS (Kohl's Corp.): 12.93%
+GBX (Greenbrier Companies): 12.88%
+OSK (Oshkosh Truck Corp.): 12.87%
+KBH (Kb Home): 12.84%
+KT (Korea Telecom Corp.): 12.83%
+GBAB (Guggenheim Build America Bonds): 12.82%
+FIX (Comfort Systems USA): 12.80%
+NGL (Ngl Energy Partners Lp): 12.80%
+IEX (Idex Corp.): 12.77%
+NXP (Nuveen Tax Free Income Portfolio): 12.74%
+CM (Canadian Imperial Bank Of Commerce): 12.74%
+ONB (Old National Bancorp Capital): 12.70%
+IAE (ING Asia Pacific High Dividend Equity): 12.70%
+FRA (Blackrock Floating Rate Income Fund): 12.69%
+NOA (North American Energy Partners): 12.68%
+NWE (Northwestern Corp.): 12.67%
+KMB (Kimberly-Clark Corp.): 12.67%
+AZN (Astrazeneca Plc): 12.66%
+LH (Laboratory Corporation Of America): 12.65%
+LRN (K12 Inc): 12.65%
+APH (Amphenol Corp.): 12.65%
+LXFR (Luxfer Holdings Plc): 12.60%
+LII (Lennox International): 12.57%
+IHS (Ihs Inc.): 12.49%
+JPI (Nuveen Preferred And Income Term Fund): 12.48%
+GSL (Global Ship Lease Inc): 12.47%
+CWH (Commonwealth REIT): 12.47%
+NNI (Nelnet): 12.44%
+KRG (Kite Realty Group Trust): 12.43%
+IQI (Invesco Quality Muni Income Trust): 12.42%
+BZ (Boise Inc): 12.39%
+NCV (Agic Convertible &): 12.36%
+BDJ (Blackrock Enhanced Dividend Achievers): 12.34%
+BLW (Blackrock Limited Duration Income Trust): 12.34%
+AVA (Avista Corp.): 12.33%
+AWI (Armstrong World Industries Inc): 12.33%
+LYB (Lyondellbasell Industries Nv): 12.31%
+DEI (Douglas Emmett): 12.29%
+NMM (Navios Maritime Partners Lp): 12.28%
+HRB (H&R Block): 12.27%
+CATO (Cato Corp.): 12.27%
+CI (Cigna Corp.): 12.26%
+AZZ (Azz Inc.): 12.22%
+ABT (Abbot Laboratories): 12.22%
+GPK (Graphic Packaging Holdings Company): 12.21%
+LAD (Lithia Motors): 12.21%
+NPK (National Presto Industries): 12.20%
+LSE (Caplease Funding Inc): 12.19%
+OPY (Oppenheimer Holdings): 12.08%
+HPP (Hudson Pacific Properties): 12.04%
+BTZ (Blackrock Preferred): 12.02%
+ASX (Advanced Semiconductor Engineering): 12.02%
+KYN (Kayne Anderson MLP Investment Company): 12.01%
+AEO (American Eagle Outfitters): 12.01%
+CCK (Crown Cork & Seal Company): 11.99%
+JKS (Jinkosolar Holding Company Limited): 11.99%
+AOS (Smith [A.O.] Corp.): 11.98%
+DSU (Blackrock Debt Strategies Fund): 11.98%
+AYI (Acuity Brands Inc): 11.98%
+ADX (Adams Express Company): 11.96%
+NRP (Natural Resource Partners Lp): 11.95%
+LPX (Louisiana-Pacific Corp.): 11.95%
+DLR (Digital Realty Trust): 11.92%
+IHG (Intercontinental Hotels Group): 11.92%
+LEG (Leggett & Platt Inc.): 11.89%
+CUBE (Cubesmart  ): 11.87%
+ITW (Illinois Tool Works Inc.): 11.86%
+NGG (National Grid Transco Plc): 11.86%
+NGVC (Natural Grocers By Vitamin Cottage Inc): 11.85%
+BKN (Blackrock Investment Quality Municipal): 11.83%
+BGT (Blackrock Global): 11.83%
+JQC (Nuveen Preferred And Convertible 2): 11.80%
+BNS (Bank Of Nova Scotia): 11.79%
+FR (First Industrial Realty Trust): 11.76%
+GHY (Prudential Global Short Durati): 11.76%
+CTS (Cts Corp.): 11.75%
+LEE (Lee Enterprises Inc.): 11.67%
+BIP (Brookfield Infrastructure Partners Lp): 11.67%
+ALV (Autoliv): 11.59%
+HCI (Homeowners Choice): 11.58%
+CUZ (Cousins Properties Inc.): 11.53%
+CCJ (Cameco Corp.): 11.53%
+DCO (Ducommun Inc.): 11.51%
+CNQ (Canadian Natural Resources): 11.45%
+GFI (Gold Fields Ltd): 11.44%
+FGB (Ferrellgas-Partners L.P.): 11.37%
+OLP (One Liberty Properties): 11.35%
+NEE (Nextera Energy): 11.34%
+GWRE (Guidewire Software Inc. Common): 11.30%
+DPG (Duff & Phelps Global Utility I): 11.29%
+AGCO (Agco Corp.): 11.29%
+HD (Home Depot): 11.29%
+CAE (Cae Inc): 11.23%
+AEG (Aegon Nv): 11.22%
+KW (Kennedy-Wilson Holdings Inc.): 11.21%
+IPI (Intrepid Potash Inc): 11.21%
+ASH (Ashland Inc.): 11.19%
+NNY (Nuveen New York Muni Value Fund): 11.16%
+GAB (Gabelli Equity Trust): 11.12%
+CMA (Comerica Inc.): 11.10%
+KFY (Korn/Ferry International): 11.07%
+AFG (American Financial Group  ): 11.06%
+NOC (Northrop Grumman Corp.): 11.02%
+NUV (Nuveen Muni Value Fund): 11.01%
+ABBV (Abbvie Inc. Common Stock): 11.00%
+BGR (Blackrock Energy And Resources Trust): 10.97%
+BCX (Blackrock Resources Common Shar): 10.93%
+KTF (Scudder Municiple Income Trust): 10.92%
+GGB (Gerdau S.A.): 10.91%
+GCI (Gannet Co.): 10.90%
+CBT (Cabot Corp.): 10.88%
+FC (Franklin Covey Company): 10.88%
+CLDT (Catham Lodging Trust [Reit]): 10.87%
+DKS (Dick's Sporting Goods Inc): 10.86%
+HQL (H&Q Life Sciences Investors): 10.84%
+BR (Broadridge Financial Solutions Llc): 10.73%
+CBZ (Cbiz): 10.73%
+DAN (Dana Holding Corp.): 10.71%
+NOAH (Noah Holdings Ltd): 10.71%
+BCE (Bce): 10.67%
+O (Realty Income Corp.): 10.65%
+AGRO (Adecoagro S.A.): 10.60%
+DNB (Dun & Bradstreet Corp.): 10.55%
+ARW (Arrow Electronics): 10.54%
+CACI (Caci International): 10.53%
+CW (Curtiss-Wright Corp.): 10.43%
+BGB (Blackstone / Gso Strategic Cre): 10.41%
+BDN (Brandywine Realty Trust): 10.41%
+NAD (Nuveen Divadv Fund): 10.40%
+AGO (Assured Guaranty Ltd): 10.40%
+HPQ (Hewlett-Packard Company): 10.37%
+ORA (Ormat Technologies): 10.35%
+APA (Apache Corp.): 10.35%
+NQP (Nuveen Pennsylvania Investment): 10.31%
+BSX (Boston Scientific Corp.): 10.31%
+JEQ (Japan Equity Fund): 10.29%
+HL (Hecla Mining Company): 10.26%
+CRT (Cross Timbers Royalty Trust): 10.24%
+OMI (Owens & Minor): 10.21%
+GDL (The Gdl Fund): 10.20%
+OLN (Olin Corp.): 10.18%
+FN (Fabrinet): 10.09%
+CAF (Morgan Stanley China A Share Fun Inc.): 10.04%
+BHP (Bhp Billiton Limited): 10.03%
+NIO (Nuveen Insured Muni Opportunity Fund): 9.99%
+ALB (Albemarle Corp.): 9.99%
+NTZ (Natuzzi S.P.A.): 9.95%
+BSAC (Banco Santander-Chile Ads): 9.94%
+CHN (China Fund): 9.89%
+ODP (Office Depot): 9.82%
+GFF (Griffon Corp.): 9.80%
+DRH (Diamondrock Hospitality Company): 9.80%
+ATI (Allagheny Technologies Inc.): 9.77%
+GES (Guess): 9.75%
+FET (Forum Energy Technologies Inc): 9.75%
+MBI (Mbia): 9.75%
+DAC (Danaos Corp.): 9.72%
+HYI (Western Asset High Yield Defined): 9.70%
+JWN (Nordstrom): 9.68%
+PAG (Penske Automotive Group): 9.68%
+AMD (Advanced Micro Devices): 9.68%
+IAG (Iamgold Corp.): 9.68%
+M (Macy's Inc): 9.58%
+CAT (Caterpillar): 9.57%
+NR (Newpark Resources): 9.55%
+OMC (Omnicom Group Inc.): 9.54%
+CFB (Campbell Soup Company): 9.53%
+NLY (Annaly Capital Management Inc): 9.52%
+DD (E.I. Du Pont De Nemours And Company): 9.51%
+HCA (Hca Holdings Inc. Common Stock): 9.48%
+KOF (Coca Cola Femsa S.A.B. De C.V.): 9.42%
+ICE (Intercontinentalexchange): 9.40%
+AHH (Armada Hoffler Properties Inc.): 9.39%
+OII (Oceaneering International): 9.36%
+FLC (Flaherty & Crumrine/Claymore Total): 9.36%
+IIF (Morgan Stanley India Investment Fund Inc): 9.35%
+BCC (Boise Cascade L.L.C. Common ST): 9.33%
+JHX (James Hardie Industries Se): 9.31%
+HSY (Hershey Foods Corp.): 9.28%
+AWR (American States Water Company): 9.25%
+IIM (Invesco Insured Muni Income Trust): 9.25%
+MCN (Madison/Claymore Covered Call & Equity): 9.24%
+KMX (Carmax Inc): 9.19%
+HVT (Haverty Furniture Companies): 9.19%
+CNP (Centerpoint Energy Inc): 9.13%
+PAI (Pacific American Income Shares): 9.05%
+JLL (Jones Lang Lasalle Inc.): 9.03%
+FPF (First Trust Intermediate Durat): 9.02%
+MYN (Blackrock Muniyield New York Quality): 9.02%
+AIG (American International Group): 8.96%
+AAT (American Assets Trust): 8.94%
+ALX (Alexander's): 8.89%
+BNY (Blackrock New York Muni Trust Inc.): 8.88%
+ACI (Arch Coal): 8.88%
+MAV (Pioneer Muni High Income Advantage Trust): 8.80%
+GUT (Gabelli Utility Trust): 8.77%
+AFL (Aflac Incorporated): 8.76%
+CLF (Cliffs Natual Resources Inc.): 8.76%
+BMR (Biomed Realty Trust): 8.75%
+DOX (Amdocs Limited): 8.74%
+HTZ (Hertz Global Holdings Inc): 8.71%
+IFF (Internationa Flavors & Fragrances): 8.64%
+KMI (Kinder Morgan): 8.57%
+NAN (Nuveen New York Divadv Fund): 8.57%
+CUK (Carnival Plc Ads): 8.49%
+BSBR (Banco Santander Brasil Sa): 8.47%
+KO (Coca-Cola Company): 8.40%
+IGT (International Game Technology): 8.38%
+BEN (Franklin Resources): 8.36%
+JBL (Jabil Circuit): 8.35%
+DHR (Danaher Corp.): 8.32%
+HMC (Honda Motor Company): 8.30%
+KNOP (Knot Offshore Partners Lp Commo): 8.26%
+HIX (Western Asset High Income Fund II Inc.): 8.26%
+KIO (Kkr Income Opportunities Fund): 8.24%
+DLB (Dolby Laboratories): 8.22%
+BCO (Brink's Company): 8.15%
+LVS (Las Vegas Sands): 8.08%
+AGI (Alamos Gold Inc.): 8.06%
+AGD (Alpine Global Dynamic Dividend Fund): 8.04%
+ORN (Orion Marine Group Inc): 8.03%
+KSM (Scudder Strategic Municiple Income Trust): 8.02%
+OI (Owens-Illinois): 7.91%
+KB (Kb Financial Group Inc): 7.89%
+HBI (Hanesbrands Inc.): 7.80%
+ALSN (Allison Transmission Holdings): 7.79%
+NKE (Nike): 7.71%
+H (Hyatt Hotels Corp.): 7.67%
+GS (Goldman Sachs Group): 7.61%
+CMRE (Costamare Inc.): 7.61%
+GD (General Dynamics Corp.): 7.61%
+AMH (American Homes 4 Rent): 7.58%
+BHK (Blackrock Core Trust): 7.58%
+KGC (Kinross Gold Corp.): 7.56%
+DOV (Dover Corp.): 7.46%
+ALE (Allete): 7.39%
+GLW (Corning Inc.): 7.34%
+BIO (Bio-Rad Laboratories): 7.31%
+CLW (Clearwater Paper Corp.): 7.30%
+HOV (Hovnanian Enterprises Inc): 7.22%
+FUN (Cedar Fair L.P.): 7.22%
+KF (Korea Fund): 7.21%
+BTO (John Hancock Bank And Thrift Fund): 7.21%
+KRO (Kronos Worldwide Inc): 7.09%
+AMTD (TD Ameritrade Holding Corp.): 7.06%
+AVB (Avalonbay Communities): 7.05%
+CMC (Commercial Metals Company): 7.02%
+LYV (Live Nation Entertainment): 6.98%
+PAM (Pampa Energia S.A.): 6.96%
+AXL (American Axle & Manufacturing): 6.94%
+MCI (Massmutual Corporate Investors): 6.88%
+CR (Crane Company): 6.87%
+CSTM (Constellium N.V.): 6.86%
+BOE (Blackrock Global): 6.86%
+AP (Ampco-Pittsburgh Corp.): 6.84%
+GNE (Genie Energy Ltd. Class B Commo.): 6.82%
+GSK (Glaxosmithkline Plc): 6.81%
+GIB (Cgi Group): 6.79%
+HE (Hawaiian Electric Industries): 6.76%
+CB (Chubb Corp.): 6.72%
+GLP (Global Partners Lp): 6.71%
+DBL (Doubleline Opportunistic Credi): 6.70%
+CE (Celanese Corp.): 6.61%
+BKH (Black Hills Corp.): 6.61%
+DNP (Duff & Phelps Utilities Income): 6.59%
+ARL (American Realty Investors): 6.58%
+IGR (ING Clarion Global Real Estate): 6.56%
+BKU (Bankunited): 6.55%
+FF (Futurefuel Corp.): 6.52%
+ALL (Allstate Corporation): 6.50%
+AES (The Aes Corp.): 6.47%
+IBN (Icici Bank Limited): 6.44%
+NWL (Newell Rubbermaid Inc.): 6.42%
+ADT (Adt Corporation Common Stock W): 6.42%
+BGS (B&G Foods Holdings): 6.40%
+AVT (Avnet): 6.39%
+DRI (Darden Resorts International): 6.39%
+AEE (Ameren Corp.): 6.38%
+CXH (Colonial Investment Grade Muni Trust): 6.37%
+FSM (Fortuna Silver Mines): 6.35%
+HCC (Hcc Insurance Holdings): 6.34%
+BP (Bp P.L.C.): 6.29%
+BDX (Becton Dickinson And Company): 6.29%
+L (Loews Corp.): 6.29%
+BWG (Legg Mason Bw Global Income Op): 6.28%
+CXW (Corrections Corporation Of America): 6.25%
+CLB (Core Laboratories N.V.): 6.24%
+AMT (American Tower Corp.): 6.24%
+DAR (Darling International Inc.): 6.23%
+AEF (Aegon Nv): 6.21%
+IGI (Western Asset Investment Grade Defined): 6.21%
+LXP (Lexington Realty Trust): 6.20%
+JNPR (Juniper Networks): 6.19%
+DEO (Diageo Plc): 6.16%
+DOLE (Dole Food Company): 6.14%
+BRC (Brady Corp.): 6.13%
+ITT (Itt Industries): 6.10%
+CRH (Crh Plc): 6.08%
+GNW (Genworth Financial Inc): 6.07%
+FLO (Flowers Foods): 6.07%
+CCI (Crown Castle International Corp.): 6.04%
+FMS (Fresenius Medical Care Corp.): 6.01%
+ARE (Alexandria Real Estate Equities): 5.99%
+CPT (Camden Property Trust): 5.97%
+CX (Cemex S.A.B. De C.V. Sponsored): 5.97%
+DG (Dollar General Corp.): 5.93%
+DBD (Diebold Inc.): 5.83%
+HTH (Hilltop Holdings Inc.): 5.83%
+PAC (Grupo Aeroportuario Del Pacifico): 5.82%
+NFJ (Nfj Dividend Interest & Premium Strategy): 5.82%
+LAZ (Lazard Ltd): 5.79%
+JOF (Japan Smaller Capitalization Fund Inc): 5.66%
+DOW (DOW Chemical Company): 5.59%
+ITUB (Itau Unibanco Banco Holding Sa): 5.37%
+NMR (Nomura Holdings Inc ADR): 5.19%
+OKE (Oneok): 5.17%
+FNB (F.N.B. Corp.): 5.10%
+BRFS (Brf-Brasil Foods S.A.): 5.03%
+GEF (Greif Bros. Corp.): 5.01%
+BGX (Blacstone Gso Long Short Credit Fund): 4.96%
+NCA (Nuveen California Muni Value Fund): 4.95%
+CNS (Cohn & Steers Inc): 4.90%
+CCL (Carnival Corp.): 4.76%
+FLS (Flowserve Corp.): 4.66%
+FNV (Franco Nev Corp): 4.58%
+KWR (Quaker Chemical Corp.): 4.56%
+NNN (National Retail Properties): 4.47%
+AB (Alliance Capital Management L.P.): 4.41%
+CLX (Clorox Company): 4.37%
+GF (New Germany Fund): 4.37%
+AXR (Amrep Corp.): 4.36%
+NSP (Insperity Inc): 4.31%
+CVE (Cenovus Energy Inc): 4.28%
+ACN (Accenture Plc.): 4.22%
+HXL (Hexcel Corp.): 4.09%
+OXY (Occidental Petroleum Corp.): 4.08%
+BZH (Beazer Homes USA): 4.00%
+CRK (Comstock Resources): 3.94%
+DSX (Diana Shipping Inc.): 3.88%
+ALK (Alaska Air Group): 3.84%
+AXS (Axis Capital Holdings): 3.74%
+AU (Anglogold Ashanti Ltd): 3.66%
+FL (Footlocker Inc): 3.65%
+LNC (Lincoln National Corp.): 3.60%
+BEAM (Beam Inc): 3.60%
+AHT-PD (Ashford Hospitality Trust Inc 8): 3.53%
+MCK (Mckesson Corp.): 3.53%
+AGM-A (Federal Agricultural Mortgage  ): 3.44%
+AME (Amtek): 3.40%
+BFZ (Blackrock California Muni Trust): 3.31%
+NBHC (National Bank Holdings Corp.): 3.23%
+CNC (Centene Corp.): 3.23%
+BOH (Bank Of Hawaii Corp.): 3.21%
+APD (Air Products And Chemicals): 3.03%
+IT (Gartner): 2.97%
+LDP (Cohen & Steers Limited Duration): 2.97%
+ABR (Arbor Realty Trust): 2.95%
+HASI (Hannon Armstrong Sustainable In): 2.94%
+GIL (Gildan Activewear): 2.88%
+GCV (Gabelli Convertible And Income): 2.85%
+AKR (Acadia Realty Trust): 2.78%
+CRL (Charles River Laboratories Intl): 2.78%
+FFC (Flaherty Crumrine/Claymore Preferred): 2.69%
+IRM (Iron Mountain Inc.): 2.64%
+OIS (Oil States International): 2.61%
+NIM (Nuveen Maturities Fund): 2.58%
+ORCL (Oracle Corp.): 2.51%
+AIV (Apartment Investment And Management): 2.45%
+AEP (American Electric Power Company): 2.39%
+NPV (Nuveen Virginia Premium Fund): 2.32%
+AWP (Alpine Global Premier Propertie): 2.32%
+LOW (Lowe's Companies): 2.30%
+LEA (Lear Corp.): 2.27%
+BYD (Boyd Gaming Corp.): 2.19%
+IDT (Idt Corp.): 2.18%
+HYT (Blackrock High Yield Fund Vi Inc): 2.13%
+CNX (Consol Energy Inc.): 2.08%
+NUS (Nu Skin Enterprises): 2.04%
+GPN (Global Payments Inc.): 2.04%
+IVZ (Invesco Plc): 1.94%
+ACP (Avenue Income Credit Strategies): 1.93%
+BCH (Banco De Chile): 1.88%
+CLS (Celestica): 1.88%
+HLF (Herbalife Ltd): 1.87%
+CNI (Canadian National Railway Company): 1.77%
+JBT (John Bean Technologies Corp.): 1.68%
+GGG (Graco Inc.): 1.64%
+CAH (Cardinal Health): 1.56%
+FSS (Federal Signal Corp.): 1.40%
+ARDC (Ares Dynamic Credit Allocation): 1.37%
+JPM (J P Morgan Chase & Co): 1.29%
+ACRE (Ares Commercial Real Estate Cor): 1.23%
+GNRC (Generac Holdings Inc.): 1.03%
+DHF (Dreyfus High Yield Strategies Fund): 0.98%
+DAL (Delta Air Lines Inc.): 0.94%
+AGM (Federal Agricultural Mortgage Corp.): 0.92%
+KMPR (Unitrin): 0.88%
+BFK (Blackrock Florida Muni 2020 Trust): 0.82%
+NOK (Nokia Corp.): 0.74%
+BERY (Berry Plastics Group Inc.): 0.63%
+HES (Hess Corp.): 0.59%
+ASG (Liberty All-Star Growth Fund): 0.57%
+CHT (Chunghwa Telecom Co Ltd): 0.52%
+MAS (Masco Corp.): 0.29%
+AIT (Applied Industrial Technologies): 0.22%
+JRI (Nuveen Real Asset Income And Gr): 0.16%
+APAM (Artisan Partners Asset Manageme): 0.04%
+BTA (Blackrock Long-Term Muni Advantage Trust): -0.06%
+NDP (Tortoise Energy Independence F): -0.34%
+FMN (Federated Premier Muni): -0.40%
+GNK (Genco Shipping): -0.40%
+ANF (Abercrombie & Fitch Company): -0.55%
+HYB (New America High): -0.71%
+BHE (Benchmark Electronics): -0.72%
+DSM (Dreyfus Strategic Muni Bond Fund): -0.77%
+CII (Blackrock Capital And Income Strategies): -0.95%
+CYD (China Yuchai International): -1.23%
+CDE (Coeur D'Alene Mines Corp.): -1.25%
+FBP (First Bancorp.): -1.29%
+FMC (Fmc Corp.): -1.31%
+DSL (Doubleline Income Solutions Fun): -1.32%
+HON (Honeywell International Inc.): -1.35%
+MATX (Matson Inc): -1.39%
+GOF (Claymore/Guggenheim Strategic Fund): -1.41%
+HUN (Huntsman Corp.): -1.51%
+HOG (Harley-Davidson): -1.55%
+LPL (Lg Display Co. Limited American): -1.72%
+GAM (General American Investors): -1.85%
+KRC (Kilroy Realty Corp.): -1.97%
+NOV (National-Oilwell): -1.98%
+FE (Firstenergy Corp.): -2.03%
+MAA (Mid-America Apartment Communities): -2.04%
+GDOT (Green Dot Corp.): -2.36%
+BH (Biglari Holdings Inc.): -2.44%
+BIT (Blackrock Multi-Sector Income T): -2.44%
+AXP (American Express Company): -2.45%
+DK (Dalek US Holdings): -2.49%
+CNO (Cno Financial Group): -2.56%
+OGE (Oge Energy Corp.): -2.63%
+DIS (Walt Disney Company): -2.76%
+FUL (H.B. Fuller Company): -2.80%
+AIN (Albany International Corp.): -3.04%
+ASGN (On Assignment): -3.06%
+NL (Nl Industries): -3.13%
+ALG (Alamo Group): -3.38%
+HCP (Hcp): -3.79%
+ACT (Actavis Inc.): -3.85%
+GME (Gamestop Corp.): -4.04%
+GCO (Genesco Inc.): -4.13%
+IHD (ING Emerging Markets High Dividend): -4.29%
+CPK (Chesapeake Utilities Corp.): -4.37%
+CCO (Clear Channel Outdoor Holdings): -4.89%
+HLX (Helix Energy Solutions Group): -4.91%
+FT (Franklin Universal Trust): -5.10%
+NAC (Nuveen California Divadv Fund): -5.38%
+LGI (Lazard Global Total Return And): -5.64%
+FRO (Frontline Ltd): -6.13%
+IGD (ING Global Equity Dividend And Premium): -6.58%
+BKT (Blackrock Income Trust Inc.): -7.19%
+COP (Conocophillips): -7.43%
+ALEX (Alexander And Baldwin Inc): -7.96%
+LTM (Life Time Fitness): -8.52%
+AHL-PC (Aspen Insurance Holdings Limite): -8.79%
+BKE (Buckle): -8.96%
+GGT (Gabelli Global Multi-Media Trust): -8.98%
+AFB (Alliance National Municipal): -11.43%
+Free money?!
