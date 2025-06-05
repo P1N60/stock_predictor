@@ -1,2 +1,2 @@
 R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
--0.29077404167376836,0.2556645394707037,0.314171205158117,100,"(1000, 1000, 1000)",200,9,adaptive,0.001,auto,0.0001,0.0001,True
+-0.2386041650746659,0.32058370282771237,0.2897014524557242,filtered,"(5000, 5000)",200,10,adaptive,0.001,auto,0.0001,0.0001,True
