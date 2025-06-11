@@ -216,3 +216,13 @@ R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_ra
 -0.05678263264135245,0.32591895165186,0.24980453576726713,all,"(1000, 1000, 1000, 1000, 1000)",200,10,adaptive,0.001,auto,0.0001,0.0001,True
 R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
 -0.05680669646922739,70.14986500828428,0.4194765958519963,filtered,"(2000, 2000, 2000, 2000)",200,10,adaptive,0.001,auto,0.0001,0.0001,True
+R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
+-0.02279719012580624,0.2831003655194644,0.23958071618012725,filtered,"(2000, 2000, 2000, 2000, 2000)",200,20,adaptive,0.001,auto,0.0001,0.0001,True
+R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
+-0.9629194898165955,0.1848734150856933,0.35995252000240985,simple,"(500, 500)",200,20,adaptive,0.001,auto,0.0001,0.0001,True
+R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
+-0.9629194898165955,0.1848734150856933,0.35995252000240985,simple,"(2000, 2000, 2000, 2000, 2000)",200,20,adaptive,0.001,auto,0.0001,0.0001,True
+R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
+-1.699693495132843,0.2579674985367078,0.40990017532501694,filtered,"(1000, 1000)",200,20,adaptive,0.001,auto,0.0001,0.0001,True
+R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
+-0.01972021017887678,0.35898589895668337,0.25023542768966495,filtered,"(2000, 2000, 2000, 2000, 2000)",200,20,adaptive,0.001,auto,0.0001,0.0001,True
