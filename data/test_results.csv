@@ -231,3 +231,5 @@ R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_ra
 Removed Ticker and Name from training data
 R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
 -0.022490079654370332,0.13652155672608166,0.23803620692238445,filtered,"(5000, 5000, 5000, 5000)",200,20,adaptive,0.001,auto,0.0001,0.0001,True
+R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
+-0.024544738019650476,0.22134443947710206,0.24424860152792338,filtered,"(4000, 4000)",200,20,adaptive,0.001,auto,0.0001,0.0001,True
