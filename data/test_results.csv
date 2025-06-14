@@ -261,5 +261,10 @@ R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_ra
 -0.0055422631038939685,0.12773610228282128,0.23873480319672552,filtered,"(2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000)",200,20,adaptive,0.001,auto,1e-05,0.0001,True
 R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
 0.028933678253503237,0.09033647760743035,0.2187163478810068,filtered,"(3000, 3000, 3000, 3000, 3000, 3000, 3000)",200,13,adaptive,0.001,auto,1e-05,0.0001,True
+Changed test data to be 2nd latest earning
 R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
 -0.0827353044045388,0.14630672827627128,0.24503556721086253,filtered,"(3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000)",200,13,adaptive,0.001,auto,1e-05,0.0001,True
+R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
+-0.055226102680108635,0.14078437489149184,0.2384075316170012,filtered,"(5000, 5000, 5000, 5000)",200,8,adaptive,0.001,auto,1e-05,0.0001,True
+R²,MSE,MAE,symbol_list,hidden_layer_sizes,max_iter,n_iter_no_change,learning_rate,learning_rate_init,batch_size,tol,alpha,shuffle
+-0.06857969714044404,0.14377751370872782,0.24014961696339704,filtered,"(5000, 5000, 5000, 5000, 5000)",200,8,adaptive,0.001,auto,1e-05,0.0001,True
