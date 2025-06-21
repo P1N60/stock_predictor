@@ -4,3 +4,4 @@ numpy
 matplotlib 
 gradio
 scikit-learn
+scikit-optimize
