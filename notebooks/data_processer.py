@@ -5,10 +5,8 @@ from stockdex import Ticker
 
 class Stock:
     def __init__(self, symbol):
-        if symbol:
-            self.symbol = symbol
-        else:
-            print("Please pass a symbol")
+        self.symbol = symbol
+        self.name = yf.Ticker(symbol).info["shortName"]
         
     def get_key_financials(self):
         return Ticker(self.symbol).macrotrends_key_financial_ratios
@@ -16,12 +14,12 @@ class Stock:
     def get_earning_dates(self):
         return self.get_key_financials().keys().to_list()
     
-    def get_pred_key(self):
+    def get_data_key(self):
         key_financials = self.get_key_financials()
         latest_earn_date = key_financials.keys().to_list()[0]
         df = pd.DataFrame(index=[0])
         df["Ticker"] = self.symbol
-        df["Name"] = yf.Ticker(self.symbol).info["shortName"]
+        df["Name"] = self.name
         df["Date"] = latest_earn_date
         df["3M Future Change"], df["6M Future Change"], df["9M Future Change"], df["1Y Future Change"] = np.nan, np.nan, np.nan, np.nan
         for feature in key_financials.index.to_list():
