@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+import yfinance as yf
 from stockdex import Ticker
 
 class Stock:
@@ -11,6 +13,20 @@ class Stock:
     def get_key_financials(self):
         return Ticker(self.symbol).macrotrends_key_financial_ratios
     
+    def get_earning_dates(self):
+        return self.get_key_financials().keys().to_list()
+    
+    def get_pred_key(self):
+        key_financials = self.get_key_financials()
+        latest_earn_date = key_financials.keys().to_list()[0]
+        df = pd.DataFrame(index=[0])
+        df["Ticker"] = self.symbol
+        df["Name"] = yf.Ticker(self.symbol).info["shortName"]
+        df["Date"] = latest_earn_date
+        df["3M Future Change"], df["6M Future Change"], df["9M Future Change"], df["1Y Future Change"] = np.nan, np.nan, np.nan, np.nan
+        for feature in key_financials.index.to_list():
+            df[feature] = key_financials[latest_earn_date][feature]
+        return df
 
 # # a must-have
 # display(ticker.macrotrends_key_financial_ratios)
