@@ -6,7 +6,6 @@ from stockdex import Ticker
 class Stock:
     def __init__(self, symbol):
         self.symbol = symbol
-        self.name = yf.Ticker(symbol).info["shortName"]
         
     def get_key_financials(self):
         return Ticker(self.symbol).macrotrends_key_financial_ratios
@@ -17,14 +16,17 @@ class Stock:
     def get_data_key(self):
         key_financials = self.get_key_financials()
         earn_dates = key_financials.keys().to_list()
+        yf_info = yf.Ticker(self.symbol).info
         df = pd.DataFrame()
         for earn_date in earn_dates:
             row_df = pd.DataFrame(index=[0])
             row_df["Ticker"] = self.symbol
-            row_df["Name"] = self.name
+            row_df["Name"] = yf_info["shortName"]
             row_df["Date"] = earn_date
+            row_df["Sector"] = yf_info["sector"]
+            row_df["Industry"] = yf_info["industry"] 
             if earn_date == earn_dates[0]:
-                row_df["3M Future Change"], df["6M Future Change"], df["9M Future Change"], df["1Y Future Change"] = np.nan, np.nan, np.nan, np.nan
+                row_df["3M Future Change"], row_df["6M Future Change"], row_df["9M Future Change"], row_df["1Y Future Change"] = np.nan, np.nan, np.nan, np.nan
             else:
                 price_data = yf.download(self.symbol, period="max", rounding=False, progress=False)
                 got_price = False
@@ -50,7 +52,11 @@ class Stock:
                         got_price = True
                     except:
                         day_offset += -1
-                if pd.isna(row_df['3M Future Change']) or pd.isna(row_df['3M Future Change']) or pd.isna(row_df['3M Future Change']) or pd.isna(row_df['3M Future Change']):
+                if got_price == True:
+                    future_change_cols = ['3M Future Change', '6M Future Change', '9M Future Change', '1Y Future Change']
+                    if row_df[future_change_cols].isna().any().any():
+                        continue
+                else:
                     continue
             for feature in key_financials.index.to_list():
                 row_df[feature] = key_financials[earn_date][feature]
