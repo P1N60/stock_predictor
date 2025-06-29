@@ -5,6 +5,5 @@ matplotlib
 gradio
 scikit-learn
 scikit-optimize
-stockdex
-webdriver-manager
-selenium
+#
+investiny

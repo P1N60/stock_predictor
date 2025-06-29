@@ -8,7 +8,7 @@ class Stock:
         self.symbol = symbol
         
     def get_key_financials(self):
-        return Ticker(self.symbol).macrotrends_key_financial_ratios
+        return Ticker(self.symbol).yahoo_api_financials(format="raw")
     
     def get_earning_dates(self):
         return self.get_key_financials().keys().to_list()
@@ -19,8 +19,7 @@ class Stock:
         yf_info = yf.Ticker(self.symbol).info
         df = pd.DataFrame()
         for earn_date in earn_dates:
-            row_df = pd.DataFrame(index=[0])
-            row_df["Ticker"] = self.symbol
+            row_df = pd.DataFrame([{"Ticker": self.symbol}])
             row_df["Name"] = yf_info["shortName"]
             row_df["Date"] = earn_date
             row_df["Sector"] = yf_info["sector"]
@@ -60,6 +59,8 @@ class Stock:
                     continue
             for feature in key_financials.index.to_list():
                 row_df[feature] = key_financials[earn_date][feature]
+                if row_df.loc[0, feature] == "":
+                    row_df.loc[0, feature] = np.nan
             df = pd.concat([df, row_df])
         return df
 
