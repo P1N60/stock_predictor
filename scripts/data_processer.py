@@ -8,7 +8,7 @@ class Stock:
         self.symbol = symbol
         
     def get_key_financials(self):
-        return Ticker(self.symbol).yahoo_api_financials(format="raw")
+        return Ticker(self.symbol).macrotrends_key_financial_ratios
     
     def get_earning_dates(self):
         return self.get_key_financials().keys().to_list()
