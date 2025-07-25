@@ -1,45 +1,44 @@
 Ticker,short_name,recommendation_score,value_score,analyst_mean%,insider_buy%,sector,industry,country,P/E (TTM),ROA%,in_portfolio
-MATAS.CO,Matas A/S,1.46,1.04,33.33,0,Consumer Cyclical,Specialty Retail,Denmark,18.29,4.06,False
-TRIFOR.CO,Trifork Group AG,1.10,0.81,23.59,0,Technology,Information Technology Services,Switzerland,16.22,1.92,False
-RNMBY,Rheinmetall AG,0.30,0.30,0.00,0,Industrials,Aerospace & Defense,Germany,95.11,7.06,True
-SAABF,Saab AB,0.39,0.39,0.00,0,Industrials,Aerospace & Defense,Sweden,54.95,3.80,True
-BCKIY,Babcock International Group Plc,0.94,0.94,0.00,0,Industrials,Engineering & Construction,United Kingdom,28.20,5.08,False
-BAESY,BAE Systems PLC,0.76,0.83,-5.67,0,Industrials,Aerospace & Defense,United Kingdom,30.24,4.40,False
-IVSO.ST,INVISIO AB,1.51,1.44,5.69,0,Technology,Communication Equipment,Sweden,53.26,19.45,False
-NSKFF,Kongsberg Gruppen ASA,0.81,0.81,0.00,0,Industrials,Aerospace & Defense,Norway,51.43,7.82,True
-GMAB,Genmab A/S,2.19,1.77,33.43,0,Healthcare,Biotechnology,Denmark,13.09,11.54,False
-GN.CO,GN Store Nord A/S,1.59,0.99,47.89,0,Healthcare,Medical Devices,Denmark,17.44,3.50,False
-NVDA,NVIDIA Corporation,2.66,2.40,20.61,0.00,Technology,Semiconductors,United States,46.01,53.24,False
-LLY,Eli Lilly and Company,0.84,1.19,23.04,-0.32,Healthcare,Drug Manufacturers - General,United States,62.90,16.45,False
-DANSKE.CO,Danske Bank A/S,0.81,0.80,0.42,0,Financial Services,Banks - Regional,Denmark,9.23,0.64,True
-CARL-B.CO,Carlsberg B A/S,1.25,1.22,2.35,0,Consumer Defensive,Beverages - Brewers,Denmark,18.31,5.92,False
-MAERSK-B.CO,A.P. Møller - Mærsk B A/S,1.37,1.55,-14.21,0,Industrials,Marine Shipping,Denmark,4.24,5.21,False
-RBREW.CO,Royal UNIBREW A/S,1.34,1.27,5.84,0,Consumer Defensive,Beverages - Brewers,Denmark,18.98,6.69,False
-ISS.CO,ISS A/S,1.25,1.29,-2.90,0,Industrials,Specialty Business Services,Denmark,12.22,5.01,True
-DSV.CO,DSV A/S,0.92,0.84,6.52,0,Industrials,Integrated Freight & Logistics,Denmark,34.22,5.24,False
-SCHO.CO,Schouw & Co. A/S,1.35,1.10,19.65,0,Industrials,Conglomerates,Denmark,14.95,3.91,True
-NETC.CO,Netcompany Group A/S,1.16,1.04,9.58,0,Technology,Information Technology Services,Denmark,29.28,6.44,False
-JYSK.CO,Jyske Bank A/S,0.84,0.85,-1.07,0,Financial Services,Banks - Regional,Denmark,7.82,0.68,True
-ABBN.SW,ABB LTD N,1.26,1.28,-1.25,0,Industrials,Electrical Equipment & Parts,Switzerland,25.83,8.61,False
-TER,"Teradyne, Inc.",1.94,1.44,11.16,0.18,Technology,Semiconductor Equipment & Materials,United States,24.59,10.56,True
-PARKEN.CO,PARKEN Sport & Entertainment A/,1.39,1.39,0.00,0,Communication Services,Entertainment,Denmark,7.47,4.72,False
-NFLX,"Netflix, Inc.",1.02,1.12,-6.21,-0.01,Communication Services,Entertainment,United States,57.81,13.79,False
-TRMD-A.CO,TORM plc A,2.11,1.84,21.31,0,Energy,Oil & Gas Midstream,United Kingdom,3.73,8.48,False
-STG.CO,Scandinavian Tobacco Group A/S,1.60,1.49,8.70,0,Consumer Defensive,Tobacco,Denmark,8.25,5.91,False
-NOVO-B.CO,Novo Nordisk B A/S,2.56,2.11,35.82,0,Healthcare,Drug Manufacturers - General,Denmark,21.28,23.29,True
-EQNR,Equinor ASA,2.06,2.03,2.54,0,Energy,Oil & Gas Integrated,Norway,7.82,13.63,False
-NKT.CO,NKT A/S,1.55,1.44,9.14,0,Industrials,Electrical Equipment & Parts,Denmark,16.43,7.93,True
-KCC.OL,KLAVENESS COMBINATION CARRIERS,2.10,1.67,34.28,0,Industrials,Marine Shipping,Norway,6.20,7.33,False
-TSLA,"Tesla, Inc.",-0.57,-0.53,-3.06,0.00,Consumer Cyclical,Auto Manufacturers,United States,175.33,3.72,False
-HEM.ST,Hemnet Group AB,1.89,1.43,36.83,0,Communication Services,Internet Content & Information,Sweden,52.29,19.09,False
-DEMANT.CO,Demant A/S,1.42,1.39,2.10,0,Healthcare,Medical Devices,Denmark,20.68,8.66,False
-BAVA.CO ,Bavarian Nordic A/S,2.05,1.47,46.17,0,Healthcare,Biotechnology,Denmark,10.90,6.65,False
-BABA,Alibaba Group Holding Limited,1.62,1.20,33.96,0,Consumer Cyclical,Internet Retail,China,16.28,5.17,False
-JD,"JD.com, Inc.",1.99,1.31,54.59,0,Consumer Cyclical,Internet Retail,China,8.28,4.14,False
-PDD,PDD Holdings Inc.,2.27,1.94,26.44,0,Consumer Cyclical,Internet Retail,Ireland,10.90,13.56,False
-BIDU,"Baidu, Inc.",1.39,1.15,19.24,0,Communication Services,Internet Content & Information,China,8.78,2.93,False
-NTES,"NetEase, Inc.",1.65,1.55,8.10,0,Communication Services,Electronic Gaming & Multimedia,China,18.63,10.23,False
-WB,Weibo Corporation,1.58,1.39,14.88,0,Communication Services,Internet Content & Information,China,7.09,4.53,False
-IQ,"iQIYI, Inc.",0.39,0.27,9.83,0,Communication Services,Entertainment,China,44.25,1.74,False
-SYDB.CO,Sydbank A/S,1.01,0.91,7.97,0,Financial Services,Banks - Regional,Denmark,9.42,1.36,True
-UBER,"Uber Technologies, Inc.",1.58,1.23,10.62,0.11,Technology,Software - Application,United States,15.26,5.21,False
+MATAS.CO,Matas A/S,1.03,1.03,31.58,0,Consumer Cyclical,Specialty Retail,Denmark,18.56,4.06,False
+TRIFOR.CO,Trifork Group AG,0.82,0.82,27.96,0,Technology,Information Technology Services,Switzerland,15.95,1.92,False
+RNMBY,Rheinmetall AG,0.32,0.32,0.00,0,Industrials,Aerospace & Defense,Germany,93.39,7.06,True
+SAABF,Saab AB,0.41,0.41,0.00,0,Industrials,Aerospace & Defense,Sweden,55.88,4.02,True
+BCKIY,Babcock International Group Plc,1.16,1.16,0.00,0,Industrials,Engineering & Construction,United Kingdom,22.18,6.21,False
+BAESY,BAE Systems PLC,0.85,0.85,21.58,0,Industrials,Aerospace & Defense,United Kingdom,28.97,4.40,False
+IVSO.ST,INVISIO AB,1.22,1.22,12.96,0,Technology,Communication Equipment,Sweden,60.20,16.52,False
+NSKFF,Kongsberg Gruppen ASA,0.74,0.74,0.00,0,Industrials,Aerospace & Defense,Norway,57.14,7.82,True
+GMAB,Genmab A/S,1.74,1.74,29.98,0,Healthcare,Biotechnology,Denmark,13.90,11.54,False
+GN.CO,GN Store Nord A/S,0.97,0.97,35.52,0,Healthcare,Medical Devices,Denmark,18.74,3.56,False
+NVDA,NVIDIA Corporation,2.27,2.27,3.34,-0.00,Technology,Semiconductors,United States,56.23,53.24,False
+LLY,Eli Lilly and Company,0.52,1.16,18.23,-0.32,Healthcare,Drug Manufacturers - General,United States,65.38,16.45,False
+DANSKE.CO,Danske Bank A/S,0.79,0.79,2.62,0,Financial Services,Banks - Regional,Denmark,9.32,0.62,True
+CARL-B.CO,Carlsberg B A/S,1.25,1.25,10.53,0,Consumer Defensive,Beverages - Brewers,Denmark,17.16,5.92,False
+MAERSK-B.CO,A.P. Møller - Mærsk B A/S,1.53,1.53,-20.94,0,Industrials,Marine Shipping,Denmark,4.83,5.21,False
+RBREW.CO,Royal UNIBREW A/S,1.31,1.31,14.89,0,Consumer Defensive,Beverages - Brewers,Denmark,17.37,6.69,False
+ISS.CO,ISS A/S,1.26,1.26,-5.27,0,Industrials,Specialty Business Services,Denmark,13.16,5.01,True
+DSV.CO,DSV A/S,0.88,0.88,15.36,0,Industrials,Integrated Freight & Logistics,Denmark,32.40,5.24,False
+SCHO.CO,Schouw & Co. A/S,1.08,1.08,15.52,0,Industrials,Conglomerates,Denmark,15.67,3.91,True
+NETC.CO,Netcompany Group A/S,1.13,1.13,28.30,0,Technology,Information Technology Services,Denmark,24.59,6.44,False
+JYSK.CO,Jyske Bank A/S,0.84,0.84,-2.28,0,Financial Services,Banks - Regional,Denmark,8.04,0.68,True
+ABBN.SW,ABB LTD N,1.25,1.25,-7.86,0,Industrials,Electrical Equipment & Parts,Switzerland,29.36,9.07,False
+TER,"Teradyne, Inc.",1.84,1.42,5.87,0.21,Technology,Semiconductor Equipment & Materials,United States,25.87,10.56,True
+PARKEN.CO,PARKEN Sport & Entertainment A/,1.36,1.36,0.00,0,Communication Services,Entertainment,Denmark,8.51,4.72,False
+NFLX,"Netflix, Inc.",1.18,1.28,12.72,-0.05,Communication Services,Entertainment,United States,50.25,15.05,False
+STG.CO,Scandinavian Tobacco Group A/S,1.49,1.49,8.78,0,Consumer Defensive,Tobacco,Denmark,8.09,5.91,False
+NOVO-B.CO,Novo Nordisk B A/S,2.15,2.15,42.23,0,Healthcare,Drug Manufacturers - General,Denmark,19.33,23.29,True
+EQNR,Equinor ASA,2.00,2.00,-0.28,0,Energy,Oil & Gas Integrated,Norway,8.50,13.32,False
+NKT.CO,NKT A/S,1.41,1.41,0.02,0,Industrials,Electrical Equipment & Parts,Denmark,17.66,7.93,False
+TSLA,"Tesla, Inc.",-0.66,-0.66,1.11,0.00,Consumer Cyclical,Auto Manufacturers,United States,181.73,2.96,False
+HEM.ST,Hemnet Group AB,1.49,1.49,23.55,0,Communication Services,Internet Content & Information,Sweden,50.66,19.82,False
+DEMANT.CO,Demant A/S,1.39,1.39,6.78,0,Healthcare,Medical Devices,Denmark,20.86,8.66,False
+BAVA.CO ,Bavarian Nordic A/S,1.40,1.40,1.03,0,Healthcare,Biotechnology,Denmark,13.82,6.65,False
+BABA,Alibaba Group Holding Limited,1.21,1.21,25.10,0,Consumer Cyclical,Internet Retail,Hong Kong,16.22,5.31,False
+JD,"JD.com, Inc.",1.31,1.31,40.84,0,Consumer Cyclical,Internet Retail,China,8.14,4.14,False
+PDD,PDD Holdings Inc.,1.89,1.89,7.33,0,Consumer Cyclical,Internet Retail,Ireland,12.66,13.56,False
+BIDU,"Baidu, Inc.",1.15,1.15,12.60,0,Communication Services,Internet Content & Information,China,8.98,2.93,False
+NTES,"NetEase, Inc.",1.53,1.53,5.86,0,Communication Services,Electronic Gaming & Multimedia,China,19.44,10.23,False
+WB,Weibo Corporation,1.37,1.37,8.98,0,Communication Services,Internet Content & Information,China,7.48,4.53,False
+IQ,"iQIYI, Inc.",0.18,0.18,-4.50,0,Communication Services,Entertainment,China,51.00,1.74,False
+SYDB.CO,Sydbank A/S,0.90,0.90,9.11,0,Financial Services,Banks - Regional,Denmark,9.89,1.36,True
+UBER,"Uber Technologies, Inc.",1.43,1.21,9.94,0.11,Technology,Software - Application,United States,15.91,5.21,False
+COLO-B.CO,Coloplast B A/S,1.27,1.27,19.52,0,Healthcare,Medical Instruments & Supplies,Denmark,30.63,9.64,False
