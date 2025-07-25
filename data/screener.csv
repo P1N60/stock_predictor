@@ -1,44 +1,1762 @@
-Ticker,short_name,recommendation_score,value_score,analyst_mean%,insider_buy%,sector,industry,country,P/E (TTM),ROA%,in_portfolio
-MATAS.CO,Matas A/S,1.03,1.03,31.58,0,Consumer Cyclical,Specialty Retail,Denmark,18.56,4.06,False
-TRIFOR.CO,Trifork Group AG,0.82,0.82,27.96,0,Technology,Information Technology Services,Switzerland,15.95,1.92,False
-RNMBY,Rheinmetall AG,0.32,0.32,0.00,0,Industrials,Aerospace & Defense,Germany,93.39,7.06,True
-SAABF,Saab AB,0.41,0.41,0.00,0,Industrials,Aerospace & Defense,Sweden,55.88,4.02,True
-BCKIY,Babcock International Group Plc,1.16,1.16,0.00,0,Industrials,Engineering & Construction,United Kingdom,22.18,6.21,False
-BAESY,BAE Systems PLC,0.85,0.85,21.58,0,Industrials,Aerospace & Defense,United Kingdom,28.97,4.40,False
-IVSO.ST,INVISIO AB,1.22,1.22,12.96,0,Technology,Communication Equipment,Sweden,60.20,16.52,False
-NSKFF,Kongsberg Gruppen ASA,0.74,0.74,0.00,0,Industrials,Aerospace & Defense,Norway,57.14,7.82,True
-GMAB,Genmab A/S,1.74,1.74,29.98,0,Healthcare,Biotechnology,Denmark,13.90,11.54,False
-GN.CO,GN Store Nord A/S,0.97,0.97,35.52,0,Healthcare,Medical Devices,Denmark,18.74,3.56,False
-NVDA,NVIDIA Corporation,2.27,2.27,3.34,-0.00,Technology,Semiconductors,United States,56.23,53.24,False
-LLY,Eli Lilly and Company,0.52,1.16,18.23,-0.32,Healthcare,Drug Manufacturers - General,United States,65.38,16.45,False
-DANSKE.CO,Danske Bank A/S,0.79,0.79,2.62,0,Financial Services,Banks - Regional,Denmark,9.32,0.62,True
-CARL-B.CO,Carlsberg B A/S,1.25,1.25,10.53,0,Consumer Defensive,Beverages - Brewers,Denmark,17.16,5.92,False
-MAERSK-B.CO,A.P. Møller - Mærsk B A/S,1.53,1.53,-20.94,0,Industrials,Marine Shipping,Denmark,4.83,5.21,False
-RBREW.CO,Royal UNIBREW A/S,1.31,1.31,14.89,0,Consumer Defensive,Beverages - Brewers,Denmark,17.37,6.69,False
-ISS.CO,ISS A/S,1.26,1.26,-5.27,0,Industrials,Specialty Business Services,Denmark,13.16,5.01,True
-DSV.CO,DSV A/S,0.88,0.88,15.36,0,Industrials,Integrated Freight & Logistics,Denmark,32.40,5.24,False
-SCHO.CO,Schouw & Co. A/S,1.08,1.08,15.52,0,Industrials,Conglomerates,Denmark,15.67,3.91,True
-NETC.CO,Netcompany Group A/S,1.13,1.13,28.30,0,Technology,Information Technology Services,Denmark,24.59,6.44,False
-JYSK.CO,Jyske Bank A/S,0.84,0.84,-2.28,0,Financial Services,Banks - Regional,Denmark,8.04,0.68,True
-ABBN.SW,ABB LTD N,1.25,1.25,-7.86,0,Industrials,Electrical Equipment & Parts,Switzerland,29.36,9.07,False
-TER,"Teradyne, Inc.",1.84,1.42,5.87,0.21,Technology,Semiconductor Equipment & Materials,United States,25.87,10.56,True
-PARKEN.CO,PARKEN Sport & Entertainment A/,1.36,1.36,0.00,0,Communication Services,Entertainment,Denmark,8.51,4.72,False
-NFLX,"Netflix, Inc.",1.18,1.28,12.72,-0.05,Communication Services,Entertainment,United States,50.25,15.05,False
-STG.CO,Scandinavian Tobacco Group A/S,1.49,1.49,8.78,0,Consumer Defensive,Tobacco,Denmark,8.09,5.91,False
-NOVO-B.CO,Novo Nordisk B A/S,2.15,2.15,42.23,0,Healthcare,Drug Manufacturers - General,Denmark,19.33,23.29,True
-EQNR,Equinor ASA,2.00,2.00,-0.28,0,Energy,Oil & Gas Integrated,Norway,8.50,13.32,False
-NKT.CO,NKT A/S,1.41,1.41,0.02,0,Industrials,Electrical Equipment & Parts,Denmark,17.66,7.93,False
-TSLA,"Tesla, Inc.",-0.66,-0.66,1.11,0.00,Consumer Cyclical,Auto Manufacturers,United States,181.73,2.96,False
-HEM.ST,Hemnet Group AB,1.49,1.49,23.55,0,Communication Services,Internet Content & Information,Sweden,50.66,19.82,False
-DEMANT.CO,Demant A/S,1.39,1.39,6.78,0,Healthcare,Medical Devices,Denmark,20.86,8.66,False
-BAVA.CO ,Bavarian Nordic A/S,1.40,1.40,1.03,0,Healthcare,Biotechnology,Denmark,13.82,6.65,False
-BABA,Alibaba Group Holding Limited,1.21,1.21,25.10,0,Consumer Cyclical,Internet Retail,Hong Kong,16.22,5.31,False
-JD,"JD.com, Inc.",1.31,1.31,40.84,0,Consumer Cyclical,Internet Retail,China,8.14,4.14,False
-PDD,PDD Holdings Inc.,1.89,1.89,7.33,0,Consumer Cyclical,Internet Retail,Ireland,12.66,13.56,False
-BIDU,"Baidu, Inc.",1.15,1.15,12.60,0,Communication Services,Internet Content & Information,China,8.98,2.93,False
-NTES,"NetEase, Inc.",1.53,1.53,5.86,0,Communication Services,Electronic Gaming & Multimedia,China,19.44,10.23,False
-WB,Weibo Corporation,1.37,1.37,8.98,0,Communication Services,Internet Content & Information,China,7.48,4.53,False
-IQ,"iQIYI, Inc.",0.18,0.18,-4.50,0,Communication Services,Entertainment,China,51.00,1.74,False
-SYDB.CO,Sydbank A/S,0.90,0.90,9.11,0,Financial Services,Banks - Regional,Denmark,9.89,1.36,True
-UBER,"Uber Technologies, Inc.",1.43,1.21,9.94,0.11,Technology,Software - Application,United States,15.91,5.21,False
-COLO-B.CO,Coloplast B A/S,1.27,1.27,19.52,0,Healthcare,Medical Instruments & Supplies,Denmark,30.63,9.64,False
+Ticker,Name,Recommendation Score
+MATAS.CO,Matas A/S,1.03
+TRIFOR.CO,Trifork Group AG,0.82
+RNMBY,Rheinmetall AG,0.32
+SAABF,Saab AB,0.41
+BCKIY,Babcock International Group Plc,1.16
+BAESY,BAE Systems PLC,0.86
+IVSO.ST,INVISIO AB,1.22
+NSKFF,Kongsberg Gruppen ASA,0.74
+GMAB,Genmab A/S,1.75
+GN.CO,GN Store Nord A/S,0.97
+NVDA,NVIDIA Corporation,2.26
+LLY,Eli Lilly and Company,0.53
+DANSKE.CO,Danske Bank A/S,0.79
+CARL-B.CO,Carlsberg B A/S,1.25
+MAERSK-B.CO,A.P. Møller - Mærsk B A/S,1.53
+RBREW.CO,Royal UNIBREW A/S,1.31
+ISS.CO,ISS A/S,1.26
+DSV.CO,DSV A/S,0.88
+SCHO.CO,Schouw & Co. A/S,1.08
+NETC.CO,Netcompany Group A/S,1.14
+JYSK.CO,Jyske Bank A/S,0.84
+ABBN.SW,ABB LTD N,1.25
+TER,"Teradyne, Inc.",1.85
+PARKEN.CO,PARKEN Sport & Entertainment A/,1.36
+NFLX,"Netflix, Inc.",1.18
+STG.CO,Scandinavian Tobacco Group A/S,1.49
+NOVO-B.CO,Novo Nordisk B A/S,2.15
+EQNR,Equinor ASA,2.00
+NKT.CO,NKT A/S,1.40
+TSLA,"Tesla, Inc.",-0.67
+HEM.ST,Hemnet Group AB,1.49
+DEMANT.CO,Demant A/S,1.39
+BAVA.CO ,Bavarian Nordic A/S,1.40
+BABA,Alibaba Group Holding Limited,1.22
+JD,"JD.com, Inc.",1.31
+PDD,PDD Holdings Inc.,1.89
+BIDU,"Baidu, Inc.",1.15
+NTES,"NetEase, Inc.",1.53
+WB,Weibo Corporation,1.38
+IQ,"iQIYI, Inc.",0.19
+SYDB.CO,Sydbank A/S,0.90
+UBER,"Uber Technologies, Inc.",1.43
+COLO-B.CO,Coloplast B A/S,1.26
+A,"Agilent Technologies, Inc.",1.31
+AA,Alcoa Corporation,1.31
+AAT,"American Assets Trust, Inc.",0.94
+ABBV,AbbVie Inc.,0.88
+ABM,ABM Industries Incorporated,0.46
+ABR,Arbor Realty Trust,0.91
+ACI,"Albertsons Companies, Inc.",1.27
+ACM,AECOM,1.03
+ACN,Accenture plc,1.44
+ACP,Aberdeen Income Credit Strategi,1.21
+ACT,"Enact Holdings, Inc.",1.70
+ADC,Agree Realty Corporation,0.39
+ADM,Archer-Daniels-Midland Company,0.73
+ADT,ADT Inc.,1.31
+ADX,Adams Diversified Equity Fund I,0.90
+AEE,Ameren Corporation,1.14
+AEF,27762,0.65
+AEG,Aegon Ltd. New York Registry Sh,0.49
+AEM,Agnico Eagle Mines Limited,1.20
+AEO,"American Eagle Outfitters, Inc.",1.32
+AEP,American Electric Power Company,7.71
+AER,AerCap Holdings N.V.,1.21
+AES,The AES Corporation,1.13
+AFG,"American Financial Group, Inc.",0.96
+AFL,AFLAC Incorporated,0.90
+AGI,Alamos Gold Inc.,0.84
+AGM,Federal Agricultural Mortgage C,1.19
+AGM-A,Federal Agricultural Mortgage C,0.84
+AGO,Assured Guaranty Ltd.,1.29
+AGRO,Adecoagro S.A.,0.96
+AHH,"Armada Hoffler Properties, Inc.",-0.01
+AIG,"American International Group, I",1.21
+AIN,Albany International Corporatio,0.90
+AIR,AAR Corp.,-0.47
+AIT,Applied Industrial Technologies,1.39
+AIZ,"Assurant, Inc.",1.78
+AJG,Arthur J. Gallagher & Co.,1.16
+AKR,Acadia Realty Trust,-0.43
+AL,Air Lease Corporation,1.20
+ALE,"Allete, Inc.",0.67
+ALEX,"Alexander & Baldwin, Inc.",1.49
+ALG,"Alamo Group, Inc.",1.53
+ALK,"Alaska Air Group, Inc.",1.73
+ALL,Allstate Corporation (The),1.18
+ALSN,"Allison Transmission Holdings, ",3.32
+ALV,"Autoliv, Inc.",1.91
+ALX,"Alexander's, Inc.",0.67
+AM,Antero Midstream Corporation,1.33
+AMD,"Advanced Micro Devices, Inc.",-0.33
+AME,"AMETEK, Inc.",1.34
+AMG,"Affiliated Managers Group, Inc.",1.10
+AMH,American Homes 4 Rent,0.50
+AMP,"Ameriprise Financial, Inc.",1.46
+AMRC,"Ameresco, Inc.",0.79
+AMT,American Tower Corporation (REI,1.13
+AMTD,AMTD IDEA Group,1.41
+AMX,"America Movil, S.A.B. de C.V.",0.88
+AN,"AutoNation, Inc.",1.53
+ANF,Abercrombie & Fitch Company,2.07
+AOD,Aberdeen Total Dynamic Dividend,1.05
+AON,Aon plc,0.94
+AOS,A.O. Smith Corporation,1.80
+AP,Ampco-Pittsburgh Corporation,0.83
+APA,APA Corporation,1.72
+APAM,Artisan Partners Asset Manageme,2.33
+APD,"Air Products and Chemicals, Inc",0.63
+APH,Amphenol Corporation,1.33
+APO,"Apollo Global Management, Inc. ",0.55
+ARW,"Arrow Electronics, Inc.",1.63
+ASA,ASA  Gold and Precious Metals L,0.80
+ASC,Ardmore Shipping Corporation,1.86
+ASG,"Liberty All-Star Growth Fund, I",0.68
+ASGN,ASGN Incorporated,1.11
+ASR,Grupo Aeroportuario del Sureste,1.96
+ASX,"ASE Technology Holding Co., Ltd",0.93
+ATI,ATI Inc.,0.77
+ATO,Atmos Energy Corporation,1.33
+ATR,"AptarGroup, Inc.",1.45
+AVA,Avista Corporation,1.41
+AVB,"AvalonBay Communities, Inc.",1.25
+AVT,"Avnet, Inc.",1.07
+AVY,Avery Dennison Corporation,1.71
+AWF,Alliancebernstein Global High I,1.15
+AWI,Armstrong World Industries Inc,1.38
+AWK,"American Water Works Company, I",1.66
+AWP,Aberdeen Global Premier Propert,0.88
+AWR,American States Water Company,1.40
+AXL,American Axle & Manufacturing H,0.74
+AXP,American Express Company,0.91
+AXR,AMREP Corporation,1.51
+AXS,Axis Capital Holdings Limited,-0.77
+AYI,Acuity Inc.,1.19
+AZN,Astrazeneca PLC,1.18
+AZO,"AutoZone, Inc.",1.84
+AZZ,AZZ Inc.,1.51
+BCC,"Boise Cascade, L.L.C.",1.90
+BCE,"BCE, Inc.",0.26
+BCH,Banco De Chile,1.02
+BCO,Brinks Company (The),0.92
+BCS,Barclays PLC,0.75
+BDC,Belden Inc,1.56
+BDJ,Blackrock Enhanced Equity Divid,0.87
+BDX,"Becton, Dickinson and Company",0.69
+BEN,"Franklin Resources, Inc.",0.47
+BFAM,Bright Horizons Family Solution,0.75
+BFS,"Saul Centers, Inc.",0.89
+BFZ,BlackRock California Municipal ,-2.09
+BG,Bunge Limited,1.15
+BGC,"BGC Group, Inc.",0.56
+BGR,BlackRock Energy and Resources ,0.50
+BGT,BlackRock Floating Rate Income ,1.30
+BGY,Blackrock Enhanced Internationa,0.03
+BHE,"Benchmark Electronics, Inc.",1.61
+BHK,Blackrock Core Bond Trust Black,0.34
+BHLB,"Berkshire Hills Bancorp, Inc.",0.91
+BHP,BHP Group Limited,1.90
+BK,The Bank of New York Mellon Cor,1.60
+BKE,"Buckle, Inc. (The)",2.02
+BKH,Black Hills Corporation,1.03
+BKN,BlackRock Investment Quality Mu,0.29
+BKT,BlackRock Income Trust Inc. (Th,-0.15
+BKU,"BankUnited, Inc.",1.78
+BLW,Blackrock Limited Duration Inco,1.24
+BLX,Banco Latinoamericano de Comerc,1.03
+BME,Blackrock Health Sciences Trust,0.37
+BMI,"Badger Meter, Inc.",1.48
+BMO,Bank Of Montreal,0.65
+BMY,Bristol-Myers Squibb Company,2.13
+BNS,Bank Nova Scotia Halifax Pfd 3,0.58
+BOE,Blackrock Enhanced Global Divid,0.79
+BOH,Bank of Hawaii Corporation,0.59
+BR,"Broadridge Financial Solutions,",0.97
+BRC,Brady Corporation,1.57
+BRFS,BRF S.A.,1.62
+BRO,"Brown & Brown, Inc.",0.98
+BSAC,Banco Santander - Chile,0.94
+BSBR,Banco Santander Brasil SA,0.71
+BSL,Blackstone GSO Senior Floating ,1.33
+BTA,BlackRock Long-Term Municipal A,0.93
+BTE,Baytex Energy Corp,1.57
+BTO,John Hancock Financial Opportun,1.04
+BTT,BlackRock Municipal 2030 Target,0.39
+BTU,Peabody Energy Corporation,1.53
+BTZ,BlackRock Credit Allocation Inc,1.04
+BVN,Buenaventura Mining Company Inc,1.17
+BWA,BorgWarner Inc.,1.80
+BXC,Bluelinx Holdings Inc.,0.88
+BYD,Boyd Gaming Corporation,1.63
+BYM,Blackrock Municipal Income Qual,0.23
+BZ,KANZHUN LIMITED - American Depo,0.79
+BZH,"Beazer Homes USA, Inc.",1.13
+C,"Citigroup, Inc.",1.07
+CACI,"CACI International, Inc.",1.18
+CAE,CAE Inc.,0.76
+CAG,"ConAgra Brands, Inc.",1.41
+CAH,"Cardinal Health, Inc.",0.79
+CAT,"Caterpillar, Inc.",1.82
+CB,Chubb Limited,1.06
+CBL,"CBL & Associates Properties, In",1.23
+CBT,Cabot Corporation,1.83
+CBU,"Community Financial System, Inc",0.98
+CBZ,"CBIZ, Inc.",0.47
+CCJ,Cameco Corporation,-0.61
+CCK,"Crown Holdings, Inc.",1.24
+CCL,Carnival Corporation,1.22
+CCU,"Compania Cervecerias Unidas, S.",1.16
+CDE,"Coeur Mining, Inc.",1.77
+CEE,The Central and Eastern Europe ,1.21
+CF,"CF Industries Holdings, Inc.",1.90
+CFR,"Cullen/Frost Bankers, Inc.",0.75
+CHA,Chagee Holdings Limited,2.46
+CHD,"Church & Dwight Company, Inc.",1.55
+CHE,Chemed Corp,2.07
+CHH,"Choice Hotels International, In",1.62
+CHKR,Chesapeake Granite Wash Trust,2.72
+CHN,"China Fund, Inc. (The)",0.87
+CHT,"Chunghwa Telecom Co., Ltd.",1.01
+CI,The Cigna Group,1.12
+CIA,"Citizens, Inc.",0.37
+CIB,Grupo Cibest S.A.,1.06
+CIF,MFS Intermediate High Income Fu,1.27
+CIG,Comp En De Mn Cemig,1.80
+CII,BlackRock Enhanced Large Cap Co,0.75
+CIM,Chimera Investment Corporation,0.96
+CL,Colgate-Palmolive Company,2.29
+CLB,Core Laboratories Inc.,1.08
+CLDT,Chatham Lodging Trust (REIT),-0.48
+CLH,"Clean Harbors, Inc.",0.92
+CLS,"Celestica, Inc.",-142.86
+CLX,Clorox Company (The),1.52
+CM,Canadian Imperial Bank of Comme,0.72
+CMA,Comerica Incorporated,1.28
+CMC,Commercial Metals Company,-0.47
+CMG,"Chipotle Mexican Grill, Inc.",1.39
+CMI,Cummins Inc.,2.10
+CMRE,Costamare Inc.,1.60
+CMS,CMS Energy Corporation,1.25
+CMU,MFS High Yield Municipal Trust,1.16
+CNC,Centene Corporation,1.41
+CNH,CNH Industrial N.V.,0.83
+CNI,Canadian National Railway Compa,1.39
+CNK,Cinemark Holdings Inc Cinemark ,1.19
+CNO,"CNO Financial Group, Inc.",0.88
+CNP,"CenterPoint Energy, Inc (Holdin",1.02
+CNQ,Canadian Natural Resources Limi,1.61
+CNX,CNX Resources Corporation,0.42
+COF,Capital One Financial Corporati,-2.08
+COO,"The Cooper Companies, Inc.",0.68
+COP,ConocoPhillips,1.61
+COR,"Cencora, Inc.",0.37
+CP,Canadian Pacific Kansas City Li,0.91
+CPA,"Copa Holdings, S.A.",1.75
+CPAC,Cementos Pacasmayo S.A.A.,1.62
+CPF,Central Pacific Financial Corp ,0.95
+CPK,Chesapeake Utilities Corporatio,0.97
+CPT,Camden Property Trust,-0.19
+CR,Crane Company,1.08
+CRH,CRH PLC,4.71
+CRI,"Carter's, Inc.",1.67
+CRM,"Salesforce, Inc.",0.76
+CRS,Carpenter Technology Corporatio,1.42
+CRT,Cross Timbers Royalty Trust,3.64
+CSL,Carlisle Companies Incorporated,2.24
+CSTM,Constellium SE,0.80
+CSV,"Carriage Services, Inc.",1.53
+CSX,CSX Corporation,1.46
+CTS,CTS Corporation,1.27
+CUBE,CubeSmart,1.06
+CUK,Carnival Plc,1.25
+CUZ,Cousins Properties Incorporated,-0.23
+CVE,Cenovus Energy Inc,1.26
+CVS,CVS Health Corporation,0.51
+CVX,Chevron Corporation,1.17
+CW,Curtiss-Wright Corporation,1.28
+CWT,California Water Service Group,3.01
+CX,"Cemex, S.A.B. de C.V. Sponsored",1.04
+CXE,MFS High Income Municipal Trust,1.16
+CXH,MFS Investment Grade Municipal ,1.10
+CXW,"CoreCivic, Inc.",1.89
+CYD,China Yuchai International Limi,0.61
+D,"Dominion Energy, Inc.",0.80
+DAC,Danaos Corporation,1.79
+DAL,"Delta Air Lines, Inc.",3.63
+DB,Deutsche Bank AG,0.69
+DCI,"Donaldson Company, Inc.",1.63
+DCO,Ducommun Incorporated,0.61
+DD,"DuPont de Nemours, Inc.",-3.11
+DDS,"Dillard's, Inc.",1.73
+DE,Deere & Company,1.05
+DEI,"Douglas Emmett, Inc.",0.15
+DEO,Diageo plc,1.42
+DG,Dollar General Corporation,2.20
+DGX,Quest Diagnostics Incorporated,6.51
+DHF,Dreyfus High Yield Strategies F,1.23
+DHI,"D.R. Horton, Inc.",1.64
+DHR,Danaher Corporation,0.54
+DHT,"DHT Holdings, Inc.",1.57
+DIN,"Dine Brands Global, Inc. Common",1.52
+DIS,Walt Disney Company (The),1.00
+DKL,"Delek Logistics Partners, L.P.",1.26
+DKS,Dick's Sporting Goods Inc,1.72
+DLB,Dolby Laboratories,8.34
+DLR,"Digital Realty Trust, Inc.",0.19
+DLX,Deluxe Corporation,1.28
+DMB,Dreyfus Municipal Bond Infrastr,0.71
+DMO,Western Asset Mortgage Defined ,1.44
+DNP,"DNP Select Income Fund, Inc.",1.16
+DOC,"Healthpeak Properties, Inc.",0.29
+DOLE,Dole plc,1.11
+DOX,Amdocs Limited,1.38
+DPZ,Domino's Pizza Inc,2.21
+DRD,DRDGOLD Limited,1.93
+DRH,Diamondrock Hospitality Company,0.50
+DRI,"Darden Restaurants, Inc.",1.15
+DSM,Dreyfus Strategic Municipal Bon,1.10
+DSU,"Blackrock Debt Strategies Fund,",1.30
+DSX,Diana Shipping inc.,0.60
+DTE,DTE Energy Company,1.12
+DTF,"DTF Tax-Free Income, Inc.",0.10
+DUK,Duke Energy Corporation (Holdin,1.69
+DV,"DoubleVerify Holdings, Inc.",1.21
+DVA,DaVita Inc.,1.30
+DVN,Devon Energy Corporation,1.80
+DX,"Dynex Capital, Inc.",0.65
+DY,"Dycom Industries, Inc.",1.07
+E,ENI S.p.A.,0.83
+EARN,Ellington Credit Company,0.25
+EAT,"Brinker International, Inc.",1.47
+EBF,"Ennis, Inc.",1.62
+EBR,Centrais Electricas Brasileiras,1.13
+EC,Ecopetrol S.A.,1.72
+ECL,Ecolab Inc.,1.23
+ED,"Consolidated Edison, Inc.",0.91
+EDN,Empresa Distribuidora Y Comerci,1.05
+EDU,New Oriental Education & Techno,0.96
+EE,"Excelerate Energy, Inc.",1.20
+EFC,Ellington Financial Inc.,0.84
+EFT,Eaton Vance Floating Rate Incom,1.42
+EFX,"Equifax, Inc.",0.98
+EGO,Eldorado Gold Corporation,1.32
+EGP,"EastGroup Properties, Inc.",0.62
+EGY,"VAALCO Energy, Inc.",3.79
+EHI,Western Asset Global High Incom,1.36
+EIG,Employers Holdings Inc,1.35
+EIX,Edison International,1.93
+ELA,Envela Corporation,1.29
+ELP,Companhia Paranaense de Energia,1.16
+ELS,"Equity Lifestyle Properties, In",1.07
+EMD,Western Asset Emerging Markets ,1.31
+EME,"EMCOR Group, Inc.",1.46
+EMN,Eastman Chemical Company,1.95
+EMR,Emerson Electric Company,0.62
+ENB,Enbridge Inc,0.86
+ENR,"Energizer Holdings, Inc.",1.01
+ENS,EnerSys,1.77
+EOG,"EOG Resources, Inc.",1.95
+EOI,Eaton Vance Enhance Equity Inco,0.57
+EOS,Eaton Vance Enhance Equity Inco,0.76
+EPAM,"EPAM Systems, Inc.",1.47
+EPD,Enterprise Products Partners L.,1.38
+EPR,EPR Properties,1.49
+EQR,Equity Residential,0.73
+EQT,EQT Corporation,1.71
+ERJ,Embraer S.A.,0.86
+ESE,ESCO Technologies Inc.,0.77
+ESI,Element Solutions Inc.,0.86
+ESS,"Essex Property Trust, Inc.",0.77
+ETB,Eaton Vance Tax-Managed Buy-Wri,0.84
+ETG,Eaton Vance Tax-Advantaged Glob,0.90
+ETN,"Eaton Corporation, PLC",1.16
+ETO,Eaton Vance Tax-Advantage Globa,0.83
+ETR,Entergy Corporation,0.73
+ETV,Eaton Vance Corporation Eaton V,0.84
+ETW,Eaton Vance Corporation Eaton V,0.84
+ETY,Eaton Vance Tax-Managed Diversi,0.66
+EVER,"EverQuote, Inc.",1.75
+EVF,Eaton Vance Senior Income Trust,1.36
+EVG,Eaton Vance Short Diversified I,1.14
+EVN,Eaton Vance Municipal Income Tr,1.01
+EVR,Evercore Inc.,1.68
+EVT,Eaton Vance Tax Advantaged Divi,0.35
+EVTC,"Evertec, Inc.",1.74
+EW,Edwards Lifesciences Corporatio,1.19
+EXC,Exelon Corporation,1.32
+EXP,Eagle Materials Inc,1.72
+EXP,Eagle Materials Inc,1.72
+EXR,Extra Space Storage Inc,0.70
+F,Ford Motor Company,1.85
+FBP,First BanCorp. New,-0.63
+FC,Franklin Covey Company,1.11
+FCF,First,0.81
+FCN,"FTI Consulting, Inc.",1.52
+FCT,First Trust Senior Floating Rat,1.25
+FCX,"Freeport-McMoRan, Inc.",1.21
+FDP,"Fresh Del Monte Produce, Inc.",1.18
+FDS,FactSet Research Systems Inc.,1.39
+FDX,FedEx Corporation,1.22
+FE,FirstEnergy Corp.,2.45
+FFA,First Trust Enhanced Equity Inc,0.87
+FFC,Flaherty & Crumrine Preferred S,1.39
+FHN,First Horizon Corporation,1.74
+FI,"Fiserv, Inc.",1.59
+FICO,Fair Isaac Corporation,1.61
+FIX,"Comfort Systems USA, Inc.",1.38
+FLC,Flaherty & Crumrine Total Retur,1.37
+FLO,"Flowers Foods, Inc.",1.32
+FLR,Fluor Corporation,1.81
+FLS,Flowserve Corporation,1.10
+FMC,FMC Corporation,1.57
+FMN,Federated Premier Municipal Inc,1.11
+FMS,Fresenius Medical Care AG,0.83
+FMX,Fomento Economico Mexicano S.A.,0.98
+FMY,First Trust Motgage Income Fund,1.15
+FN,Fabrinet,1.08
+FNB,F.N.B. Corporation,1.10
+FNF,"Fidelity National Financial, In",0.77
+FNV,Franco-Nevada Corporation,0.84
+FOR,Forestar Group Inc,1.35
+FR,"First Industrial Realty Trust, ",0.83
+FRA,Blackrock Floating Rate Income ,1.30
+FRO,Frontline Plc,1.34
+FRT,Federal Realty Investment Trust,0.75
+FSM,Fortuna Mining Corp.,1.55
+FSS,Federal Signal Corporation,1.30
+FT,Franklin Universal Trust,1.24
+FTI,TechnipFMC plc,3.50
+FTK,"Flotek Industries, Inc.",1.04
+FUL,H. B. Fuller Company,1.96
+G,Genpact Limited,1.69
+GAB,"Gabelli Equity Trust, Inc. (The",0.75
+GAM,"General American Investors, Inc",0.90
+GB,Global Blue Group Holding AG,1.40
+GBX,"Greenbrier Companies, Inc. (The",1.50
+GCI,"Gannett Co., Inc.",1.01
+GD,General Dynamics Corporation,1.42
+GDV,Gabelli Dividend & Income Trust,0.83
+GE,GE Aerospace,0.79
+GEF,Greif Inc.,1.01
+GEO,Geo Group Inc (The) REIT,0.31
+GF,"New Germany Fund, Inc. (The)",0.73
+GFF,Griffon Corporation,1.82
+GFI,Gold Fields Limited,1.76
+GGB,Gerdau S.A.,1.27
+GGG,Graco Inc.,1.53
+GGT,"Gabelli Multi-Media Trust, Inc.",0.74
+GHI,Greystone Housing Impact Invest,0.48
+GIB,CGI Inc.,1.48
+GIL,"Gildan Activewear, Inc.",1.59
+GIS,"General Mills, Inc.",1.83
+GLP,Global Partners LP,1.31
+GLW,Corning Incorporated,-0.12
+GM,General Motors Company,1.09
+GME,GameStop Corporation,0.14
+GMED,"Globus Medical, Inc.",0.81
+GNE,Genie Energy Ltd.,1.17
+GNK,Genco Shipping & Trading Limite,0.93
+GNRC,Generac Holdlings Inc.,1.15
+GNW,Genworth Financial Inc,0.61
+GPC,Genuine Parts Company,1.30
+GPK,Graphic Packaging Holding Compa,1.40
+GPN,Global Payments Inc.,1.24
+GS,"Goldman Sachs Group, Inc. (The)",0.89
+GSK,GSK plc,1.28
+GSL,Global Ship Lease Inc New,1.99
+GTN,"Gray Media, Inc.",2.11
+GTY,Getty Realty Corporation,0.84
+GUT,Gabelli Utility Trust (The),0.82
+GVA,Granite Construction Incorporat,1.49
+GWRE,"Guidewire Software, Inc.",-2.50
+GWW,"W.W. Grainger, Inc.",1.87
+H,Hyatt Hotels Corporation,0.94
+HAE,Haemonetics Corporation,1.20
+HAL,Halliburton Company,1.89
+HASI,HA Sustainable Infrastructure C,0.61
+HBM,Hudbay Minerals Inc.,1.04
+HCA,"HCA Healthcare, Inc.",1.73
+HCC,"Warrior Met Coal, Inc.",0.59
+HCI,"HCI Group, Inc.",1.38
+HD,"Home Depot, Inc. (The)",1.84
+HDB,HDFC Bank Limited,0.58
+HEI,Heico Corporation,0.51
+HES,Hess Corporation,1.44
+HIG,"The Hartford Insurance Group, I",1.71
+HII,"Huntington Ingalls Industries, ",1.88
+HIO,Western Asset High Income Oppor,1.19
+HIW,"Highwoods Properties, Inc.",0.80
+HIX,Western Asset High Income Fund ,1.28
+HL,Hecla Mining Company,0.44
+HLF,Herbalife Ltd.,2.07
+HLX,"Helix Energy Solutions Group, I",0.75
+HMC,"Honda Motor Company, Ltd.",1.09
+HMN,Horace Mann Educators Corporati,0.89
+HMY,Harmony Gold Mining Company Lim,1.99
+HNI,HNI Corporation,1.78
+HOG,"Harley-Davidson, Inc.",1.42
+HON,Honeywell International Inc.,1.42
+HOV,"Hovnanian Enterprises, Inc.",1.58
+HP,"Helmerich & Payne, Inc.",1.33
+HPF,John Hancock Pfd Income Fund II,1.28
+HPI,John Hancock Preferred Income F,1.28
+HPQ,HP Inc.,1.46
+HPS,John Hancock Preferred Income F,1.28
+HQH,Tekla Healthcare Investors,-0.81
+HRB,"H&R Block, Inc.",1.97
+HRL,Hormel Foods Corporation,1.26
+HST,"Host Hotels & Resorts, Inc.",1.35
+HSY,The Hershey Company,2.54
+HTD,John Hancock Tax Advantaged Div,1.26
+HTGC,"Hercules Capital, Inc.",1.42
+HTH,Hilltop Holdings Inc.,0.66
+HUM,Humana Inc.,2.32
+HVT,"Haverty Furniture Companies, In",0.87
+HXL,Hexcel Corporation,0.75
+HY,"Hyster-Yale, Inc.",1.51
+HYT,Blackrock Corporate High Yield ,1.25
+IAG,Iamgold Corporation,1.63
+IBM,International Business Machines,1.27
+IBN,ICICI Bank Limited,0.77
+ICE,Intercontinental Exchange Inc.,0.36
+IDA,"IDACORP, Inc.",1.07
+IDT,IDT Corporation,1.81
+IEX,IDEX Corporation,1.63
+IFN,"India Fund, Inc. (The)",0.73
+IGA,Voya Global Advantage and Premi,0.99
+IGD,Voya Global Equity Dividend and,0.98
+IGT,International Game Technology,-0.36
+IHG,Intercontinental Hotels Group,1.51
+IIF,Morgan Stanley India Investment,0.75
+IIM,Invesco Value Municipal Income ,0.71
+IMAX,Imax Corporation,0.74
+INFY,Infosys Limited,1.73
+ING,"ING Group, N.V.",0.74
+INGR,Ingredion Incorporated,2.15
+INN,"Summit Hotel Properties, Inc.",4.82
+IP,International Paper Company,0.63
+IPG,"Interpublic Group of Companies,",1.65
+IQI,Invesco Quality Municipal Incom,0.73
+IR,Ingersoll Rand Inc.,1.55
+IRM,Iron Mountain Incorporated (Del,-0.40
+IRS,IRSA Inversiones Y Representaci,1.20
+IT,"Gartner, Inc.",1.50
+ITT,ITT Inc.,1.29
+ITUB,Itau Unibanco Banco Holding SA,0.95
+ITW,Illinois Tool Works Inc.,1.91
+IVR,INVESCO MORTGAGE CAPITAL INC,0.61
+IVZ,Invesco Ltd,0.72
+IX,ORIX Corporation,0.97
+JBI,"Janus International Group, Inc.",1.40
+JBL,Jabil Inc.,0.39
+JCI,Johnson Controls International ,0.53
+JEQ,"Aberdeen Japan Equity Fund, Inc",0.77
+JHI,John Hancock Investors Trust,1.10
+JHS,John Hancock Income Securities ,1.04
+JHX,James Hardie Industries plc.,1.38
+JLL,Jones Lang LaSalle Incorporated,1.21
+JNPR,"Juniper Networks, Inc.",0.95
+JOE,St. Joe Company (The),-0.68
+JOF,Japan Smaller Capitalization Fu,0.28
+JPC,Nuveen Preferred & Income Oppor,1.27
+JPM,JP Morgan Chase & Co.,0.72
+JQC,Nuveen Credit Strategies Income,1.33
+K,Kellanova,0.24
+KAI,Kadant Inc,1.45
+KAR,"OPENLANE, Inc.",0.84
+KB,KB Financial Group Inc,0.85
+KBH,KB Home,2.08
+KBR,"KBR, Inc.",1.60
+KEP,Korea Electric Power Corporatio,1.26
+KEX,Kirby Corporation,1.45
+KFY,Korn Ferry,1.91
+KGC,Kinross Gold Corporation,1.62
+KIM,Kimco Realty Corporation (HC),0.66
+KKR,KKR & Co. Inc.,-0.09
+KMB,Kimberly-Clark Corporation,4.16
+KMI,"Kinder Morgan, Inc.",0.92
+KMPR,Kemper Corporation,1.03
+KMT,Kennametal Inc.,1.10
+KMX,CarMax Inc,0.91
+KNOP,KNOT Offshore Partners LP,0.65
+KNX,Knight-Swift Transportation Hol,0.29
+KO,Coca-Cola Company (The),1.33
+KOF,Coca Cola Femsa S.A.B. de C.V.,1.28
+KOP,Koppers Holdings Inc.,1.11
+KR,Kroger Company (The),1.16
+KRC,Kilroy Realty Corporation,1.26
+KRG,Kite Realty Group Trust,-1.27
+KRO,Kronos Worldwide Inc,1.45
+KSM,DWS Strategic Municipal Income ,0.77
+KSS,Kohl's Corporation,2.59
+KT,KT Corporation,0.61
+KTF,DWS Municipal Income Trust,1.06
+KWR,Quaker Houghton,0.97
+KYN,Kayne Anderson MLP/Midstream In,1.06
+L,Loews Corporation,0.80
+LAD,"Lithia Motors, Inc.",1.31
+LAZ,"Lazard, Inc.",1.39
+LEA,Lear Corporation,1.99
+LEN,Lennar Corporation,1.57
+LGI,Lazard Global Total Return and ,0.59
+LH,Labcorp Holdings Inc.,1.46
+LII,"Lennox International, Inc.",1.82
+LIN,Linde plc,1.63
+LITB,"LightInTheBox Holding Co., Ltd.",0.98
+LLY,Eli Lilly and Company,0.53
+LMT,Lockheed Martin Corporation,2.93
+LNC,Lincoln National Corporation,0.91
+LND,Brasilagro Brazilian Agric Real,1.53
+LNN,Lindsay Corporation,1.27
+LNT,Alliant Energy Corporation,0.79
+LOW,"Lowe's Companies, Inc.",2.26
+LPX,Louisiana-Pacific Corporation,1.80
+LRN,"Stride, Inc.",1.59
+LSE,"Leishen Energy Holding Co., Ltd",1.48
+LTC,"LTC Properties, Inc.",1.05
+LTM,LATAM Airlines Group S.A.,1.47
+LUV,Southwest Airlines Company,-0.00
+LXFR,Luxfer Holdings PLC,1.96
+LXP,LXP Industrial Trust,0.21
+LYB,LyondellBasell Industries NV,0.95
+LYG,Lloyds Banking Group Plc,0.70
+LYV,"Live Nation Entertainment, Inc.",0.50
+LZB,La-Z-Boy Incorporated,1.20
+M,Macy's Inc,1.57
+MA,Mastercard Incorporated,0.13
+MAA,Mid-America Apartment Communiti,0.77
+MAIN,Main Street Capital Corporation,1.36
+MAR,Marriott International,1.24
+MAS,Masco Corporation,2.42
+MATX,"Matson, Inc.",2.21
+MAV,Pioneer Municipal High Income A,-0.18
+MCD,McDonald's Corporation,1.72
+MCI,Barings Corporate Investors,1.38
+MCK,McKesson Corporation,0.61
+MCN,Madison Covered Call & Equity S,0.51
+MCO,Moody's Corporation,1.25
+MCR,MFS Charter Income Trust,1.20
+MCY,Mercury General Corporation,1.01
+MDT,Medtronic plc.,0.99
+MDU,"MDU Resources Group, Inc.",0.83
+MET,"MetLife, Inc.",1.43
+MFA,"MFA Financial, Inc.",0.89
+MFC,Manulife Financial Corporation,0.60
+MFG,"Mizuho Financial Group, Inc. Sp",0.64
+MFM,MFS Municipal Income Trust,0.70
+MG,Mistras Group Inc,1.12
+MGA,"Magna International, Inc.",1.22
+MGF,MFS Government Markets Income T,0.85
+MGM,MGM Resorts International,0.86
+MHD,"Blackrock MuniHoldings Fund, In",0.29
+MHF,Western Asset Municipal High In,0.24
+MHI,Pioneer Municipal High Income T,0.52
+MHK,"Mohawk Industries, Inc.",1.07
+MHN,Blackrock MuniHoldings New York,-1.63
+MHO,"M/I Homes, Inc.",1.94
+MITT,"AG Mortgage Investment Trust, I",0.82
+MIY,Blackrock MuniYield Michigan Qu,0.06
+MKC,"McCormick & Company, Incorporat",1.03
+MKL,Markel Group Inc.,1.00
+MLI,"Mueller Industries, Inc.",1.90
+MLM,"Martin Marietta Materials, Inc.",1.21
+MLR,"Miller Industries, Inc.",1.53
+MMC,"Marsh & McLennan Companies, Inc",2.06
+MMD,MainStay MacKay DefinedTerm Mun,0.95
+MMM,3M Company,1.84
+MMS,"Maximus, Inc.",1.89
+MMT,MFS Multimarket Income Trust,1.09
+MMU,Western Asset Managed Municipal,-0.61
+MNR,Mach Natural Resources LP,1.59
+MO,"Altria Group, Inc.",2.30
+MOD,Modine Manufacturing Company,1.29
+MOH,Molina Healthcare Inc,1.65
+MOS,Mosaic Company (The),0.47
+MOV,Movado Group Inc.,0.66
+MPA,Blackrock MuniYield Pennsylvani,0.59
+MPC,Marathon Petroleum Corporation,1.00
+MPLX,MPLX LP,1.53
+MPV,Barings Participation Investors,1.39
+MPX,Marine Products Corporation,1.07
+MQT,Blackrock MuniYield Quality Fun,0.14
+MQY,Blackrock MuniYield Quality Fun,0.19
+MRC,MRC Global Inc.,0.80
+MRK,"Merck & Company, Inc.",2.42
+MSA,MSA Safety Incorporated,1.59
+MSB,Mesabi Trust,3.29
+MSCI,MSCI Inc.,1.72
+MSD,Morgan Stanley Emerging Markets,1.59
+MSI,"Motorola Solutions, Inc.",2.12
+MSM,"MSC Industrial Direct Company, ",1.34
+MT,Arcelor Mittal NY Registry Shar,0.74
+MTB,M&T Bank Corporation,1.20
+MTD,"Mettler-Toledo International, I",1.85
+MTDR,Matador Resources Company,1.76
+MTG,MGIC Investment Corporation,3.01
+MTH,Meritage Homes Corporation,1.78
+MTN,"Vail Resorts, Inc.",1.19
+MTR,Mesa Royalty Trust,1.35
+MTRN,Materion Corporation,-0.28
+MTW,"Manitowoc Company, Inc. (The)",0.96
+MTZ,"MasTec, Inc.",0.21
+MUA,"Blackrock MuniAssets Fund, Inc",1.05
+MUC,Blackrock MuniHoldings Californ,-0.67
+MUE,Blackrock MuniHoldings Quality ,0.51
+MUJ,Blackrock MuniHoldings New Jers,0.26
+MUR,Murphy Oil Corporation,1.28
+MVO,MV Oil Trust,4.66
+MVT,"Blackrock MuniVest Fund II, Inc",0.38
+MWA,MUELLER WATER PRODUCTS,1.23
+MYE,"Myers Industries, Inc.",0.56
+MYI,Blackrock MuniYield Quality Fun,0.20
+MYN,Blackrock MuniYield New York Qu,-1.23
+NAC,Nuveen California Quality Munic,0.92
+NAD,Nuveen Quality Municipal Income,-0.75
+NAN,Nuveen New York Quality Municip,nan
+NAT,Nordic American Tankers Limited,1.08
+NBHC,National Bank Holdings Corporat,1.06
+NC,"NACCO Industries, Inc.",-1.60
+NCA,Nuveen California Municipal Val,0.88
+NCI,Neo-Concept International Group,1.53
+NCT,Intercont (Cayman) Limited,0.59
+NCV,AllianzGI Convertible & Income ,-0.82
+NCZ,AllianzGI Convertible & Income ,1.30
+NE,Noble Corporation plc A,1.60
+NEE,"NextEra Energy, Inc.",1.40
+NEM,Newmont Corporation,1.67
+NEU,NewMarket Corp,1.82
+NFG,National Fuel Gas Company,-0.35
+NFJ,"AllianzGI NFJ Dividend, Interes",0.83
+NGG,"National Grid Transco, PLC Nati",0.93
+NGS,"Natural Gas Services Group, Inc",1.19
+NGVC,Natural Grocers by Vitamin Cott,1.09
+NHI,"National Health Investors, Inc.",1.00
+NI,NiSource Inc,1.84
+NIM,Nuveen Select Maturities Munici,0.09
+NJR,NewJersey Resources Corporation,1.32
+NKE,"Nike, Inc.",0.91
+NL,"NL Industries, Inc.",1.18
+NLY,Annaly Capital Management Inc.,5.56
+NMFC,New Mountain Finance Corporatio,1.37
+NMI,"Nuveen Municipal Income Fund, I",0.66
+NMM,Navios Maritime Partners LP,1.52
+NMR,Nomura Holdings Inc,0.80
+NMT,Nuveen Massachusetts Quality Mu,0.86
+NNI,"Nelnet, Inc.",0.56
+NNN,"NNN REIT, Inc.",1.59
+NNY,Nuveen New York Municipal Value,0.90
+NOA,North American Construction Gro,1.23
+NOAH,Noah Holdings Limited,1.11
+NOC,Northrop Grumman Corporation,1.45
+NOK,Nokia Corporation Sponsored,0.76
+NOV,NOV Inc.,1.41
+NOW,"ServiceNow, Inc.",0.17
+NPK,"National Presto Industries, Inc",1.33
+NPO,Enpro Inc.,0.69
+NPV,Nuveen Virginia Quality Municip,0.97
+NRG,"NRG Energy, Inc.",1.10
+NRP,Natural Resource Partners LP Li,1.94
+NRT,North European Oil Royality Tru,3.82
+NSC,Norfolk Southern Corporation,1.27
+NSP,"Insperity, Inc.",0.54
+NU,Nu Holdings Ltd.,0.85
+NUE,Nucor Corporation,1.35
+NUV,"Nuveen Municipal Value Fund, In",0.20
+NVO,Novo Nordisk A/S,2.15
+NVR,"NVR, Inc.",2.10
+NVS,Novartis AG,1.69
+NWE,"NorthWestern Energy Group, Inc.",1.44
+NWN,Northwest Natural Holding Compa,1.07
+NX,Quanex Building Products Corpor,0.31
+NXC,Nuveen California Select Tax-Fr,0.49
+NXP,Nuveen Select Tax Free Income P,0.13
+NYT,New York Times Company (The),1.40
+O,Realty Income Corporation,0.22
+OC,Owens Corning Inc,1.98
+ODC,Oil-Dri Corporation Of America,1.83
+ODP,The ODP Corporation,1.09
+OFG,OFG Bancorp,1.15
+OGE,OGE Energy Corp,2.01
+OHI,"Omega Healthcare Investors, Inc",0.96
+OIA,Invesco Municipal Income Opport,0.96
+OII,"Oceaneering International, Inc.",1.65
+OIS,"Oil States International, Inc.",-0.22
+OKE,"ONEOK, Inc.",1.29
+OLN,Olin Corporation,0.43
+OLP,"One Liberty Properties, Inc.",0.90
+OMC,Omnicom Group Inc.,1.73
+ONB,Old National Bancorp,0.76
+OPY,"Oppenheimer Holdings, Inc.",1.00
+ORA,"Ormat Technologies, Inc.",0.59
+ORCL,Oracle Corporation,0.73
+ORI,Old Republic International Corp,1.09
+ORN,"Orion Group Holdings, Inc.",0.07
+OSK,Oshkosh Corporation (Holding Co,1.38
+OXM,"Oxford Industries, Inc.",1.43
+OXY,Occidental Petroleum Corporatio,1.09
+PAA,"Plains All American Pipeline, L",1.01
+PAC,Grupo Aeroportuario Del Pacific,1.68
+PAG,"Penske Automotive Group, Inc.",1.27
+PAI,Western Asset Investment Grade ,0.63
+PAM,Pampa Energia S.A.,1.16
+PANW,"Palo Alto Networks, Inc.",-0.56
+PAY,"Paymentus Holdings, Inc.",0.72
+PB,"Prosperity Bancshares, Inc.",1.03
+PBA,Pembina Pipeline Corp.,1.20
+PBH,Prestige Consumer Healthcare In,1.62
+PBI,Pitney Bowes Inc.,-0.05
+PBR,Petroleo Brasileiro S.A. Petrob,1.68
+PBT,Permian Basin Royalty Trust,4.92
+PBYI,Puma Biotechnology Inc,2.12
+PCG,Pacific Gas & Electric Co.,6.04
+PCM,"PCM Fund, Inc.",1.40
+PCN,Pimco Corporate & Income Strate,1.43
+PDS,Precision Drilling Corporation,1.30
+PDT,John Hancock Premium Dividend F,1.24
+PEG,Public Service Enterprise Group,3.21
+PEO,"Adams Natural Resources Fund, I",-0.15
+PEP,"Pepsico, Inc.",1.46
+PFD,Flaherty & Crumrine Preferred I,1.36
+PFE,"Pfizer, Inc.",2.71
+PFG,Principal Financial Group Inc,0.52
+PFL,PIMCO Income Strategy Fund Shar,1.43
+PFO,Flaherty & Crumrine Preferred I,1.36
+PFS,"Provident Financial Services, I",0.96
+PFSI,"PennyMac Financial Services, In",0.83
+PFX,PhenixFIN Corporation,1.15
+PG,Procter & Gamble Company (The),1.44
+PGR,Progressive Corporation (The),1.40
+PH,Parker-Hannifin Corporation,2.04
+PHD,Pioneer Floating Rate Trust Pio,1.45
+PHH,Park Ha Biological Technology C,1.57
+PHI,PLDT Inc. Sponsored,1.45
+PHM,"PulteGroup, Inc.",2.19
+PHX,PHX Minerals Inc.,0.66
+PII,Polaris Inc.,0.06
+PKE,Park Aerospace Corp.,0.62
+PKX,POSCO Holdings Inc.,0.43
+PLD,"Prologis, Inc.",0.67
+PLOW,"Douglas Dynamics, Inc.",1.58
+PM,Philip Morris International Inc,1.83
+PMM,Putnam Managed Municipal Income,0.65
+PMT,PennyMac Mortgage Investment Tr,1.44
+PNC,"PNC Financial Services Group, I",1.02
+PNR,Pentair plc.,2.01
+PNW,Pinnacle West Capital Corporati,6.31
+POR,Portland General Electric Co,2.04
+POST,"Post Holdings, Inc.",1.08
+PPG,"PPG Industries, Inc.",1.45
+PPL,PPL Corporation,6.29
+PPT,Putnam Premier Income Trust,0.91
+PRA,ProAssurance Corporation,0.40
+PRI,"Primerica, Inc.",1.62
+PRLB,"Proto Labs, Inc.",0.04
+PRU,"Prudential Financial, Inc.",2.11
+PSA,Public Storage,1.11
+PSO,"Pearson, Plc",1.19
+PSX,Phillips 66,0.66
+PTY,Pimco Corporate & Income Opport,1.42
+PUK,Prudential Public Limited Compa,0.78
+PVH,PVH Corp.,1.24
+PWR,"Quanta Services, Inc.",0.38
+PX,"P10, Inc.",1.27
+R,"Ryder System, Inc.",1.77
+RBA,"RB Global, Inc.",1.29
+RBC,RBC Bearings Incorporated,0.60
+RCI,"Rogers Communication, Inc.",1.10
+RCL,Royal Caribbean Cruises Ltd.,1.28
+RCS,"PIMCO Strategic Income Fund, In",0.95
+RDN,Radian Group Inc.,2.22
+RDY,Dr. Reddy's Laboratories Ltd,1.52
+REG,Regency Centers Corporation,0.66
+RES,"RPC, Inc.",0.83
+REX,REX American Resources Corporat,1.26
+REXR,"Rexford Industrial Realty, Inc.",0.76
+RF,Regions Financial Corporation,1.19
+RFI,Cohen & Steers Total Return Rea,0.70
+RGA,"Reinsurance Group of America, I",0.62
+RGR,"Sturm, Ruger & Company, Inc.",2.64
+RGS,Regis Corporation,1.37
+RH,RH,0.60
+RHP,"Ryman Hospitality Properties, I",1.33
+RIO,Rio Tinto Plc,1.68
+RL,Ralph Lauren Corporation,1.30
+RLI,RLI Corp.,1.09
+RLJ,RLJ Lodging Trust,0.54
+RM,Regional Management Corp.,1.75
+RMD,ResMed Inc.,1.49
+RMT,"Royce Micro-Cap Trust, Inc.",0.73
+RNP,Cohen & Steers Reit and Preferr,1.01
+RNR,RenaissanceRe Holdings Ltd.,1.48
+ROG,Rogers Corporation,1.56
+ROK,"Rockwell Automation, Inc.",0.83
+ROL,"Rollins, Inc.",1.15
+ROP,"Roper Technologies, Inc.",0.73
+RPM,RPM International Inc.,1.28
+RPT,Rithm Property Trust Inc.,-0.82
+RQI,Cohen & Steers Quality Income R,-1.24
+RRC,Range Resources Corporation,1.31
+RS,"Reliance, Inc.",1.85
+RSG,"Republic Services, Inc.",1.53
+RVT,"Royce Value Trust, Inc.",0.62
+RWT,"Redwood Trust, Inc.",0.28
+RY,Royal Bank Of Canada,0.70
+RYN,Rayonier Inc. REIT,1.53
+SAM,"Boston Beer Company, Inc. (The)",1.19
+SAN,"Banco Santander, S.A. Sponsored",0.82
+SAP,SAP  SE,0.90
+SAR,Saratoga Investment Corp New,1.38
+SB,"Safe Bulkers, Inc",1.39
+SBH,"Sally Beauty Holdings, Inc. (Na",1.69
+SBR,Sabine Royalty Trust,5.15
+SBS,Companhia de saneamento Basico ,2.04
+SCCO,Southern Copper Corporation,1.98
+SCD,LMP Capital and Income Fund Inc,1.11
+SCI,Service Corporation Internation,0.94
+SCL,Stepan Company,0.68
+SCM,Stellus Capital Investment Corp,1.30
+SCS,Steelcase Inc.,1.29
+SD,"SandRidge Energy, Inc.",1.39
+SDRL,Seadrill Limited,1.14
+SE,Sea Limited,-0.22
+SEE,Sealed Air Corporation,1.40
+SEM,Select Medical Holdings Corpora,0.72
+SF,Stifel Financial Corporation,0.77
+SFL,SFL Corporation Ltd,0.95
+SGU,Star Group L.P.,1.62
+SHG,Shinhan Financial Group Co Ltd,0.84
+SHO,"Sunstone Hotel Investors, Inc. ",-0.26
+SHW,Sherwin-Williams Company (The),1.20
+SIG,Signet Jewelers Limited,0.49
+SJT,San Juan Basin Royalty Trust,-0.90
+SKM,"SK Telecom Co., Ltd.",1.23
+SKT,Tanger Inc.,1.08
+SKX,"Skechers U.S.A., Inc.",1.22
+SKY,"Champion Homes, Inc.",1.54
+SLB,Schlumberger N.V.,1.59
+SLF,Sun Life Financial Inc.,0.67
+SM,SM Energy Company,2.19
+SMFG,Sumitomo Mitsui Financial Group,0.60
+SMG,Scotts Miracle-Gro Company (The,0.09
+SMP,"Standard Motor Products, Inc.",1.36
+SN,"SharkNinja, Inc.",1.20
+SNA,Snap-On Incorporated,1.71
+SNN,"Smith & Nephew SNATS, Inc.",0.88
+SNV,Synovus Financial Corp.,1.82
+SNX,TD SYNNEX Corporation,0.89
+SO,Southern Company (The),1.87
+SON,Sonoco Products Company,-0.40
+SOR,"Source Capital, Inc. Cmn Shs of",1.13
+SPB,"Spectrum Brands Holdings, Inc.",0.68
+SPE,"Special Opportunities Fund, Inc",1.16
+SPG,"Simon Property Group, Inc.",1.04
+SPH,"Suburban Propane Partners, L.P.",1.31
+SPLP,Steel Partners Holdings LP LTD ,1.47
+SQM,Sociedad Quimica y Minera S.A.,1.16
+SR,Spire Inc.,0.87
+SRE,DBA Sempra,2.25
+SSD,"Simpson Manufacturing Company, ",1.75
+SSP,E.W. Scripps Company (The),1.55
+SSTK,"Shutterstock, Inc.",1.06
+ST,Sensata Technologies Holding pl,0.59
+STAG,"Stag Industrial, Inc.",0.69
+STC,Stewart Information Services Co,1.35
+STE,STERIS plc (Ireland),0.97
+STM,STMicroelectronics N.V.,0.40
+STN,Stantec Inc,0.79
+STNG,Scorpio Tankers Inc.,1.65
+STR,Sitio Royalties Corp.,0.57
+STT,State Street Corporation,1.19
+STWD,"STARWOOD PROPERTY TRUST, INC. S",0.48
+SU,Suncor Energy  Inc.,1.45
+SUI,"Sun Communities, Inc.",-0.57
+SVM,Silvercorp Metals Inc.,1.36
+SWK,"Stanley Black & Decker, Inc.",1.13
+SWX,"Southwest Gas Holdings, Inc.",-0.95
+SXC,"SunCoke Energy, Inc.",1.47
+SXI,Standex International Corporati,0.86
+SXT,Sensient Technologies Corporati,1.05
+SYK,Stryker Corporation,0.81
+SYT,"SYLA Technologies Co., Ltd.",1.19
+SYY,Sysco Corporation,1.40
+T,AT&T Inc.,4.55
+TAC,TransAlta Corporation,-2.50
+TAL,TAL Education Group,-0.37
+TAP,Molson Coors Beverage Company,1.28
+TCI,Transcontinental Realty Investo,-0.10
+TD,Toronto Dominion Bank (The),0.80
+TDC,Teradata Corporation,-65.36
+TDF,"Templeton Dragon Fund, Inc.",0.81
+TDG,Transdigm Group Incorporated,0.27
+TDW,Tidewater Inc.,3.18
+TDY,Teledyne Technologies Incorpora,0.93
+TEI,Templeton Emerging Markets Inco,1.15
+TEL,TE Connectivity plc,0.95
+TEN,Tsakos Energy Navigation Ltd,1.39
+TEO,Telecom Argentina SA,-0.56
+TER,"Teradyne, Inc.",1.85
+TEX,Terex Corporation,1.78
+TFX,Teleflex Incorporated,0.78
+TGI,"Triumph Group, Inc.",1.06
+TGS,Transportadora de Gas del Sur S,1.79
+TGT,Target Corporation,1.67
+THC,Tenet Healthcare Corporation,2.99
+THG,Hanover Insurance Group Inc,1.64
+THO,"Thor Industries, Inc.",0.81
+THR,"Thermon Group Holdings, Inc.",1.31
+THS,"Treehouse Foods, Inc.",-4.54
+TJX,"TJX Companies, Inc. (The)",2.51
+TKC,Turkcell Iletisim Hizmetleri AS,1.31
+TKR,Timken Company (The),1.28
+TLK,"PT Telekomunikasi Indonesia, Tb",1.62
+TM,Toyota Motor Corporation,1.23
+TMHC,Taylor Morrison Home Corporatio,2.18
+TMO,Thermo Fisher Scientific Inc,1.15
+TMUS,"T-Mobile US, Inc.",1.10
+TNC,Tennant Company,2.27
+TNK,Teekay Tankers Ltd.,1.78
+TOL,"Toll Brothers, Inc.",1.64
+TPH,"Tri Pointe Homes, Inc.",1.84
+TPL,Texas Pacific Land Corporation,1.96
+TR,"Tootsie Roll Industries, Inc.",1.01
+TRC,Tejon Ranch Co,-1.55
+TREX,"Trex Company, Inc.",1.66
+TRGP,"Targa Resources, Inc.",1.05
+TRI,Thomson Reuters Corp,0.81
+TRN,"Trinity Industries, Inc.",6.59
+TRNO,Terreno Realty Corporation,0.59
+TRP,TC Energy Corporation,0.96
+TRV,"The Travelers Companies, Inc.",12.27
+TS,Tenaris S.A.,1.46
+TSI,"TCW Strategic Income Fund, Inc.",1.05
+TSM,Taiwan Semiconductor Manufactur,1.66
+TSN,"Tyson Foods, Inc.",0.93
+TTC,Toro Company (The),1.77
+TTI,"Tetra Technologies, Inc.",1.69
+TU,Telus Corporation,0.76
+TW,Tradeweb Markets Inc.,2.10
+TWN,"Taiwan Fund, Inc. (The)",0.72
+TXT,Textron Inc.,1.25
+TY,Tri Continental Corporation,1.14
+TYG,Tortoise Energy Infrastructure ,1.03
+TYL,"Tyler Technologies, Inc.",0.08
+UAL,"United Airlines Holdings, Inc.",3.18
+UAN,"CVR Partners, LP",1.49
+UBS,UBS Group AG Registered,0.36
+UDR,"UDR, Inc.",-0.26
+UGI,UGI Corporation,1.22
+UGP,Ultrapar Participacoes S.A. (Ne,1.54
+UHS,"Universal Health Services, Inc.",2.17
+UHT,Universal Health Realty Income ,0.78
+UL,Unilever PLC,1.39
+UMC,United Microelectronics Corpora,1.35
+UMH,"UMH Properties, Inc.",-0.65
+UNF,Unifirst Corporation,1.03
+UNH,UnitedHealth Group Incorporated,1.68
+UNM,Unum Group,1.16
+UNP,Union Pacific Corporation,2.07
+UPS,"United Parcel Service, Inc.",1.42
+URI,"United Rentals, Inc.",1.57
+USA,Liberty All-Star Equity Fund,0.80
+USAC,"USA Compression Partners, LP",0.98
+USB,U.S. Bancorp,2.28
+USNA,"USANA Health Sciences, Inc.",1.23
+USPH,"U.S. Physical Therapy, Inc.",1.27
+UTF,Cohen & Steers Infrastructure F,1.02
+UTI,Universal Technical Institute I,-0.44
+UTL,UNITIL Corporation,0.96
+UVV,Universal Corporation,1.24
+V,Visa Inc.,1.58
+VAC,Marriott Vacations Worldwide Co,1.05
+VAL,Valaris Limited,1.47
+VALE,VALE S.A.,1.67
+VBF,Invesco Bond Fund,1.05
+VC,Visteon Corporation,12.30
+WAB,Westinghouse Air Brake Technolo,1.19
+WAL,Western Alliance Bancorporation,0.82
+WAT,Waters Corporation,1.45
+WBS,Webster Financial Corporation,1.13
+X,United States Steel Corporation,-0.96
+XEL,Xcel Energy Inc.,0.73
+XOM,Exxon Mobil Corporation,1.85
+XPO,"XPO, Inc.",0.78
+XYL,Xylem Inc.,1.32
+YELP,Yelp Inc.,2.01
+YPF,YPF Sociedad Anonima,1.28
+YUM,"Yum! Brands, Inc.",3.65
+ZTS,Zoetis Inc.,1.83
+AAON,"AAON, Inc.",1.20
+AAPL,Apple Inc.,1.90
+ABCB,Ameris Bancorp,0.84
+ACAD,ACADIA Pharmaceuticals Inc.,1.40
+ACGL,Arch Capital Group Ltd.,1.28
+ACHC,"Acadia Healthcare Company, Inc.",1.33
+ACIW,"ACI Worldwide, Inc.",1.90
+ACLS,"Axcelis Technologies, Inc.",2.48
+ACNB,ACNB Corporation,0.69
+ADBE,Adobe Inc.,2.22
+ADI,"Analog Devices, Inc.",0.45
+ADP,"Automatic Data Processing, Inc.",0.93
+ADSK,"Autodesk, Inc.",1.24
+ADUS,Addus HomeCare Corporation,2.17
+AEIS,"Advanced Energy Industries, Inc",0.63
+AGNC,AGNC Investment Corp.,0.63
+AGYS,"Agilysys, Inc.",-0.76
+AKAM,"Akamai Technologies, Inc.",1.12
+ALGN,"Align Technology, Inc.",0.93
+ALKS,Alkermes plc,2.36
+AMAT,"Applied Materials, Inc.",1.84
+AMED,Amedisys Inc,1.32
+AMGN,Amgen Inc.,1.26
+AMKR,"Amkor Technology, Inc.",1.08
+AMSC,American Superconductor Corpora,-1.00
+AMSF,"AMERISAFE, Inc.",0.92
+AMWD,American Woodmark Corporation,1.46
+AMZN,"Amazon.com, Inc.",0.95
+ANDE,"The Andersons, Inc.",1.37
+ANGI,Angi Inc.,-1.43
+ANSS,"ANSYS, Inc.",2.08
+APEI,"American Public Education, Inc.",0.30
+APOG,"Apogee Enterprises, Inc.",1.35
+APWC,Asia Pacific Wire & Cable Corpo,0.91
+ARCC,Ares Capital Corporation,1.35
+ARLP,"Alliance Resource Partners, L.P",1.49
+AROW,Arrow Financial Corporation,0.79
+ARTNA,Artesian Resources Corporation,0.93
+ARTW,"Art's-Way Manufacturing Co., In",1.23
+ASML,ASML Holding N.V. - New York Re,1.75
+ASTE,"Astec Industries, Inc.",1.40
+ATLC,Atlanticus Holdings Corporation,1.23
+ATLO,Ames National Corporation,0.72
+AUDC,AudioCodes Ltd.,0.94
+AVAV,"AeroVironment, Inc.",0.26
+AVGO,Broadcom Inc.,0.21
+BANC,"Banc of California, Inc.",0.66
+BANR,Banner Corporation,0.79
+BBSI,"Barrett Business Services, Inc.",5.69
+BCBP,"BCB Bancorp, Inc. (NJ)",-0.12
+BCPC,Balchem Corporation,1.02
+BELFA,Bel Fuse Inc.,1.13
+BELFB,Bel Fuse Inc.,1.43
+BFIN,BankFinancial Corporation,0.23
+BIDU,"Baidu, Inc.",1.15
+BIIB,Biogen Inc.,1.87
+BJRI,"BJ's Restaurants, Inc.",0.34
+BLDR,"Builders FirstSource, Inc.",2.05
+BLMN,"Bloomin' Brands, Inc.",1.49
+BMRN,BioMarin Pharmaceutical Inc.,1.62
+BOKF,BOK Financial Corporation,0.78
+BOSC,B.O.S. Better Online Solutions,1.44
+BOTJ,Bank of the James Financial Gro,0.79
+BPOP,"Popular, Inc.",0.97
+BRKL,"Brookline Bancorp, Inc.",0.72
+BRKR,Bruker Corporation,0.24
+BSET,"Bassett Furniture Industries, I",-0.21
+BSRR,Sierra Bancorp,0.90
+BUR,Burford Capital Limited,1.27
+BUSE,First Busey Corporation,0.53
+CAAS,"China Automotive Systems, Inc.",1.30
+CAC,Camden National Corporation,1.19
+CACC,Credit Acceptance Corporation,0.84
+CAKE,The Cheesecake Factory Incorpor,1.10
+CALM,"Cal-Maine Foods, Inc.",-0.66
+CAMT,Camtek Ltd.,1.09
+CART,Maplebear Inc.,1.63
+CASH,"Pathward Financial, Inc.",1.03
+CASS,"Cass Information Systems, Inc",0.47
+CASY,"Caseys General Stores, Inc.",2.14
+CATY,Cathay General Bancorp,0.92
+CBAN,"Colony Bankcorp, Inc.",0.78
+CBNK,"Capital Bancorp, Inc.",0.81
+CBOE,"Cboe Global Markets, Inc.",1.95
+CBRL,Cracker Barrel Old Country Stor,0.66
+CBSH,"Commerce Bancshares, Inc.",0.86
+CCBG,Capital City Bank Group,0.86
+CCNE,CNB Financial Corporation,1.01
+CDNS,"Cadence Design Systems, Inc.",2.17
+CDW,CDW Corporation,2.13
+CECO,CECO Environmental Corp.,0.76
+CENT,Central Garden & Pet Company,0.99
+CENTA,Central Garden & Pet Company,1.04
+CENX,Century Aluminum Company,1.19
+CEVA,"CEVA, Inc.",-1.01
+CFBK,CF Bankshares Inc.,0.77
+CFFI,C&F Financial Corporation,0.92
+CFFN,"Capitol Federal Financial, Inc.",0.68
+CG,The Carlyle Group Inc.,1.09
+CGNX,Cognex Corporation,0.99
+CGO,Calamos Global Total Return Fun,0.69
+CHCI,"Comstock Holding Companies, Inc",1.95
+CHCO,City Holding Company,0.90
+CHDN,"Churchill Downs, Incorporated",1.21
+CHEF,"The Chefs' Warehouse, Inc.",0.73
+CHI,Calamos Convertible Opportuniti,0.67
+CHKP,Check Point Software Technologi,1.31
+CHRW,"C.H. Robinson Worldwide, Inc.",1.53
+CHTR,"Charter Communications, Inc.",1.45
+CHW,Calamos Global Dynamic Income F,0.76
+CHY,Calamos Convertible and High In,0.66
+CIEN,Ciena Corporation,-0.53
+CINF,Cincinnati Financial Corporatio,0.99
+CLWT,Euro Tech Holdings Company Limi,0.79
+CMCSA,Comcast Corporation,1.44
+CME,CME Group Inc.,0.54
+CNMD,CONMED Corporation,1.23
+CNOB,"ConnectOne Bancorp, Inc.",0.71
+COCO,"The Vita Coco Company, Inc.",0.29
+COKE,"Coca-Cola Consolidated, Inc.",1.65
+COLB,"Columbia Banking System, Inc.",0.89
+COLM,Columbia Sportswear Company,1.32
+CORT,Corcept Therapeutics Incorporat,0.94
+COST,Costco Wholesale Corporation,0.84
+CPHC,Canterbury Park Holding Corpora,-0.38
+CPRT,"Copart, Inc.",1.41
+CPRX,"Catalyst Pharmaceuticals, Inc.",2.06
+CPSS,"Consumer Portfolio Services, In",1.06
+CRAI,"CRA International,Inc.",1.33
+CRESY,Cresud S.A.C.I.F. y A.,0.63
+CRMT,"America's Car-Mart, Inc.",0.89
+CRNT,Ceragon Networks Ltd.,1.63
+CROX,"Crocs, Inc.",2.40
+CRUS,"Cirrus Logic, Inc.",2.35
+CRVL,CorVel Corp.,1.29
+CSCO,"Cisco Systems, Inc.",0.95
+CSGP,"CoStar Group, Inc.",-1.27
+CSGS,"CSG Systems International, Inc.",1.96
+CSQ,Calamos Strategic Total Return ,0.75
+CSWC,Capital Southwest Corporation,1.32
+CTAS,Cintas Corporation,1.29
+CTBI,"Community Trust Bancorp, Inc.",0.89
+CTSH,Cognizant Technology Solutions ,2.32
+CUBA,The Herzfeld Caribbean Basin Fu,0.44
+CUBI,"Customers Bancorp, Inc",0.62
+CVBF,CVB Financial Corporation,0.79
+CVCO,"Cavco Industries, Inc.",1.61
+CVGW,"Calavo Growers, Inc.",0.77
+CVLT,"Commvault Systems, Inc.",0.44
+CWBC,Community West Bancshares,0.76
+CWCO,Consolidated Water Co. Ltd.,0.87
+CWST,"Casella Waste Systems, Inc.",-1.60
+CZNC,Citizens & Northern Corp,0.81
+CZWI,"Citizens Community Bancorp, Inc",0.74
+DCOM,"Dime Community Bancshares, Inc.",0.17
+DECK,Deckers Outdoor Corporation,2.07
+DELL,Dell Technologies Inc.,0.88
+DENN,Denny's Corporation,1.40
+DGICA,"Donegal Group, Inc.",2.86
+DGICB,"Donegal Group, Inc.",1.16
+DGII,Digi International Inc.,0.83
+DHIL,"Diamond Hill Investment Group, ",2.56
+DIOD,Diodes Incorporated,0.02
+DJCO,Daily Journal Corp. (S.C.),0.99
+DLHC,DLH Holdings Corp.,1.16
+DLTR,"Dollar Tree, Inc.",64.62
+DMLP,"Dorchester Minerals, L.P.",2.23
+DORM,"Dorman Products, Inc.",1.46
+DSGX,The Descartes Systems Group Inc,0.62
+DSWL,"Deswell Industries, Inc.",1.13
+DXCM,"DexCom, Inc.",1.05
+DXPE,"DXP Enterprises, Inc.",1.28
+EA,Electronic Arts Inc.,1.84
+EBAY,eBay Inc.,2.78
+EBMT,"Eagle Bancorp Montana, Inc.",0.71
+EBTC,Enterprise Bancorp Inc,0.79
+EEFT,"Euronet Worldwide, Inc.",1.28
+EFSC,Enterprise Financial Services C,1.06
+EGAN,eGain Corporation,-0.05
+ELSE,"Electro-Sensors, Inc.",-0.09
+ELTK,Eltek Ltd.,0.94
+EML,Eastern Company (The),1.31
+ENPH,"Enphase Energy, Inc.",0.78
+ENSG,"The Ensign Group, Inc.",1.04
+ENTG,"Entegris, Inc.",1.68
+EQIX,"Equinix, Inc.",0.12
+ERIC,Ericsson,1.11
+ERIE,Erie Indemnity Company,1.63
+ERII,"Energy Recovery, Inc.",1.05
+ESCA,"Escalade, Incorporated",1.29
+ESEA,Euroseas Ltd.,2.22
+ESGR,Enstar Group Limited,1.31
+ESLT,Elbit Systems Ltd.,0.29
+ESMC,Escalon Medical Corp.,1.72
+ESSA,"ESSA Bancorp, Inc.",0.69
+EWBC,"East West Bancorp, Inc.",1.00
+EXEL,"Exelixis, Inc.",3.10
+EXLS,"ExlService Holdings, Inc.",1.82
+EXPD,Expeditors International of Was,1.88
+EXPE,"Expedia Group, Inc.",1.03
+EXPO,"Exponent, Inc.",1.48
+EZPW,"EZCORP, Inc.",1.26
+FANG,"Diamondback Energy, Inc.",1.58
+FAST,Fastenal Company,1.57
+FBIZ,First Business Financial Servic,1.09
+FBNC,First Bancorp,0.70
+FCAP,"First Capital, Inc.",0.84
+FCBC,"First Community Bankshares, Inc",0.81
+FCCO,First Community Corporation,0.74
+FCFS,"FirstCash Holdings, Inc.",1.27
+FCNCA,"First Citizens BancShares, Inc.",0.80
+FDUS,Fidus Investment Corporation,1.42
+FEIM,"Frequency Electronics, Inc.",1.60
+FELE,"Franklin Electric Co., Inc.",1.33
+FFBC,First Financial Bancorp.,1.25
+FFIN,"First Financial Bankshares, Inc",0.68
+FFIV,"F5, Inc.",1.71
+FIBK,"First Interstate BancSystem, In",0.77
+FITB,Fifth Third Bancorp,1.19
+FIVE,"Five Below, Inc.",1.08
+FIZZ,National Beverage Corp.,1.96
+FLEX,Flex Ltd.,1.09
+FLIC,The First of Long Island Corpor,0.85
+FLXS,"Flexsteel Industries, Inc.",1.32
+FMNB,Farmers National Banc Corp.,0.91
+FNLC,"First Bancorp, Inc (ME)",0.85
+FONR,Fonar Corporation,1.11
+FORM,"FormFactor, Inc.",0.45
+FORTY,Formula Systems (1985) Ltd.,1.08
+FOX,Fox Corporation,1.56
+FOXA,Fox Corporation,1.54
+FRME,First Merchants Corporation,0.86
+FSBW,"FS Bancorp, Inc.",0.86
+FSFG,"First Savings Financial Group, ",0.83
+FSLR,"First Solar, Inc.",1.48
+FSTR,L.B. Foster Company,1.16
+FTNT,"Fortinet, Inc.",1.42
+FULT,Fulton Financial Corporation,1.39
+FUNC,First,0.87
+FUND,"Sprott Focus Trust, Inc. - Clos",-0.56
+GABC,"German American Bancorp, Inc.",0.74
+GAIN,Gladstone Investment Corporatio,1.28
+GASS,"StealthGas, Inc.",1.52
+GBCI,"Glacier Bancorp, Inc.",0.46
+GBDC,"Golub Capital BDC, Inc.",6.36
+GBLI,"Global Indemnity Group, LLC",0.73
+GCBC,"Greene County Bancorp, Inc.",0.74
+GENC,"Gencor Industries, Inc.",1.11
+GGAL,Grupo Financiero Galicia S.A.,1.51
+GIFI,"Gulf Island Fabrication, Inc.",1.33
+GIII,"G-III Apparel Group, LTD.",1.70
+GILD,"Gilead Sciences, Inc.",2.61
+GILT,Gilat Satellite Networks Ltd.,0.49
+GLAD,Gladstone Capital Corporation,1.47
+GLBZ,Glen Burnie Bancorp,-2.05
+GLDD,Great Lakes Dredge & Dock Corpo,2.36
+GLNG,Golar LNG Limited,-2.92
+GLRE,"Greenlight Reinsurance, Ltd.",0.95
+GNTX,Gentex Corporation,2.76
+GOOD,Gladstone Commercial Corporatio,0.43
+GOOG,Alphabet Inc.,1.87
+GRFS,"Grifols, S.A.",0.66
+GRMN,Garmin Ltd.,3.35
+GROW,"U.S. Global Investors, Inc.",-2.29
+GRVY,"GRAVITY Co., Ltd.",1.54
+GSBC,"Great Southern Bancorp, Inc.",0.87
+GT,The Goodyear Tire & Rubber Comp,0.90
+GTIM,Good Times Restaurants Inc.,0.69
+GTLS,"Chart Industries, Inc.",0.79
+HAFC,Hanmi Financial Corporation,0.79
+HALO,"Halozyme Therapeutics, Inc.",2.49
+HBAN,Huntington Bancshares Incorpora,1.05
+HBANP,Huntington Bancshares Incorpora,0.54
+HBCP,"Home Bancorp, Inc.",0.87
+HBNC,"Horizon Bancorp, Inc.",0.75
+HCKT,"The Hackett Group, Inc.",1.51
+HCSG,"Healthcare Services Group, Inc.",-0.22
+HDSN,"Hudson Technologies, Inc.",0.96
+HEES,"H&E Equipment Services, Inc.",0.67
+HFBL,"Home Federal Bancorp, Inc. of L",0.70
+HFWA,Heritage Financial Corporation,0.91
+HIFS,Hingham Institution for Savings,0.55
+HIHO,Highway Holdings Limited,-1.50
+HIMX,"Himax Technologies, Inc.",0.92
+HLIT,Harmonic Inc.,1.44
+HOLX,"Hologic, Inc.",1.11
+HOMB,"Home BancShares, Inc.",0.91
+HSIC,"Henry Schein, Inc.",1.68
+HSII,Heidrick & Struggles Internatio,0.47
+HSTM,"HealthStream, Inc.",0.43
+HTBK,Heritage Commerce Corp,0.77
+HTHT,H World Group Limited,1.07
+HUBG,"Hub Group, Inc.",0.86
+HURN,Huron Consulting Group Inc.,1.92
+HWBK,"Hawthorn Bancshares, Inc.",0.78
+HWKN,"Hawkins, Inc.",1.18
+IBCP,Independent Bank Corporation,0.95
+IBKR,"Interactive Brokers Group, Inc.",0.51
+IBOC,International Bancshares Corpor,1.06
+ICFI,"ICF International, Inc.",1.55
+ICLR,ICON plc,1.05
+IDCC,"InterDigital, Inc.",2.70
+IDXX,"IDEXX Laboratories, Inc.",1.64
+IESC,"IES Holdings, Inc.",1.71
+III,"Information Services Group, Inc",0.74
+IIIN,"Insteel Industries, Inc.",1.10
+IMKTA,"Ingles Markets, Incorporated",0.87
+IMMR,Immersion Corporation,1.61
+IMOS,ChipMOS TECHNOLOGIES INC.,0.81
+INBK,First Internet Bancorp,0.71
+INCY,Incyte Corporation,-1.18
+INDB,Independent Bank Corp.,-3.11
+INOD,Innodata Inc.,1.37
+INTU,Intuit Inc.,0.64
+IOSP,Innospec Inc.,0.21
+IPAR,"Interparfums, Inc.",1.59
+IRDM,Iridium Communications Inc,1.07
+IROQ,"IF Bancorp, Inc.",0.39
+ISRG,"Intuitive Surgical, Inc.",0.81
+ISRL,Israel Acquisitions Corp,-0.65
+ISSC,Innovative Solutions and Suppor,1.17
+ITIC,Investors Title Company,1.45
+ITRI,"Itron, Inc.",1.37
+ITRN,Ituran Location and Control Ltd,1.86
+JAKK,"JAKKS Pacific, Inc.",1.83
+JAZZ,Jazz Pharmaceuticals plc,1.37
+JBHT,"J.B. Hunt Transport Services, I",1.07
+JBSS,"John B. Sanfilippo & Son, Inc.",1.56
+JJSF,J & J Snack Foods Corp.,0.89
+JKHY,"Jack Henry & Associates, Inc.",1.33
+JVA,"Coffee Holding Co., Inc.",1.71
+KALU,Kaiser Aluminum Corporation,0.81
+KEQU,Kewaunee Scientific Corporation,1.46
+KFRC,"Kforce, Inc.",1.66
+KGJI,Kingold Jewelry Inc.,1.61
+KINS,"Kingstone Companies, Inc",1.42
+KLAC,KLA Corporation,1.47
+KLIC,"Kulicke and Soffa Industries, I",0.10
+KMDA,Kamada Ltd.,0.85
+KRNY,Kearny Financial,0.33
+KTOS,Kratos Defense & Security Solut,-1.49
+LAMR,Lamar Advertising Company,0.90
+LANC,Lancaster Colony Corporation,1.44
+LARK,Landmark Bancorp Inc.,0.70
+LBAI,"Lakeland Bancorp, Inc.",0.92
+LCNB,LCNB Corporation,0.81
+LECO,"Lincoln Electric Holdings, Inc.",1.57
+LFUS,"Littelfuse, Inc.",1.21
+LFVN,Lifevantage Corporation,1.63
+LGCY,Legacy Education Inc.,1.59
+LINC,Lincoln Educational Services Co,0.03
+LKFN,Lakeland Financial Corporation,0.88
+LKQ,LKQ Corporation,1.81
+LMAT,"LeMaitre Vascular, Inc.",0.85
+LOAN,"Manhattan Bridge Capital, Inc",1.57
+LOGI,Logitech International S.A. - R,1.72
+LOPE,"Grand Canyon Education, Inc.",1.88
+LPLA,LPL Financial Holdings Inc.,1.56
+LQDT,"Liquidity Services, Inc.",0.88
+LRCX,Lam Research Corporation,2.02
+LSBK,"Lake Shore Bancorp, Inc.",0.87
+LSCC,Lattice Semiconductor Corporati,-0.03
+LSTR,"Landstar System, Inc.",1.20
+LULU,lululemon athletica inc.,2.24
+LWAY,"Lifeway Foods, Inc.",1.02
+LYTS,LSI Industries Inc.,1.11
+MAG,MAG Silver Corporation,-0.11
+MANH,"Manhattan Associates, Inc.",1.95
+MARPS,3273,2.94
+MAT,"Mattel, Inc.",1.54
+MBWM,Mercantile Bank Corporation,0.98
+MCBI,Mountain Commerce Bancorp Inc.,0.51
+MCBK,"Madison County Financial, Inc.",0.59
+MCRI,"Monarch Casino & Resort, Inc.",1.52
+MDLZ,"Mondelez International, Inc.",0.83
+MDXG,"MiMedx Group, Inc",2.33
+MELI,"MercadoLibre, Inc.",0.73
+MEOH,Methanex Corporation,1.35
+MGEE,MGE Energy Inc.,0.88
+MGIC,Magic Software Enterprises Ltd.,1.13
+MGPI,"MGP Ingredients, Inc.",0.45
+MGRC,McGrath RentCorp,2.45
+MGYR,"Magyar Bancorp, Inc.",0.77
+MIDD,The Middleby Corporation,-2.03
+MIND,"MIND Technology, Inc.",1.98
+MITK,"Mitek Systems, Inc.",1.28
+MKSI,MKS Inc.,1.52
+MKTX,"MarketAxess Holdings, Inc.",1.40
+MMSI,"Merit Medical Systems, Inc.",0.84
+MMYT,MakeMyTrip Limited,-0.35
+MNDO,MIND C.T.I. Ltd.,1.55
+MNKD,MannKind Corporation,2.35
+MNST,Monster Beverage Corporation,1.39
+MORN,"Morningstar, Inc.",1.11
+MPB,Mid Penn Bancorp,0.92
+MPWR,"Monolithic Power Systems, Inc.",1.60
+MRCC,Monroe Capital Corporation,1.19
+MRTN,"Marten Transport, Ltd.",0.08
+MSEX,Middlesex Water Company,1.05
+MSFT,Microsoft Corporation,1.35
+MU,"Micron Technology, Inc.",1.11
+MYRG,"MYR Group, Inc.",-0.19
+NATH,"Nathan's Famous, Inc.",2.81
+NATL,NCR Atleos Corporation,1.27
+NATR,"Nature's Sunshine Products, Inc",0.97
+NBIX,"Neurocrine Biosciences, Inc.",1.06
+NBN,Northeast Bank,0.98
+NBTB,NBT Bancorp Inc.,0.82
+NCLH,Norwegian Cruise Line Holdings ,1.19
+NDAQ,"Nasdaq, Inc.",0.78
+NDSN,Nordson Corporation,1.14
+NECB,"NorthEast Community Bancorp, In",1.17
+NEWT,"NewtekOne, Inc.",1.55
+NFBK,"Northfield Bancorp, Inc.",0.72
+NFLX,"Netflix, Inc.",1.17
+NICE,NICE Ltd,1.22
+NKSH,"National Bankshares, Inc.",0.47
+NRIM,Northrim BanCorp Inc,0.96
+NSIT,"Insight Enterprises, Inc.",-0.34
+NSSC,"NAPCO Security Technologies, In",1.74
+NTAP,"NetApp, Inc.",1.87
+NTES,"NetEase, Inc.",1.53
+NTGR,"NETGEAR, Inc.",-0.82
+NTIC,Northern Technologies Internati,0.43
+NTRS,Northern Trust Corporation,1.41
+NTWK,NETSOL Technologies Inc.,-1.05
+NVAX,"Novavax, Inc.",2.50
+NVDA,NVIDIA Corporation,2.26
+NVEC,NVE Corporation,1.75
+NVMI,Nova Ltd.,1.15
+NWBI,"Northwest Bancshares, Inc.",1.13
+NWFL,Norwood Financial Corp.,-0.71
+NWPX,"NWPX Infrastructure, Inc.",2.01
+NWS,News Corporation,0.56
+NWSA,News Corporation,0.63
+NXPI,NXP Semiconductors N.V.,1.28
+NXST,"Nexstar Media Group, Inc.",1.66
+OCFC,OceanFirst Financial Corp.,0.75
+ODFL,"Old Dominion Freight Line, Inc.",1.67
+OFED,Oconee Federal Financial Corp.,0.33
+OFLX,"Omega Flex, Inc.",1.67
+OFS,OFS Capital Corporation,1.51
+OLED,Universal Display Corporation,1.19
+OMAB,Grupo Aeroportuario del Centro ,2.00
+OMCL,"Omnicell, Inc.",-0.18
+ONB,Old National Bancorp,0.76
+OPHC,"OptimumBank Holdings, Inc.",1.13
+OPOF,Old Point Financial Corporation,0.52
+ORBT,Orbit International Corp.,-2.65
+ORLY,"O'Reilly Automotive, Inc.",1.43
+ORRF,"Orrstown Financial Services, In",0.62
+OSBC,"Old Second Bancorp, Inc.",0.92
+OSIS,"OSI Systems, Inc.",0.89
+OTEX,Open Text Corporation,1.19
+OTTR,Otter Tail Corporation,1.47
+OVBC,Ohio Valley Banc Corp.,0.74
+OXLC,Oxford Lane Capital Corp.,1.59
+OXLCO,Oxford Lane Capital Corp. - Pre,1.26
+OXLCP,Oxford Lane Capital Corp. - 6.2,1.23
+PAAS,Pan American Silver Corp.,0.82
+PATK,"Patrick Industries, Inc.",1.27
+PAYX,"Paychex, Inc.",1.34
+PBHC,"Pathfinder Bancorp, Inc.",0.57
+PCAR,PACCAR Inc.,1.26
+PCH,PotlatchDeltic Corporation - Co,0.08
+PCYO,Pure Cycle Corporation,1.04
+PDEX,"Pro-Dex, Inc.",1.72
+PDFS,"PDF Solutions, Inc.",-2.52
+PEBK,Peoples Bancorp of North Caroli,0.86
+PEBO,Peoples Bancorp Inc.,0.90
+PEGA,Pegasystems Inc.,1.14
+PERF,Perfect Corp.,-0.04
+PETS,"PetMed Express, Inc.",-1.48
+PFBC,Preferred Bank,0.96
+PFLT,PennantPark Floating Rate Capit,1.34
+PGC,Peapack-Gladstone Financial Cor,0.58
+PKBK,"Parke Bancorp, Inc.",0.95
+PKOH,Park-Ohio Holdings Corp.,1.37
+PLAB,"Photronics, Inc.",1.76
+PLBC,Plumas Bancorp,1.00
+PLPC,Preformed Line Products Company,1.21
+PLUS,ePlus inc.,1.18
+PLXS,Plexus Corp.,1.29
+PNFP,"Pinnacle Financial Partners, In",1.18
+PNNT,PennantPark Investment Corporat,1.35
+PNRG,PrimeEnergy Resources Corporati,1.91
+PODD,Insulet Corporation,2.40
+POOL,Pool Corporation,1.38
+POWI,"Power Integrations, Inc.",0.20
+POWL,"Powell Industries, Inc.",1.80
+PPBI,Pacific Premier Bancorp Inc,1.16
+PPC,Pilgrim's Pride Corporation,1.87
+PRAA,"PRA Group, Inc.",1.33
+PRGS,Progress Software Corporation,2.13
+PRIM,Primoris Services Corporation,1.40
+PROV,"Provident Financial Holdings, I",0.60
+PSMT,"PriceSmart, Inc.",1.27
+PTCT,"PTC Therapeutics, Inc.",2.47
+PWOD,"Penns Woods Bancorp, Inc.",0.81
+PZZA,"Papa John's International, Inc.",1.71
+QCOM,QUALCOMM Incorporated,1.80
+QCRH,"QCR Holdings, Inc.",0.92
+QGEN,Qiagen N.V.,0.00
+QLYS,"Qualys, Inc.",2.04
+RAND,Rand Capital Corporation,1.36
+RBCAA,"Republic Bancorp, Inc.",0.94
+RCKY,"Rocky Brands, Inc.",1.25
+RCMT,"RCM Technologies, Inc.",1.76
+RDCM,Radcom Ltd.,0.66
+RDWR,Radware Ltd.,-0.66
+REGN,"Regeneron Pharmaceuticals, Inc.",1.41
+RGCO,RGC Resources Inc.,1.07
+RGLD,"Royal Gold, Inc.",1.86
+RICK,"RCI Hospitality Holdings, Inc.",0.70
+RIGL,"Rigel Pharmaceuticals, Inc.",3.47
+RMBS,"Rambus, Inc.",2.94
+RNST,Renasant Corporation,1.11
+ROCK,"Gibraltar Industries, Inc.",2.03
+ROST,"Ross Stores, Inc.",1.61
+RPRX,Royalty Pharma plc,1.40
+RUSHA,"Rush Enterprises, Inc.",1.35
+RUSHB,"Rush Enterprises, Inc.",1.31
+RVSB,Riverview Bancorp Inc,-0.12
+RYAAY,Ryanair Holdings plc,1.45
+SAFT,"Safety Insurance Group, Inc.",0.96
+SAIA,"Saia, Inc.",2.88
+SAMG,Silvercrest Asset Management Gr,1.27
+SANM,Sanmina Corporation,0.96
+SBAC,SBA Communications Corporation,1.94
+SBCF,Seacoast Banking Corporation of,0.57
+SBFG,"SB Financial Group, Inc.",0.81
+SBGI,"Sinclair, Inc.",1.50
+SBLK,Star Bulk Carriers Corp.,1.31
+SBNY,"Signature Bank (New York, NY)",1.20
+SBRA,"Sabra Health Care REIT, Inc.",0.75
+SBSI,"Southside Bancshares, Inc.",0.83
+SBUX,Starbucks Corporation,1.16
+SCSC,"ScanSource, Inc.",1.03
+SCVL,"Shoe Carnival, Inc.",1.32
+SEIC,SEI Investments Company,1.80
+SENEA,Seneca Foods Corp.,1.04
+SENEB,Seneca Foods Corp.,1.04
+SFBC,"Sound Financial Bancorp, Inc.",0.41
+SFM,"Sprouts Farmers Market, Inc.",1.50
+SFNC,Simmons First National Corporat,0.59
+SFST,"Southern First Bancshares, Inc.",0.68
+SGC,"Superior Group of Companies, In",0.68
+SGI,Somnigroup International Inc.,0.90
+SHBI,"Shore Bancshares, Inc.",0.79
+SHIP,Seanergy Maritime Holdings Corp,1.51
+SHOO,"Steven Madden, Ltd.",2.09
+SIEB,Siebert Financial Corp.,1.14
+SIGA,SIGA Technologies Inc.,1.99
+SIGI,"Selective Insurance Group, Inc.",1.24
+SIMO,Silicon Motion Technology Corpo,0.99
+SKYW,"SkyWest, Inc.",2.21
+SLGN,Silgan Holdings Inc.,1.33
+SLM,SLM Corporation,2.81
+SLMBP,SLM Corporation - Floating Rate,0.47
+SLRC,SLR Investment Corp.,1.25
+SMBC,"Southern Missouri Bancorp, Inc.",0.82
+SMCI,"Super Micro Computer, Inc.",1.18
+SMPL,The Simply Good Foods Company,1.19
+SNFCA,Security National Financial Cor,0.92
+SNPS,"Synopsys, Inc.",0.36
+SOHU,Sohu.com Limited,-0.42
+SPNS,Sapiens International Corporati,1.29
+SPSC,"SPS Commerce, Inc.",-1.53
+SRCE,1st Source Corporation,0.91
+SRCL,"Stericycle, Inc.",-0.63
+SSNC,"SS&C Technologies Holdings, Inc",0.94
+STBA,"S&T Bancorp, Inc.",0.86
+STEL,"Stellar Bancorp, Inc.",0.72
+STLD,"Steel Dynamics, Inc.",1.23
+STRA,"Strategic Education, Inc.",1.45
+STRL,"Sterling Infrastructure, Inc.",1.42
+STRT,STRATTEC SECURITY CORPORATION,1.19
+STX,Seagate Technology Holdings PLC,1.39
+SUPN,"Supernus Pharmaceuticals, Inc.",0.77
+SWKS,"Skyworks Solutions, Inc.",0.91
+SYBT,"Stock Yards Bancorp, Inc.",0.71
+SYNA,Synaptics Incorporated,0.19
+TAIT,Taitron Components Incorporated,-1.28
+TATT,TAT Technologies Ltd.,1.00
+TAYD,"Taylor Devices, Inc.",1.43
+TBBK,"The Bancorp, Inc.",1.17
+TCBI,"Texas Capital Bancshares, Inc.",0.22
+TCBK,TriCo Bancshares,0.79
+TECH,Bio-Techne Corp,0.51
+TFSL,TFS Financial Corporation,-0.30
+TGTX,"TG Therapeutics, Inc.",0.13
+THFF,First Financial Corporation,0.96
+THRM,Gentherm Inc,0.88
+TIGR,UP Fintech Holding Limited,0.57
+TILE,"Interface, Inc.",1.99
+TIPT,Tiptree Inc.,0.83
+TLF,"Tandy Leather Factory, Inc.",0.94
+TOPS,"TOP Ships, Inc.",1.37
+TOWN,Towne Bank,0.74
+TRAK,"ReposiTrak, Inc.",0.66
+TRIP,"TripAdvisor, Inc.",-2.80
+TRMB,Trimble Inc.,3.98
+TRMK,Trustmark Corporation,0.84
+TRNS,"Transcat, Inc.",0.46
+TROW,"T. Rowe Price Group, Inc.",1.81
+TRS,TriMas Corporation,1.10
+TRST,TrustCo Bank Corp NY,0.75
+TSBK,"Timberland Bancorp, Inc.",0.94
+TSCO,Tractor Supply Company,1.30
+TSEM,Tower Semiconductor Ltd.,0.84
+TSLA,"Tesla, Inc.",-0.70
+TTEK,"Tetra Tech, Inc.",0.80
+TTMI,"TTM Technologies, Inc.",0.68
+TWIN,"Twin Disc, Incorporated",0.60
+TXN,Texas Instruments Incorporated,1.44
+TXRH,"Texas Roadhouse, Inc.",1.52
+TZOO,Travelzoo,2.01
+UBCP,"United Bancorp, Inc.",0.77
+UBOH,"United Bancshares, Inc.",0.82
+UBSI,"United Bankshares, Inc.",0.80
+UCTT,"Ultra Clean Holdings, Inc.",1.26
+UFCS,"United Fire Group, Inc",1.19
+UFPI,"UFP Industries, Inc.",1.54
+UFPT,"UFP Technologies, Inc.",1.68
+UG,"United-Guardian, Inc.",1.95
+UHAL,U-Haul Holding Company,0.46
+ULBI,Ultralife Corporation,0.69
+ULTA,"Ulta Beauty, Inc.",2.74
+UMBF,UMB Financial Corporation,0.85
+UNB,"Union Bankshares, Inc.",0.65
+UNTY,"Unity Bancorp, Inc.",1.00
+URBN,"Urban Outfitters, Inc.",1.44
+USLM,"United States Lime & Minerals, ",1.75
+UTHR,United Therapeutics Corporation,2.81
+UTMD,"Utah Medical Products, Inc.",1.39
+UVSP,Univest Financial Corporation,0.81
+VALU,"Value Line, Inc.",0.93
+VECO,Veeco Instruments Inc.,1.31
+VICR,Vicor Corporation,0.43
+VIRC,Virco Manufacturing Corporation,1.80
+VLGEA,"Village Super Market, Inc.",1.33
+VRNT,Verint Systems Inc.,1.42
+VRSK,"Verisk Analytics, Inc.",1.73
+VRSN,"VeriSign, Inc.",2.34
+VRTS,"Virtus Investment Partners, Inc",1.10
+VSEC,VSE Corporation,0.82
+WABC,Westamerica Bancorporation,1.01
+WAFD,"WaFd, Inc.",0.77
+WDC,Western Digital Corporation,1.59
+WDFC,WD-40 Company,1.47
+WEN,Wendy's Company (The),1.30
+WERN,"Werner Enterprises, Inc.",-0.49
+WEYS,"Weyco Group, Inc.",1.54
+WHF,"WhiteHorse Finance, Inc.",1.07
+WILC,"G. Willi-Food International,  L",1.44
+WINA,Winmark Corporation,3.26
+WLDN,"Willdan Group, Inc.",0.85
+WLFC,Willis Lease Finance Corporatio,1.61
+WRLD,World Acceptance Corporation,1.63
+WSBC,"WesBanco, Inc.",0.48
+WSBF,"Waterstone Financial, Inc.",0.77
+WSFS,WSFS Financial Corporation,1.07
+WTBA,West Bancorporation,0.73
+WTFC,Wintrust Financial Corporation,0.93
+WVFC,WVS Financial Corp.,0.67
+WWD,"Woodward, Inc.",1.54
+WYNN,"Wynn Resorts, Limited",0.96
+YORW,The York Water Company,0.81
+ZBRA,Zebra Technologies Corporation,1.01
+ZEUS,"Olympic Steel, Inc.",0.74
+ZION,Zions Bancorporation N.A.,0.95
+CLOUD.OL,CLOUDBERRY CLEAN ENERGY ASA,-0.30
+NVO,Novo Nordisk A/S,2.15
