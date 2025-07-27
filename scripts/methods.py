@@ -1,5 +1,5 @@
 import pandas as pd
-import math
+import numpy as np
 import yfinance as yf
 
 def get_gettables():
@@ -20,11 +20,23 @@ class Ticker:
             if pd.isna(insider_buy):
                 insider_buy = 0
         return float(insider_buy)
+    
+    def forward_vs_current_PE(self) -> float:
+        try: 
+            return self.info["trailingPE"]/self.info["forwardPE"]
+        except:
+            return 1.00
+
+    def recommendation_old(self) -> float:
+        pe = self.info["trailingPE"]
+        roa = self.info["returnOnAssets"]*100
+        fpe = self.info["forwardPE"]
+        return f"{2.6 + np.log(roa+5) - np.log(pe+25) + self.insider_buy()*2:.2f}"
 
     def recommendation(self) -> float:
         pe = self.info["trailingPE"]
         roa = self.info["returnOnAssets"]*100
-        return f"{2.6 + math.log(roa+5) - math.log(pe+25) + self.insider_buy()*2:.2f}"
+        return f"{2.6 + np.log(roa+5) - np.log(pe+25) + self.insider_buy()*2 + np.log(self.forward_vs_current_PE())*0.5:.2f}"
 
     def summary(self):
         df = pd.DataFrame([{
