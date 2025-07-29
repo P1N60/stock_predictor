@@ -1,43 +1,1757 @@
 Ticker,Name,Signal,Recommendation Score,Forward P/E,P/E,ROA%,Insider Buy%,Sector,Industry
-NVDA,NVIDIA Corporation,Buy,1.8,42.4,56.16,53.24,-0.3,Technology,Semiconductors
-NOVO-B.CO,Novo Nordisk B A/S,Buy,1.65,15.86,19.23,23.29,0.0,Healthcare,Drug Manufacturers - General
-AAPL,Apple Inc.,Buy,1.42,25.78,33.36,23.81,0.1,Technology,Consumer Electronics
-EQNR,Equinor ASA,Buy,1.37,9.11,8.66,13.32,0.0,Energy,Oil & Gas Integrated
-TER,"Teradyne, Inc.",Buy,1.33,21.57,25.97,10.56,21.5,Technology,Semiconductor Equipment & Materials
-GOOGL,Alphabet Inc.,Buy,1.24,21.35,20.37,16.79,0.0,Communication Services,Internet Content & Information
-TRMD,TORM plc,Buy,1.19,4.53,4.15,8.48,0.0,Energy,Oil & Gas Midstream
-KOG.OL,KONGSBERG GRUPPEN,Buy,1.07,8.86,40.08,7.05,0.0,Industrials,Aerospace & Defense
-GMAB,Genmab A/S,Buy,1.05,16.61,13.68,11.54,0.0,Healthcare,Biotechnology
-STG.CO,Scandinavian Tobacco Group A/S,Buy,1.03,6.18,8.08,5.91,0.0,Consumer Defensive,Tobacco
-COLO-B.CO,Coloplast B A/S,Buy,0.86,20.73,30.84,9.64,0.0,Healthcare,Medical Instruments & Supplies
-DEMANT.CO,Demant A/S,Buy,0.84,18.91,20.9,8.66,0.0,Healthcare,Medical Devices
-MSFT,Microsoft Corporation,Buy,0.83,34.23,39.52,14.58,-2.6,Technology,Software - Infrastructure
-BAVA.CO ,Bavarian Nordic A/S,Buy,0.82,13.28,14.18,6.65,0.0,Healthcare,Biotechnology
-MAERSK-B.CO,A.P. Møller - Mærsk B A/S,Buy,0.82,5.89,4.73,5.21,0.0,Industrials,Marine Shipping
-CBRAIN.CO,cBrain A/S,Buy,0.79,36.45,65.61,15.06,0.0,Technology,Software - Application
-NETC.CO,Netcompany Group A/S,Buy,0.76,15.76,24.21,6.44,0.0,Technology,Information Technology Services
-NKT.CO,NKT A/S,Hold,0.74,20.0,17.84,7.93,0.0,Industrials,Electrical Equipment & Parts
-CARL-B.CO,Carlsberg B A/S,Hold,0.74,14.2,16.54,5.92,0.0,Consumer Defensive,Beverages - Brewers
-RBREW.CO,Royal UNIBREW A/S,Hold,0.73,16.89,17.03,6.69,0.0,Consumer Defensive,Beverages - Brewers
-ISS.CO,ISS A/S,Hold,0.73,11.39,13.11,5.01,0.0,Industrials,Specialty Business Services
-GN.CO,GN Store Nord A/S,Hold,0.7,9.65,18.65,3.56,0.0,Healthcare,Medical Devices
-MATAS.CO,Matas A/S,Hold,0.67,11.53,18.59,4.06,0.0,Consumer Cyclical,Specialty Retail
-SCHO.CO,Schouw & Co. A/S,Hold,0.62,11.83,15.82,3.91,0.0,Industrials,Conglomerates
-ABBN.SW,ABB LTD N,Hold,0.58,33.75,29.27,9.07,0.0,Industrials,Electrical Equipment & Parts
-NFLX,"Netflix, Inc.",Hold,0.58,49.69,50.31,15.05,-5.1,Communication Services,Entertainment
-DLTR,"Dollar Tree, Inc.",Hold,0.5,18.99,22.69,4.69,0.0,Consumer Defensive,Discount Stores
-BRK-B,Berkshire Hathaway Inc. New,Hold,0.44,24.09,12.89,5.79,0.0,Financial Services,Insurance - Diversified
-DSV.CO,DSV A/S,Hold,0.39,25.92,32.68,5.24,0.0,Industrials,Integrated Freight & Logistics
-UBER,"Uber Technologies, Inc.",Hold,0.38,38.38,15.86,5.21,10.7,Technology,Software - Application
-BAESY,BAE Systems PLC,Hold,0.35,23.98,27.91,4.4,0.0,Industrials,Aerospace & Defense
-AMZN,"Amazon.com, Inc.",Hold,0.34,37.92,38.04,7.63,-2.6,Consumer Cyclical,Internet Retail
-SYDB.CO,Sydbank A/S,Hold,0.32,9.43,9.98,1.36,0.0,Financial Services,Banks - Regional
-LLY,Eli Lilly and Company,Hold,0.23,35.93,66.35,16.45,-31.6,Healthcare,Drug Manufacturers - General
-JYSK.CO,Jyske Bank A/S,Hold,0.21,8.6,8.05,0.68,0.0,Financial Services,Banks - Regional
-DANSKE.CO,Danske Bank A/S,Hold,0.15,10.07,9.32,0.62,0.0,Financial Services,Banks - Regional
-COLUM.CO,Columbus A/S,Hold,0.07,,26.58,2.46,0.0,Technology,Information Technology Services
-CBK.DE,Commerzbank AG                I,Hold,0.06,13.41,13.59,0.53,0.0,Financial Services,Banks - Regional
-RHM.DE,RHEINMETALL AG                I,Sell,-0.02,55.93,90.22,7.06,0.0,Industrials,Aerospace & Defense
-SAAB-B.ST,SAAB AB ser. B,Sell,-0.14,51.02,52.6,4.02,0.0,Industrials,Aerospace & Defense
-TRIFOR.CO,Trifork Group AG,Sell,-0.76,116.88,16.04,1.92,0.0,Technology,Information Technology Services
-TSLA,"Tesla, Inc.",Sell,-0.99,100.94,194.67,2.91,0.2,Consumer Cyclical,Auto Manufacturers
+SBR,Sabine Royalty Trust,Buy,4.55,,12.46,473.6,0.0,Energy,Oil & Gas Midstream
+PBT,Permian Basin Royalty Trust,Buy,4.31,,27.59,526.24,0.0,Energy,Oil & Gas Midstream
+MVO,MV Oil Trust,Buy,4.3,2.78,4.41,227.92,0.0,Energy,Oil & Gas E&P
+CHA,Chagee Holdings Limited,Buy,3.26,1.22,20.17,34.26,0.0,Consumer Cyclical,Restaurants
+NRT,North European Oil Royality Tru,Buy,3.22,,8.81,109.24,0.0,Energy,Oil & Gas E&P
+CRT,Cross Timbers Royalty Trust,Buy,3.04,,9.68,92.98,0.0,Energy,Oil & Gas E&P
+WINA,Winmark Corporation,Buy,2.7,31.62,34.01,77.33,16.3,Consumer Cyclical,Specialty Retail
+MARPS,3273,Buy,2.34,,13.14,48.38,0.0,Energy,Oil & Gas Midstream
+UTHR,United Therapeutics Corporation,Buy,2.26,10.69,11.88,12.93,46.6,Healthcare,Drug Manufacturers - Specialty & Generic
+ORLY,"O'Reilly Automotive, Inc.",Buy,2.22,2.17,34.89,13.62,0.0,Consumer Cyclical,Auto Parts
+NATH,"Nathan's Famous, Inc.",Buy,2.21,,16.25,44.58,1.4,Consumer Cyclical,Restaurants
+RGR,"Sturm, Ruger & Company, Inc.",Buy,2.2,13.79,19.06,32.12,10.5,Industrials,Aerospace & Defense
+CHKR,Chesapeake Granite Wash Trust,Buy,2.12,,4.89,28.8,0.0,Energy,Oil & Gas E&P
+ULTA,"Ulta Beauty, Inc.",Buy,2.08,22.71,20.32,16.85,43.3,Consumer Cyclical,Specialty Retail
+HALO,"Halozyme Therapeutics, Inc.",Buy,2.02,11.93,15.35,18.5,21.6,Healthcare,Biotechnology
+TPL,Texas Pacific Land Corporation,Buy,2.01,13.36,48.78,26.72,10.2,Energy,Oil & Gas E&P
+BMY,Bristol-Myers Squibb Company,Buy,2.01,6.76,17.73,7.24,39.0,Healthcare,Drug Manufacturers - General
+DHIL,"Diamond Hill Investment Group, ",Buy,1.97,,10.02,14.03,28.9,Financial Services,Asset Management
+MAS,Masco Corporation,Buy,1.92,15.27,18.44,16.04,27.3,Industrials,Building Products & Equipment
+ACLS,"Axcelis Technologies, Inc.",Buy,1.86,13.93,13.81,8.66,45.3,Technology,Semiconductor Equipment & Materials
+COKE,"Coca-Cola Consolidated, Inc.",Buy,1.85,2.98,17.29,10.11,0.0,Consumer Defensive,Beverages - Non-Alcoholic
+VRSN,"VeriSign, Inc.",Buy,1.84,35.37,36.51,46.56,0.3,Technology,Software - Infrastructure
+JNJ,Johnson & Johnson,Buy,1.83,15.68,17.8,7.61,49.4,Healthcare,Drug Manufacturers - General
+OC,Owens Corning Inc,Buy,1.8,8.75,20.05,9.28,26.5,Industrials,Building Products & Equipment
+BWA,BorgWarner Inc.,Buy,1.79,7.68,25.19,5.81,36.5,Consumer Cyclical,Auto Parts
+CRUS,"Cirrus Logic, Inc.",Buy,1.79,15.63,17.35,11.25,34.6,Technology,Semiconductors
+MDXG,"MiMedx Group, Inc",Buy,1.79,21.9,25.15,13.79,34.9,Healthcare,Biotechnology
+NVDA,NVIDIA Corporation,Buy,1.79,42.9,57.2,53.24,-0.3,Technology,Semiconductors
+CTSH,Cognizant Technology Solutions ,Buy,1.75,15.11,15.88,10.09,36.2,Technology,Information Technology Services
+ALKS,Alkermes plc,Buy,1.74,13.01,12.45,11.62,28.8,Healthcare,Drug Manufacturers - Specialty & Generic
+CL,Colgate-Palmolive Company,Buy,1.74,22.4,24.5,16.02,27.6,Consumer Defensive,Household & Personal Products
+APAM,Artisan Partners Asset Manageme,Buy,1.74,12.42,12.73,16.3,15.3,Financial Services,Asset Management
+SIGA,SIGA Technologies Inc.,Buy,1.7,5.81,10.76,14.39,0.0,Healthcare,Drug Manufacturers - Specialty & Generic
+CROX,"Crocs, Inc.",Buy,1.7,8.03,6.52,12.92,18.4,Consumer Cyclical,Footwear & Accessories
+LOW,"Lowe's Companies, Inc.",Buy,1.67,18.21,19.01,14.44,23.5,Consumer Cyclical,Home Improvement Retail
+RIGL,"Rigel Pharmaceuticals, Inc.",Buy,1.67,22.72,9.56,18.15,25.1,Healthcare,Biotechnology
+GLDD,Great Lakes Dredge & Dock Corpo,Buy,1.67,13.44,11.2,5.82,48.5,Industrials,Engineering & Construction
+NOVO-B.CO,Novo Nordisk B A/S,Buy,1.66,15.62,18.93,23.29,0.0,Healthcare,Drug Manufacturers - General
+SM,SM Energy Company,Buy,1.66,3.87,4.03,9.66,16.4,Energy,Oil & Gas E&P
+CSL,Carlisle Companies Incorporated,Buy,1.66,18.73,23.81,11.19,32.3,Industrials,Building Products & Equipment
+LULU,lululemon athletica inc.,Buy,1.65,14.51,14.72,22.02,1.3,Consumer Cyclical,Apparel Retail
+MO,"Altria Group, Inc.",Buy,1.65,10.98,9.85,20.92,0.0,Consumer Defensive,Tobacco
+BLDR,"Builders FirstSource, Inc.",Buy,1.64,11.64,17.39,7.77,32.1,Industrials,Building Products & Equipment
+LEA,Lear Corporation,Buy,1.64,7.26,13.99,4.27,37.6,Consumer Cyclical,Auto Parts
+CDW,CDW Corporation,Buy,1.63,17.96,22.53,7.61,42.5,Technology,Information Technology Services
+DPZ,Domino's Pizza Inc,Buy,1.63,26.89,27.54,30.8,0.2,Consumer Cyclical,Restaurants
+RDN,Radian Group Inc.,Buy,1.63,9.08,8.55,6.73,35.7,Financial Services,Insurance - Specialty
+MTH,Meritage Homes Corporation,Buy,1.63,3.25,8.02,6.64,11.2,Consumer Cyclical,Residential Construction
+INGR,Ingredion Incorporated,Buy,1.63,11.84,13.89,9.07,28.3,Consumer Defensive,Packaged Foods
+IDCC,"InterDigital, Inc.",Buy,1.63,45.99,17.57,15.78,41.7,Technology,Software - Application
+SHOO,"Steven Madden, Ltd.",Buy,1.62,8.91,11.64,11.38,14.5,Consumer Cyclical,Footwear & Accessories
+DMLP,"Dorchester Minerals, L.P.",Buy,1.62,,13.61,21.52,0.0,Energy,Oil & Gas E&P
+MSI,"Motorola Solutions, Inc.",Buy,1.62,29.27,35.83,13.0,36.7,Technology,Communication Equipment
+TMHC,Taylor Morrison Home Corporatio,Buy,1.61,6.52,7.0,8.85,20.7,Consumer Cyclical,Residential Construction
+NVO,Novo Nordisk A/S,Buy,1.61,16.95,18.65,23.29,0.0,Healthcare,Drug Manufacturers - General
+PHM,"PulteGroup, Inc.",Buy,1.6,8.65,8.74,12.95,11.1,Consumer Cyclical,Residential Construction
+HMY,Harmony Gold Mining Company Lim,Buy,1.6,9.7,14.76,16.66,0.0,Basic Materials,Gold
+TZOO,Travelzoo,Buy,1.59,8.58,12.01,18.78,-7.0,Communication Services,Internet Content & Information
+CSGS,"CSG Systems International, Inc.",Buy,1.59,13.59,21.17,7.2,35.1,Technology,Software - Infrastructure
+UHS,"Universal Health Services, Inc.",Buy,1.58,8.53,8.71,7.57,27.9,Healthcare,Medical Care Facilities
+EA,Electronic Arts Inc.,Buy,1.58,17.82,35.68,7.68,40.2,Communication Services,Electronic Gaming & Multimedia
+CHE,Chemed Corp,Buy,1.57,18.73,22.72,14.09,19.3,Healthcare,Medical Care Facilities
+CDE,"Coeur Mining, Inc.",Buy,1.56,14.43,31.34,5.04,45.1,Basic Materials,Gold
+SKYW,"SkyWest, Inc.",Buy,1.56,14.07,11.98,5.14,46.9,Industrials,Airlines
+TSCO,Tractor Supply Company,Buy,1.56,5.22,28.63,9.03,2.6,Consumer Cyclical,Specialty Retail
+ALK,"Alaska Air Group, Inc.",Buy,1.56,10.06,22.27,2.82,48.2,Industrials,Airlines
+PNR,Pentair plc.,Buy,1.55,21.31,28.23,9.05,37.0,Industrials,Specialty Industrial Machinery
+MRK,"Merck & Company, Inc.",Buy,1.55,8.94,12.22,13.81,4.0,Healthcare,Drug Manufacturers - General
+WDC,Western Digital Corporation,Buy,1.55,7.83,23.62,5.56,26.1,Technology,Computer Hardware
+QLYS,"Qualys, Inc.",Buy,1.55,22.62,28.08,13.06,25.9,Technology,Software - Infrastructure
+PX,"P10, Inc.",Buy,1.54,13.22,77.69,7.23,39.0,Financial Services,Asset Management
+CMI,Cummins Inc.,Buy,1.54,16.46,18.25,7.73,35.6,Industrials,Specialty Industrial Machinery
+KBH,KB Home,Buy,1.54,6.27,7.56,6.56,23.9,Consumer Cyclical,Residential Construction
+MMC,"Marsh & McLennan Companies, Inc",Buy,1.53,21.87,24.76,7.86,41.1,Financial Services,Insurance Brokers
+NVR,"NVR, Inc.",Buy,1.53,15.14,16.58,20.13,-0.3,Consumer Cyclical,Residential Construction
+BIIB,Biogen Inc.,Buy,1.53,7.76,12.77,5.43,28.2,Healthcare,Drug Manufacturers - General
+YUM,"Yum! Brands, Inc.",Buy,1.51,23.73,28.74,24.86,0.0,Consumer Cyclical,Restaurants
+ADBE,Adobe Inc.,Buy,1.51,17.98,23.7,17.85,6.5,Technology,Software - Application
+LRCX,Lam Research Corporation,Buy,1.5,23.1,27.47,17.29,13.4,Technology,Semiconductor Equipment & Materials
+LXFR,Luxfer Holdings PLC,Buy,1.5,11.59,15.6,6.03,32.6,Industrials,Specialty Industrial Machinery
+HRB,"H&R Block, Inc.",Buy,1.49,10.82,13.79,15.63,0.0,Consumer Cyclical,Personal Services
+PH,Parker-Hannifin Corporation,Buy,1.49,25.1,28.41,8.82,39.2,Industrials,Specialty Industrial Machinery
+HAL,Halliburton Company,Buy,1.49,7.03,10.72,8.23,13.7,Energy,Oil & Gas Equipment & Services
+VRNT,Verint Systems Inc.,Buy,1.49,6.91,25.68,2.54,37.0,Technology,Software - Infrastructure
+IPG,"Interpublic Group of Companies,",Buy,1.48,9.28,21.63,5.39,28.1,Communication Services,Advertising Agencies
+YELP,Yelp Inc.,Buy,1.48,15.04,17.11,11.18,18.6,Communication Services,Internet Content & Information
+ANF,Abercrombie & Fitch Company,Buy,1.48,9.1,9.73,14.9,0.0,Consumer Cyclical,Apparel Retail
+PBR,Petroleo Brasileiro S.A. Petrob,Buy,1.48,4.23,9.37,8.66,0.0,Energy,Oil & Gas Integrated
+ROCK,"Gibraltar Industries, Inc.",Buy,1.47,13.89,15.17,7.4,30.3,Industrials,Building Products & Equipment
+UNP,Union Pacific Corporation,Buy,1.46,18.93,19.92,9.06,29.8,Industrials,Railroads
+ASTE,"Astec Industries, Inc.",Buy,1.46,15.98,61.48,5.94,42.7,Industrials,Farm & Heavy Construction Machinery
+DSX,Diana Shipping inc.,Buy,1.46,1.76,32.4,2.78,0.0,Industrials,Marine Shipping
+CBOE,"Cboe Global Markets, Inc.",Buy,1.45,26.31,31.74,9.32,36.8,Financial Services,Financial Data & Stock Exchanges
+DECK,Deckers Outdoor Corporation,Buy,1.45,17.67,17.26,21.27,-3.1,Consumer Cyclical,Footwear & Accessories
+CPRX,"Catalyst Pharmaceuticals, Inc.",Buy,1.44,13.77,13.25,18.59,-2.9,Healthcare,Biotechnology
+NWPX,"NWPX Infrastructure, Inc.",Buy,1.44,12.17,12.99,4.69,38.6,Basic Materials,Steel
+SBAC,SBA Communications Corporation,Buy,1.44,24.73,30.03,9.36,34.6,Real Estate,REIT - Specialty
+OMAB,Grupo Aeroportuario del Centro ,Buy,1.43,17.66,17.66,19.01,0.0,Industrials,Airports & Air Services
+RM,Regional Management Corp.,Buy,1.43,5.6,9.68,4.11,24.6,Financial Services,Credit Services
+BCC,"Boise Cascade, L.L.C.",Buy,1.43,8.4,10.82,7.29,18.5,Basic Materials,Lumber & Wood Production
+AAPL,Apple Inc.,Buy,1.42,25.76,33.34,23.81,0.1,Technology,Consumer Electronics
+ESEA,Euroseas Ltd.,Buy,1.42,4.06,2.78,13.93,0.0,Industrials,Marine Shipping
+SCCO,Southern Copper Corporation,Buy,1.42,20.19,21.63,20.16,0.0,Basic Materials,Copper
+F,Ford Motor Company,Buy,1.42,6.45,9.02,0.98,49.3,Consumer Cyclical,Auto Manufacturers
+EMN,Eastman Chemical Company,Buy,1.41,8.82,9.77,5.95,25.5,Basic Materials,Specialty Chemicals
+NTAP,"NetApp, Inc.",Buy,1.41,14.1,18.86,8.6,21.8,Technology,Computer Hardware
+MHO,"M/I Homes, Inc.",Buy,1.41,5.87,6.78,8.67,8.8,Consumer Cyclical,Residential Construction
+TILE,"Interface, Inc.",Buy,1.41,13.87,14.35,6.65,30.4,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+BKE,"Buckle, Inc. (The)",Buy,1.4,13.35,12.84,16.1,0.1,Consumer Cyclical,Apparel Retail
+OXLC,Oxford Lane Capital Corp.,Buy,1.4,5.36,12.33,8.49,0.0,Financial Services,Asset Management
+KFY,Korn Ferry,Buy,1.39,13.69,15.98,5.55,33.2,Industrials,Staffing & Employment Services
+EVTC,"Evertec, Inc.",Buy,1.39,10.16,16.65,5.82,24.5,Technology,Software - Infrastructure
+TEX,Terex Corporation,Buy,1.38,9.49,14.07,5.64,24.1,Industrials,Farm & Heavy Construction Machinery
+UCTT,"Ultra Clean Holdings, Inc.",Buy,1.38,8.93,39.89,2.9,37.0,Technology,Semiconductor Equipment & Materials
+FIZZ,National Beverage Corp.,Buy,1.38,22.37,23.16,20.4,0.0,Consumer Defensive,Beverages - Non-Alcoholic
+UG,"United-Guardian, Inc.",Buy,1.38,,13.38,15.65,0.0,Consumer Defensive,Household & Personal Products
+RS,"Reliance, Inc.",Buy,1.37,17.28,21.75,6.21,34.0,Basic Materials,Steel
+ALV,"Autoliv, Inc.",Buy,1.37,11.4,12.72,8.13,18.4,Consumer Cyclical,Auto Parts
+EQNR,Equinor ASA,Buy,1.37,9.09,8.64,13.32,0.0,Energy,Oil & Gas Integrated
+VIRC,Virco Manufacturing Corporation,Buy,1.36,4.82,6.84,9.08,0.0,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+PM,Philip Morris International Inc,Buy,1.36,21.91,23.37,14.79,11.0,Consumer Defensive,Tobacco
+AIZ,"Assurant, Inc.",Buy,1.35,10.32,14.41,1.7,47.9,Financial Services,Insurance - Property & Casualty
+TER,"Teradyne, Inc.",Buy,1.35,21.44,25.82,10.56,22.3,Technology,Semiconductor Equipment & Materials
+CHCI,"Comstock Holding Companies, Inc",Buy,1.35,,8.41,12.4,-0.0,Real Estate,Real Estate Services
+FAST,Fastenal Company,Buy,1.35,21.37,45.44,20.31,-0.0,Industrials,Industrial Distribution
+HII,"Huntington Ingalls Industries, ",Buy,1.35,16.74,18.9,3.63,45.6,Industrials,Aerospace & Defense
+EOG,"EOG Resources, Inc.",Buy,1.35,11.0,11.26,10.51,9.6,Energy,Oil & Gas E&P
+CALM,"Cal-Maine Foods, Inc.",Buy,1.34,32.41,4.18,36.8,0.0,Consumer Defensive,Farm Products
+HURN,Huron Consulting Group Inc.,Buy,1.34,19.26,20.13,8.16,27.4,Industrials,Consulting Services
+RCMT,"RCM Technologies, Inc.",Buy,1.34,10.52,14.69,11.48,2.4,Industrials,Conglomerates
+MMS,"Maximus, Inc.",Buy,1.34,13.4,14.6,7.54,22.3,Industrials,Specialty Business Services
+LKQ,LKQ Corporation,Buy,1.34,8.7,11.49,5.03,24.8,Consumer Cyclical,Auto Parts
+NSSC,"NAPCO Security Technologies, In",Buy,1.33,17.14,25.43,16.15,0.0,Industrials,Security & Protection Services
+HSIC,"Henry Schein, Inc.",Buy,1.33,13.55,21.95,4.61,33.6,Healthcare,Medical Distribution
+LOPE,"Grand Canyon Education, Inc.",Buy,1.33,19.04,21.0,16.98,1.0,Consumer Defensive,Education & Training Services
+AZO,"AutoZone, Inc.",Buy,1.33,21.78,25.71,12.98,14.2,Consumer Cyclical,Auto Parts
+LOGI,Logitech International S.A. - R,Buy,1.33,20.15,22.89,11.69,15.7,Technology,Computer Hardware
+GSL,Global Ship Lease Inc New,Buy,1.33,3.06,2.76,10.04,0.0,Industrials,Marine Shipping
+MKSI,MKS Inc.,Buy,1.32,13.04,30.46,3.82,36.8,Technology,Scientific & Technical Instruments
+TPH,"Tri Pointe Homes, Inc.",Buy,1.32,6.97,8.05,6.43,15.3,Consumer Cyclical,Residential Construction
+GFI,Gold Fields Limited,Buy,1.32,12.89,17.84,13.51,0.0,Basic Materials,Gold
+AMAT,"Applied Materials, Inc.",Buy,1.31,19.64,23.15,15.88,3.1,Technology,Semiconductor Equipment & Materials
+GWW,"W.W. Grainger, Inc.",Buy,1.31,24.9,26.88,19.6,0.8,Industrials,Industrial Distribution
+PNRG,PrimeEnergy Resources Corporati,Buy,1.31,,8.29,12.31,-1.8,Energy,Oil & Gas E&P
+ALSN,"Allison Transmission Holdings, ",Buy,1.31,9.7,10.19,12.17,0.0,Consumer Cyclical,Auto Parts
+JAZZ,Jazz Pharmaceuticals plc,Buy,1.31,5.44,15.95,3.99,14.4,Healthcare,Biotechnology
+ZTS,Zoetis Inc.,Buy,1.3,23.78,27.11,15.11,9.2,Healthcare,Drug Manufacturers - Specialty & Generic
+TDW,Tidewater Inc.,Buy,1.3,7.51,15.85,8.97,0.0,Energy,Oil & Gas Equipment & Services
+BHP,BHP Group Limited,Buy,1.3,11.83,11.67,13.22,0.0,Basic Materials,Other Industrial Metals & Mining
+QCOM,QUALCOMM Incorporated,Buy,1.3,13.17,16.42,13.43,0.0,Technology,Semiconductors
+GIL,"Gildan Activewear, Inc.",Buy,1.3,10.93,20.61,11.46,0.0,Consumer Cyclical,Apparel Manufacturing
+HLF,Herbalife Ltd.,Buy,1.3,4.9,3.55,11.72,0.0,Consumer Defensive,Packaged Foods
+FFIV,"F5, Inc.",Buy,1.3,19.59,28.64,8.08,26.2,Technology,Software - Infrastructure
+GIS,"General Mills, Inc.",Buy,1.3,10.61,12.16,6.52,20.3,Consumer Defensive,Packaged Foods
+ARW,"Arrow Electronics, Inc.",Buy,1.3,10.15,17.7,2.81,35.9,Technology,Electronics & Computer Distribution
+GFF,Griffon Corporation,Buy,1.29,14.7,17.01,11.59,7.2,Industrials,Building Products & Equipment
+RGLD,"Royal Gold, Inc.",Buy,1.29,23.7,25.11,7.43,32.9,Basic Materials,Gold
+ITW,Illinois Tool Works Inc.,Buy,1.28,24.3,22.89,16.54,5.5,Industrials,Specialty Industrial Machinery
+CBT,Cabot Corporation,Buy,1.28,8.88,9.76,11.06,0.0,Basic Materials,Specialty Chemicals
+MMM,3M Company,Buy,1.28,19.25,21.09,7.32,27.5,Industrials,Conglomerates
+VALE,VALE S.A.,Buy,1.28,4.8,7.13,7.76,0.0,Basic Materials,Other Industrial Metals & Mining
+MNR,Mach Natural Resources LP,Buy,1.27,5.41,9.67,7.55,0.0,Energy,Oil & Gas E&P
+MTD,"Mettler-Toledo International, I",Buy,1.27,29.6,31.45,21.22,0.6,Healthcare,Diagnostics & Research
+XOM,Exxon Mobil Corporation,Buy,1.27,14.16,14.78,6.2,25.7,Energy,Oil & Gas Integrated
+BLMN,"Bloomin' Brands, Inc.",Buy,1.27,5.09,10.88,3.42,17.2,Consumer Cyclical,Restaurants
+SHIP,Seanergy Maritime Holdings Corp,Buy,1.27,2.72,5.59,5.31,0.0,Industrials,Marine Shipping
+BHE,"Benchmark Electronics, Inc.",Buy,1.27,15.97,27.17,3.16,43.0,Technology,Electronic Components
+GVA,Granite Construction Incorporat,Buy,1.27,17.62,36.96,4.61,38.2,Industrials,Engineering & Construction
+HCKT,"The Hackett Group, Inc.",Buy,1.27,13.34,27.63,12.62,0.0,Technology,Information Technology Services
+FI,"Fiserv, Inc.",Buy,1.27,13.73,23.4,4.53,31.3,Technology,Information Technology Services
+FICO,Fair Isaac Corporation,Buy,1.26,40.72,65.36,28.7,0.4,Technology,Software - Application
+R,"Ryder System, Inc.",Buy,1.26,13.43,15.52,3.9,35.3,Industrials,Rental & Leasing Services
+CAT,"Caterpillar, Inc.",Buy,1.26,19.55,21.1,9.4,19.2,Industrials,Farm & Heavy Construction Machinery
+HD,"Home Depot, Inc. (The)",Buy,1.26,24.18,25.64,15.12,7.7,Consumer Cyclical,Home Improvement Retail
+EQT,EQT Corporation,Buy,1.26,20.6,27.32,4.02,43.8,Energy,Oil & Gas E&P
+CRNT,Ceragon Networks Ltd.,Buy,1.26,5.73,9.04,7.89,0.0,Technology,Communication Equipment
+TNK,Teekay Tankers Ltd.,Buy,1.26,3.99,4.69,8.11,0.0,Energy,Oil & Gas Midstream
+OMC,Omnicom Group Inc.,Buy,1.25,8.64,10.68,5.19,19.6,Communication Services,Advertising Agencies
+ODC,Oil-Dri Corporation Of America,Buy,1.25,,16.88,11.89,7.7,Basic Materials,Specialty Chemicals
+TTC,Toro Company (The),Buy,1.25,16.23,19.15,8.57,17.5,Industrials,Tools & Accessories
+GOOG,Alphabet Inc.,Buy,1.25,21.61,20.62,16.79,0.5,Communication Services,Internet Content & Information
+NI,NiSource Inc,Buy,1.25,22.19,22.31,3.25,49.7,Utilities,Utilities - Regulated Gas
+ITRN,Ituran Location and Control Ltd,Buy,1.25,14.94,14.62,13.83,0.0,Technology,Scientific & Technical Instruments
+HNI,HNI Corporation,Buy,1.24,15.04,17.0,7.59,19.0,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+MA,Mastercard Incorporated,Buy,1.24,34.69,39.85,23.36,0.0,Financial Services,Credit Services
+GOOGL,Alphabet Inc.,Buy,1.24,21.49,20.53,16.79,0.0,Communication Services,Internet Content & Information
+IX,ORIX Corporation,Buy,1.24,1.93,10.89,2.05,0.0,Financial Services,Financial Conglomerates
+MANH,"Manhattan Associates, Inc.",Buy,1.24,44.92,61.69,24.44,7.9,Technology,Software - Application
+MTDR,Matador Resources Company,Buy,1.24,6.57,7.72,9.03,0.0,Energy,Oil & Gas E&P
+TROW,"T. Rowe Price Group, Inc.",Buy,1.24,11.34,12.03,10.99,2.4,Financial Services,Asset Management
+DAC,Danaos Corporation,Buy,1.24,3.39,3.8,7.75,0.0,Industrials,Marine Shipping
+NOA,North American Construction Gro,Buy,1.23,4.74,15.73,5.37,0.0,Energy,Oil & Gas Equipment & Services
+EVR,Evercore Inc.,Buy,1.23,21.52,28.9,15.24,3.0,Financial Services,Capital Markets
+IR,Ingersoll Rand Inc.,Buy,1.22,24.81,43.48,5.39,41.4,Industrials,Specialty Industrial Machinery
+MLI,"Mueller Industries, Inc.",Buy,1.22,16.58,13.97,15.97,-3.7,Industrials,Metal Fabrication
+LII,"Lennox International, Inc.",Buy,1.22,28.01,28.01,19.14,0.2,Industrials,Building Products & Equipment
+AOS,A.O. Smith Corporation,Buy,1.22,17.45,19.79,13.33,2.4,Industrials,Specialty Industrial Machinery
+EGY,"VAALCO Energy, Inc.",Buy,1.22,6.69,6.93,9.4,0.0,Energy,Oil & Gas E&P
+EXPD,Expeditors International of Was,Buy,1.22,21.44,19.16,14.77,4.3,Industrials,Integrated Freight & Logistics
+EIX,Edison International,Buy,1.22,9.17,7.39,2.8,37.4,Utilities,Utilities - Regulated Electric
+CPA,"Copa Holdings, S.A.",Buy,1.22,6.49,7.45,8.94,0.0,Industrials,Airlines
+EXP,Eagle Materials Inc,Buy,1.22,13.21,16.06,12.06,0.0,Basic Materials,Building Materials
+PPC,Pilgrim's Pride Corporation,Buy,1.21,10.59,9.38,11.46,0.0,Consumer Defensive,Packaged Foods
+ASR,Grupo Aeroportuario del Sureste,Buy,1.21,16.67,12.36,14.78,0.0,Industrials,Airports & Air Services
+MITK,"Mitek Systems, Inc.",Buy,1.21,11.24,32.17,2.78,34.2,Technology,Software - Application
+SSTK,"Shutterstock, Inc.",Buy,1.21,4.1,18.17,4.3,0.0,Communication Services,Internet Content & Information
+AVY,Avery Dennison Corporation,Buy,1.2,16.57,19.53,8.5,15.4,Consumer Cyclical,Packaging & Containers
+EXEL,"Exelixis, Inc.",Buy,1.2,26.11,21.34,18.05,0.0,Healthcare,Biotechnology
+CF,"CF Industries Holdings, Inc.",Buy,1.2,14.97,12.24,8.71,14.9,Basic Materials,Agricultural Inputs
+ENS,EnerSys,Buy,1.2,9.82,10.42,8.21,7.7,Industrials,Electrical Equipment & Parts
+DVN,Devon Energy Corporation,Buy,1.2,7.64,7.77,9.56,0.0,Energy,Oil & Gas E&P
+CHD,"Church & Dwight Company, Inc.",Buy,1.19,25.65,41.06,8.24,28.0,Consumer Defensive,Household & Personal Products
+INFY,Infosys Limited,Buy,1.19,20.19,22.29,14.98,0.0,Technology,Information Technology Services
+TRMD,TORM plc,Buy,1.19,4.55,4.17,8.48,0.0,Energy,Oil & Gas Midstream
+PAC,Grupo Aeroportuario Del Pacific,Buy,1.19,17.85,22.18,13.82,0.0,Industrials,Airports & Air Services
+ENR,"Energizer Holdings, Inc.",Buy,1.19,6.71,32.01,6.62,0.0,Industrials,Electrical Equipment & Parts
+UNH,UnitedHealth Group Incorporated,Buy,1.19,9.44,11.8,7.04,9.9,Healthcare,Healthcare Plans
+SSD,"Simpson Manufacturing Company, ",Buy,1.19,19.62,21.59,9.91,14.0,Basic Materials,Lumber & Wood Production
+ACIW,"ACI Worldwide, Inc.",Buy,1.19,21.93,17.6,7.0,28.3,Technology,Software - Infrastructure
+NVS,Novartis AG,Buy,1.19,13.8,16.96,11.88,0.0,Healthcare,Drug Manufacturers - General
+MOH,Molina Healthcare Inc,Buy,1.18,6.39,8.1,6.6,5.5,Healthcare,Healthcare Plans
+HLIT,Harmonic Inc.,Buy,1.18,10.16,20.31,9.05,0.0,Technology,Communication Equipment
+DHT,"DHT Holdings, Inc.",Buy,1.18,6.73,10.27,7.52,0.0,Energy,Oil & Gas Midstream
+VRSK,"Verisk Analytics, Inc.",Buy,1.18,40.39,43.3,16.7,14.5,Industrials,Consulting Services
+GILD,"Gilead Sciences, Inc.",Buy,1.18,15.21,23.75,12.14,0.0,Healthcare,Drug Manufacturers - General
+LPX,Louisiana-Pacific Corporation,Buy,1.18,16.3,15.67,12.68,1.7,Industrials,Building Products & Equipment
+IEX,IDEX Corporation,Buy,1.18,21.65,29.23,6.9,27.3,Industrials,Specialty Industrial Machinery
+EC,Ecopetrol S.A.,Buy,1.18,4.87,5.6,7.63,0.0,Energy,Oil & Gas Integrated
+DIN,"Dine Brands Global, Inc. Common",Buy,1.18,3.99,6.55,5.82,0.0,Consumer Cyclical,Restaurants
+SIG,Signet Jewelers Limited,Buy,1.18,7.31,96.43,5.61,16.5,Consumer Cyclical,Luxury Goods
+DLX,Deluxe Corporation,Buy,1.17,5.0,13.49,5.24,0.0,Industrials,Conglomerates
+HCA,"HCA Healthcare, Inc.",Buy,1.17,13.87,14.31,11.84,0.2,Healthcare,Medical Care Facilities
+G,Genpact Limited,Buy,1.17,13.14,15.41,9.38,6.2,Technology,Information Technology Services
+SEIC,SEI Investments Company,Buy,1.17,18.19,16.68,14.39,-1.4,Financial Services,Asset Management
+MSCI,MSCI Inc.,Buy,1.17,32.44,36.63,18.55,3.5,Financial Services,Financial Data & Stock Exchanges
+HIG,"The Hartford Insurance Group, I",Buy,1.17,10.44,11.01,3.08,31.8,Financial Services,Insurance - Property & Casualty
+MCD,McDonald's Corporation,Buy,1.16,23.73,26.39,13.42,6.9,Consumer Cyclical,Restaurants
+NMM,Navios Maritime Partners LP,Buy,1.16,2.39,3.91,4.79,0.0,Industrials,Marine Shipping
+SNV,Synovus Financial Corp.,Buy,1.16,10.57,9.43,1.3,46.0,Financial Services,Banks - Regional
+KOP,Koppers Holdings Inc.,Buy,1.16,7.7,28.61,6.43,2.4,Basic Materials,Specialty Chemicals
+FSLR,"First Solar, Inc.",Buy,1.16,8.8,15.6,7.5,2.8,Technology,Solar
+DHI,"D.R. Horton, Inc.",Buy,1.16,9.18,11.75,8.96,0.3,Consumer Cyclical,Residential Construction
+DCI,"Donaldson Company, Inc.",Buy,1.16,18.05,24.09,12.01,3.9,Industrials,Specialty Industrial Machinery
+TREX,"Trex Company, Inc.",Buy,1.15,30.96,36.88,11.43,19.5,Industrials,Building Products & Equipment
+LH,Labcorp Holdings Inc.,Buy,1.15,16.35,28.91,4.44,30.5,Healthcare,Diagnostics & Research
+POWL,"Powell Industries, Inc.",Buy,1.15,19.47,17.04,14.32,-0.5,Industrials,Electrical Equipment & Parts
+RBA,"RB Global, Inc.",Buy,1.15,21.31,53.44,4.02,42.7,Industrials,Specialty Business Services
+SLB,Schlumberger N.V.,Buy,1.15,9.81,12.33,7.68,5.6,Energy,Oil & Gas Equipment & Services
+SNA,Snap-On Incorporated,Buy,1.15,16.23,17.39,9.92,8.0,Industrials,Tools & Accessories
+BDC,Belden Inc,Buy,1.15,16.98,25.13,5.91,23.9,Technology,Communication Equipment
+PLAB,"Photronics, Inc.",Buy,1.14,9.6,10.94,8.16,4.0,Technology,Semiconductor Equipment & Materials
+NATL,NCR Atleos Corporation,Buy,1.14,6.73,17.58,6.16,0.0,Technology,Software - Application
+KBR,"KBR, Inc.",Buy,1.14,12.02,15.64,5.72,16.9,Industrials,Engineering & Construction
+TGT,Target Corporation,Buy,1.14,10.13,11.7,6.64,10.8,Consumer Defensive,Discount Stores
+SBLK,Star Bulk Carriers Corp.,Buy,1.14,4.14,9.82,4.61,0.0,Industrials,Marine Shipping
+EPR,EPR Properties,Buy,1.14,21.16,34.79,4.07,38.8,Real Estate,REIT - Specialty
+USLM,"United States Lime & Minerals, ",Buy,1.14,,25.85,16.57,0.1,Basic Materials,Building Materials
+MTG,MGIC Investment Corporation,Buy,1.14,9.19,8.51,9.75,0.0,Financial Services,Insurance - Specialty
+LIN,Linde plc,Buy,1.14,27.58,33.9,6.96,31.5,Basic Materials,Specialty Chemicals
+MRCC,Monroe Capital Corporation,Buy,1.14,6.17,18.88,5.66,0.0,Financial Services,Asset Management
+FRO,Frontline Plc,Buy,1.14,5.33,12.22,5.43,0.0,Energy,Oil & Gas Midstream
+DKS,Dick's Sporting Goods Inc,Buy,1.14,14.81,15.7,9.37,7.4,Consumer Cyclical,Specialty Retail
+DUK,Duke Energy Corporation (Holdin,Buy,1.13,18.55,19.5,2.84,42.0,Utilities,Utilities - Regulated Electric
+LFVN,Lifevantage Corporation,Buy,1.13,15.82,18.76,11.69,0.3,Consumer Defensive,Packaged Foods
+PZZA,"Papa John's International, Inc.",Buy,1.13,17.65,18.17,12.8,0.0,Consumer Cyclical,Restaurants
+ESMC,Escalon Medical Corp.,Buy,1.13,,6.4,8.19,0.0,Healthcare,Medical Devices
+WHF,"WhiteHorse Finance, Inc.",Buy,1.13,6.12,22.74,5.39,0.0,Financial Services,Asset Management
+TLK,"PT Telekomunikasi Indonesia, Tb",Buy,1.13,9.61,12.01,8.92,0.0,Communication Services,Telecom Services
+TGS,Transportadora de Gas del Sur S,Buy,1.12,15.46,13.64,12.17,0.0,Energy,Oil & Gas Integrated
+TDC,Teradata Corporation,Buy,1.12,9.15,15.96,7.9,0.0,Technology,Software - Infrastructure
+GNTX,Gentex Corporation,Buy,1.12,13.3,15.77,10.48,0.0,Consumer Cyclical,Auto Parts
+ICFI,"ICF International, Inc.",Buy,1.12,10.47,14.5,5.1,16.2,Industrials,Consulting Services
+ODFL,"Old Dominion Freight Line, Inc.",Buy,1.12,27.85,30.89,16.78,0.5,Industrials,Trucking
+NVEC,NVE Corporation,Buy,1.12,22.32,21.06,14.77,0.0,Technology,Semiconductors
+ERIE,Erie Indemnity Company,Buy,1.11,26.39,30.12,16.29,0.0,Financial Services,Insurance Brokers
+APOG,"Apogee Enterprises, Inc.",Buy,1.11,8.73,18.2,7.36,0.0,Industrials,Building Products & Equipment
+THG,Hanover Insurance Group Inc,Buy,1.11,12.03,13.76,2.44,34.6,Financial Services,Insurance - Property & Casualty
+LEN,Lennar Corporation,Buy,1.11,7.2,9.62,7.26,0.0,Consumer Cyclical,Residential Construction
+IESC,"IES Holdings, Inc.",Buy,1.11,,29.4,16.9,1.1,Industrials,Engineering & Construction
+APA,APA Corporation,Buy,1.11,7.12,7.01,8.23,0.0,Energy,Oil & Gas E&P
+ASML,ASML Holding N.V. - New York Re,Buy,1.11,27.34,25.84,16.35,0.0,Technology,Semiconductor Equipment & Materials
+TOPS,"TOP Ships, Inc.",Buy,1.11,2.88,5.78,3.96,0.0,Energy,Oil & Gas Midstream
+V,Visa Inc.,Buy,1.1,28.08,35.73,16.94,-0.1,Financial Services,Credit Services
+KFRC,"Kforce, Inc.",Buy,1.1,16.52,18.4,11.17,2.0,Industrials,Staffing & Employment Services
+JAKK,"JAKKS Pacific, Inc.",Buy,1.1,4.27,5.09,7.16,-4.0,Consumer Cyclical,Leisure
+JHX,James Hardie Industries plc.,Buy,1.1,14.84,27.55,10.6,0.0,Basic Materials,Building Materials
+ABBV,AbbVie Inc.,Buy,1.1,15.54,80.56,8.34,17.4,Healthcare,Drug Manufacturers - General
+CMRE,Costamare Inc.,Buy,1.09,3.27,3.94,5.62,0.0,Industrials,Marine Shipping
+DENN,Denny's Corporation,Buy,1.09,6.95,12.42,6.25,0.0,Consumer Cyclical,Restaurants
+EPAM,"EPAM Systems, Inc.",Buy,1.09,15.13,23.69,8.14,8.7,Technology,Information Technology Services
+M,Macy's Inc,Buy,1.09,5.32,6.93,3.28,15.2,Consumer Cyclical,Department Stores
+ARLP,"Alliance Resource Partners, L.P",Buy,1.09,8.26,15.11,6.8,0.5,Energy,Thermal Coal
+IDXX,"IDEXX Laboratories, Inc.",Buy,1.09,47.37,52.36,22.98,2.6,Healthcare,Diagnostics & Research
+PMT,PennyMac Mortgage Investment Tr,Buy,1.09,7.98,13.13,0.73,36.7,Real Estate,REIT - Mortgage
+RPRX,Royalty Pharma plc,Buy,1.09,8.44,15.13,7.04,0.0,Healthcare,Biotechnology
+PEP,"Pepsico, Inc.",Buy,1.09,16.4,25.79,8.51,9.4,Consumer Defensive,Beverages - Non-Alcoholic
+AWK,"American Water Works Company, I",Buy,1.09,24.34,25.27,3.48,42.3,Utilities,Utilities - Regulated Water
+UFPT,"UFP Technologies, Inc.",Buy,1.09,28.52,30.02,10.92,15.1,Healthcare,Medical Devices
+MLR,"Miller Industries, Inc.",Buy,1.08,6.92,9.12,6.78,0.0,Consumer Cyclical,Auto Parts
+PPG,"PPG Industries, Inc.",Buy,1.08,12.88,20.17,6.3,11.9,Basic Materials,Specialty Chemicals
+BMRN,BioMarin Pharmaceutical Inc.,Buy,1.08,19.44,21.53,6.38,21.8,Healthcare,Biotechnology
+OFLX,"Omega Flex, Inc.",Buy,1.08,,19.71,12.73,0.0,Industrials,Specialty Industrial Machinery
+ACT,"Enact Holdings, Inc.",Buy,1.08,8.36,7.91,9.11,-2.5,Financial Services,Insurance - Specialty
+SBH,"Sally Beauty Holdings, Inc. (Na",Buy,1.08,5.95,5.89,7.43,0.0,Consumer Cyclical,Specialty Retail
+LPLA,LPL Financial Holdings Inc.,Buy,1.08,20.72,26.66,8.71,13.8,Financial Services,Capital Markets
+KMB,Kimberly-Clark Corporation,Buy,1.08,16.63,17.26,11.54,0.0,Consumer Defensive,Household & Personal Products
+TOL,"Toll Brothers, Inc.",Buy,1.08,8.44,9.17,8.37,-1.4,Consumer Cyclical,Residential Construction
+DRD,DRDGOLD Limited,Buy,1.08,20.16,12.35,14.15,0.0,Basic Materials,Gold
+NAT,Nordic American Tankers Limited,Buy,1.07,5.0,16.47,4.0,0.0,Energy,Oil & Gas Midstream
+IHG,Intercontinental Hotels Group,Buy,1.07,21.97,30.45,13.61,0.0,Consumer Cyclical,Lodging
+MET,"MetLife, Inc.",Buy,1.07,8.01,12.69,0.63,36.9,Financial Services,Insurance - Life
+BRC,Brady Corporation,Buy,1.07,14.35,17.46,10.18,0.0,Industrials,Security & Protection Services
+AMWD,American Woodmark Corporation,Buy,1.07,5.57,8.53,5.72,0.0,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+PBH,Prestige Consumer Healthcare In,Buy,1.07,16.0,17.79,6.5,16.6,Healthcare,Drug Manufacturers - Specialty & Generic
+RIO,Rio Tinto Plc,Buy,1.07,9.12,8.8,8.48,0.0,Basic Materials,Other Industrial Metals & Mining
+FSM,Fortuna Mining Corp.,Buy,1.07,10.12,12.85,8.28,0.0,Basic Materials,Gold
+CVCO,"Cavco Industries, Inc.",Buy,1.07,17.71,20.0,9.07,8.8,Consumer Cyclical,Residential Construction
+LRN,"Stride, Inc.",Buy,1.06,17.69,20.13,11.49,0.0,Consumer Defensive,Education & Training Services
+CLX,Clorox Company (The),Buy,1.06,17.45,22.84,11.6,-0.6,Consumer Defensive,Household & Personal Products
+GENC,"Gencor Industries, Inc.",Buy,1.06,5.33,17.33,4.17,0.0,Industrials,Farm & Heavy Construction Machinery
+SKY,"Champion Homes, Inc.",Buy,1.06,16.1,19.01,7.61,11.4,Consumer Cyclical,Residential Construction
+KOG.OL,KONGSBERG GRUPPEN,Buy,1.06,8.98,40.5,7.05,0.0,Industrials,Aerospace & Defense
+SBS,Companhia de saneamento Basico ,Buy,1.06,16.64,7.6,13.75,0.0,Utilities,Utilities - Regulated Water
+CHH,"Choice Hotels International, In",Buy,1.06,18.91,20.34,11.98,0.4,Consumer Cyclical,Lodging
+CPSS,"Consumer Portfolio Services, In",Buy,1.06,3.37,11.35,0.58,16.3,Financial Services,Credit Services
+GIII,"G-III Apparel Group, LTD.",Buy,1.06,6.11,5.73,7.43,0.0,Consumer Cyclical,Apparel Manufacturing
+TEN,Tsakos Energy Navigation Ltd,Buy,1.05,2.63,4.43,3.76,0.0,Energy,Oil & Gas Midstream
+CRI,"Carter's, Inc.",Buy,1.05,5.3,7.07,5.75,0.0,Consumer Cyclical,Apparel Retail
+GSK,GSK plc,Buy,1.05,8.71,18.36,6.55,0.0,Healthcare,Drug Manufacturers - General
+URI,"United Rentals, Inc.",Buy,1.05,19.19,23.31,8.94,10.1,Industrials,Rental & Leasing Services
+STC,Stewart Information Services Co,Buy,1.05,11.4,21.16,3.48,21.7,Financial Services,Insurance - Property & Casualty
+ODP,The ODP Corporation,Buy,1.05,4.63,14.12,3.7,0.0,Consumer Cyclical,Specialty Retail
+ASC,Ardmore Shipping Corporation,Buy,1.05,4.76,3.16,8.42,0.0,Industrials,Marine Shipping
+GMAB,Genmab A/S,Buy,1.05,16.49,13.58,11.54,0.0,Healthcare,Biotechnology
+AMED,Amedisys Inc,Buy,1.04,18.96,35.76,6.36,19.9,Healthcare,Medical Care Facilities
+AA,Alcoa Corporation,Buy,1.04,9.62,18.48,7.06,0.0,Basic Materials,Aluminum
+NE,Noble Corporation plc A,Buy,1.04,8.76,9.76,7.32,1.4,Energy,Oil & Gas Drilling
+MSA,MSA Safety Incorporated,Buy,1.04,21.98,24.59,11.96,2.9,Industrials,Security & Protection Services
+LECO,"Lincoln Electric Holdings, Inc.",Buy,1.04,24.35,28.02,12.5,3.7,Industrials,Tools & Accessories
+AEO,"American Eagle Outfitters, Inc.",Buy,1.04,6.2,12.28,5.19,0.0,Consumer Cyclical,Apparel Retail
+UFPI,"UFP Industries, Inc.",Buy,1.04,14.23,18.1,6.94,10.1,Basic Materials,Lumber & Wood Production
+FCN,"FTI Consulting, Inc.",Buy,1.03,19.51,24.05,6.46,18.9,Industrials,Consulting Services
+TSM,Taiwan Semiconductor Manufactur,Buy,1.03,30.04,28.66,15.96,0.0,Technology,Semiconductors
+ROST,"Ross Stores, Inc.",Buy,1.03,21.05,22.21,11.29,3.2,Consumer Cyclical,Apparel Retail
+ESCA,"Escalade, Incorporated",Buy,1.03,6.49,12.85,4.36,4.3,Consumer Cyclical,Leisure
+AMP,"Ameriprise Financial, Inc.",Buy,1.03,13.42,17.63,2.2,33.7,Financial Services,Asset Management
+HOG,"Harley-Davidson, Inc.",Buy,1.02,5.76,8.44,1.9,20.4,Consumer Cyclical,Recreational Vehicles
+HTGC,"Hercules Capital, Inc.",Buy,1.02,9.55,14.37,6.67,1.9,Financial Services,Asset Management
+ACHC,"Acadia Healthcare Company, Inc.",Buy,1.02,6.18,11.12,5.06,0.0,Healthcare,Medical Care Facilities
+PEGA,Pegasystems Inc.,Buy,1.02,18.62,49.14,12.2,-0.3,Technology,Software - Application
+HPQ,HP Inc.,Buy,1.02,7.18,9.94,6.33,-0.9,Technology,Computer Hardware
+OII,"Oceaneering International, Inc.",Buy,1.02,12.26,11.58,8.15,3.8,Energy,Oil & Gas Equipment & Services
+STG.CO,Scandinavian Tobacco Group A/S,Buy,1.02,6.19,8.08,5.91,0.0,Consumer Defensive,Tobacco
+EXLS,"ExlService Holdings, Inc.",Buy,1.02,22.34,31.98,11.26,4.6,Technology,Information Technology Services
+BTE,Baytex Energy Corp,Buy,1.01,6.78,7.48,6.52,0.0,Energy,Oil & Gas E&P
+IPAR,"Interparfums, Inc.",Buy,1.01,22.87,24.2,12.81,-0.1,Consumer Defensive,Household & Personal Products
+COP,ConocoPhillips,Buy,1.01,12.08,12.3,8.78,0.0,Energy,Oil & Gas E&P
+SEE,Sealed Air Corporation,Buy,1.01,9.77,14.93,7.0,0.0,Consumer Cyclical,Packaging & Containers
+KGJI,Kingold Jewelry Inc.,Buy,1.01,,0.0,4.31,0.0,Consumer Cyclical,Luxury Goods
+OXM,"Oxford Industries, Inc.",Buy,1.01,5.77,8.46,5.3,0.0,Consumer Cyclical,Apparel Manufacturing
+BK,The Bank of New York Mellon Cor,Buy,1.0,15.41,15.39,1.09,44.6,Financial Services,Banks - Diversified
+STNG,Scorpio Tankers Inc.,Buy,1.0,4.82,4.37,6.34,0.0,Energy,Oil & Gas Midstream
+CNQ,Canadian Natural Resources Limi,Buy,1.0,12.33,12.28,8.76,0.0,Energy,Oil & Gas E&P
+FC,Franklin Covey Company,Buy,1.0,9.58,25.59,6.39,0.0,Consumer Defensive,Education & Training Services
+EVER,"EverQuote, Inc.",Buy,1.0,34.52,24.23,15.6,2.4,Communication Services,Internet Content & Information
+GPN,Global Payments Inc.,Buy,1.0,6.62,13.71,3.23,9.0,Industrials,Specialty Business Services
+CHRW,"C.H. Robinson Worldwide, Inc.",Buy,1.0,21.32,24.22,8.87,10.0,Industrials,Integrated Freight & Logistics
+AN,"AutoNation, Inc.",Buy,1.0,10.57,12.31,6.6,4.7,Consumer Cyclical,Auto & Truck Dealerships
+LOAN,"Manhattan Bridge Capital, Inc",Buy,1.0,10.76,11.21,8.05,0.0,Real Estate,REIT - Mortgage
+MSD,Morgan Stanley Emerging Markets,Buy,0.99,,9.27,7.54,0.0,Financial Services,Asset Management
+AZN,Astrazeneca PLC,Buy,0.99,13.08,28.85,8.16,0.0,Healthcare,Drug Manufacturers - General
+PATK,"Patrick Industries, Inc.",Buy,0.99,12.67,24.03,5.31,11.3,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+NUE,Nucor Corporation,Buy,0.99,15.44,25.9,3.87,24.1,Basic Materials,Steel
+AMGN,Amgen Inc.,Buy,0.99,14.58,27.46,7.04,7.1,Healthcare,Drug Manufacturers - General
+MKTX,"MarketAxess Holdings, Inc.",Buy,0.99,25.23,36.12,11.06,7.2,Financial Services,Capital Markets
+GPI,"Group 1 Automotive, Inc.",Buy,0.99,10.56,11.75,6.52,4.7,Consumer Cyclical,Auto & Truck Dealerships
+CART,Maplebear Inc.,Buy,0.99,35.25,31.07,6.81,30.5,Consumer Cyclical,Internet Retail
+MCRI,"Monarch Casino & Resort, Inc.",Buy,0.99,21.43,24.73,11.67,0.9,Consumer Cyclical,Resorts & Casinos
+GGB,Gerdau S.A.,Buy,0.99,5.71,10.61,4.47,0.0,Basic Materials,Steel
+PRI,"Primerica, Inc.",Buy,0.99,12.86,12.14,4.46,19.3,Financial Services,Insurance - Life
+ALG,"Alamo Group, Inc.",Buy,0.99,20.04,22.63,6.71,16.6,Industrials,Farm & Heavy Construction Machinery
+EBF,"Ennis, Inc.",Buy,0.98,12.84,11.99,8.16,2.7,Industrials,Business Equipment & Supplies
+NTES,"NetEase, Inc.",Buy,0.98,17.54,18.76,10.23,0.0,Communication Services,Electronic Gaming & Multimedia
+DOX,Amdocs Limited,Buy,0.98,12.35,18.24,7.83,0.0,Technology,Software - Infrastructure
+NEM,Newmont Corporation,Buy,0.98,16.62,11.53,9.07,6.2,Basic Materials,Gold
+NEWT,"NewtekOne, Inc.",Buy,0.98,5.68,6.12,5.83,0.0,Financial Services,Banks - Regional
+CSWC,Capital Southwest Corporation,Buy,0.98,9.43,15.66,6.38,0.0,Financial Services,Asset Management
+LFUS,"Littelfuse, Inc.",Buy,0.97,23.76,62.09,4.59,35.0,Technology,Electronic Components
+TRS,TriMas Corporation,Buy,0.97,15.9,40.88,2.6,32.8,Consumer Cyclical,Packaging & Containers
+GGG,Graco Inc.,Buy,0.97,27.43,29.96,12.15,4.6,Industrials,Specialty Industrial Machinery
+ADSK,"Autodesk, Inc.",Buy,0.97,33.17,65.34,8.84,25.6,Technology,Software - Application
+STX,Seagate Technology Holdings PLC,Buy,0.97,15.51,21.65,14.08,-15.4,Technology,Computer Hardware
+PHH,Park Ha Biological Technology C,Buy,0.97,,41.16,18.55,0.0,Consumer Defensive,Household & Personal Products
+TXRH,"Texas Roadhouse, Inc.",Buy,0.97,26.23,28.99,10.78,7.2,Consumer Cyclical,Restaurants
+IVR,INVESCO MORTGAGE CAPITAL INC,Buy,0.97,2.61,19.64,0.78,0.0,Real Estate,REIT - Mortgage
+KGC,Kinross Gold Corporation,Buy,0.97,17.85,16.03,10.46,0.0,Basic Materials,Gold
+VAL,Valaris Limited,Buy,0.97,9.79,12.17,6.95,0.0,Energy,Oil & Gas Equipment & Services
+NNN,"NNN REIT, Inc.",Buy,0.97,20.52,19.66,3.89,30.2,Real Estate,REIT - Retail
+SAM,"Boston Beer Company, Inc. (The)",Buy,0.96,17.55,28.84,8.45,4.9,Consumer Defensive,Beverages - Brewers
+RMD,ResMed Inc.,Buy,0.96,26.58,30.66,14.01,-1.9,Healthcare,Medical Instruments & Supplies
+HP,"Helmerich & Payne, Inc.",Buy,0.96,4.9,7.95,4.19,0.0,Energy,Oil & Gas Drilling
+TKC,Turkcell Iletisim Hizmetleri AS,Buy,0.96,10.64,17.62,6.75,0.0,Communication Services,Telecom Services
+UGP,Ultrapar Participacoes S.A. (Ne,Buy,0.96,8.03,8.47,6.47,0.0,Energy,Oil & Gas Refining & Marketing
+LAZ,"Lazard, Inc.",Buy,0.96,13.38,18.61,7.04,4.0,Financial Services,Capital Markets
+RSG,"Republic Services, Inc.",Buy,0.96,35.45,36.36,6.4,31.2,Industrials,Waste Management
+DDS,"Dillard's, Inc.",Buy,0.96,19.63,14.2,11.12,0.4,Consumer Cyclical,Department Stores
+UPS,"United Parcel Service, Inc.",Buy,0.96,11.53,14.83,7.34,0.0,Industrials,Integrated Freight & Logistics
+TFX,Teleflex Incorporated,Buy,0.96,7.57,35.67,4.84,0.0,Healthcare,Medical Instruments & Supplies
+RDY,Dr. Reddy's Laboratories Ltd,Buy,0.96,16.9,18.61,9.71,0.0,Healthcare,Drug Manufacturers - Specialty & Generic
+GIB,CGI Inc.,Buy,0.95,15.43,17.96,9.01,0.0,Technology,Information Technology Services
+MAT,"Mattel, Inc.",Buy,0.95,11.11,11.47,7.54,0.0,Consumer Cyclical,Leisure
+SWK,"Stanley Black & Decker, Inc.",Buy,0.95,13.47,31.33,2.78,25.4,Industrials,Tools & Accessories
+SAMG,Silvercrest Asset Management Gr,Buy,0.95,10.12,17.65,6.28,0.0,Financial Services,Asset Management
+MNDO,MIND C.T.I. Ltd.,Buy,0.95,,8.41,6.68,0.0,Technology,Software - Application
+VECO,Veeco Instruments Inc.,Buy,0.95,12.21,20.51,3.28,19.5,Technology,Semiconductor Equipment & Materials
+FDS,FactSet Research Systems Inc.,Buy,0.95,22.17,29.86,10.5,3.2,Financial Services,Financial Data & Stock Exchanges
+BTU,Peabody Energy Corporation,Buy,0.94,5.77,5.73,3.82,9.8,Energy,Thermal Coal
+MPLX,MPLX LP,Buy,0.94,11.56,11.78,7.58,0.0,Energy,Oil & Gas Midstream
+GRVY,"GRAVITY Co., Ltd.",Buy,0.94,,7.65,6.34,0.0,Communication Services,Electronic Gaming & Multimedia
+KOF,Coca Cola Femsa S.A.B. de C.V.,Buy,0.94,12.71,13.74,7.86,0.0,Consumer Defensive,Beverages - Non-Alcoholic
+KLAC,KLA Corporation,Buy,0.94,28.13,33.56,19.23,-13.0,Technology,Semiconductor Equipment & Materials
+PFLT,PennantPark Floating Rate Capit,Buy,0.94,8.43,12.4,5.64,0.0,Financial Services,Asset Management
+NXST,"Nexstar Media Group, Inc.",Buy,0.94,12.36,9.76,6.77,6.9,Communication Services,Broadcasting
+SLGN,Silgan Holdings Inc.,Buy,0.94,13.4,20.62,4.75,13.6,Consumer Cyclical,Packaging & Containers
+NCI,Neo-Concept International Group,Buy,0.94,,7.77,6.39,0.0,Consumer Cyclical,Apparel Manufacturing
+STRA,"Strategic Education, Inc.",Buy,0.94,14.19,16.86,4.82,14.9,Consumer Defensive,Education & Training Services
+GBDC,"Golub Capital BDC, Inc.",Buy,0.94,8.78,13.98,5.74,0.0,Financial Services,Asset Management
+AKAM,"Akamai Technologies, Inc.",Buy,0.94,11.93,26.75,3.92,14.6,Technology,Software - Infrastructure
+RCKY,"Rocky Brands, Inc.",Buy,0.93,7.34,12.77,4.79,0.0,Consumer Cyclical,Footwear & Accessories
+WRLD,World Acceptance Corporation,Buy,0.93,13.26,11.0,8.66,-0.4,Financial Services,Credit Services
+GPK,Graphic Packaging Holding Compa,Buy,0.93,8.63,11.34,5.93,0.0,Consumer Cyclical,Packaging & Containers
+PHI,PLDT Inc. Sponsored,Buy,0.93,7.68,8.97,5.72,0.0,Communication Services,Telecom Services
+BELFB,Bel Fuse Inc.,Buy,0.93,25.66,33.98,7.17,18.7,Technology,Electronic Components
+SMCI,"Super Micro Computer, Inc.",Buy,0.93,14.16,32.64,8.37,-1.1,Technology,Computer Hardware
+IBM,International Business Machines,Buy,0.93,24.81,42.38,4.81,29.6,Technology,Information Technology Services
+NEE,"NextEra Energy, Inc.",Buy,0.93,19.39,24.86,2.57,34.4,Utilities,Utilities - Regulated Electric
+PVH,PVH Corp.,Buy,0.93,6.07,10.85,4.17,0.0,Consumer Cyclical,Apparel Manufacturing
+PBYI,Puma Biotechnology Inc,Buy,0.93,13.92,4.28,11.35,4.9,Healthcare,Biotechnology
+PRGS,Progress Software Corporation,Buy,0.93,8.81,38.07,5.36,0.0,Technology,Software - Infrastructure
+LND,Brasilagro Brazilian Agric Real,Buy,0.93,,6.7,5.9,0.0,Consumer Defensive,Farm Products
+WAT,Waters Corporation,Buy,0.93,23.38,27.46,11.61,0.0,Healthcare,Diagnostics & Research
+JBSS,"John B. Sanfilippo & Son, Inc.",Buy,0.93,14.0,14.12,8.88,-1.9,Consumer Defensive,Packaged Foods
+ACN,Accenture plc,Buy,0.93,19.69,22.02,11.24,-3.2,Technology,Information Technology Services
+HON,Honeywell International Inc.,Buy,0.92,20.44,25.58,7.15,11.7,Industrials,Conglomerates
+BUR,Burford Capital Limited,Buy,0.92,7.18,11.77,4.72,0.0,Financial Services,Asset Management
+FANG,"Diamondback Energy, Inc.",Buy,0.92,10.28,9.36,7.13,0.3,Energy,Oil & Gas E&P
+AMX,"America Movil, S.A.B. de C.V.",Buy,0.92,10.82,19.98,6.19,0.0,Communication Services,Telecom Services
+PG,Procter & Gamble Company (The),Buy,0.92,21.17,24.94,10.98,-1.2,Consumer Defensive,Household & Personal Products
+DORM,"Dorman Products, Inc.",Buy,0.92,16.23,17.53,8.59,1.0,Consumer Cyclical,Auto Parts
+SYY,Sysco Corporation,Buy,0.92,16.33,20.76,8.57,1.0,Consumer Defensive,Food Distribution
+KRO,Kronos Worldwide Inc,Buy,0.92,6.29,7.26,5.19,0.0,Basic Materials,Specialty Chemicals
+UL,Unilever PLC,Buy,0.92,16.92,22.01,9.07,0.0,Consumer Defensive,Household & Personal Products
+TJX,"TJX Companies, Inc. (The)",Buy,0.92,27.26,29.5,12.75,0.0,Consumer Cyclical,Apparel Retail
+FLXS,"Flexsteel Industries, Inc.",Buy,0.92,9.56,14.28,5.94,0.0,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+HSY,The Hershey Company,Buy,0.92,21.97,22.67,10.96,0.0,Consumer Defensive,Confectioners
+LGCY,Legacy Education Inc.,Buy,0.92,22.1,18.73,11.15,-0.2,Consumer Defensive,Education & Training Services
+HSII,Heidrick & Struggles Internatio,Buy,0.92,15.62,128.83,4.85,30.8,Industrials,Staffing & Employment Services
+LANC,Lancaster Colony Corporation,Buy,0.91,24.38,28.09,11.69,-0.2,Consumer Defensive,Packaged Foods
+RRC,Range Resources Corporation,Buy,0.91,11.97,17.87,6.05,3.3,Energy,Oil & Gas E&P
+EXPO,"Exponent, Inc.",Buy,0.91,33.69,34.85,11.96,7.8,Industrials,Engineering & Construction
+BMI,"Badger Meter, Inc.",Buy,0.91,39.3,42.05,12.68,10.6,Technology,Scientific & Technical Instruments
+NMFC,New Mountain Finance Corporatio,Buy,0.91,8.12,10.66,5.43,0.0,Financial Services,Asset Management
+WWD,"Woodward, Inc.",Buy,0.91,44.04,40.97,6.12,36.1,Industrials,Aerospace & Defense
+LTM,LATAM Airlines Group S.A.,Buy,0.91,11.03,11.66,6.93,0.0,Industrials,Airlines
+SQM,Sociedad Quimica y Minera S.A.,Buy,0.91,9.83,18.55,5.6,0.0,Basic Materials,Specialty Chemicals
+SVM,Silvercorp Metals Inc.,Buy,0.91,12.13,16.46,7.0,0.0,Basic Materials,Silver
+SPH,"Suburban Propane Partners, L.P.",Buy,0.9,8.6,12.75,5.38,0.0,Utilities,Utilities - Regulated Gas
+RICK,"RCI Hospitality Holdings, Inc.",Buy,0.9,8.97,43.58,5.36,0.0,Consumer Cyclical,Restaurants
+ATR,"AptarGroup, Inc.",Buy,0.9,26.76,28.96,7.13,17.9,Healthcare,Medical Instruments & Supplies
+SMP,"Standard Motor Products, Inc.",Buy,0.9,9.48,12.57,5.58,1.4,Consumer Cyclical,Auto Parts
+MATX,"Matson, Inc.",Buy,0.9,10.79,7.16,8.58,-1.6,Industrials,Marine Shipping
+MGPI,"MGP Ingredients, Inc.",Buy,0.9,7.68,61.94,6.56,-6.3,Consumer Defensive,Beverages - Wineries & Distilleries
+ANDE,"The Andersons, Inc.",Buy,0.9,8.8,11.38,3.38,11.8,Consumer Defensive,Food Distribution
+HES,Hess Corporation,Buy,0.9,18.41,20.66,9.68,-1.1,Energy,Oil & Gas E&P
+PFE,"Pfizer, Inc.",Buy,0.9,8.3,17.62,4.79,0.0,Healthcare,Drug Manufacturers - General
+FOXA,Fox Corporation,Buy,0.9,15.12,13.96,8.4,0.5,Communication Services,Entertainment
+MNST,Monster Beverage Corporation,Buy,0.9,32.2,39.61,14.24,0.2,Consumer Defensive,Beverages - Non-Alcoholic
+SFM,"Sprouts Farmers Market, Inc.",Buy,0.89,38.0,35.95,10.11,15.4,Consumer Defensive,Grocery Stores
+HY,"Hyster-Yale, Inc.",Buy,0.89,8.06,7.78,6.02,0.0,Industrials,Farm & Heavy Construction Machinery
+JBI,"Janus International Group, Inc.",Buy,0.89,21.45,25.03,6.04,16.0,Industrials,Building Products & Equipment
+NEU,NewMarket Corp,Buy,0.89,26.92,13.83,12.81,0.2,Basic Materials,Specialty Chemicals
+CPRT,"Copart, Inc.",Buy,0.89,26.48,30.52,12.02,0.0,Industrials,Specialty Business Services
+GGAL,Grupo Financiero Galicia S.A.,Buy,0.89,7.16,6.95,5.73,0.0,Financial Services,Banks - Regional
+GPC,Genuine Parts Company,Buy,0.89,15.71,22.86,4.59,15.4,Consumer Cyclical,Auto Parts
+FOR,Forestar Group Inc,Buy,0.89,5.88,7.86,4.36,0.2,Real Estate,Real Estate - Development
+KAI,Kadant Inc,Buy,0.89,32.52,36.48,7.71,20.6,Industrials,Specialty Industrial Machinery
+LSE,"Leishen Energy Holding Co., Ltd",Buy,0.89,,11.56,6.99,0.0,Energy,Oil & Gas Equipment & Services
+CSX,CSX Corporation,Buy,0.89,17.59,21.91,7.25,5.9,Industrials,Railroads
+CMG,"Chipotle Mexican Grill, Inc.",Buy,0.89,34.24,39.7,13.5,3.3,Consumer Cyclical,Restaurants
+REGN,"Regeneron Pharmaceuticals, Inc.",Buy,0.88,12.33,14.2,6.91,0.0,Healthcare,Biotechnology
+HCI,"HCI Group, Inc.",Buy,0.88,10.91,13.25,6.33,0.0,Financial Services,Insurance - Property & Casualty
+KEP,Korea Electric Power Corporatio,Buy,0.88,3.06,4.79,2.77,0.0,Utilities,Utilities - Regulated Electric
+DEO,Diageo plc,Buy,0.88,14.51,16.15,7.75,0.0,Consumer Defensive,Beverages - Wineries & Distilleries
+PKOH,Park-Ohio Holdings Corp.,Buy,0.88,4.67,5.83,4.01,0.1,Industrials,Specialty Industrial Machinery
+LYB,LyondellBasell Industries NV,Buy,0.88,7.3,21.76,3.85,0.0,Basic Materials,Specialty Chemicals
+SAR,Saratoga Investment Corp New,Buy,0.88,8.36,10.21,5.37,0.0,Financial Services,Asset Management
+NYT,New York Times Company (The),Buy,0.88,25.02,28.44,8.72,8.5,Communication Services,Publishing
+JVA,"Coffee Holding Co., Inc.",Buy,0.88,11.17,6.98,8.19,0.0,Consumer Defensive,Packaged Foods
+CSV,"Carriage Services, Inc.",Buy,0.88,16.69,15.18,4.4,19.1,Consumer Cyclical,Personal Services
+CMCSA,Comcast Corporation,Buy,0.88,7.66,8.26,5.45,0.0,Communication Services,Telecom Services
+MNKD,MannKind Corporation,Buy,0.87,23.29,39.6,10.96,0.0,Healthcare,Biotechnology
+FCX,"Freeport-McMoRan, Inc.",Buy,0.87,20.27,33.17,7.79,6.9,Basic Materials,Copper
+MEOH,Methanex Corporation,Buy,0.87,8.86,11.09,5.38,0.0,Basic Materials,Chemicals
+CRS,Carpenter Technology Corporatio,Buy,0.87,35.29,39.08,9.25,16.3,Industrials,Metal Fabrication
+A,"Agilent Technologies, Inc.",Buy,0.87,21.16,29.44,8.46,5.2,Healthcare,Diagnostics & Research
+MUR,Murphy Oil Corporation,Buy,0.87,6.97,10.35,3.51,4.7,Energy,Oil & Gas E&P
+SD,"SandRidge Energy, Inc.",Buy,0.87,5.12,6.09,4.2,0.0,Energy,Oil & Gas E&P
+CAG,"ConAgra Brands, Inc.",Buy,0.87,7.14,8.0,5.03,0.0,Consumer Defensive,Packaged Foods
+SCVL,"Shoe Carnival, Inc.",Buy,0.86,7.06,9.37,4.49,0.0,Consumer Cyclical,Apparel Retail
+EEFT,"Euronet Worldwide, Inc.",Buy,0.86,10.79,15.5,5.52,1.4,Technology,Software - Infrastructure
+NICE,NICE Ltd,Buy,0.86,14.0,23.76,6.97,0.0,Technology,Software - Application
+NOC,Northrop Grumman Corporation,Buy,0.86,20.26,20.97,6.44,11.8,Industrials,Aerospace & Defense
+OTEX,Open Text Corporation,Buy,0.86,7.26,12.34,4.17,0.0,Technology,Software - Application
+TXT,Textron Inc.,Buy,0.86,11.73,17.69,4.15,9.7,Industrials,Aerospace & Defense
+HBM,Hudbay Minerals Inc.,Buy,0.86,11.06,25.23,5.62,0.0,Basic Materials,Copper
+AIG,"American International Group, I",Buy,0.86,11.81,19.32,0.7,33.3,Financial Services,Insurance - Diversified
+COLO-B.CO,Coloplast B A/S,Buy,0.86,20.85,30.95,9.64,0.0,Healthcare,Medical Instruments & Supplies
+VC,Visteon Corporation,Buy,0.86,12.67,10.95,7.43,0.0,Consumer Cyclical,Auto Parts
+SPLP,Steel Partners Holdings LP LTD ,Buy,0.86,,3.72,4.22,0.0,Industrials,Conglomerates
+GD,General Dynamics Corporation,Buy,0.86,19.47,21.01,5.75,13.7,Industrials,Aerospace & Defense
+HOLX,"Hologic, Inc.",Buy,0.86,13.92,27.6,6.92,0.0,Healthcare,Medical Instruments & Supplies
+THR,"Thermon Group Holdings, Inc.",Buy,0.85,13.29,18.03,6.72,0.0,Industrials,Specialty Industrial Machinery
+PDEX,"Pro-Dex, Inc.",Buy,0.85,25.97,19.38,12.73,-4.4,Healthcare,Medical Instruments & Supplies
+CHKP,Check Point Software Technologi,Buy,0.85,21.96,28.84,9.92,0.0,Technology,Software - Infrastructure
+WDFC,WD-40 Company,Buy,0.85,34.9,33.09,13.87,0.0,Basic Materials,Specialty Chemicals
+CHTR,"Charter Communications, Inc.",Buy,0.85,8.34,8.16,5.62,0.0,Communication Services,Telecom Services
+AJG,Arthur J. Gallagher & Co.,Buy,0.85,27.4,47.63,2.68,40.9,Financial Services,Insurance Brokers
+OSK,Oshkosh Corporation (Holding Co,Buy,0.85,11.96,13.84,6.39,0.0,Industrials,Farm & Heavy Construction Machinery
+PDS,Precision Drilling Corporation,Buy,0.85,7.15,9.77,4.43,0.0,Energy,Oil & Gas Drilling
+PLXS,Plexus Corp.,Buy,0.85,15.99,21.24,4.14,16.3,Technology,Electronic Components
+TKR,Timken Company (The),Buy,0.85,12.43,17.61,5.52,3.9,Industrials,Tools & Accessories
+PNNT,PennantPark Investment Corporat,Buy,0.85,8.31,10.01,5.07,0.0,Financial Services,Asset Management
+AVA,Avista Corporation,Buy,0.85,14.29,15.63,2.65,24.0,Utilities,Utilities - Diversified
+PHD,Pioneer Floating Rate Trust Pio,Buy,0.85,,7.31,5.26,0.0,Financial Services,Asset Management
+COCO,"The Vita Coco Company, Inc.",Buy,0.85,33.59,36.91,13.77,0.0,Consumer Defensive,Beverages - Non-Alcoholic
+EME,"EMCOR Group, Inc.",Buy,0.84,28.31,27.94,11.97,-0.9,Industrials,Engineering & Construction
+ACI,"Albertsons Companies, Inc.",Buy,0.84,8.67,12.01,4.55,1.7,Consumer Defensive,Grocery Stores
+TS,Tenaris S.A.,Buy,0.84,11.85,11.59,6.64,0.0,Energy,Oil & Gas Equipment & Services
+POOL,Pool Corporation,Buy,0.84,26.72,29.68,10.04,4.0,Industrials,Industrial Distribution
+XYL,Xylem Inc.,Buy,0.84,27.84,35.55,4.44,28.8,Industrials,Specialty Industrial Machinery
+CNI,Canadian National Railway Compa,Buy,0.84,16.02,17.96,7.75,0.0,Industrials,Railroads
+NXPI,NXP Semiconductors N.V.,Buy,0.84,17.48,27.23,8.39,-1.2,Technology,Semiconductors
+DEMANT.CO,Demant A/S,Buy,0.84,18.97,20.98,8.66,0.0,Healthcare,Medical Devices
+ITIC,Investors Title Company,Buy,0.84,,13.65,7.07,0.0,Financial Services,Insurance - Specialty
+DMO,Western Asset Mortgage Defined ,Buy,0.84,,7.82,5.3,0.0,Financial Services,Asset Management
+BOSC,B.O.S. Better Online Solutions,Buy,0.84,,10.38,6.09,0.0,Technology,Communication Equipment
+AME,"AMETEK, Inc.",Buy,0.83,24.5,29.22,7.52,10.6,Industrials,Specialty Industrial Machinery
+ESGR,Enstar Group Limited,Buy,0.83,8.45,10.83,2.21,15.5,Financial Services,Insurance - Diversified
+MOD,Modine Manufacturing Company,Buy,0.83,22.26,30.85,10.25,-1.9,Consumer Cyclical,Auto Parts
+NBIX,"Neurocrine Biosciences, Inc.",Buy,0.83,21.53,45.33,8.75,4.2,Healthcare,Drug Manufacturers - Specialty & Generic
+PCN,Pimco Corporate & Income Strate,Buy,0.83,,9.28,5.65,0.0,Financial Services,Asset Management
+HAE,Haemonetics Corporation,Buy,0.83,13.98,22.56,6.65,0.0,Healthcare,Medical Devices
+RNR,RenaissanceRe Holdings Ltd.,Buy,0.83,6.98,6.27,3.56,8.7,Financial Services,Insurance - Reinsurance
+NOV,NOV Inc.,Buy,0.83,9.08,9.5,5.46,0.0,Energy,Oil & Gas Equipment & Services
+CNC,Centene Corporation,Buy,0.83,3.82,6.52,2.5,0.0,Healthcare,Healthcare Plans
+CCK,"Crown Holdings, Inc.",Buy,0.83,14.77,21.36,6.85,0.6,Consumer Cyclical,Packaging & Containers
+PFL,PIMCO Income Strategy Fund Shar,Buy,0.83,,8.43,5.39,0.0,Financial Services,Asset Management
+MSFT,Microsoft Corporation,Buy,0.83,34.28,39.67,14.58,-2.6,Technology,Software - Infrastructure
+FUL,H. B. Fuller Company,Buy,0.83,12.58,31.8,4.54,7.6,Basic Materials,Specialty Chemicals
+PTY,Pimco Corporate & Income Opport,Buy,0.82,,9.77,5.67,0.0,Financial Services,Asset Management
+TAYD,"Taylor Devices, Inc.",Buy,0.82,18.56,18.19,8.39,0.0,Industrials,Specialty Industrial Machinery
+THC,Tenet Healthcare Corporation,Buy,0.82,13.66,9.84,7.63,0.0,Healthcare,Medical Care Facilities
+AWI,Armstrong World Industries Inc,Buy,0.82,24.68,27.01,10.38,0.0,Industrials,Building Products & Equipment
+MAERSK-B.CO,A.P. Møller - Mærsk B A/S,Buy,0.82,5.91,4.75,5.21,0.0,Industrials,Marine Shipping
+MSM,"MSC Industrial Direct Company, ",Buy,0.82,20.42,24.8,8.08,3.3,Industrials,Industrial Distribution
+GASS,"StealthGas, Inc.",Buy,0.82,4.54,3.83,4.71,0.0,Industrials,Marine Shipping
+DLHC,DLH Holdings Corp.,Buy,0.82,8.98,15.37,4.52,0.0,Industrials,Specialty Business Services
+PRIM,Primoris Services Corporation,Buy,0.82,23.54,24.47,5.3,18.6,Industrials,Engineering & Construction
+EFT,Eaton Vance Floating Rate Incom,Buy,0.82,,8.59,5.36,0.0,Financial Services,Asset Management
+PAYX,"Paychex, Inc.",Buy,0.82,27.65,31.93,10.8,1.4,Technology,Software - Application
+RUSHA,"Rush Enterprises, Inc.",Buy,0.82,13.19,15.34,6.02,2.2,Consumer Cyclical,Auto & Truck Dealerships
+BAVA.CO ,Bavarian Nordic A/S,Buy,0.82,13.36,14.26,6.65,0.0,Healthcare,Biotechnology
+FEIM,"Frequency Electronics, Inc.",Buy,0.82,15.93,11.33,8.29,0.0,Technology,Communication Equipment
+AGNC,AGNC Investment Corp.,Buy,0.82,5.6,26.89,0.42,14.5,Real Estate,REIT - Mortgage
+UAL,"United Airlines Holdings, Inc.",Buy,0.82,7.65,9.27,4.59,0.0,Industrials,Airlines
+FTNT,"Fortinet, Inc.",Buy,0.82,43.52,43.16,13.33,6.7,Technology,Software - Infrastructure
+THRM,Gentherm Inc,Buy,0.82,11.2,34.27,5.37,0.0,Consumer Cyclical,Auto Parts
+AMTD,AMTD IDEA Group,Buy,0.81,,1.42,3.01,0.0,Financial Services,Asset Management
+PRAA,"PRA Group, Inc.",Buy,0.81,7.45,8.74,4.52,0.0,Financial Services,Credit Services
+MGA,"Magna International, Inc.",Buy,0.81,7.14,10.6,3.89,0.0,Consumer Cyclical,Auto Parts
+NWE,"NorthWestern Energy Group, Inc.",Buy,0.81,14.4,13.57,2.77,22.2,Utilities,Utilities - Regulated Electric
+AWR,American States Water Company,Buy,0.81,22.01,22.21,5.01,17.9,Utilities,Utilities - Regulated Water
+AM,Antero Midstream Corporation,Buy,0.81,16.7,19.62,7.3,1.2,Energy,Oil & Gas Midstream
+SB,"Safe Bulkers, Inc",Buy,0.81,6.03,6.3,4.31,0.0,Industrials,Marine Shipping
+EBAY,eBay Inc.,Buy,0.81,15.13,18.99,6.96,0.0,Consumer Cyclical,Internet Retail
+FLO,"Flowers Foods, Inc.",Buy,0.81,12.51,15.06,6.14,0.0,Consumer Defensive,Packaged Foods
+SN,"SharkNinja, Inc.",Buy,0.81,24.64,37.98,10.45,0.0,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+PLOW,"Douglas Dynamics, Inc.",Buy,0.81,14.97,10.59,5.85,8.5,Consumer Cyclical,Auto Parts
+CVE,Cenovus Energy Inc,Buy,0.81,9.69,13.53,4.94,0.0,Energy,Oil & Gas Integrated
+STLD,"Steel Dynamics, Inc.",Buy,0.81,12.97,18.9,5.27,3.7,Basic Materials,Steel
+WILC,"G. Willi-Food International,  L",Buy,0.81,,14.77,7.04,0.0,Consumer Defensive,Food Distribution
+SBNY,"Signature Bank (New York, NY)",Buy,0.81,0.04,0.06,1.17,0.0,Financial Services,Banks - Regional
+KEX,Kirby Corporation,Buy,0.8,17.8,23.93,4.38,15.4,Industrials,Marine Shipping
+RCI,"Rogers Communication, Inc.",Buy,0.8,9.05,16.63,4.28,0.0,Communication Services,Telecom Services
+SMPL,The Simply Good Foods Company,Buy,0.8,15.13,22.43,6.76,0.0,Consumer Defensive,Packaged Foods
+USPH,"U.S. Physical Therapy, Inc.",Buy,0.8,25.98,34.56,4.02,27.1,Healthcare,Medical Care Facilities
+USNA,"USANA Health Sciences, Inc.",Buy,0.8,12.68,17.27,5.14,3.7,Consumer Defensive,Packaged Foods
+IT,"Gartner, Inc.",Buy,0.8,26.72,21.97,9.03,5.6,Technology,Information Technology Services
+PCM,"PCM Fund, Inc.",Buy,0.8,,10.86,5.75,0.0,Financial Services,Asset Management
+CI,The Cigna Group,Buy,0.8,9.34,16.29,4.03,2.4,Healthcare,Healthcare Plans
+PCAR,PACCAR Inc.,Buy,0.8,12.97,17.26,5.79,1.1,Industrials,Farm & Heavy Construction Machinery
+MG,Mistras Group Inc,Buy,0.8,9.83,17.57,4.62,0.0,Industrials,Security & Protection Services
+MU,"Micron Technology, Inc.",Buy,0.8,8.64,20.05,6.55,-12.9,Technology,Semiconductors
+MWA,MUELLER WATER PRODUCTS,Buy,0.8,19.19,27.42,9.4,-4.1,Industrials,Specialty Industrial Machinery
+LYTS,LSI Industries Inc.,Buy,0.8,14.36,25.93,6.39,0.0,Technology,Electronic Components
+AMG,"Affiliated Managers Group, Inc.",Buy,0.79,9.06,16.1,4.17,0.0,Financial Services,Asset Management
+ARCC,Ares Capital Corporation,Buy,0.79,10.32,11.13,5.37,0.0,Financial Services,Asset Management
+EAT,"Brinker International, Inc.",Buy,0.79,25.35,21.82,12.21,-6.9,Consumer Cyclical,Restaurants
+IIIN,"Insteel Industries, Inc.",Buy,0.79,12.93,22.85,5.69,0.0,Industrials,Metal Fabrication
+SON,Sonoco Products Company,Buy,0.79,8.41,50.74,4.19,0.0,Consumer Cyclical,Packaging & Containers
+AAON,"AAON, Inc.",Buy,0.79,28.35,43.5,11.04,1.3,Industrials,Building Products & Equipment
+SKM,"SK Telecom Co., Ltd.",Buy,0.79,6.87,9.38,3.81,0.0,Communication Services,Telecom Services
+ASGN,ASGN Incorporated,Buy,0.79,9.82,17.29,4.52,0.0,Technology,Information Technology Services
+JLL,Jones Lang LaSalle Incorporated,Buy,0.79,16.23,23.75,3.56,17.0,Real Estate,Real Estate Services
+SU,Suncor Energy  Inc.,Buy,0.79,12.65,11.35,6.48,0.0,Energy,Oil & Gas Integrated
+LWAY,"Lifeway Foods, Inc.",Buy,0.79,18.75,38.34,8.4,-0.6,Consumer Defensive,Packaged Foods
+LMT,Lockheed Martin Corporation,Buy,0.78,14.99,23.64,6.47,0.0,Industrials,Aerospace & Defense
+AIT,Applied Industrial Technologies,Buy,0.78,25.99,27.55,10.56,-1.4,Industrials,Industrial Distribution
+FTI,TechnipFMC plc,Buy,0.78,18.69,17.53,7.9,0.0,Energy,Oil & Gas Equipment & Services
+RLI,RLI Corp.,Buy,0.78,10.45,19.04,4.47,1.0,Financial Services,Insurance - Property & Casualty
+LZB,La-Z-Boy Incorporated,Buy,0.78,11.34,16.26,5.16,0.0,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+FDUS,Fidus Investment Corporation,Buy,0.78,9.94,9.0,5.51,0.0,Financial Services,Asset Management
+UTMD,"Utah Medical Products, Inc.",Buy,0.78,,15.41,6.96,0.0,Healthcare,Medical Instruments & Supplies
+HRL,Hormel Foods Corporation,Buy,0.78,16.89,20.99,4.75,11.1,Consumer Defensive,Packaged Foods
+FCFS,"FirstCash Holdings, Inc.",Buy,0.78,15.16,18.47,6.97,-1.7,Financial Services,Credit Services
+PSMT,"PriceSmart, Inc.",Buy,0.78,18.29,22.79,6.96,2.5,Consumer Defensive,Discount Stores
+DV,"DoubleVerify Holdings, Inc.",Buy,0.78,34.74,55.1,4.1,36.2,Technology,Software - Application
+SPNS,Sapiens International Corporati,Buy,0.78,18.46,22.43,7.74,0.0,Technology,Software - Application
+FELE,"Franklin Electric Co., Inc.",Buy,0.78,21.57,24.38,8.37,1.5,Industrials,Specialty Industrial Machinery
+FFC,Flaherty & Crumrine Preferred S,Buy,0.78,,5.14,3.94,0.0,Financial Services,Asset Management
+MCI,Barings Corporate Investors,Buy,0.78,,11.93,5.87,0.0,Financial Services,Asset Management
+TNC,Tennant Company,Buy,0.78,13.01,23.11,5.69,0.0,Industrials,Specialty Industrial Machinery
+ELA,Envela Corporation,Buy,0.78,17.0,20.52,7.23,0.0,Consumer Cyclical,Luxury Goods
+KO,Coca-Cola Company (The),Buy,0.77,22.93,24.15,8.93,0.1,Consumer Defensive,Beverages - Non-Alcoholic
+TAP,Molson Coors Beverage Company,Buy,0.77,8.42,10.04,4.15,1.4,Consumer Defensive,Beverages - Brewers
+FLC,Flaherty & Crumrine Total Retur,Buy,0.77,,5.13,3.77,0.0,Financial Services,Asset Management
+COLM,Columbia Sportswear Company,Buy,0.77,14.11,15.64,6.23,0.3,Consumer Cyclical,Apparel Manufacturing
+RMBS,"Rambus, Inc.",Buy,0.77,26.22,33.63,10.21,0.0,Technology,Semiconductors
+FDX,FedEx Corporation,Buy,0.77,10.66,14.43,4.83,0.3,Industrials,Integrated Freight & Logistics
+JKHY,"Jack Henry & Associates, Inc.",Buy,0.77,27.75,29.83,11.81,-4.1,Technology,Information Technology Services
+RPM,RPM International Inc.,Buy,0.77,19.73,22.72,7.97,0.0,Basic Materials,Specialty Chemicals
+SIGI,"Selective Insurance Group, Inc.",Buy,0.77,10.07,12.84,2.56,12.8,Financial Services,Insurance - Property & Casualty
+SWKS,"Skyworks Solutions, Inc.",Buy,0.77,11.14,27.86,4.81,0.0,Technology,Semiconductors
+OKE,"ONEOK, Inc.",Buy,0.77,13.7,15.98,6.05,0.0,Energy,Oil & Gas Midstream
+ADT,ADT Inc.,Buy,0.77,10.45,11.77,5.15,0.0,Industrials,Security & Protection Services
+GRFS,"Grifols, S.A.",Buy,0.77,9.01,37.37,3.99,0.0,Healthcare,Drug Manufacturers - General
+PLUS,ePlus inc.,Buy,0.76,11.56,16.75,5.02,0.0,Technology,Software - Application
+OTTR,Otter Tail Corporation,Buy,0.76,13.82,11.08,6.72,0.0,Industrials,Conglomerates
+RAND,Rand Capital Corporation,Buy,0.76,,5.99,3.97,0.0,Financial Services,Asset Management
+EGO,Eldorado Gold Corporation,Buy,0.76,11.47,12.45,5.42,0.0,Basic Materials,Gold
+MTR,Mesa Royalty Trust,Buy,0.76,,24.13,9.19,0.0,Energy,Oil & Gas E&P
+WEN,Wendy's Company (The),Buy,0.76,9.96,11.02,4.55,1.6,Consumer Cyclical,Restaurants
+UMC,United Microelectronics Corpora,Buy,0.76,11.25,11.43,5.45,0.0,Technology,Semiconductors
+PFD,Flaherty & Crumrine Preferred I,Buy,0.76,,5.17,3.71,0.0,Financial Services,Asset Management
+CBRAIN.CO,cBrain A/S,Buy,0.76,37.54,67.37,15.06,0.0,Technology,Software - Application
+LSTR,"Landstar System, Inc.",Buy,0.76,20.8,28.02,8.17,0.0,Industrials,Integrated Freight & Logistics
+DAL,"Delta Air Lines, Inc.",Buy,0.76,7.92,8.08,4.52,0.0,Industrials,Airlines
+NETC.CO,Netcompany Group A/S,Buy,0.76,15.75,24.19,6.44,0.0,Technology,Information Technology Services
+SEM,Select Medical Holdings Corpora,Buy,0.76,6.26,22.82,2.42,-1.1,Healthcare,Medical Care Facilities
+HST,"Host Hotels & Resorts, Inc.",Buy,0.76,16.91,17.08,3.91,15.3,Real Estate,REIT - Hotel & Motel
+DVA,DaVita Inc.,Buy,0.76,12.89,14.42,7.04,-5.6,Healthcare,Medical Care Facilities
+NTRS,Northern Trust Corporation,Buy,0.76,16.99,15.25,1.05,35.2,Financial Services,Asset Management
+LAD,"Lithia Motors, Inc.",Buy,0.76,8.73,9.69,4.5,0.1,Consumer Cyclical,Auto & Truck Dealerships
+PFO,Flaherty & Crumrine Preferred I,Buy,0.76,,5.12,3.74,0.0,Financial Services,Asset Management
+RL,Ralph Lauren Corporation,Buy,0.75,23.17,25.97,8.46,1.1,Consumer Cyclical,Apparel Manufacturing
+NKT.CO,NKT A/S,Buy,0.75,19.75,17.63,7.93,0.0,Industrials,Electrical Equipment & Parts
+IDT,IDT Corporation,Buy,0.75,38.24,15.13,11.13,6.1,Communication Services,Telecom Services
+RCL,Royal Caribbean Cruises Ltd.,Buy,0.75,24.63,28.66,7.43,7.1,Consumer Cyclical,Travel Services
+MIDD,The Middleby Corporation,Buy,0.75,15.03,18.65,6.28,0.0,Industrials,Specialty Industrial Machinery
+RHP,"Ryman Hospitality Properties, I",Buy,0.75,20.19,21.0,6.17,7.1,Real Estate,REIT - Hotel & Motel
+BZH,"Beazer Homes USA, Inc.",Buy,0.75,5.03,7.97,2.53,0.0,Consumer Cyclical,Residential Construction
+CNMD,CONMED Corporation,Buy,0.75,10.33,13.13,4.14,2.9,Healthcare,Medical Devices
+CRAI,"CRA International,Inc.",Buy,0.75,23.02,23.86,8.37,1.2,Industrials,Consulting Services
+RYAAY,Ryanair Holdings plc,Buy,0.75,16.9,14.0,7.29,0.0,Industrials,Airlines
+EVF,Eaton Vance Senior Income Trust,Buy,0.75,,10.04,5.08,0.0,Financial Services,Asset Management
+TGI,"Triumph Group, Inc.",Buy,0.75,31.34,56.54,5.79,24.0,Industrials,Aerospace & Defense
+AYI,Acuity Inc.,Buy,0.75,17.05,24.63,8.9,-7.9,Industrials,Electrical Equipment & Parts
+EHI,Western Asset Global High Incom,Buy,0.75,,7.21,4.27,0.0,Financial Services,Asset Management
+AXR,AMREP Corporation,Buy,0.75,11.65,9.39,5.9,0.0,Real Estate,Real Estate - Development
+CARL-B.CO,Carlsberg B A/S,Hold,0.74,14.17,16.49,5.92,0.0,Consumer Defensive,Beverages - Brewers
+ATO,Atmos Energy Corporation,Hold,0.74,21.66,21.6,3.64,21.3,Utilities,Utilities - Regulated Gas
+SAH,"Sonic Automotive, Inc.",Hold,0.74,12.4,16.93,5.22,-0.2,Consumer Cyclical,Auto & Truck Dealerships
+FSS,Federal Signal Corporation,Hold,0.74,28.88,31.59,10.41,0.0,Industrials,Pollution & Treatment Controls
+SAIA,"Saia, Inc.",Hold,0.74,20.25,29.85,7.81,0.0,Industrials,Trucking
+ALEX,"Alexander & Baldwin, Inc.",Hold,0.74,29.95,16.92,3.52,31.3,Real Estate,REIT - Retail
+CLB,Core Laboratories Inc.,Hold,0.74,12.19,19.27,5.0,0.0,Energy,Oil & Gas Equipment & Services
+GRMN,Garmin Ltd.,Hold,0.74,31.68,31.14,11.05,0.0,Technology,Scientific & Technical Instruments
+AGRO,Adecoagro S.A.,Hold,0.74,6.94,14.65,2.77,0.0,Consumer Defensive,Farm Products
+SCS,Steelcase Inc.,Hold,0.73,9.52,10.43,3.51,5.6,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+YPF,YPF Sociedad Anonima,Hold,0.73,7.07,7.75,3.73,0.0,Energy,Oil & Gas Integrated
+ISS.CO,ISS A/S,Hold,0.73,11.44,13.15,5.01,0.0,Industrials,Specialty Business Services
+BSL,Blackstone GSO Senior Floating ,Hold,0.73,,9.92,4.83,0.0,Financial Services,Asset Management
+GM,General Motors Company,Hold,0.73,5.06,8.16,2.31,0.0,Consumer Cyclical,Auto Manufacturers
+CTAS,Cintas Corporation,Hold,0.73,47.09,49.97,15.53,0.0,Industrials,Specialty Business Services
+MAR,Marriott International,Hold,0.73,26.02,31.34,9.4,0.3,Consumer Cyclical,Lodging
+LVS,Las Vegas Sands Corp.,Hold,0.73,19.09,26.51,7.33,0.0,Consumer Cyclical,Resorts & Casinos
+SCM,Stellus Capital Investment Corp,Hold,0.73,9.66,10.07,4.66,0.0,Financial Services,Asset Management
+VLGEA,"Village Super Market, Inc.",Hold,0.73,,9.26,4.66,0.0,Consumer Defensive,Grocery Stores
+IAG,Iamgold Corporation,Hold,0.73,8.65,4.74,6.25,0.0,Basic Materials,Gold
+GBX,"Greenbrier Companies, Inc. (The",Hold,0.73,9.36,6.6,5.82,-1.5,Industrials,Railroads
+GNRC,Generac Holdlings Inc.,Hold,0.73,18.94,27.08,6.79,2.0,Industrials,Specialty Industrial Machinery
+RBREW.CO,Royal UNIBREW A/S,Hold,0.73,16.86,17.0,6.69,0.0,Consumer Defensive,Beverages - Brewers
+JQC,Nuveen Credit Strategies Income,Hold,0.73,,9.34,4.67,0.0,Financial Services,Asset Management
+CSTM,Constellium SE,Hold,0.73,9.54,27.86,3.66,0.0,Basic Materials,Aluminum
+SHW,Sherwin-Williams Company (The),Hold,0.73,26.3,33.35,9.34,0.7,Basic Materials,Specialty Chemicals
+UGI,UGI Corporation,Hold,0.72,11.89,14.67,4.96,0.0,Utilities,Utilities - Regulated Gas
+GB,Global Blue Group Holding AG,Hold,0.72,21.09,18.0,8.0,0.0,Technology,Software - Infrastructure
+CTS,CTS Corporation,Hold,0.72,17.52,19.68,6.76,0.0,Technology,Electronic Components
+CRH,CRH PLC,Hold,0.72,16.23,20.92,6.24,0.0,Basic Materials,Building Materials
+BRFS,BRF S.A.,Hold,0.72,16.0,8.76,7.71,0.0,Consumer Defensive,Packaged Foods
+CHDN,"Churchill Downs, Incorporated",Hold,0.72,15.65,19.21,6.07,0.0,Consumer Cyclical,Gambling
+ELTK,Eltek Ltd.,Hold,0.72,9.67,20.47,3.65,0.0,Technology,Electronic Components
+EXC,Exelon Corporation,Hold,0.72,16.51,16.14,2.76,19.7,Utilities,Utilities - Regulated Electric
+URBN,"Urban Outfitters, Inc.",Hold,0.72,20.19,16.29,7.56,0.6,Consumer Cyclical,Apparel Retail
+EMD,Western Asset Emerging Markets ,Hold,0.72,,9.52,4.55,0.0,Financial Services,Asset Management
+MCO,Moody's Corporation,Hold,0.72,38.1,43.12,12.75,0.1,Financial Services,Financial Data & Stock Exchanges
+CACI,"CACI International, Inc.",Hold,0.71,17.23,21.88,6.32,0.6,Technology,Information Technology Services
+SBUX,Starbucks Corporation,Hold,0.71,25.18,34.06,8.98,0.0,Consumer Cyclical,Restaurants
+NRP,Natural Resource Partners LP Li,Hold,0.71,35.0,10.01,12.91,0.0,Energy,Thermal Coal
+CNK,Cinemark Holdings Inc Cinemark ,Hold,0.71,14.63,18.21,4.24,7.1,Communication Services,Entertainment
+RUSHB,"Rush Enterprises, Inc.",Hold,0.71,,15.35,6.02,0.5,Consumer Cyclical,Auto & Truck Dealerships
+EML,Eastern Company (The),Hold,0.71,,11.2,4.94,0.0,Industrials,Tools & Accessories
+NCV,AllianzGI Convertible & Income ,Hold,0.71,,1.23,2.19,0.0,Financial Services,Asset Management
+MLM,"Martin Marietta Materials, Inc.",Hold,0.71,27.63,33.0,5.62,15.8,Basic Materials,Building Materials
+CAC,Camden National Corporation,Hold,0.71,10.29,13.2,0.74,24.1,Financial Services,Banks - Regional
+JNPR,"Juniper Networks, Inc.",Hold,0.71,18.32,38.05,2.91,21.2,Technology,Communication Equipment
+ITRI,"Itron, Inc.",Hold,0.71,27.54,24.87,5.62,15.4,Technology,Scientific & Technical Instruments
+ALL,Allstate Corporation (The),Hold,0.71,10.09,13.11,3.11,6.5,Financial Services,Insurance - Property & Casualty
+SKX,"Skechers U.S.A., Inc.",Hold,0.71,12.75,15.13,6.71,-7.2,Consumer Cyclical,Footwear & Accessories
+ENPH,"Enphase Energy, Inc.",Hold,0.71,9.55,27.09,3.74,-1.5,Technology,Solar
+BCO,Brinks Company (The),Hold,0.7,11.62,24.65,4.32,0.0,Industrials,Security & Protection Services
+TMO,Thermo Fisher Scientific Inc,Hold,0.7,20.65,28.02,4.98,11.0,Healthcare,Diagnostics & Research
+AVT,"Avnet, Inc.",Hold,0.7,9.3,15.2,3.61,0.0,Technology,Electronics & Computer Distribution
+TXN,Texas Instruments Incorporated,Hold,0.7,32.19,35.84,10.42,0.9,Technology,Semiconductors
+NCZ,AllianzGI Convertible & Income ,Hold,0.7,,1.18,2.13,0.0,Financial Services,Asset Management
+DSU,"Blackrock Debt Strategies Fund,",Hold,0.7,,11.47,4.94,0.0,Financial Services,Asset Management
+PGR,Progressive Corporation (The),Hold,0.7,17.46,13.57,7.86,-4.1,Financial Services,Insurance - Property & Casualty
+FLS,Flowserve Corporation,Hold,0.7,16.78,25.64,6.21,0.0,Industrials,Specialty Industrial Machinery
+BGT,BlackRock Floating Rate Income ,Hold,0.7,,11.38,4.9,0.0,Financial Services,Asset Management
+EXPE,"Expedia Group, Inc.",Hold,0.7,13.03,22.33,4.08,4.2,Consumer Cyclical,Travel Services
+FRA,Blackrock Floating Rate Income ,Hold,0.7,,11.82,5.0,0.0,Financial Services,Asset Management
+ITT,ITT Inc.,Hold,0.7,24.92,25.83,8.58,0.0,Industrials,Specialty Industrial Machinery
+FIX,"Comfort Systems USA, Inc.",Hold,0.7,40.79,35.59,12.61,0.4,Industrials,Engineering & Construction
+CG,The Carlyle Group Inc.,Hold,0.7,14.21,21.41,5.12,0.7,Financial Services,Asset Management
+CW,Curtiss-Wright Corporation,Hold,0.7,41.47,43.65,7.91,17.1,Industrials,Aerospace & Defense
+DGX,Quest Diagnostics Incorporated,Hold,0.7,17.2,20.13,6.34,0.0,Healthcare,Diagnostics & Research
+CRVL,CorVel Corp.,Hold,0.7,,48.13,15.09,-0.2,Financial Services,Insurance Brokers
+WAB,Westinghouse Air Brake Technolo,Hold,0.7,23.2,29.32,5.61,10.8,Industrials,Railroads
+GN.CO,GN Store Nord A/S,Hold,0.7,9.58,18.52,3.56,0.0,Healthcare,Medical Devices
+EFX,"Equifax, Inc.",Hold,0.69,25.61,47.15,5.8,14.3,Industrials,Consulting Services
+FOX,Fox Corporation,Hold,0.69,22.09,12.85,8.4,0.0,Communication Services,Entertainment
+ELP,Companhia Paranaense de Energia,Hold,0.69,11.42,14.63,4.44,0.0,Utilities,Utilities - Regulated Electric
+EIG,Employers Holdings Inc,Hold,0.69,12.3,11.11,2.24,17.7,Financial Services,Insurance - Specialty
+KR,Kroger Company (The),Hold,0.69,15.14,18.89,5.53,0.2,Consumer Defensive,Grocery Stores
+SFL,SFL Corporation Ltd,Hold,0.69,11.5,23.0,4.17,0.0,Industrials,Marine Shipping
+KINS,"Kingstone Companies, Inc",Hold,0.69,12.85,9.78,5.17,2.6,Financial Services,Insurance - Property & Casualty
+NDSN,Nordson Corporation,Hold,0.69,21.07,28.16,7.37,0.0,Industrials,Specialty Industrial Machinery
+ATLC,Atlanticus Holdings Corporation,Hold,0.69,8.62,9.74,3.81,0.2,Financial Services,Credit Services
+KSS,Kohl's Corporation,Hold,0.69,6.42,11.77,2.31,0.0,Consumer Cyclical,Department Stores
+DOV,Dover Corporation,Hold,0.69,19.65,23.86,6.94,0.0,Industrials,Specialty Industrial Machinery
+ST,Sensata Technologies Holding pl,Hold,0.69,9.8,40.65,3.72,0.0,Technology,Scientific & Technical Instruments
+CMA,Comerica Incorporated,Hold,0.69,12.71,13.36,0.92,26.5,Financial Services,Banks - Regional
+CMS,CMS Energy Corporation,Hold,0.69,19.93,21.11,3.09,20.2,Utilities,Utilities - Regulated Electric
+HIX,Western Asset High Income Fund ,Hold,0.68,,11.83,4.83,0.0,Financial Services,Asset Management
+MYE,"Myers Industries, Inc.",Hold,0.68,12.88,53.82,5.28,0.0,Consumer Cyclical,Packaging & Containers
+SRE,DBA Sempra,Hold,0.68,15.62,17.65,1.93,21.7,Utilities,Utilities - Diversified
+TTI,"Tetra Technologies, Inc.",Hold,0.68,9.64,4.27,6.84,0.0,Industrials,Conglomerates
+HPI,John Hancock Preferred Income F,Hold,0.68,,8.24,3.84,0.0,Financial Services,Asset Management
+MGIC,Magic Software Enterprises Ltd.,Hold,0.68,20.65,27.71,7.21,0.0,Technology,Information Technology Services
+AZZ,AZZ Inc.,Hold,0.68,19.75,12.62,6.92,2.7,Industrials,Specialty Business Services
+HPF,John Hancock Pfd Income Fund II,Hold,0.68,,8.29,3.86,0.0,Financial Services,Asset Management
+EZPW,"EZCORP, Inc.",Hold,0.68,10.73,11.18,4.7,-1.0,Financial Services,Credit Services
+TEL,TE Connectivity plc,Hold,0.68,23.29,43.07,8.28,0.2,Technology,Electronic Components
+ADUS,Addus HomeCare Corporation,Hold,0.68,18.75,24.69,6.52,0.0,Healthcare,Medical Care Facilities
+AMKR,"Amkor Technology, Inc.",Hold,0.68,11.12,17.4,3.65,2.3,Technology,Semiconductor Equipment & Materials
+CVX,Chevron Corporation,Hold,0.68,14.16,17.86,5.23,0.1,Energy,Oil & Gas Integrated
+SXC,"SunCoke Energy, Inc.",Hold,0.68,11.11,7.64,5.54,0.0,Basic Materials,Coking Coal
+NCLH,Norwegian Cruise Line Holdings ,Hold,0.68,11.43,13.57,4.4,0.0,Consumer Cyclical,Travel Services
+TWIN,"Twin Disc, Incorporated",Hold,0.68,7.74,30.41,2.47,0.0,Industrials,Specialty Industrial Machinery
+STRL,"Sterling Infrastructure, Inc.",Hold,0.67,42.04,30.87,9.07,10.5,Industrials,Engineering & Construction
+JPC,Nuveen Preferred & Income Oppor,Hold,0.67,,9.52,4.14,0.0,Financial Services,Asset Management
+EDU,New Oriental Education & Techno,Hold,0.67,10.95,20.57,3.82,0.0,Consumer Defensive,Education & Training Services
+HPS,John Hancock Preferred Income F,Hold,0.67,,8.41,3.87,0.0,Financial Services,Asset Management
+GMED,"Globus Medical, Inc.",Hold,0.67,15.88,40.52,5.84,0.0,Healthcare,Medical Devices
+BGC,"BGC Group, Inc.",Hold,0.67,9.2,37.5,2.76,2.7,Financial Services,Capital Markets
+GEO,Geo Group Inc (The) REIT,Hold,0.67,16.47,118.27,5.01,17.1,Industrials,Security & Protection Services
+PAG,"Penske Automotive Group, Inc.",Hold,0.67,12.27,12.01,4.94,-0.5,Consumer Cyclical,Auto & Truck Dealerships
+OXLCO,Oxford Lane Capital Corp. - Pre,Hold,0.66,,26.76,8.49,0.0,Financial Services,Asset Management
+HTD,John Hancock Tax Advantaged Div,Hold,0.66,,5.26,2.9,0.0,Financial Services,Asset Management
+ICLR,ICON plc,Hold,0.66,12.59,19.53,4.35,0.0,Healthcare,Diagnostics & Research
+TBBK,"The Bancorp, Inc.",Hold,0.66,12.18,13.78,2.64,11.0,Financial Services,Banks - Regional
+KT,KT Corporation,Hold,0.66,6.07,21.78,1.47,0.0,Communication Services,Telecom Services
+DXCM,"DexCom, Inc.",Hold,0.66,44.1,67.32,5.97,28.7,Healthcare,Medical Devices
+MATAS.CO,Matas A/S,Hold,0.66,11.62,18.72,4.06,0.0,Consumer Cyclical,Specialty Retail
+SLRC,SLR Investment Corp.,Hold,0.66,9.9,10.02,4.11,0.0,Financial Services,Asset Management
+FFBC,First Financial Bancorp.,Hold,0.65,10.29,10.08,1.3,19.0,Financial Services,Banks - Regional
+ETN,"Eaton Corporation, PLC",Hold,0.65,32.59,39.67,7.82,8.6,Industrials,Specialty Industrial Machinery
+BDX,"Becton, Dickinson and Company",Hold,0.65,11.63,35.45,3.69,1.5,Healthcare,Medical Instruments & Supplies
+AER,AerCap Holdings N.V.,Hold,0.65,9.14,9.94,3.67,0.0,Industrials,Rental & Leasing Services
+HTHT,H World Group Limited,Hold,0.65,15.9,22.64,5.37,0.0,Consumer Cyclical,Lodging
+SGU,Star Group L.P.,Hold,0.65,13.4,6.48,6.82,0.0,Energy,Oil & Gas Refining & Marketing
+HYT,Blackrock Corporate High Yield ,Hold,0.65,,11.25,4.36,0.0,Financial Services,Asset Management
+CENX,Century Aluminum Company,Hold,0.65,16.06,18.56,5.44,0.2,Basic Materials,Aluminum
+FCT,First Trust Senior Floating Rat,Hold,0.65,,11.12,4.34,0.0,Financial Services,Asset Management
+ACGL,Arch Capital Group Ltd.,Hold,0.65,9.57,8.87,3.8,1.6,Financial Services,Insurance - Diversified
+PBI,Pitney Bowes Inc.,Hold,0.65,12.11,21.25,4.09,0.0,Industrials,Integrated Freight & Logistics
+TRGP,"Targa Resources, Inc.",Hold,0.65,20.26,30.76,7.44,-3.0,Energy,Oil & Gas Midstream
+PDT,John Hancock Premium Dividend F,Hold,0.64,,6.15,2.96,0.0,Financial Services,Asset Management
+HUM,Humana Inc.,Hold,0.64,13.75,16.34,4.72,0.0,Healthcare,Healthcare Plans
+UVV,Universal Corporation,Hold,0.64,,14.3,5.13,0.0,Consumer Defensive,Tobacco
+FITB,Fifth Third Bancorp,Hold,0.64,11.65,13.25,1.1,20.7,Financial Services,Banks - Regional
+FMC,FMC Corporation,Hold,0.64,9.15,13.89,3.13,0.0,Basic Materials,Agricultural Inputs
+HMC,"Honda Motor Company, Ltd.",Hold,0.64,6.7,9.13,2.51,0.0,Consumer Cyclical,Auto Manufacturers
+SSNC,"SS&C Technologies Holdings, Inc",Hold,0.64,14.81,26.87,4.82,0.3,Technology,Software - Application
+CIG,Comp En De Mn Cemig,Hold,0.64,12.93,4.11,8.19,0.0,Utilities,Utilities - Diversified
+BLW,Blackrock Limited Duration Inco,Hold,0.64,,11.2,4.33,0.0,Financial Services,Asset Management
+MOV,Movado Group Inc.,Hold,0.64,6.62,21.55,1.61,0.0,Consumer Cyclical,Luxury Goods
+FT,Franklin Universal Trust,Hold,0.64,,5.72,2.85,0.0,Financial Services,Asset Management
+ALGN,"Align Technology, Inc.",Hold,0.64,20.19,37.74,6.72,0.0,Healthcare,Medical Instruments & Supplies
+DRI,"Darden Restaurants, Inc.",Hold,0.64,19.23,22.87,7.38,-4.9,Consumer Cyclical,Restaurants
+ECL,Ecolab Inc.,Hold,0.64,36.0,36.78,7.76,10.6,Basic Materials,Specialty Chemicals
+AGM,Federal Agricultural Mortgage C,Hold,0.64,9.93,10.84,0.66,21.9,Financial Services,Credit Services
+MTB,M&T Bank Corporation,Hold,0.63,11.93,12.58,1.29,19.5,Financial Services,Banks - Regional
+KWR,Quaker Houghton,Hold,0.63,13.6,22.61,4.28,0.4,Basic Materials,Specialty Chemicals
+BG,Bunge Limited,Hold,0.63,8.25,9.85,3.13,0.0,Consumer Defensive,Farm Products
+OXLCP,Oxford Lane Capital Corp. - 6.2,Hold,0.63,,27.95,8.49,0.0,Financial Services,Asset Management
+ULBI,Ultralife Corporation,Hold,0.63,9.62,27.94,2.93,0.0,Industrials,Electrical Equipment & Parts
+MHK,"Mohawk Industries, Inc.",Hold,0.63,10.76,15.92,3.4,0.9,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+T,AT&T Inc.,Hold,0.63,12.32,15.77,4.17,0.0,Communication Services,Telecom Services
+NSC,Norfolk Southern Corporation,Hold,0.63,21.09,19.56,6.74,0.0,Industrials,Railroads
+LNN,Lindsay Corporation,Hold,0.63,21.54,19.81,7.03,-0.7,Industrials,Farm & Heavy Construction Machinery
+DHF,Dreyfus High Yield Strategies F,Hold,0.63,,11.68,4.32,0.0,Financial Services,Asset Management
+OLED,Universal Display Corporation,Hold,0.63,28.19,31.35,8.65,0.0,Technology,Electronic Components
+PBA,Pembina Pipeline Corp.,Hold,0.62,15.6,16.51,5.15,0.0,Energy,Oil & Gas Midstream
+NX,Quanex Building Products Corpor,Hold,0.62,8.52,53.68,2.9,0.0,Industrials,Building Products & Equipment
+ZBRA,Zebra Technologies Corporation,Hold,0.62,20.87,31.63,6.54,0.0,Technology,Communication Equipment
+RF,Regions Financial Corporation,Hold,0.62,11.64,12.29,1.33,18.3,Financial Services,Banks - Regional
+PAA,"Plains All American Pipeline, L",Hold,0.62,13.28,19.85,4.21,0.0,Energy,Oil & Gas Midstream
+AXL,American Axle & Manufacturing H,Hold,0.62,10.19,27.17,3.01,0.0,Consumer Cyclical,Auto Parts
+STE,STERIS plc (Ireland),Hold,0.62,22.72,36.77,5.82,5.8,Healthcare,Medical Devices
+SCHO.CO,Schouw & Co. A/S,Hold,0.62,11.81,15.8,3.91,0.0,Industrials,Conglomerates
+BELFA,Bel Fuse Inc.,Hold,0.62,23.19,30.46,7.17,0.0,Technology,Electronic Components
+BCE,"BCE, Inc.",Hold,0.62,11.4,76.87,4.84,0.0,Communication Services,Telecom Services
+MTN,"Vail Resorts, Inc.",Hold,0.62,18.92,20.19,5.97,0.0,Consumer Cyclical,Resorts & Casinos
+GTLS,"Chart Industries, Inc.",Hold,0.62,14.41,34.26,4.71,0.0,Industrials,Specialty Industrial Machinery
+FMS,Fresenius Medical Care AG,Hold,0.62,9.86,20.83,2.91,0.0,Healthcare,Medical Care Facilities
+MT,Arcelor Mittal NY Registry Shar,Hold,0.61,8.25,21.08,2.18,0.0,Basic Materials,Steel
+PFSI,"PennyMac Financial Services, In",Hold,0.61,6.67,14.33,1.69,-0.2,Financial Services,Mortgage Finance
+CEE,The Central and Eastern Europe ,Hold,0.61,,3.54,2.13,0.0,Financial Services,Asset Management
+PAAS,Pan American Silver Corp.,Hold,0.61,15.33,33.15,4.88,0.0,Basic Materials,Gold
+ACP,Aberdeen Income Credit Strategi,Hold,0.61,,17.44,5.57,0.0,Financial Services,Asset Management
+APH,Amphenol Corporation,Hold,0.61,49.4,42.51,12.5,2.0,Technology,Electronic Components
+STT,State Street Corporation,Hold,0.61,12.04,12.65,0.81,22.7,Financial Services,Asset Management
+ROL,"Rollins, Inc.",Hold,0.61,51.12,56.69,14.37,0.0,Consumer Cyclical,Personal Services
+NOAH,Noah Holdings Limited,Hold,0.61,10.59,12.76,3.55,0.0,Financial Services,Asset Management
+GLP,Global Partners LP,Hold,0.6,20.57,16.44,4.67,8.5,Energy,Oil & Gas Midstream
+OXY,Occidental Petroleum Corporatio,Hold,0.6,14.41,18.44,4.51,0.0,Energy,Oil & Gas E&P
+PSO,"Pearson, Plc",Hold,0.6,16.45,16.65,5.19,0.0,Communication Services,Publishing
+ETR,Entergy Corporation,Hold,0.6,11.2,28.05,3.07,1.0,Utilities,Utilities - Regulated Electric
+DGICB,"Donegal Group, Inc.",Hold,0.6,,6.38,2.71,0.0,Financial Services,Insurance - Property & Casualty
+WBS,Webster Financial Corporation,Hold,0.6,10.39,12.1,1.08,16.9,Financial Services,Banks - Regional
+JBHT,"J.B. Hunt Transport Services, I",Hold,0.6,20.67,26.93,6.06,0.8,Industrials,Integrated Freight & Logistics
+NVMI,Nova Ltd.,Hold,0.6,35.69,40.65,10.12,0.0,Technology,Semiconductor Equipment & Materials
+MPWR,"Monolithic Power Systems, Inc.",Hold,0.6,42.99,19.68,12.0,-2.2,Technology,Semiconductors
+PLPC,Preformed Line Products Company,Hold,0.6,,18.02,5.58,0.0,Industrials,Electrical Equipment & Parts
+DXPE,"DXP Enterprises, Inc.",Hold,0.6,25.93,23.33,7.73,-0.5,Industrials,Industrial Distribution
+USAC,"USA Compression Partners, LP",Hold,0.6,23.27,35.78,7.11,0.0,Energy,Oil & Gas Equipment & Services
+TTEK,"Tetra Tech, Inc.",Hold,0.6,25.04,54.43,8.34,0.0,Industrials,Engineering & Construction
+AEM,Agnico Eagle Mines Limited,Hold,0.6,27.14,26.33,7.81,0.0,Basic Materials,Gold
+CRESY,Cresud S.A.C.I.F. y A.,Hold,0.59,5.29,16.32,0.74,0.0,Industrials,Conglomerates
+GNK,Genco Shipping & Trading Limite,Hold,0.59,9.36,15.57,2.57,0.8,Industrials,Marine Shipping
+MFG,"Mizuho Financial Group, Inc. Sp",Hold,0.59,4.27,12.64,0.32,0.0,Financial Services,Banks - Regional
+UNM,Unum Group,Hold,0.59,8.86,9.44,2.22,6.1,Financial Services,Insurance - Life
+SPB,"Spectrum Brands Holdings, Inc.",Hold,0.59,10.11,27.37,2.74,0.0,Consumer Defensive,Household & Personal Products
+SYT,"SYLA Technologies Co., Ltd.",Hold,0.59,,9.04,3.27,0.0,Technology,Software - Application
+AMT,American Tower Corporation (REI,Hold,0.59,33.02,36.22,4.53,20.0,Real Estate,REIT - Specialty
+FLR,Fluor Corporation,Hold,0.59,18.26,5.33,3.68,23.2,Industrials,Engineering & Construction
+HIO,Western Asset High Income Oppor,Hold,0.59,,15.23,4.79,0.0,Financial Services,Asset Management
+BIDU,"Baidu, Inc.",Hold,0.59,8.06,8.8,2.93,0.0,Communication Services,Internet Content & Information
+AEE,Ameren Corporation,Hold,0.59,19.98,21.8,2.69,17.5,Utilities,Utilities - Regulated Electric
+CUK,Carnival Plc,Hold,0.59,16.14,14.2,5.16,0.0,Consumer Cyclical,Travel Services
+HWKN,"Hawkins, Inc.",Hold,0.59,37.67,39.81,10.43,0.0,Basic Materials,Specialty Chemicals
+NWBI,"Northwest Bancshares, Inc.",Hold,0.59,12.43,14.09,0.79,21.8,Financial Services,Banks - Regional
+NATR,"Nature's Sunshine Products, Inc",Hold,0.58,18.65,27.79,5.41,0.0,Consumer Defensive,Packaged Foods
+NFLX,"Netflix, Inc.",Hold,0.58,49.39,50.0,15.05,-5.1,Communication Services,Entertainment
+KMT,Kennametal Inc.,Hold,0.58,15.32,18.32,4.59,0.0,Industrials,Tools & Accessories
+MPX,Marine Products Corporation,Hold,0.58,17.78,22.23,5.21,0.0,Consumer Cyclical,Recreational Vehicles
+FLEX,Flex Ltd.,Hold,0.58,18.16,22.24,4.51,4.3,Technology,Electronic Components
+ARTW,"Art's-Way Manufacturing Co., In",Hold,0.58,,9.74,3.36,0.0,Industrials,Farm & Heavy Construction Machinery
+KEQU,Kewaunee Scientific Corporation,Hold,0.58,26.55,14.97,6.74,4.7,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+MRC,MRC Global Inc.,Hold,0.58,13.41,30.04,3.93,0.0,Energy,Oil & Gas Equipment & Services
+CSCO,"Cisco Systems, Inc.",Hold,0.58,17.42,27.72,6.2,-4.9,Technology,Communication Equipment
+SXI,Standex International Corporati,Hold,0.58,17.05,32.81,5.47,-1.8,Industrials,Specialty Industrial Machinery
+WEYS,"Weyco Group, Inc.",Hold,0.58,21.86,10.42,7.31,0.0,Consumer Cyclical,Footwear & Accessories
+PNFP,"Pinnacle Financial Partners, In",Hold,0.58,12.04,12.21,1.15,19.0,Financial Services,Banks - Regional
+BSBR,Banco Santander Brasil SA,Hold,0.58,6.06,15.26,1.13,0.0,Financial Services,Banks - Regional
+NGS,"Natural Gas Services Group, Inc",Hold,0.58,18.4,18.26,4.62,4.5,Energy,Oil & Gas Equipment & Services
+AES,The AES Corporation,Hold,0.58,6.66,7.34,2.46,0.0,Utilities,Utilities - Diversified
+CCL,Carnival Corporation,Hold,0.57,17.28,15.57,5.16,0.4,Consumer Cyclical,Travel Services
+CXE,MFS High Income Municipal Trust,Hold,0.57,,6.73,2.62,0.0,Financial Services,Asset Management
+CIF,MFS Intermediate High Income Fu,Hold,0.57,,10.91,3.6,0.0,Financial Services,Asset Management
+CR,Crane Company,Hold,0.57,32.25,38.61,8.85,0.0,Industrials,Specialty Industrial Machinery
+HLX,"Helix Energy Solutions Group, I",Hold,0.57,8.22,19.53,1.92,0.0,Energy,Oil & Gas Equipment & Services
+OFG,OFG Bancorp,Hold,0.57,11.06,10.28,1.66,13.6,Financial Services,Banks - Regional
+DOLE,Dole plc,Hold,0.57,10.2,11.68,3.21,0.0,Consumer Defensive,Farm Products
+SANM,Sanmina Corporation,Hold,0.57,14.83,21.06,4.65,-2.3,Technology,Electronic Components
+ABBN.SW,ABB LTD N,Hold,0.57,33.92,29.26,9.07,0.0,Industrials,Electrical Equipment & Parts
+VAC,Marriott Vacations Worldwide Co,Hold,0.57,11.08,14.15,3.32,0.0,Consumer Cyclical,Resorts & Casinos
+CENTA,Central Garden & Pet Company,Hold,0.57,14.81,18.99,4.22,0.6,Consumer Defensive,Packaged Foods
+FN,Fabrinet,Hold,0.57,28.6,35.34,7.99,0.0,Technology,Electronic Components
+SCSC,"ScanSource, Inc.",Hold,0.57,11.0,14.79,3.22,0.0,Technology,Electronics & Computer Distribution
+MPC,Marathon Petroleum Corporation,Hold,0.56,17.14,24.11,3.47,7.2,Energy,Oil & Gas Refining & Marketing
+MGRC,McGrath RentCorp,Hold,0.56,21.04,12.31,6.47,0.0,Industrials,Rental & Leasing Services
+SPE,"Special Opportunities Fund, Inc",Hold,0.56,,4.52,2.02,0.0,Financial Services,Asset Management
+DNP,"DNP Select Income Fund, Inc.",Hold,0.56,,4.23,1.9,0.0,Financial Services,Asset Management
+GT,The Goodyear Tire & Rubber Comp,Hold,0.56,7.62,12.79,1.9,0.0,Consumer Cyclical,Auto Parts
+CVGW,"Calavo Growers, Inc.",Hold,0.56,14.95,33.3,4.29,0.0,Consumer Defensive,Food Distribution
+MDT,Medtronic plc.,Hold,0.56,15.72,25.48,4.41,0.0,Healthcare,Medical Devices
+SIMO,Silicon Motion Technology Corpo,Hold,0.56,18.85,27.86,5.34,0.0,Technology,Semiconductors
+CAKE,The Cheesecake Factory Incorpor,Hold,0.56,17.86,20.66,4.31,3.9,Consumer Cyclical,Restaurants
+IBKR,"Interactive Brokers Group, Inc.",Hold,0.56,9.46,34.42,2.37,0.0,Financial Services,Capital Markets
+CAMT,Camtek Ltd.,Hold,0.56,31.41,37.9,8.54,0.0,Technology,Semiconductor Equipment & Materials
+GEF,Greif Inc.,Hold,0.56,13.47,17.69,4.51,-3.9,Consumer Cyclical,Packaging & Containers
+DLB,Dolby Laboratories,Hold,0.56,20.0,28.86,5.64,0.0,Industrials,Specialty Business Services
+SIEB,Siebert Financial Corp.,Hold,0.55,,8.39,2.86,0.0,Financial Services,Capital Markets
+DY,"Dycom Industries, Inc.",Hold,0.55,28.29,33.45,7.63,0.0,Industrials,Engineering & Construction
+TTMI,"TTM Technologies, Inc.",Hold,0.55,23.32,61.27,3.51,18.9,Technology,Electronic Components
+TEI,Templeton Emerging Markets Inco,Hold,0.55,,18.56,5.2,0.0,Financial Services,Asset Management
+NRG,"NRG Energy, Inc.",Hold,0.55,22.98,25.21,6.31,-0.6,Utilities,Utilities - Independent Power Producers
+DKL,"Delek Logistics Partners, L.P.",Hold,0.55,18.66,14.84,5.41,0.0,Energy,Oil & Gas Refining & Marketing
+FMY,First Trust Motgage Income Fund,Hold,0.55,,9.27,3.03,0.0,Financial Services,Asset Management
+MMSI,"Merit Medical Systems, Inc.",Hold,0.55,22.77,41.4,4.32,10.5,Healthcare,Medical Instruments & Supplies
+ACAD,ACADIA Pharmaceuticals Inc.,Hold,0.55,27.59,16.51,5.56,8.7,Healthcare,Biotechnology
+NJR,NewJersey Resources Corporation,Hold,0.55,15.72,11.03,5.09,0.0,Utilities,Utilities - Regulated Gas
+AGO,Assured Guaranty Ltd.,Hold,0.55,13.18,9.96,2.54,11.3,Financial Services,Insurance - Specialty
+NWN,Northwest Natural Holding Compa,Hold,0.54,14.21,16.07,2.74,7.3,Utilities,Utilities - Regulated Gas
+AWF,Alliancebernstein Global High I,Hold,0.54,,13.88,4.06,0.0,Financial Services,Asset Management
+NSIT,"Insight Enterprises, Inc.",Hold,0.54,12.98,29.0,3.39,0.0,Technology,Electronics & Computer Distribution
+PSA,Public Storage,Hold,0.54,26.9,28.4,7.06,0.0,Real Estate,REIT - Industrial
+TATT,TAT Technologies Ltd.,Hold,0.54,20.66,28.39,5.61,0.0,Industrials,Aerospace & Defense
+AGI,Alamos Gold Inc.,Hold,0.54,23.03,40.85,6.46,0.0,Basic Materials,Gold
+FNB,F.N.B. Corporation,Hold,0.54,11.14,12.18,0.96,16.4,Financial Services,Banks - Regional
+POST,"Post Holdings, Inc.",Hold,0.54,16.9,18.91,4.05,3.1,Consumer Defensive,Packaged Foods
+MFA,"MFA Financial, Inc.",Hold,0.54,5.77,9.49,1.23,0.0,Real Estate,REIT - Mortgage
+MAIN,Main Street Capital Corporation,Hold,0.54,16.88,11.04,6.02,-2.8,Financial Services,Asset Management
+CGNX,Cognex Corporation,Hold,0.54,36.07,50.19,4.02,24.7,Technology,Scientific & Technical Instruments
+DSWL,"Deswell Industries, Inc.",Hold,0.54,,4.27,1.79,0.0,Technology,Electronic Components
+EVG,Eaton Vance Short Diversified I,Hold,0.54,,11.47,3.48,0.0,Financial Services,Asset Management
+BEN,"Franklin Resources, Inc.",Hold,0.54,9.49,35.75,2.22,0.1,Financial Services,Asset Management
+GLAD,Gladstone Capital Corporation,Hold,0.54,13.75,7.15,5.39,0.0,Financial Services,Asset Management
+CORT,Corcept Therapeutics Incorporat,Hold,0.54,39.51,60.13,9.18,6.0,Healthcare,Biotechnology
+TY,Tri Continental Corporation,Hold,0.54,,5.27,2.03,0.0,Financial Services,Asset Management
+CCNE,CNB Financial Corporation,Hold,0.54,9.34,10.13,0.89,14.4,Financial Services,Banks - Regional
+KRC,Kilroy Realty Corporation,Hold,0.54,28.38,21.79,1.82,29.6,Real Estate,REIT - Office
+BR,"Broadridge Financial Solutions,",Hold,0.54,27.0,38.02,9.02,-6.3,Technology,Information Technology Services
+SXT,Sensient Technologies Corporati,Hold,0.53,32.83,35.62,6.3,8.3,Basic Materials,Specialty Chemicals
+SOR,"Source Capital, Inc. Cmn Shs of",Hold,0.53,,9.14,2.85,0.0,Financial Services,Asset Management
+NFG,National Fuel Gas Company,Hold,0.53,9.81,186.93,6.15,0.0,Energy,Oil & Gas Integrated
+PCG,Pacific Gas & Electric Co.,Hold,0.53,9.45,12.83,2.43,0.0,Utilities,Utilities - Regulated Electric
+CNP,"CenterPoint Energy, Inc (Holdin",Hold,0.53,21.44,26.08,2.89,14.7,Utilities,Utilities - Regulated Electric
+CENT,Central Garden & Pet Company,Hold,0.53,16.1,20.9,4.22,0.0,Consumer Defensive,Packaged Foods
+DGII,Digi International Inc.,Hold,0.53,16.26,30.36,4.27,0.0,Technology,Communication Equipment
+CX,"Cemex, S.A.B. de C.V. Sponsored",Hold,0.53,11.52,13.79,3.14,0.0,Basic Materials,Building Materials
+FMX,Fomento Economico Mexicano S.A.,Hold,0.53,18.41,27.64,4.93,0.0,Consumer Defensive,Beverages - Brewers
+AUDC,AudioCodes Ltd.,Hold,0.53,12.8,18.75,3.29,0.0,Technology,Communication Equipment
+OPHC,"OptimumBank Holdings, Inc.",Hold,0.53,,3.42,1.52,0.0,Financial Services,Banks - Regional
+VSEC,VSE Corporation,Hold,0.53,30.71,59.06,4.53,19.1,Industrials,Aerospace & Defense
+IMAX,Imax Corporation,Hold,0.52,21.24,44.95,4.98,4.8,Communication Services,Entertainment
+TMUS,"T-Mobile US, Inc.",Hold,0.52,22.32,22.47,5.76,-0.2,Communication Services,Telecom Services
+JJSF,J & J Snack Foods Corp.,Hold,0.52,18.8,29.5,4.95,0.0,Consumer Defensive,Packaged Foods
+III,"Information Services Group, Inc",Hold,0.52,13.37,28.41,3.3,0.0,Technology,Information Technology Services
+ABR,Arbor Realty Trust,Hold,0.52,7.7,11.44,1.79,0.0,Real Estate,REIT - Mortgage
+MCY,Mercury General Corporation,Hold,0.52,10.76,13.55,2.84,0.0,Financial Services,Insurance - Property & Casualty
+NBN,Northeast Bank,Hold,0.52,8.09,10.88,2.03,0.0,Financial Services,Banks - Regional
+EBR,Centrais Electricas Brasileiras,Hold,0.52,9.38,9.0,2.89,0.0,Utilities,Utilities - Renewable
+RNST,Renasant Corporation,Hold,0.52,14.76,15.49,0.72,22.7,Financial Services,Banks - Regional
+ASX,"ASE Technology Holding Co., Ltd",Hold,0.52,14.09,20.73,3.55,0.0,Technology,Semiconductors
+EE,"Excelerate Energy, Inc.",Hold,0.51,19.06,15.99,5.1,0.0,Energy,Oil & Gas Midstream
+SYK,Stryker Corporation,Hold,0.51,29.61,54.07,7.49,2.7,Healthcare,Medical Devices
+MORN,"Morningstar, Inc.",Hold,0.51,31.29,31.75,7.93,-1.0,Financial Services,Financial Data & Stock Exchanges
+CXH,MFS Investment Grade Municipal ,Hold,0.51,,8.4,2.54,0.0,Financial Services,Asset Management
+RH,RH,Hold,0.51,17.68,51.82,5.15,0.0,Consumer Cyclical,Specialty Retail
+SCD,LMP Capital and Income Fund Inc,Hold,0.51,,3.07,1.31,0.0,Financial Services,Asset Management
+FONR,Fonar Corporation,Hold,0.51,,12.77,3.54,0.0,Healthcare,Diagnostics & Research
+AIN,Albany International Corporatio,Hold,0.51,18.79,29.05,4.78,0.0,Consumer Cyclical,Textile Manufacturing
+DTE,DTE Energy Company,Hold,0.51,19.05,18.56,2.92,11.7,Utilities,Utilities - Regulated Electric
+ENSG,"The Ensign Group, Inc.",Hold,0.51,24.07,26.72,5.3,3.5,Healthcare,Medical Care Facilities
+CAAS,"China Automotive Systems, Inc.",Hold,0.5,6.59,4.4,3.04,0.0,Consumer Cyclical,Auto Parts
+KAR,"OPENLANE, Inc.",Hold,0.5,25.79,42.69,3.84,13.9,Consumer Cyclical,Auto & Truck Dealerships
+NBHC,National Bank Holdings Corporat,Hold,0.5,11.84,12.65,1.2,13.3,Financial Services,Banks - Regional
+FDP,"Fresh Del Monte Produce, Inc.",Hold,0.5,13.55,11.68,3.37,2.5,Consumer Defensive,Farm Products
+NECB,"NorthEast Community Bancorp, In",Hold,0.5,7.39,6.72,2.29,0.7,Financial Services,Banks - Regional
+IDA,"IDACORP, Inc.",Hold,0.5,20.7,21.36,2.27,16.8,Utilities,Utilities - Regulated Electric
+PAM,Pampa Energia S.A.,Hold,0.5,9.8,8.83,2.97,0.0,Utilities,Utilities - Independent Power Producers
+LQDT,"Liquidity Services, Inc.",Hold,0.5,20.18,30.65,5.82,-3.5,Consumer Cyclical,Internet Retail
+DLTR,"Dollar Tree, Inc.",Hold,0.5,19.05,22.77,4.69,0.0,Consumer Defensive,Discount Stores
+SKT,Tanger Inc.,Hold,0.5,35.23,36.47,4.31,18.6,Real Estate,REIT - Retail
+CCU,"Compania Cervecerias Unidas, S.",Hold,0.5,14.21,12.39,3.9,0.0,Consumer Defensive,Beverages - Brewers
+FLIC,The First of Long Island Corpor,Hold,0.5,9.89,16.49,0.39,14.3,Financial Services,Banks - Regional
+C,"Citigroup, Inc.",Hold,0.5,13.29,14.11,0.57,20.8,Financial Services,Banks - Diversified
+WYNN,"Wynn Resorts, Limited",Hold,0.5,22.17,29.75,5.03,2.5,Consumer Cyclical,Resorts & Casinos
+JHI,John Hancock Investors Trust,Hold,0.5,,14.59,3.81,0.0,Financial Services,Asset Management
+GHI,Greystone Housing Impact Invest,Hold,0.49,7.17,24.38,0.94,0.0,Financial Services,Mortgage Finance
+SAFT,"Safety Insurance Group, Inc.",Hold,0.49,11.2,14.29,2.65,0.0,Financial Services,Insurance - Property & Casualty
+DSM,Dreyfus Strategic Municipal Bon,Hold,0.49,,8.29,2.39,0.0,Financial Services,Asset Management
+NKE,"Nike, Inc.",Hold,0.49,24.53,36.69,6.2,-0.4,Consumer Cyclical,Footwear & Accessories
+IOSP,Innospec Inc.,Hold,0.49,13.29,77.06,0.81,24.0,Basic Materials,Specialty Chemicals
+BCPC,Balchem Corporation,Hold,0.49,30.87,36.12,7.54,0.0,Basic Materials,Specialty Chemicals
+TSN,"Tyson Foods, Inc.",Hold,0.49,15.27,20.8,3.67,0.0,Consumer Defensive,Farm Products
+KMPR,Kemper Corporation,Hold,0.49,9.92,11.2,2.54,0.0,Financial Services,Insurance - Property & Casualty
+AL,Air Lease Corporation,Hold,0.49,12.54,10.02,2.77,5.4,Industrials,Rental & Leasing Services
+IP,International Paper Company,Hold,0.49,18.5,47.44,1.9,18.7,Consumer Cyclical,Packaging & Containers
+AON,Aon plc,Hold,0.49,21.23,31.05,5.26,0.0,Financial Services,Insurance Brokers
+MMT,MFS Multimarket Income Trust,Hold,0.49,,12.18,3.24,0.0,Financial Services,Asset Management
+ITUB,Itau Unibanco Banco Holding SA,Hold,0.48,7.02,8.83,1.58,0.0,Financial Services,Banks - Regional
+SNX,TD SYNNEX Corporation,Hold,0.48,11.5,17.37,2.71,-1.0,Technology,Electronics & Computer Distribution
+ELS,"Equity Lifestyle Properties, In",Hold,0.48,29.81,30.12,5.83,5.3,Real Estate,REIT - Residential
+CUBE,CubeSmart,Hold,0.48,22.98,24.2,4.65,4.4,Real Estate,REIT - Industrial
+PPBI,Pacific Premier Bancorp Inc,Hold,0.48,16.92,15.62,0.76,23.7,Financial Services,Banks - Regional
+FORTY,Formula Systems (1985) Ltd.,Hold,0.48,,24.33,5.83,0.0,Technology,Information Technology Services
+CASH,"Pathward Financial, Inc.",Hold,0.48,9.67,10.62,2.52,-0.4,Financial Services,Banks - Regional
+SMG,Scotts Miracle-Gro Company (The,Hold,0.48,16.31,119.24,6.69,-0.2,Basic Materials,Agricultural Inputs
+OFS,OFS Capital Corporation,Hold,0.48,8.72,3.76,4.64,0.0,Financial Services,Asset Management
+MIND,"MIND Technology, Inc.",Hold,0.48,13.86,2.31,9.55,0.0,Technology,Scientific & Technical Instruments
+TRV,"The Travelers Companies, Inc.",Hold,0.48,12.0,11.27,3.21,0.0,Financial Services,Insurance - Property & Casualty
+SGC,"Superior Group of Companies, In",Hold,0.48,11.24,24.52,2.3,0.0,Consumer Cyclical,Apparel Manufacturing
+SPG,"Simon Property Group, Inc.",Hold,0.48,24.38,26.32,5.83,0.0,Real Estate,REIT - Retail
+CB,Chubb Limited,Hold,0.48,11.27,11.74,2.88,0.2,Financial Services,Insurance - Property & Casualty
+REX,REX American Resources Corporat,Hold,0.48,23.94,16.83,5.9,0.0,Basic Materials,Chemicals
+AXS,Axis Capital Holdings Limited,Hold,0.48,8.36,9.55,2.09,0.0,Financial Services,Insurance - Specialty
+DE,Deere & Company,Hold,0.48,23.03,24.69,4.31,6.1,Industrials,Farm & Heavy Construction Machinery
+ERIC,Ericsson,Hold,0.48,14.25,13.72,3.66,0.0,Technology,Communication Equipment
+NOK,Nokia Corporation Sponsored,Hold,0.47,12.17,22.42,2.59,0.0,Technology,Communication Equipment
+FIVE,"Five Below, Inc.",Hold,0.47,29.37,29.74,5.04,8.3,Consumer Cyclical,Specialty Retail
+LTC,"LTC Properties, Inc.",Hold,0.47,17.62,17.8,4.23,0.0,Real Estate,REIT - Healthcare Facilities
+AVB,"AvalonBay Communities, Inc.",Hold,0.47,35.88,24.75,2.91,24.8,Real Estate,REIT - Residential
+DG,Dollar General Corporation,Hold,0.47,17.01,20.19,3.97,0.0,Consumer Defensive,Discount Stores
+ACM,AECOM,Hold,0.47,22.81,24.38,5.3,0.0,Industrials,Engineering & Construction
+AMRC,"Ameresco, Inc.",Hold,0.47,10.23,17.39,1.39,4.9,Industrials,Engineering & Construction
+BBSI,"Barrett Business Services, Inc.",Hold,0.47,20.95,23.86,4.94,0.0,Industrials,Staffing & Employment Services
+AFG,"American Financial Group, Inc.",Hold,0.47,10.6,13.13,2.34,0.4,Financial Services,Insurance - Property & Casualty
+AEIS,"Advanced Energy Industries, Inc",Hold,0.47,28.5,72.05,2.58,28.0,Industrials,Electrical Equipment & Parts
+HFWA,Heritage Financial Corporation,Hold,0.47,12.3,16.43,0.7,15.4,Financial Services,Banks - Regional
+IVZ,Invesco Ltd,Hold,0.47,11.47,23.31,2.37,0.0,Financial Services,Asset Management
+FBIZ,First Business Financial Servic,Hold,0.46,9.31,8.71,1.25,9.0,Financial Services,Banks - Regional
+BKH,Black Hills Corporation,Hold,0.46,13.56,14.33,3.23,0.0,Utilities,Utilities - Regulated Gas
+PB,"Prosperity Bancshares, Inc.",Hold,0.46,11.64,12.29,1.34,10.1,Financial Services,Banks - Regional
+INBK,First Internet Bancorp,Hold,0.46,5.5,13.18,0.27,0.0,Financial Services,Banks - Regional
+DELL,Dell Technologies Inc.,Hold,0.46,14.24,20.95,5.36,-12.0,Technology,Computer Hardware
+BRO,"Brown & Brown, Inc.",Hold,0.46,25.08,29.56,5.72,0.0,Financial Services,Insurance Brokers
+UNF,Unifirst Corporation,Hold,0.46,20.3,21.38,4.61,0.4,Industrials,Specialty Business Services
+LAMR,Lamar Advertising Company,Hold,0.46,21.86,30.32,5.08,0.0,Real Estate,REIT - Specialty
+IMKTA,"Ingles Markets, Incorporated",Hold,0.46,13.64,19.61,2.98,0.0,Consumer Defensive,Grocery Stores
+BZ,KANZHUN LIMITED - American Depo,Hold,0.46,20.44,34.79,4.82,0.0,Communication Services,Internet Content & Information
+KTF,DWS Municipal Income Trust,Hold,0.46,,9.56,2.4,0.0,Financial Services,Asset Management
+E,ENI S.p.A.,Hold,0.46,10.09,18.95,1.86,0.0,Energy,Oil & Gas Integrated
+CWCO,Consolidated Water Co. Ltd.,Hold,0.46,20.27,29.59,4.05,3.5,Utilities,Utilities - Regulated Water
+TSI,"TCW Strategic Income Fund, Inc.",Hold,0.45,,13.27,3.12,0.0,Financial Services,Asset Management
+AOD,Aberdeen Total Dynamic Dividend,Hold,0.45,,13.68,3.21,0.0,Financial Services,Asset Management
+HBAN,Huntington Bancshares Incorpora,Hold,0.45,12.42,12.42,1.05,13.7,Financial Services,Banks - Regional
+MUA,"Blackrock MuniAssets Fund, Inc",Hold,0.45,,11.37,2.75,0.0,Financial Services,Asset Management
+IRDM,Iridium Communications Inc,Hold,0.45,26.6,25.54,5.22,3.2,Communication Services,Telecom Services
+ORRF,"Orrstown Financial Services, In",Hold,0.45,7.9,18.34,1.01,0.0,Financial Services,Banks - Regional
+VBF,Invesco Bond Fund,Hold,0.45,,13.2,3.08,0.0,Financial Services,Asset Management
+CACC,Credit Acceptance Corporation,Hold,0.45,14.36,21.98,3.34,-1.7,Financial Services,Credit Services
+ZEUS,"Olympic Steel, Inc.",Hold,0.45,12.25,22.78,2.4,0.0,Basic Materials,Steel
+BXC,Bluelinx Holdings Inc.,Hold,0.45,12.42,17.31,2.58,0.0,Industrials,Industrial Distribution
+MSEX,Middlesex Water Company,Hold,0.45,21.65,21.38,2.96,11.1,Utilities,Utilities - Regulated Water
+IBOC,International Bancshares Corpor,Hold,0.45,,10.61,2.58,0.0,Financial Services,Banks - Regional
+HASI,HA Sustainable Infrastructure C,Hold,0.45,10.69,25.64,1.93,0.0,Financial Services,Asset Management
+SENEB,Seneca Foods Corp.,Hold,0.44,,17.61,3.91,0.0,Consumer Defensive,Packaged Foods
+RGCO,RGC Resources Inc.,Hold,0.44,16.81,16.02,3.8,0.4,Utilities,Utilities - Regulated Gas
+SENEA,Seneca Foods Corp.,Hold,0.44,,17.31,3.91,0.0,Consumer Defensive,Packaged Foods
+FE,FirstEnergy Corp.,Hold,0.44,14.33,22.03,2.96,0.0,Utilities,Utilities - Regulated Electric
+UFCS,"United Fire Group, Inc",Hold,0.44,14.44,10.52,1.69,13.4,Financial Services,Insurance - Property & Casualty
+PNC,"PNC Financial Services Group, I",Hold,0.44,12.92,13.26,1.12,12.7,Financial Services,Banks - Regional
+GLRE,"Greenlight Reinsurance, Ltd.",Hold,0.44,8.29,10.05,1.71,-0.1,Financial Services,Insurance - Reinsurance
+POR,Portland General Electric Co,Hold,0.44,12.64,15.11,2.71,0.0,Utilities,Utilities - Regulated Electric
+HUBG,"Hub Group, Inc.",Hold,0.44,14.78,20.95,3.12,0.0,Industrials,Integrated Freight & Logistics
+WSFS,WSFS Financial Corporation,Hold,0.44,13.51,12.5,1.29,12.9,Financial Services,Banks - Regional
+ORI,Old Republic International Corp,Hold,0.44,11.27,10.21,2.64,1.0,Financial Services,Insurance - Property & Casualty
+BRK-B,Berkshire Hathaway Inc. New,Hold,0.44,23.99,12.84,5.79,0.0,Financial Services,Insurance - Diversified
+CDNS,"Cadence Design Systems, Inc.",Hold,0.44,48.72,90.21,12.73,0.0,Technology,Software - Application
+CHW,Calamos Global Dynamic Income F,Hold,0.44,7.02,12.25,0.9,0.0,Financial Services,Asset Management
+SNN,"Smith & Nephew SNATS, Inc.",Hold,0.44,24.17,33.17,5.45,0.0,Healthcare,Medical Devices
+CPF,Central Pacific Financial Corp ,Hold,0.44,10.85,12.21,0.82,11.5,Financial Services,Banks - Regional
+BTZ,BlackRock Credit Allocation Inc,Hold,0.44,,15.93,3.57,0.0,Financial Services,Asset Management
+HMN,Horace Mann Educators Corporati,Hold,0.44,11.27,15.07,0.78,11.5,Financial Services,Insurance - Property & Casualty
+HVT,"Haverty Furniture Companies, In",Hold,0.44,11.76,17.09,2.15,1.4,Consumer Cyclical,Home Improvement Retail
+JHS,John Hancock Income Securities ,Hold,0.44,,12.44,2.84,0.0,Financial Services,Asset Management
+CPK,Chesapeake Utilities Corporatio,Hold,0.44,19.38,22.43,4.27,0.0,Utilities,Utilities - Regulated Gas
+CRMT,"America's Car-Mart, Inc.",Hold,0.43,16.82,21.73,3.8,-1.5,Consumer Cyclical,Auto & Truck Dealerships
+NLY,Annaly Capital Management Inc.,Hold,0.43,7.52,19.88,0.73,0.0,Real Estate,REIT - Mortgage
+PFS,"Provident Financial Services, I",Hold,0.43,9.05,10.37,0.95,7.2,Financial Services,Banks - Regional
+BSAC,Banco Santander - Chile,Hold,0.43,8.22,9.83,1.61,0.0,Financial Services,Banks - Regional
+NGG,"National Grid Transco, PLC Nati",Hold,0.43,14.47,17.49,3.04,0.0,Utilities,Utilities - Regulated Electric
+LBAI,"Lakeland Bancorp, Inc.",Hold,0.43,8.39,10.41,0.78,6.9,Financial Services,Banks - Regional
+CRM,"Salesforce, Inc.",Hold,0.43,24.28,42.36,5.09,2.8,Technology,Software - Application
+NU,Nu Holdings Ltd.,Hold,0.43,20.34,28.66,4.39,0.0,Financial Services,Banks - Regional
+SUPN,"Supernus Pharmaceuticals, Inc.",Hold,0.43,17.68,30.1,2.76,6.1,Healthcare,Drug Manufacturers - Specialty & Generic
+CIM,Chimera Investment Corporation,Hold,0.43,8.01,9.18,1.66,0.0,Real Estate,REIT - Mortgage
+COO,"The Cooper Companies, Inc.",Hold,0.42,17.87,35.22,3.88,0.0,Healthcare,Medical Instruments & Supplies
+IMMR,Immersion Corporation,Hold,0.42,13.35,4.08,5.0,3.8,Technology,Software - Application
+MCBI,Mountain Commerce Bancorp Inc.,Hold,0.42,7.14,19.83,0.56,0.0,Financial Services,Banks - Regional
+ROK,"Rockwell Automation, Inc.",Hold,0.42,31.23,44.84,7.11,-0.7,Industrials,Specialty Industrial Machinery
+ESI,Element Solutions Inc.,Hold,0.42,14.67,20.32,4.52,-9.1,Basic Materials,Specialty Chemicals
+CASY,"Caseys General Stores, Inc.",Hold,0.42,32.41,35.84,6.87,0.0,Consumer Cyclical,Specialty Retail
+HDSN,"Hudson Technologies, Inc.",Hold,0.42,19.59,22.68,4.13,0.0,Basic Materials,Specialty Chemicals
+ADM,Archer-Daniels-Midland Company,Hold,0.42,10.8,19.28,1.79,0.0,Consumer Defensive,Farm Products
+CIB,Grupo Cibest S.A.,Hold,0.42,7.42,6.75,1.84,0.0,Financial Services,Banks - Regional
+SAP,SAP  SE,Hold,0.42,41.83,43.31,8.73,0.0,Technology,Software - Application
+CNH,CNH Industrial N.V.,Hold,0.42,11.1,16.24,2.03,0.0,Industrials,Farm & Heavy Construction Machinery
+UTF,Cohen & Steers Infrastructure F,Hold,0.42,,9.33,2.09,0.0,Financial Services,Asset Management
+DIS,Walt Disney Company (The),Hold,0.42,23.37,24.57,4.48,2.7,Communication Services,Entertainment
+THO,"Thor Industries, Inc.",Hold,0.42,14.73,22.82,2.94,0.0,Consumer Cyclical,Recreational Vehicles
+RNP,Cohen & Steers Reit and Preferr,Hold,0.41,,11.68,2.48,0.0,Financial Services,Asset Management
+UTI,Universal Technical Institute I,Hold,0.41,33.48,29.66,6.85,0.0,Consumer Defensive,Education & Training Services
+TRIP,"TripAdvisor, Inc.",Hold,0.41,13.33,46.49,2.78,0.0,Consumer Cyclical,Travel Services
+CUBI,"Customers Bancorp, Inc",Hold,0.41,10.71,16.23,0.68,8.9,Financial Services,Banks - Regional
+TM,Toyota Motor Corporation,Hold,0.41,11.86,7.68,3.26,0.0,Consumer Cyclical,Auto Manufacturers
+BRKR,Bruker Corporation,Hold,0.41,16.21,84.48,4.78,0.0,Healthcare,Medical Devices
+BANC,"Banc of California, Inc.",Hold,0.41,11.64,23.28,0.43,12.2,Financial Services,Banks - Regional
+EVN,Eaton Vance Municipal Income Tr,Hold,0.41,,11.27,2.4,0.0,Financial Services,Asset Management
+WLDN,"Willdan Group, Inc.",Hold,0.41,35.11,48.83,4.74,13.6,Industrials,Engineering & Construction
+CNO,"CNO Financial Group, Inc.",Hold,0.41,10.05,13.14,1.11,5.4,Financial Services,Insurance - Life
+FAF,First American Corporation (New,Hold,0.41,10.63,33.3,1.59,1.1,Financial Services,Insurance - Specialty
+NHI,"National Health Investors, Inc.",Hold,0.4,22.28,22.14,4.56,0.0,Real Estate,REIT - Healthcare Facilities
+PKX,POSCO Holdings Inc.,Hold,0.4,9.7,29.2,1.29,0.0,Basic Materials,Steel
+ERII,"Energy Recovery, Inc.",Hold,0.4,24.95,38.11,5.62,-1.7,Industrials,Pollution & Treatment Controls
+OSIS,"OSI Systems, Inc.",Hold,0.4,22.79,27.26,6.54,-9.0,Technology,Electronic Components
+EWBC,"East West Bancorp, Inc.",Hold,0.4,12.04,12.13,1.58,6.5,Financial Services,Banks - Regional
+CP,Canadian Pacific Kansas City Li,Hold,0.4,21.08,25.22,4.29,0.0,Industrials,Railroads
+NL,"NL Industries, Inc.",Hold,0.4,7.71,5.3,2.35,0.0,Industrials,Security & Protection Services
+ABM,ABM Industries Incorporated,Hold,0.4,12.87,37.69,3.81,-8.7,Industrials,Specialty Business Services
+GNE,Genie Energy Ltd.,Hold,0.4,43.65,30.42,8.36,0.1,Utilities,Utilities - Regulated Electric
+KNOP,KNOT Offshore Partners LP,Hold,0.4,16.64,33.29,3.31,0.0,Energy,Oil & Gas Midstream
+AIR,AAR Corp.,Hold,0.4,17.07,219.43,4.01,21.1,Industrials,Aerospace & Defense
+UTL,UNITIL Corporation,Hold,0.4,16.35,17.36,3.29,0.0,Utilities,Utilities - Diversified
+IGA,Voya Global Advantage and Premi,Hold,0.39,,6.45,1.3,0.0,Financial Services,Asset Management
+BLX,Banco Latinoamericano de Comerc,Hold,0.39,8.05,7.26,1.79,0.0,Financial Services,Banks - Regional
+EFSC,Enterprise Financial Services C,Hold,0.39,12.42,11.08,1.29,10.0,Financial Services,Banks - Regional
+BCH,Banco De Chile,Hold,0.39,10.88,10.39,2.28,0.0,Financial Services,Banks - Regional
+AROW,Arrow Financial Corporation,Hold,0.39,10.48,14.9,0.71,7.8,Financial Services,Banks - Regional
+SCI,Service Corporation Internation,Hold,0.39,19.23,21.03,3.48,1.7,Consumer Cyclical,Personal Services
+APD,"Air Products and Chemicals, Inc",Hold,0.39,20.86,42.53,4.7,-1.5,Basic Materials,Specialty Chemicals
+TECH,Bio-Techne Corp,Hold,0.39,26.74,70.54,5.24,6.9,Healthcare,Biotechnology
+DJCO,Daily Journal Corp. (S.C.),Hold,0.39,,5.29,1.05,0.0,Technology,Software - Application
+MKC,"McCormick & Company, Incorporat",Hold,0.39,22.95,24.95,5.19,-3.0,Consumer Defensive,Packaged Foods
+CLH,"Clean Harbors, Inc.",Hold,0.39,28.2,32.47,5.78,-0.4,Industrials,Waste Management
+HBNC,"Horizon Bancorp, Inc.",Hold,0.38,9.5,15.65,0.67,5.2,Financial Services,Banks - Regional
+MTRN,Materion Corporation,Hold,0.38,15.55,195.67,4.95,10.9,Basic Materials,Other Industrial Metals & Mining
+KALU,Kaiser Aluminum Corporation,Hold,0.38,15.09,24.78,2.7,0.0,Basic Materials,Aluminum
+HCC,"Warrior Met Coal, Inc.",Hold,0.38,13.11,26.29,2.18,0.0,Basic Materials,Coking Coal
+DSV.CO,DSV A/S,Hold,0.38,26.04,32.83,5.24,0.0,Industrials,Integrated Freight & Logistics
+NPO,Enpro Inc.,Hold,0.38,28.07,52.91,4.04,10.9,Industrials,Specialty Industrial Machinery
+BVN,Buenaventura Mining Company Inc,Hold,0.38,16.2,10.57,3.76,0.0,Basic Materials,Other Precious Metals & Mining
+CHT,"Chunghwa Telecom Co., Ltd.",Hold,0.38,28.39,26.48,5.55,0.0,Communication Services,Telecom Services
+ADP,"Automatic Data Processing, Inc.",Hold,0.38,28.23,31.35,5.57,0.3,Technology,Software - Application
+MPV,Barings Participation Investors,Hold,0.38,26.29,11.69,5.91,0.0,Financial Services,Asset Management
+IGD,Voya Global Equity Dividend and,Hold,0.38,,6.82,1.3,0.0,Financial Services,Asset Management
+FNF,"Fidelity National Financial, In",Hold,0.38,9.21,14.15,1.26,0.0,Financial Services,Insurance - Specialty
+UBER,"Uber Technologies, Inc.",Hold,0.38,38.39,15.87,5.21,10.7,Technology,Software - Application
+FNV,Franco-Nevada Corporation,Hold,0.37,39.55,50.02,8.03,0.0,Basic Materials,Gold
+RWT,"Redwood Trust, Inc.",Hold,0.37,7.07,28.62,0.23,0.0,Real Estate,REIT - Mortgage
+NPV,Nuveen Virginia Quality Municip,Hold,0.37,,10.59,1.95,0.0,Financial Services,Asset Management
+EARN,Ellington Credit Company,Hold,0.37,5.03,21.18,-0.6,0.0,Financial Services,Asset Management
+STN,Stantec Inc,Hold,0.37,30.91,44.1,6.35,0.0,Industrials,Engineering & Construction
+ORCL,Oracle Corporation,Hold,0.37,34.6,57.21,7.26,1.1,Technology,Software - Infrastructure
+RES,"RPC, Inc.",Hold,0.37,14.56,19.8,2.55,0.0,Energy,Oil & Gas Equipment & Services
+WAL,Western Alliance Bancorporation,Hold,0.36,8.98,10.61,1.02,2.8,Financial Services,Banks - Regional
+GBLI,"Global Indemnity Group, LLC",Hold,0.36,9.88,15.71,1.29,0.0,Financial Services,Insurance - Property & Casualty
+ISSC,Innovative Solutions and Suppor,Hold,0.36,38.27,25.1,13.19,-21.1,Industrials,Aerospace & Defense
+CFFI,C&F Financial Corporation,Hold,0.36,,8.76,0.95,4.6,Financial Services,Banks - Regional
+SR,Spire Inc.,Hold,0.36,16.61,19.37,2.94,0.0,Utilities,Utilities - Regulated Gas
+CBZ,"CBIZ, Inc.",Hold,0.36,25.0,66.16,4.17,8.5,Industrials,Specialty Business Services
+BPOP,"Popular, Inc.",Hold,0.36,11.55,11.2,0.97,8.8,Financial Services,Banks - Regional
+SF,Stifel Financial Corporation,Hold,0.36,14.64,21.32,1.58,6.3,Financial Services,Capital Markets
+AFL,AFLAC Incorporated,Hold,0.36,14.07,15.69,2.34,0.9,Financial Services,Insurance - Life
+TSEM,Tower Semiconductor Ltd.,Hold,0.36,20.58,26.64,3.78,0.0,Technology,Semiconductors
+OGE,OGE Energy Corp,Hold,0.36,19.56,18.34,3.71,0.0,Utilities,Utilities - Regulated Electric
+OIA,Invesco Municipal Income Opport,Hold,0.36,,15.05,2.75,0.0,Financial Services,Asset Management
+FTK,"Flotek Industries, Inc.",Hold,0.36,31.92,26.37,5.95,0.0,Energy,Oil & Gas Equipment & Services
+PFX,PhenixFIN Corporation,Hold,0.36,14.07,9.74,3.12,0.0,Financial Services,Asset Management
+DRH,Diamondrock Hospitality Company,Hold,0.36,17.09,42.26,3.31,0.0,Real Estate,REIT - Hotel & Motel
+MDLZ,"Mondelez International, Inc.",Hold,0.36,20.29,25.87,3.69,0.0,Consumer Defensive,Confectioners
+UHAL,U-Haul Holding Company,Hold,0.35,13.84,36.86,2.31,0.0,Industrials,Rental & Leasing Services
+COLB,"Columbia Banking System, Inc.",Hold,0.35,9.06,9.75,1.02,3.2,Financial Services,Banks - Regional
+BCBP,"BCB Bancorp, Inc. (NJ)",Hold,0.35,6.06,54.94,0.12,0.0,Financial Services,Banks - Regional
+GAIN,Gladstone Investment Corporatio,Hold,0.35,15.27,7.81,3.81,0.0,Financial Services,Asset Management
+BAESY,BAE Systems PLC,Hold,0.35,23.91,28.06,4.4,0.0,Industrials,Aerospace & Defense
+PRU,"Prudential Financial, Inc.",Hold,0.35,7.06,16.36,0.23,0.0,Financial Services,Insurance - Life
+MMD,MainStay MacKay DefinedTerm Mun,Hold,0.35,,14.5,2.59,0.0,Financial Services,Asset Management
+THFF,First Financial Corporation,Hold,0.35,10.75,10.67,1.18,5.4,Financial Services,Banks - Regional
+OHI,"Omega Healthcare Investors, Inc",Hold,0.35,24.51,23.75,4.55,0.0,Real Estate,REIT - Healthcare Facilities
+PKBK,"Parke Bancorp, Inc.",Hold,0.35,,8.4,1.48,-0.3,Financial Services,Banks - Regional
+BFAM,Bright Horizons Family Solution,Hold,0.35,27.4,40.35,4.91,2.1,Consumer Cyclical,Personal Services
+LNC,Lincoln National Corporation,Hold,0.35,4.54,4.96,0.27,2.4,Financial Services,Insurance - Life
+VALU,"Value Line, Inc.",Hold,0.35,,16.64,2.99,0.0,Financial Services,Financial Data & Stock Exchanges
+INOD,Innodata Inc.,Hold,0.35,100.92,45.79,20.71,-11.7,Technology,Information Technology Services
+RGA,"Reinsurance Group of America, I",Hold,0.35,8.48,16.45,0.74,0.0,Financial Services,Insurance - Reinsurance
+MGEE,MGE Energy Inc.,Hold,0.35,21.05,23.97,3.82,0.0,Utilities,Utilities - Regulated Electric
+SDRL,Seadrill Limited,Hold,0.35,8.39,5.82,2.11,0.0,Energy,Oil & Gas Drilling
+SLM,SLM Corporation,Hold,0.35,10.93,15.92,1.51,0.0,Financial Services,Credit Services
+MMU,Western Asset Managed Municipal,Hold,0.35,,11.38,2.01,0.0,Financial Services,Asset Management
+AMZN,"Amazon.com, Inc.",Hold,0.34,37.85,37.85,7.63,-2.6,Consumer Cyclical,Internet Retail
+ED,"Consolidated Edison, Inc.",Hold,0.34,17.97,18.67,3.11,0.0,Utilities,Utilities - Regulated Electric
+ALX,"Alexander's, Inc.",Hold,0.34,19.66,33.12,3.48,0.0,Real Estate,REIT - Retail
+KMI,"Kinder Morgan, Inc.",Hold,0.34,21.6,22.3,3.83,0.1,Energy,Oil & Gas Midstream
+WABC,Westamerica Bancorporation,Hold,0.34,11.35,10.29,2.09,-0.2,Financial Services,Banks - Regional
+ARTNA,Artesian Resources Corporation,Hold,0.34,15.48,15.56,2.72,0.0,Utilities,Utilities - Regulated Water
+SCL,Stepan Company,Hold,0.34,13.8,22.93,2.08,0.0,Basic Materials,Specialty Chemicals
+RCS,"PIMCO Strategic Income Fund, In",Hold,0.34,,10.91,1.85,0.0,Financial Services,Asset Management
+MBWM,Mercantile Bank Corporation,Hold,0.34,10.78,9.49,1.38,4.4,Financial Services,Banks - Regional
+KYN,Kayne Anderson MLP/Midstream In,Hold,0.34,4.24,3.82,0.79,0.0,Financial Services,Asset Management
+CAH,"Cardinal Health, Inc.",Hold,0.34,18.09,24.46,3.13,0.0,Healthcare,Medical Distribution
+UNTY,"Unity Bancorp, Inc.",Hold,0.34,11.04,10.19,1.83,1.0,Financial Services,Banks - Regional
+TSBK,"Timberland Bancorp, Inc.",Hold,0.34,,9.75,1.4,1.4,Financial Services,Banks - Regional
+IGT,International Game Technology,Hold,0.34,11.06,148.09,3.98,0.0,Consumer Cyclical,Gambling
+UBCP,"United Bancorp, Inc.",Hold,0.34,8.22,11.47,0.88,0.0,Financial Services,Banks - Regional
+MDU,"MDU Resources Group, Inc.",Hold,0.34,14.81,18.55,2.42,0.0,Industrials,Conglomerates
+IBCP,Independent Bank Corporation,Hold,0.34,10.62,10.55,1.21,4.3,Financial Services,Banks - Regional
+CATY,Cathay General Bancorp,Hold,0.33,11.11,11.3,1.26,3.8,Financial Services,Banks - Regional
+MIN,MFS Intermediate Income Trust,Hold,0.33,,12.02,1.98,0.0,Financial Services,Asset Management
+HEES,"H&E Equipment Services, Inc.",Hold,0.33,22.53,38.01,4.16,0.0,Industrials,Rental & Leasing Services
+PEBO,Peoples Bancorp Inc.,Hold,0.33,9.54,10.16,1.11,2.3,Financial Services,Banks - Regional
+PFBC,Preferred Bank,Hold,0.33,10.64,9.95,1.79,-0.2,Financial Services,Banks - Regional
+INTU,Intuit Inc.,Hold,0.33,35.93,65.36,8.57,-3.9,Technology,Software - Application
+XPO,"XPO, Inc.",Hold,0.33,30.78,41.9,5.81,0.0,Industrials,Trucking
+ANSS,"ANSYS, Inc.",Hold,0.33,29.58,55.53,6.06,0.0,Technology,Software - Application
+KMX,CarMax Inc,Hold,0.33,15.98,16.65,1.97,4.8,Consumer Cyclical,Auto & Truck Dealerships
+SNFCA,Security National Financial Cor,Hold,0.33,,9.43,1.45,0.0,Financial Services,Mortgage Finance
+TDY,Teledyne Technologies Incorpora,Hold,0.33,25.95,30.67,4.72,-0.5,Technology,Scientific & Technical Instruments
+D,"Dominion Energy, Inc.",Hold,0.33,17.16,22.39,2.86,0.0,Utilities,Utilities - Regulated Electric
+TRN,"Trinity Industries, Inc.",Hold,0.33,16.44,14.86,2.9,0.0,Industrials,Railroads
+AXP,American Express Company,Hold,0.33,20.55,21.84,3.57,0.2,Financial Services,Credit Services
+CBNK,"Capital Bancorp, Inc.",Hold,0.32,11.13,13.92,1.35,0.9,Financial Services,Banks - Regional
+NSP,"Insperity, Inc.",Hold,0.32,16.74,36.34,2.26,3.2,Industrials,Staffing & Employment Services
+MPB,Mid Penn Bancorp,Hold,0.32,9.19,9.41,0.75,4.9,Financial Services,Banks - Regional
+FMNB,Farmers National Banc Corp.,Hold,0.32,10.04,10.63,0.98,3.9,Financial Services,Banks - Regional
+BTA,BlackRock Long-Term Municipal A,Hold,0.32,,15.21,2.53,0.0,Financial Services,Asset Management
+NAC,Nuveen California Quality Munic,Hold,0.32,,14.22,2.3,0.0,Financial Services,Asset Management
+EFC,Ellington Financial Inc.,Hold,0.32,8.18,9.41,0.96,0.0,Real Estate,REIT - Mortgage
+SYDB.CO,Sydbank A/S,Hold,0.32,9.5,10.05,1.36,0.0,Financial Services,Banks - Regional
+TW,Tradeweb Markets Inc.,Hold,0.32,41.51,56.71,8.06,0.0,Financial Services,Capital Markets
+CWBC,Community West Bancshares,Hold,0.32,9.91,13.82,0.75,3.1,Financial Services,Banks - Regional
+PLBC,Plumas Bancorp,Hold,0.32,10.14,8.66,1.78,0.0,Financial Services,Banks - Regional
+OSBC,"Old Second Bancorp, Inc.",Hold,0.32,9.74,9.69,1.47,0.0,Financial Services,Banks - Regional
+APWC,Asia Pacific Wire & Cable Corpo,Hold,0.31,,10.88,1.62,0.0,Industrials,Electrical Equipment & Parts
+AEP,American Electric Power Company,Hold,0.31,18.33,20.84,2.89,0.0,Utilities,Utilities - Regulated Electric
+TRP,TC Energy Corporation,Hold,0.31,17.67,15.87,2.95,0.0,Energy,Oil & Gas Midstream
+ADX,Adams Diversified Equity Fund I,Hold,0.31,,4.72,0.46,0.0,Financial Services,Asset Management
+KMDA,Kamada Ltd.,Hold,0.31,24.77,27.43,4.14,0.0,Healthcare,Drug Manufacturers - Specialty & Generic
+EMR,Emerson Electric Company,Hold,0.31,23.65,43.33,4.72,-2.1,Industrials,Specialty Industrial Machinery
+AMSF,"AMERISAFE, Inc.",Hold,0.31,19.77,17.67,3.31,0.0,Financial Services,Insurance - Specialty
+QCRH,"QCR Holdings, Inc.",Hold,0.31,10.64,11.15,1.25,1.8,Financial Services,Banks - Regional
+ETG,Eaton Vance Tax-Advantaged Glob,Hold,0.3,,12.82,1.93,0.0,Financial Services,Asset Management
+GTY,Getty Realty Corporation,Hold,0.3,22.23,23.97,3.6,0.0,Real Estate,REIT - Retail
+UMBF,UMB Financial Corporation,Hold,0.3,11.8,13.7,0.72,6.8,Financial Services,Banks - Regional
+NTIC,Northern Technologies Internati,Hold,0.3,9.82,25.35,0.75,0.0,Basic Materials,Specialty Chemicals
+ENB,Enbridge Inc,Hold,0.3,20.86,22.65,3.35,0.0,Energy,Oil & Gas Midstream
+GAM,"General American Investors, Inc",Hold,0.3,,5.31,0.55,0.0,Financial Services,Asset Management
+WAFD,"WaFd, Inc.",Hold,0.3,8.67,11.31,0.82,0.0,Financial Services,Banks - Regional
+STRT,STRATTEC SECURITY CORPORATION,Hold,0.3,23.27,13.04,4.28,0.0,Consumer Cyclical,Auto Parts
+ROP,"Roper Technologies, Inc.",Hold,0.3,27.92,39.2,4.15,3.8,Technology,Software - Application
+HOMB,"Home BancShares, Inc.",Hold,0.3,13.58,13.21,1.9,1.2,Financial Services,Banks - Regional
+NNY,Nuveen New York Municipal Value,Hold,0.3,,15.67,2.42,0.0,Financial Services,Asset Management
+PII,Polaris Inc.,Hold,0.3,12.99,69.69,2.44,0.0,Consumer Cyclical,Recreational Vehicles
+CMC,Commercial Metals Company,Hold,0.3,11.21,175.67,4.22,0.0,Basic Materials,Steel
+PPT,Putnam Premier Income Trust,Hold,0.3,,16.59,2.6,0.0,Financial Services,Asset Management
+BHLB,"Berkshire Hills Bancorp, Inc.",Hold,0.29,10.64,10.06,0.93,4.7,Financial Services,Banks - Regional
+FSBW,"FS Bancorp, Inc.",Hold,0.29,9.06,9.72,1.09,0.0,Financial Services,Banks - Regional
+COST,Costco Wholesale Corporation,Hold,0.29,47.46,52.92,8.79,-1.5,Consumer Defensive,Discount Stores
+SO,Southern Company (The),Hold,0.29,21.83,22.61,3.46,0.0,Utilities,Utilities - Regulated Electric
+SMBC,"Southern Missouri Bancorp, Inc.",Hold,0.29,9.75,10.88,1.17,-0.5,Financial Services,Banks - Regional
+PPL,PPL Corporation,Hold,0.29,19.51,26.65,2.97,0.0,Utilities,Utilities - Regulated Electric
+LMAT,"LeMaitre Vascular, Inc.",Hold,0.29,38.0,41.86,7.28,-3.0,Healthcare,Medical Instruments & Supplies
+THS,"Treehouse Foods, Inc.",Hold,0.29,6.87,208.8,2.68,0.0,Consumer Defensive,Packaged Foods
+ZION,Zions Bancorporation N.A.,Hold,0.29,11.32,10.1,0.96,6.1,Financial Services,Banks - Regional
+AWP,Aberdeen Global Premier Propert,Hold,0.29,,7.37,0.83,0.0,Financial Services,Asset Management
+TU,Telus Corporation,Hold,0.29,21.63,27.97,3.41,0.0,Communication Services,Telecom Services
+LCNB,LCNB Corporation,Hold,0.29,8.92,10.41,0.9,0.0,Financial Services,Banks - Regional
+RBCAA,"Republic Bancorp, Inc.",Hold,0.28,12.83,11.26,1.83,0.6,Financial Services,Banks - Regional
+CXW,"CoreCivic, Inc.",Hold,0.28,23.95,26.13,3.76,0.0,Industrials,Security & Protection Services
+BSRR,Sierra Bancorp,Hold,0.28,10.94,10.63,1.09,3.2,Financial Services,Banks - Regional
+FSTR,L.B. Foster Company,Hold,0.28,13.19,7.53,2.71,0.0,Industrials,Railroads
+RDCM,Radcom Ltd.,Hold,0.28,17.43,27.3,2.46,0.0,Communication Services,Telecom Services
+DCO,Ducommun Incorporated,Hold,0.28,22.23,38.93,3.65,0.0,Industrials,Aerospace & Defense
+BUSE,First Busey Corporation,Hold,0.28,9.21,18.28,0.5,0.0,Financial Services,Banks - Regional
+CVLT,"Commvault Systems, Inc.",Hold,0.28,41.91,97.28,5.57,15.2,Technology,Software - Application
+LKFN,Lakeland Financial Corporation,Hold,0.28,19.32,18.48,1.4,10.6,Financial Services,Banks - Regional
+NCA,Nuveen California Municipal Val,Hold,0.28,,16.02,2.33,0.0,Financial Services,Asset Management
+NBTB,NBT Bancorp Inc.,Hold,0.28,12.16,13.69,1.05,3.8,Financial Services,Banks - Regional
+HXL,Hexcel Corporation,Hold,0.27,24.64,57.27,4.62,0.0,Industrials,Aerospace & Defense
+NDAQ,"Nasdaq, Inc.",Hold,0.27,30.3,36.59,4.64,1.4,Financial Services,Financial Data & Stock Exchanges
+NMT,Nuveen Massachusetts Quality Mu,Hold,0.27,,14.88,2.08,0.0,Financial Services,Asset Management
+FCAP,"First Capital, Inc.",Hold,0.27,,9.54,1.1,0.0,Financial Services,Banks - Regional
+GABC,"German American Bancorp, Inc.",Hold,0.27,12.55,16.13,1.04,3.0,Financial Services,Banks - Regional
+YORW,The York Water Company,Hold,0.27,19.71,22.01,2.91,0.0,Utilities,Utilities - Regulated Water
+MGM,MGM Resorts International,Hold,0.27,16.77,17.21,2.34,-0.0,Consumer Cyclical,Resorts & Casinos
+CHN,"China Fund, Inc. (The)",Hold,0.27,,8.5,0.96,0.0,Financial Services,Asset Management
+LSBK,"Lake Shore Bancorp, Inc.",Hold,0.27,,13.46,0.8,8.3,Financial Services,Banks - Regional
+CTBI,"Community Trust Bancorp, Inc.",Hold,0.27,11.41,10.98,1.5,0.0,Financial Services,Banks - Regional
+CLS,"Celestica, Inc.",Hold,0.27,38.96,48.56,6.68,0.0,Technology,Electronic Components
+KLIC,"Kulicke and Soffa Industries, I",Hold,0.27,19.04,95.22,4.55,0.0,Technology,Semiconductor Equipment & Materials
+ENTG,"Entegris, Inc.",Hold,0.27,23.96,45.1,4.02,0.0,Technology,Semiconductor Equipment & Materials
+BDJ,Blackrock Enhanced Equity Divid,Hold,0.27,,10.05,1.21,0.0,Financial Services,Asset Management
+FBP,First BanCorp. New,Hold,0.27,11.97,11.34,1.62,0.0,Financial Services,Banks - Regional
+FORM,"FormFactor, Inc.",Hold,0.26,20.95,50.7,2.55,6.4,Technology,Semiconductor Equipment & Materials
+FFA,First Trust Enhanced Equity Inc,Hold,0.26,,5.51,0.38,0.0,Financial Services,Asset Management
+ISRG,"Intuitive Surgical, Inc.",Hold,0.26,62.84,68.99,9.02,5.8,Healthcare,Medical Instruments & Supplies
+GNW,Genworth Financial Inc,Hold,0.26,9.01,15.3,0.43,0.0,Financial Services,Insurance - Life
+SRCE,1st Source Corporation,Hold,0.26,11.77,10.86,1.57,0.0,Financial Services,Banks - Regional
+HL,Hecla Mining Company,Hold,0.26,22.15,49.83,3.34,2.4,Basic Materials,Other Precious Metals & Mining
+PEBK,Peoples Bancorp of North Caroli,Hold,0.26,,9.47,1.02,0.3,Financial Services,Banks - Regional
+BFS,"Saul Centers, Inc.",Hold,0.26,24.01,22.21,3.61,0.0,Real Estate,REIT - Retail
+CHCO,City Holding Company,Hold,0.25,16.84,15.26,1.89,3.1,Financial Services,Banks - Regional
+STWD,"STARWOOD PROPERTY TRUST, INC. S",Hold,0.25,10.05,21.06,0.53,0.0,Real Estate,REIT - Mortgage
+FIBK,"First Interstate BancSystem, In",Hold,0.25,12.05,14.05,0.75,4.3,Financial Services,Banks - Regional
+LNT,Alliant Energy Corporation,Hold,0.25,19.76,22.01,2.73,0.0,Utilities,Utilities - Regulated Electric
+GS,"Goldman Sachs Group, Inc. (The)",Hold,0.25,17.41,15.95,0.9,11.4,Financial Services,Capital Markets
+CINF,Cincinnati Financial Corporatio,Hold,0.25,20.07,12.76,3.22,0.0,Financial Services,Insurance - Property & Casualty
+QGEN,Qiagen N.V.,Hold,0.25,22.26,118.56,5.76,0.0,Healthcare,Diagnostics & Research
+AGM-A,Federal Agricultural Mortgage C,Hold,0.24,,7.95,0.66,0.0,Financial Services,Credit Services
+DHR,Danaher Corporation,Hold,0.24,24.22,43.09,4.01,-1.5,Healthcare,Diagnostics & Research
+FULT,Fulton Financial Corporation,Hold,0.24,10.46,10.95,1.02,0.0,Financial Services,Banks - Regional
+CWT,California Water Service Group,Hold,0.24,19.27,19.61,2.59,0.0,Utilities,Utilities - Regulated Water
+FNLC,"First Bancorp, Inc (ME)",Hold,0.24,,9.71,0.95,0.0,Financial Services,Banks - Regional
+SBFG,"SB Financial Group, Inc.",Hold,0.24,11.11,11.63,0.85,2.6,Financial Services,Banks - Regional
+FCF,First,Hold,0.24,11.41,12.17,1.17,0.0,Financial Services,Banks - Regional
+ETW,Eaton Vance Corporation Eaton V,Hold,0.24,,8.63,0.78,0.0,Financial Services,Asset Management
+ETV,Eaton Vance Corporation Eaton V,Hold,0.24,,4.72,0.12,0.0,Financial Services,Asset Management
+PAY,"Paymentus Holdings, Inc.",Hold,0.24,57.0,71.25,5.91,15.3,Technology,Software - Infrastructure
+MOS,Mosaic Company (The),Hold,0.24,14.81,31.41,2.14,-3.2,Basic Materials,Agricultural Inputs
+ONB,Old National Bancorp,Hold,0.24,10.96,12.85,0.92,0.9,Financial Services,Banks - Regional
+PEG,Public Service Enterprise Group,Hold,0.24,21.36,23.75,2.94,0.0,Utilities,Utilities - Regulated Electric
+ERJ,Embraer S.A.,Hold,0.24,23.0,21.94,3.31,0.0,Industrials,Aerospace & Defense
+FUNC,First,Hold,0.24,10.39,9.86,1.17,0.0,Financial Services,Banks - Regional
+CIA,"Citizens, Inc.",Hold,0.24,9.47,23.94,0.31,0.0,Financial Services,Insurance - Life
+MITT,"AG Mortgage Investment Trust, I",Hold,0.24,8.33,8.71,0.68,0.0,Real Estate,REIT - Mortgage
+MKL,Markel Group Inc.,Hold,0.24,20.44,14.79,2.73,2.0,Financial Services,Insurance - Property & Casualty
+CPAC,Cementos Pacasmayo S.A.A.,Hold,0.24,43.21,8.9,7.79,0.0,Basic Materials,Building Materials
+PROV,"Provident Financial Holdings, I",Hold,0.24,9.86,15.66,0.5,0.4,Financial Services,Banks - Regional
+ETO,Eaton Vance Tax-Advantage Globa,Hold,0.23,,13.7,1.62,0.0,Financial Services,Asset Management
+USB,U.S. Bancorp,Hold,0.23,10.64,11.03,1.01,0.0,Financial Services,Banks - Regional
+SPSC,"SPS Commerce, Inc.",Hold,0.23,35.95,65.21,6.38,0.0,Technology,Software - Application
+CBSH,"Commerce Bancshares, Inc.",Hold,0.23,16.14,14.93,1.79,1.9,Financial Services,Banks - Regional
+WSBC,"WesBanco, Inc.",Hold,0.23,10.19,20.77,0.47,0.0,Financial Services,Banks - Regional
+CNX,CNX Resources Corporation,Hold,0.23,16.81,36.42,2.09,0.0,Energy,Oil & Gas E&P
+TIPT,Tiptree Inc.,Hold,0.23,,18.04,2.08,1.7,Financial Services,Insurance - Specialty
+ETB,Eaton Vance Tax-Managed Buy-Wri,Hold,0.23,,5.57,0.23,0.0,Financial Services,Asset Management
+PNW,Pinnacle West Capital Corporati,Hold,0.23,18.95,17.56,2.5,0.0,Utilities,Utilities - Regulated Electric
+ACNB,ACNB Corporation,Hold,0.23,11.26,14.95,0.88,0.0,Financial Services,Banks - Regional
+DGICA,"Donegal Group, Inc.",Hold,0.23,14.52,7.41,2.71,0.0,Financial Services,Insurance - Property & Casualty
+FSFG,"First Savings Financial Group, ",Hold,0.23,9.45,9.25,0.9,0.0,Financial Services,Banks - Regional
+SWX,"Southwest Gas Holdings, Inc.",Hold,0.23,21.3,24.91,2.83,0.0,Utilities,Utilities - Regulated Gas
+NFJ,"AllianzGI NFJ Dividend, Interes",Hold,0.23,,9.36,0.87,0.0,Financial Services,Asset Management
+GDV,Gabelli Dividend & Income Trust,Hold,0.23,,7.73,0.58,0.0,Financial Services,Asset Management
+SBSI,"Southside Bancshares, Inc.",Hold,0.22,10.81,10.89,1.03,0.0,Financial Services,Banks - Regional
+GUT,Gabelli Utility Trust (The),Hold,0.22,,12.16,1.28,0.0,Financial Services,Asset Management
+SLF,Sun Life Financial Inc.,Hold,0.22,11.43,15.46,0.9,0.0,Financial Services,Insurance - Diversified
+FRME,First Merchants Corporation,Hold,0.22,11.31,10.4,1.22,0.0,Financial Services,Banks - Regional
+CNOB,"ConnectOne Bancorp, Inc.",Hold,0.22,10.75,13.33,0.78,0.0,Financial Services,Banks - Regional
+BRKL,"Brookline Bancorp, Inc.",Hold,0.22,10.01,12.28,0.68,0.0,Financial Services,Banks - Regional
+CZNC,Citizens & Northern Corp,Hold,0.22,10.99,11.11,1.04,0.0,Financial Services,Banks - Regional
+MELI,"MercadoLibre, Inc.",Hold,0.22,48.66,57.8,7.74,0.0,Consumer Cyclical,Internet Retail
+CBRL,Cracker Barrel Old Country Stor,Hold,0.22,18.61,24.74,2.24,0.0,Consumer Cyclical,Restaurants
+UBOH,"United Bancshares, Inc.",Hold,0.22,,10.38,0.97,0.0,Financial Services,Banks - Regional
+AP,Ampco-Pittsburgh Corporation,Hold,0.22,15.87,16.59,1.82,0.0,Industrials,Metal Fabrication
+FBNC,First Bancorp,Hold,0.22,16.61,22.07,0.79,8.6,Financial Services,Banks - Regional
+PFG,Principal Financial Group Inc,Hold,0.22,9.52,17.21,0.28,0.0,Financial Services,Asset Management
+SBRA,"Sabra Health Care REIT, Inc.",Hold,0.22,26.44,29.97,3.14,3.4,Real Estate,REIT - Healthcare Facilities
+NKSH,"National Bankshares, Inc.",Hold,0.21,10.85,15.97,0.62,0.0,Financial Services,Banks - Regional
+PWOD,"Penns Woods Bancorp, Inc.",Hold,0.21,,10.75,0.95,0.0,Financial Services,Banks - Regional
+MGYR,"Magyar Bancorp, Inc.",Hold,0.21,,10.83,1.01,0.0,Financial Services,Banks - Regional
+JYSK.CO,Jyske Bank A/S,Hold,0.21,8.63,8.08,0.68,0.0,Financial Services,Banks - Regional
+TDF,"Templeton Dragon Fund, Inc.",Hold,0.21,,9.71,0.77,0.0,Financial Services,Asset Management
+MFC,Manulife Financial Corporation,Hold,0.21,10.66,16.3,0.55,0.0,Financial Services,Insurance - Life
+BOTJ,Bank of the James Financial Gro,Hold,0.2,,9.35,0.66,0.0,Financial Services,Banks - Regional
+STBA,"S&T Bancorp, Inc.",Hold,0.2,12.48,11.08,1.35,0.0,Financial Services,Banks - Regional
+TGTX,"TG Therapeutics, Inc.",Hold,0.2,37.1,143.96,7.26,7.4,Healthcare,Biotechnology
+CLWT,Euro Tech Holdings Company Limi,Hold,0.2,,12.25,1.13,0.0,Industrials,Pollution & Treatment Controls
+ADI,"Analog Devices, Inc.",Hold,0.2,30.61,62.88,2.99,11.8,Technology,Semiconductors
+GSBC,"Great Southern Bancorp, Inc.",Hold,0.2,11.58,10.13,1.16,0.4,Financial Services,Banks - Regional
+HAFC,Hanmi Financial Corporation,Hold,0.2,10.59,10.93,0.85,0.0,Financial Services,Banks - Regional
+ASA,ASA  Gold and Precious Metals L,Hold,0.2,,5.36,0.02,0.0,Financial Services,Asset Management
+HBCP,"Home Bancorp, Inc.",Hold,0.2,12.11,10.56,1.2,0.8,Financial Services,Banks - Regional
+XEL,Xcel Energy Inc.,Hold,0.2,18.57,20.92,2.17,0.0,Utilities,Utilities - Regulated Electric
+ESE,ESCO Technologies Inc.,Hold,0.2,39.67,41.84,5.78,0.0,Technology,Scientific & Technical Instruments
+CHEF,"The Chefs' Warehouse, Inc.",Hold,0.2,35.41,41.24,4.79,2.1,Consumer Defensive,Food Distribution
+ESSA,"ESSA Bancorp, Inc.",Hold,0.2,10.62,13.3,0.68,0.0,Financial Services,Banks - Regional
+ABCB,Ameris Bancorp,Hold,0.2,13.2,12.34,1.43,0.0,Financial Services,Banks - Regional
+MCK,McKesson Corporation,Hold,0.19,19.19,27.47,4.31,-12.8,Healthcare,Medical Distribution
+BOE,Blackrock Enhanced Global Divid,Hold,0.19,,11.19,0.95,0.0,Financial Services,Asset Management
+CCBG,Capital City Bank Group,Hold,0.19,13.86,12.01,1.34,1.4,Financial Services,Banks - Regional
+NRIM,Northrim BanCorp Inc,Hold,0.19,15.28,10.75,1.48,4.0,Financial Services,Banks - Regional
+OVBC,Ohio Valley Banc Corp.,Hold,0.19,,11.66,0.95,0.3,Financial Services,Banks - Regional
+TRMK,Trustmark Corporation,Hold,0.19,12.1,10.74,1.17,0.0,Financial Services,Banks - Regional
+FCBC,"First Community Bankshares, Inc",Hold,0.19,14.97,14.2,1.56,0.0,Financial Services,Banks - Regional
+PGC,Peapack-Gladstone Financial Cor,Hold,0.19,9.47,14.6,0.47,-2.3,Financial Services,Banks - Regional
+UHT,Universal Health Realty Income ,Hold,0.19,,30.33,4.03,0.0,Real Estate,REIT - Healthcare Facilities
+EBTC,Enterprise Bancorp Inc,Hold,0.19,,12.12,0.85,1.7,Financial Services,Banks - Regional
+BOKF,BOK Financial Corporation,Hold,0.19,12.33,12.53,1.06,0.2,Financial Services,Banks - Regional
+HWBK,"Hawthorn Bancshares, Inc.",Hold,0.18,,10.58,1.03,-2.3,Financial Services,Banks - Regional
+RYN,Rayonier Inc. REIT,Hold,0.18,45.27,9.89,7.01,0.0,Real Estate,REIT - Specialty
+NFBK,"Northfield Bancorp, Inc.",Hold,0.18,11.58,12.79,0.62,1.8,Financial Services,Banks - Regional
+ALE,"Allete, Inc.",Hold,0.18,16.52,20.66,1.64,0.0,Utilities,Utilities - Diversified
+CVBF,CVB Financial Corporation,Hold,0.18,13.84,13.37,1.29,0.0,Financial Services,Banks - Regional
+JEQ,"Aberdeen Japan Equity Fund, Inc",Hold,0.18,,10.21,0.69,0.0,Financial Services,Asset Management
+ATI,ATI Inc.,Hold,0.18,33.17,34.61,7.28,-13.0,Industrials,Metal Fabrication
+HTBK,Heritage Commerce Corp,Hold,0.18,13.97,15.52,0.73,4.1,Financial Services,Banks - Regional
+INDB,Independent Bank Corp.,Hold,0.18,12.74,14.87,0.95,0.0,Financial Services,Banks - Regional
+DIOD,Diodes Incorporated,Hold,0.18,19.72,94.31,1.18,17.9,Technology,Semiconductors
+CAE,CAE Inc.,Hold,0.18,28.72,30.57,3.78,0.0,Industrials,Aerospace & Defense
+TOWN,Towne Bank,Hold,0.18,13.84,15.13,0.99,2.0,Financial Services,Banks - Regional
+SHBI,"Shore Bancshares, Inc.",Hold,0.18,10.72,9.99,0.9,0.0,Financial Services,Banks - Regional
+OCFC,OceanFirst Financial Corp.,Hold,0.18,10.8,12.33,0.66,0.0,Financial Services,Banks - Regional
+TCBK,TriCo Bancshares,Hold,0.17,13.12,12.85,1.14,0.0,Financial Services,Banks - Regional
+MGF,MFS Government Markets Income T,Hold,0.17,,18.24,1.95,0.0,Financial Services,Asset Management
+FCNCA,"First Citizens BancShares, Inc.",Hold,0.17,12.63,12.11,1.07,0.0,Financial Services,Banks - Regional
+UBSI,"United Bankshares, Inc.",Hold,0.17,13.58,12.96,1.26,0.0,Financial Services,Banks - Regional
+CBAN,"Colony Bankcorp, Inc.",Hold,0.17,11.24,10.52,0.9,0.0,Financial Services,Banks - Regional
+KSM,DWS Strategic Municipal Income ,Hold,0.17,,21.44,2.47,0.0,Financial Services,Asset Management
+AVAV,"AeroVironment, Inc.",Hold,0.17,62.65,175.73,3.71,39.4,Industrials,Aerospace & Defense
+CBU,"Community Financial System, Inc",Hold,0.17,14.01,14.77,1.2,0.0,Financial Services,Banks - Regional
+RBC,RBC Bearings Incorporated,Hold,0.17,35.84,50.02,4.96,1.2,Industrials,Tools & Accessories
+WTBA,West Bancorporation,Hold,0.17,10.7,11.02,0.72,0.0,Financial Services,Banks - Regional
+BNS,Bank Nova Scotia Halifax Pfd 3,Hold,0.17,11.07,16.16,0.47,0.0,Financial Services,Banks - Diversified
+PHX,PHX Minerals Inc.,Hold,0.17,18.12,22.89,1.85,0.0,Energy,Oil & Gas E&P
+REXR,"Rexford Industrial Realty, Inc.",Hold,0.16,28.21,27.58,1.88,10.2,Real Estate,REIT - Industrial
+EXR,Extra Space Storage Inc,Hold,0.16,31.03,34.49,3.33,3.8,Real Estate,REIT - Industrial
+NWSA,News Corporation,Hold,0.16,27.71,35.82,3.53,0.0,Communication Services,Entertainment
+BANR,Banner Corporation,Hold,0.16,13.27,12.41,1.13,0.0,Financial Services,Banks - Regional
+K,Kellanova,Hold,0.16,66.49,20.1,8.12,0.0,Consumer Defensive,Packaged Foods
+CFBK,CF Bankshares Inc.,Hold,0.16,10.7,10.46,0.71,0.0,Financial Services,Banks - Regional
+TRST,TrustCo Bank Corp NY,Hold,0.16,12.09,12.35,0.86,0.0,Financial Services,Banks - Regional
+CZWI,"Citizens Community Bancorp, Inc",Hold,0.16,11.27,11.91,0.7,0.0,Financial Services,Banks - Regional
+RQI,Cohen & Steers Quality Income R,Hold,0.16,,16.81,1.63,0.0,Financial Services,Asset Management
+EBMT,"Eagle Bancorp Montana, Inc.",Hold,0.16,10.59,11.65,0.53,0.0,Financial Services,Banks - Regional
+IIF,Morgan Stanley India Investment,Hold,0.15,,4.28,-0.39,0.0,Financial Services,Asset Management
+WTFC,Wintrust Financial Corporation,Hold,0.15,12.93,12.49,1.15,-1.3,Financial Services,Banks - Regional
+CII,BlackRock Enhanced Large Cap Co,Hold,0.15,,7.47,0.12,0.0,Financial Services,Asset Management
+APO,"Apollo Global Management, Inc. ",Hold,0.15,17.54,26.0,1.52,0.3,Financial Services,Asset Management
+DANSKE.CO,Danske Bank A/S,Hold,0.15,10.12,9.36,0.62,0.0,Financial Services,Banks - Regional
+GCBC,"Greene County Bancorp, Inc.",Hold,0.15,,13.52,1.06,0.0,Financial Services,Banks - Regional
+EOS,Eaton Vance Enhance Equity Inco,Hold,0.15,,4.56,-0.33,0.0,Financial Services,Asset Management
+GAB,"Gabelli Equity Trust, Inc. (The",Hold,0.15,,8.97,0.35,0.0,Financial Services,Asset Management
+IBN,ICICI Bank Limited,Hold,0.15,20.63,19.91,2.23,0.0,Financial Services,Banks - Regional
+CSQ,Calamos Strategic Total Return ,Hold,0.15,,10.66,0.63,0.0,Financial Services,Asset Management
+SFNC,Simmons First National Corporat,Hold,0.15,12.22,17.06,0.59,0.0,Financial Services,Banks - Regional
+FHN,First Horizon Corporation,Hold,0.14,14.34,15.64,1.05,0.0,Financial Services,Banks - Regional
+PKE,Park Aerospace Corp.,Hold,0.14,34.96,52.44,4.88,0.0,Industrials,Aerospace & Defense
+LARK,Landmark Bancorp Inc.,Hold,0.14,,9.3,1.02,-6.0,Financial Services,Banks - Regional
+GGT,"Gabelli Multi-Media Trust, Inc.",Hold,0.14,,8.17,0.18,0.0,Financial Services,Asset Management
+FCCO,First Community Corporation,Hold,0.14,12.34,11.34,0.88,0.0,Financial Services,Banks - Regional
+STM,STMicroelectronics N.V.,Hold,0.14,19.2,38.68,1.97,0.0,Technology,Semiconductors
+TRAK,"ReposiTrak, Inc.",Hold,0.14,46.67,53.53,7.02,-2.8,Technology,Software - Application
+DCOM,"Dime Community Bancshares, Inc.",Hold,0.14,11.21,36.44,0.32,-0.3,Financial Services,Banks - Regional
+JBL,Jabil Inc.,Hold,0.13,22.46,42.74,4.63,-11.8,Technology,Electronic Components
+UVSP,Univest Financial Corporation,Hold,0.13,12.97,10.88,1.01,0.0,Financial Services,Banks - Regional
+CFFN,"Capitol Federal Financial, Inc.",Hold,0.13,12.18,13.21,0.64,0.0,Financial Services,Banks - Regional
+GF,"New Germany Fund, Inc. (The)",Hold,0.13,,9.76,0.35,0.0,Financial Services,Asset Management
+CVS,CVS Health Corporation,Hold,0.13,9.2,14.23,2.31,-20.4,Healthcare,Healthcare Plans
+TRI,Thomson Reuters Corp,Hold,0.13,49.95,42.18,6.35,0.0,Industrials,Specialty Business Services
+HIMX,"Himax Technologies, Inc.",Hold,0.13,26.22,17.48,2.97,0.0,Technology,Semiconductors
+BKU,"BankUnited, Inc.",Hold,0.13,11.85,11.23,0.73,0.0,Financial Services,Banks - Regional
+SAN,"Banco Santander, S.A. Sponsored",Hold,0.13,11.08,9.21,0.79,0.0,Financial Services,Banks - Diversified
+CFR,"Cullen/Frost Bankers, Inc.",Hold,0.13,15.71,14.87,1.18,0.8,Financial Services,Banks - Regional
+RMT,"Royce Micro-Cap Trust, Inc.",Hold,0.13,,7.42,-0.01,0.0,Financial Services,Asset Management
+NGVC,Natural Grocers by Vitamin Cott,Hold,0.13,45.89,21.14,5.46,0.1,Consumer Defensive,Grocery Stores
+IQI,Invesco Quality Municipal Incom,Hold,0.13,,24.26,2.56,0.0,Financial Services,Asset Management
+TWN,"Taiwan Fund, Inc. (The)",Hold,0.12,,12.52,0.73,0.0,Financial Services,Asset Management
+FR,"First Industrial Realty Trust, ",Hold,0.12,30.69,23.8,3.41,0.0,Real Estate,REIT - Industrial
+ING,"ING Group, N.V.",Hold,0.12,10.64,10.09,0.52,0.0,Financial Services,Banks - Diversified
+ATLO,Ames National Corporation,Hold,0.12,,12.18,0.65,0.0,Financial Services,Banks - Regional
+CASS,"Cass Information Systems, Inc",Hold,0.12,16.58,26.88,1.22,0.0,Industrials,Specialty Business Services
+MTW,"Manitowoc Company, Inc. (The)",Hold,0.12,16.95,10.49,1.87,0.0,Industrials,Farm & Heavy Construction Machinery
+PUK,Prudential Public Limited Compa,Hold,0.12,16.7,14.91,1.47,0.0,Financial Services,Insurance - Life
+IIM,Invesco Value Municipal Income ,Hold,0.11,,25.07,2.58,0.0,Financial Services,Asset Management
+DMB,Dreyfus Municipal Bond Infrastr,Hold,0.11,,24.15,2.42,0.0,Financial Services,Asset Management
+RFI,Cohen & Steers Total Return Rea,Hold,0.11,,18.94,1.62,0.0,Financial Services,Asset Management
+LYG,Lloyds Banking Group Plc,Hold,0.11,11.67,12.0,0.51,0.0,Financial Services,Banks - Regional
+DSGX,The Descartes Systems Group Inc,Hold,0.11,54.48,64.33,7.38,0.0,Technology,Software - Application
+KRNY,Kearny Financial,Hold,0.1,7.09,14.86,-0.91,0.1,Financial Services,Banks - Regional
+WSBF,"Waterstone Financial, Inc.",Hold,0.1,13.65,12.2,0.91,0.1,Financial Services,Banks - Regional
+TD,Toronto Dominion Bank (The),Hold,0.1,12.8,10.54,0.86,0.0,Financial Services,Banks - Diversified
+RY,Royal Bank Of Canada,Hold,0.1,14.07,14.23,0.85,0.0,Financial Services,Banks - Diversified
+MAA,Mid-America Apartment Communiti,Hold,0.1,35.99,31.05,3.49,3.3,Real Estate,REIT - Residential
+COR,"Cencora, Inc.",Hold,0.1,17.49,33.12,2.97,-11.4,Healthcare,Medical Distribution
+CGO,Calamos Global Total Return Fun,Hold,0.1,,13.9,0.79,0.0,Financial Services,Asset Management
+MFM,MFS Municipal Income Trust,Hold,0.1,,25.4,2.54,0.0,Financial Services,Asset Management
+FRT,Federal Realty Investment Trust,Hold,0.09,30.36,26.78,3.17,0.0,Real Estate,REIT - Retail
+DB,Deutsche Bank AG,Hold,0.09,11.42,11.31,0.42,0.0,Financial Services,Banks - Regional
+TRMB,Trimble Inc.,Hold,0.09,28.55,13.88,3.19,0.0,Technology,Scientific & Technical Instruments
+CECO,CECO Environmental Corp.,Hold,0.08,30.18,26.7,3.09,0.0,Industrials,Pollution & Treatment Controls
+HCSG,"Healthcare Services Group, Inc.",Hold,0.08,15.77,94.64,0.56,12.6,Healthcare,Medical Care Facilities
+CYD,China Yuchai International Limi,Hold,0.08,17.79,20.11,1.2,0.0,Consumer Cyclical,Auto Manufacturers
+TRNS,"Transcat, Inc.",Hold,0.08,33.62,52.68,3.4,3.8,Industrials,Specialty Business Services
+IMOS,ChipMOS TECHNOLOGIES INC.,Hold,0.08,17.32,13.15,1.44,0.0,Technology,Semiconductors
+ASG,"Liberty All-Star Growth Fund, I",Hold,0.08,,6.73,-0.36,0.0,Financial Services,Asset Management
+SYBT,"Stock Yards Bancorp, Inc.",Hold,0.08,18.94,17.9,1.47,0.3,Financial Services,Banks - Regional
+CM,Canadian Imperial Bank of Comme,Hold,0.08,13.76,12.72,0.75,0.0,Financial Services,Banks - Diversified
+HFBL,"Home Federal Bancorp, Inc. of L",Hold,0.08,,12.61,0.53,0.0,Financial Services,Banks - Regional
+GILT,Gilat Satellite Networks Ltd.,Hold,0.08,21.83,31.83,1.89,0.0,Technology,Communication Equipment
+LLY,Eli Lilly and Company,Hold,0.07,35.66,65.81,16.45,-39.5,Healthcare,Drug Manufacturers - General
+REG,Regency Centers Corporation,Hold,0.07,33.35,33.19,2.91,3.1,Real Estate,REIT - Retail
+WVFC,WVS Financial Corp.,Hold,0.07,,11.92,0.38,0.0,Financial Services,Banks - Regional
+CHI,Calamos Convertible Opportuniti,Hold,0.07,,14.65,0.73,0.0,Financial Services,Asset Management
+SBGI,"Sinclair, Inc.",Hold,0.07,37.9,7.25,5.7,0.0,Communication Services,Broadcasting
+PMM,Putnam Managed Municipal Income,Hold,0.06,,27.71,2.54,0.0,Financial Services,Asset Management
+NMR,Nomura Holdings Inc,Hold,0.06,11.93,8.91,0.62,0.0,Financial Services,Capital Markets
+FFIN,"First Financial Bankshares, Inc",Hold,0.06,22.18,21.27,1.78,0.0,Financial Services,Banks - Regional
+STEL,"Stellar Bancorp, Inc.",Hold,0.06,16.35,14.94,1.04,0.0,Financial Services,Banks - Regional
+KNX,Knight-Swift Transportation Hol,Hold,0.06,21.16,43.56,1.41,3.3,Industrials,Trucking
+CHY,Calamos Convertible and High In,Hold,0.06,,14.89,0.71,0.0,Financial Services,Asset Management
+NMI,"Nuveen Municipal Income Fund, I",Hold,0.06,,29.13,2.8,0.0,Financial Services,Asset Management
+CBK.DE,Commerzbank AG                I,Hold,0.06,13.57,13.75,0.53,0.0,Financial Services,Banks - Regional
+COLUM.CO,Columbus A/S,Hold,0.06,,26.97,2.46,0.0,Technology,Information Technology Services
+ETY,Eaton Vance Tax-Managed Diversi,Hold,0.06,,8.73,-0.17,0.0,Financial Services,Asset Management
+AEF,27762,Hold,0.05,,15.62,0.78,0.0,Financial Services,Asset Management
+EGP,"EastGroup Properties, Inc.",Hold,0.05,33.45,34.75,3.37,0.0,Real Estate,REIT - Industrial
+UNB,"Union Bankshares, Inc.",Hold,0.05,,14.27,0.6,0.0,Financial Services,Banks - Regional
+GE,GE Aerospace,Hold,0.05,51.64,38.6,4.61,4.2,Industrials,Aerospace & Defense
+JPM,JP Morgan Chase & Co.,Hold,0.04,17.82,15.29,1.3,-1.3,Financial Services,Banks - Diversified
+NWS,News Corporation,Hold,0.04,34.5,41.12,3.53,0.0,Communication Services,Entertainment
+JCI,Johnson Controls International ,Hold,0.04,26.62,33.69,4.84,-14.5,Industrials,Building Products & Equipment
+SNPS,"Synopsys, Inc.",Hold,0.04,39.85,68.51,4.67,2.0,Technology,Software - Infrastructure
+ORA,"Ormat Technologies, Inc.",Hold,0.04,39.28,42.91,1.8,14.8,Utilities,Utilities - Renewable
+AAT,"American Assets Trust, Inc.",Hold,0.04,27.68,15.1,2.65,0.0,Real Estate,REIT - Diversified
+PWR,"Quanta Services, Inc.",Hold,0.03,40.55,66.67,5.01,0.0,Industrials,Engineering & Construction
+PAI,Western Asset Investment Grade ,Hold,0.03,,32.69,3.05,0.0,Financial Services,Asset Management
+GLW,Corning Incorporated,Hold,0.03,23.99,106.56,3.59,0.7,Technology,Electronic Components
+BMO,Bank Of Montreal,Hold,0.03,14.8,14.4,0.59,0.0,Financial Services,Banks - Diversified
+POWI,"Power Integrations, Inc.",Hold,0.02,34.53,82.0,1.86,16.9,Technology,Semiconductors
+BOH,Bank of Hawaii Corporation,Hold,0.02,17.27,16.5,0.73,1.2,Financial Services,Banks - Regional
+RVT,"Royce Value Trust, Inc.",Hold,0.02,,11.48,0.03,0.0,Financial Services,Asset Management
+PLD,"Prologis, Inc.",Hold,0.02,30.43,26.71,2.43,1.2,Real Estate,REIT - Industrial
+KIM,Kimco Realty Corporation (HC),Hold,0.02,30.79,28.36,2.16,3.5,Real Estate,REIT - Retail
+ROG,Rogers Corporation,Hold,0.01,18.74,73.5,1.78,0.0,Technology,Electronic Components
+AVGO,Broadcom Inc.,Hold,0.01,47.7,107.41,8.01,-3.9,Technology,Semiconductors
+NWFL,Norwood Financial Corp.,Hold,0.01,8.27,117.14,0.14,0.0,Financial Services,Banks - Regional
+SBCF,Seacoast Banking Corporation of,Hold,0.01,18.26,17.92,0.9,0.0,Financial Services,Banks - Regional
+TCBI,"Texas Capital Bancshares, Inc.",Hold,0.01,15.28,34.32,0.43,0.0,Financial Services,Banks - Regional
+BFIN,BankFinancial Corporation,Hold,0.0,15.0,32.5,0.3,0.0,Financial Services,Banks - Regional
+NNI,"Nelnet, Inc.",Hold,0.0,21.21,23.56,1.26,0.0,Financial Services,Credit Services
+LGI,Lazard Global Total Return and ,Sell,-0.01,,14.5,0.27,0.0,Financial Services,Asset Management
+H,Hyatt Hotels Corporation,Sell,-0.01,37.4,18.7,2.4,5.7,Consumer Cyclical,Lodging
+NCT,Intercont (Cayman) Limited,Sell,-0.01,,45.44,4.43,0.0,Industrials,Marine Shipping
+MCBK,"Madison County Financial, Inc.",Sell,-0.01,,17.87,0.77,0.0,Financial Services,Banks - Regional
+MPA,Blackrock MuniYield Pennsylvani,Sell,-0.01,,28.62,2.19,0.0,Financial Services,Asset Management
+HDB,HDFC Bank Limited,Sell,-0.02,25.77,25.34,1.73,0.0,Financial Services,Banks - Regional
+SFST,"Southern First Bancshares, Inc.",Sell,-0.02,24.06,19.78,0.52,8.5,Financial Services,Banks - Regional
+MCR,MFS Charter Income Trust,Sell,-0.02,30.05,8.76,3.3,0.0,Financial Services,Asset Management
+GBCI,"Glacier Bancorp, Inc.",Sell,-0.02,19.12,24.07,0.78,0.0,Financial Services,Banks - Regional
+PBHC,"Pathfinder Bancorp, Inc.",Sell,-0.02,,24.48,0.38,9.8,Financial Services,Banks - Regional
+BJRI,"BJ's Restaurants, Inc.",Sell,-0.03,25.3,39.53,2.53,-5.1,Consumer Cyclical,Restaurants
+EOI,Eaton Vance Enhance Equity Inco,Sell,-0.03,,13.61,0.08,0.0,Financial Services,Asset Management
+HTH,Hilltop Holdings Inc.,Sell,-0.04,19.27,13.54,0.99,0.0,Financial Services,Financial Conglomerates
+ORN,"Orion Group Holdings, Inc.",Sell,-0.04,32.86,95.3,2.01,13.3,Industrials,Engineering & Construction
+HIFS,Hingham Institution for Savings,Sell,-0.04,,19.09,0.74,-0.3,Financial Services,Banks - Regional
+RHM.DE,RHEINMETALL AG                I,Sell,-0.04,57.7,92.77,7.06,0.0,Industrials,Aerospace & Defense
+CME,CME Group Inc.,Sell,-0.05,26.43,26.54,1.74,-0.6,Financial Services,Financial Data & Stock Exchanges
+PODD,Insulet Corporation,Sell,-0.05,75.52,52.66,6.94,0.0,Healthcare,Medical Devices
+TIGR,UP Fintech Holding Limited,Sell,-0.05,24.33,22.71,1.4,0.0,Financial Services,Capital Markets
+NOW,"ServiceNow, Inc.",Sell,-0.06,59.03,123.53,5.17,12.4,Technology,Software - Application
+MTZ,"MasTec, Inc.",Sell,-0.06,34.53,69.06,3.35,0.9,Industrials,Engineering & Construction
+HBANP,Huntington Bancshares Incorpora,Sell,-0.06,,22.44,1.05,0.0,Financial Services,Banks - Regional
+INCY,Incyte Corporation,Sell,-0.06,11.43,350.8,2.04,10.2,Healthcare,Biotechnology
+ICE,Intercontinental Exchange Inc.,Sell,-0.07,27.12,37.84,2.09,-2.7,Financial Services,Financial Data & Stock Exchanges
+MHI,Pioneer Municipal High Income T,Sell,-0.08,,38.74,2.95,0.0,Financial Services,Asset Management
+UBS,UBS Group AG Registered,Sell,-0.08,18.16,25.02,0.32,0.0,Financial Services,Banks - Diversified
+EQR,Equity Residential,Sell,-0.08,39.18,25.27,2.64,0.9,Real Estate,REIT - Residential
+OPOF,Old Point Financial Corporation,Sell,-0.08,,20.66,0.69,0.0,Financial Services,Banks - Regional
+MUE,Blackrock MuniHoldings Quality ,Sell,-0.09,,34.56,2.4,0.0,Financial Services,Asset Management
+MCN,Madison Covered Call & Equity S,Sell,-0.09,,24.88,1.15,0.0,Financial Services,Asset Management
+EDN,Empresa Distribuidora Y Comerci,Sell,-0.09,22.98,8.14,1.92,0.0,Utilities,Utilities - Regulated Electric
+TRNO,Terreno Realty Corporation,Sell,-0.1,33.99,28.01,2.12,0.2,Real Estate,REIT - Industrial
+STAG,"Stag Industrial, Inc.",Sell,-0.1,39.5,26.14,2.65,0.2,Real Estate,REIT - Industrial
+BGR,BlackRock Energy and Resources ,Sell,-0.1,,27.83,1.48,0.0,Financial Services,Asset Management
+HEI,Heico Corporation,Sell,-0.1,75.68,75.68,7.44,-0.4,Industrials,Aerospace & Defense
+ESS,"Essex Property Trust, Inc.",Sell,-0.1,47.04,27.1,2.83,3.3,Real Estate,REIT - Residential
+OPY,"Oppenheimer Holdings, Inc.",Sell,-0.1,29.06,11.07,2.23,-0.2,Financial Services,Capital Markets
+NXC,Nuveen California Select Tax-Fr,Sell,-0.11,,35.44,2.36,0.0,Financial Services,Asset Management
+LSCC,Lattice Semiconductor Corporati,Sell,-0.11,50.69,145.22,3.53,17.7,Technology,Semiconductors
+APEI,"American Public Education, Inc.",Sell,-0.12,20.73,27.84,5.23,-31.4,Consumer Defensive,Education & Training Services
+OMCL,"Omnicell, Inc.",Sell,-0.12,16.11,63.04,0.35,0.0,Healthcare,Health Information Services
+EGAN,eGain Corporation,Sell,-0.12,22.34,64.8,1.31,0.0,Technology,Software - Application
+PRLB,"Proto Labs, Inc.",Sell,-0.13,26.97,66.07,1.92,0.0,Industrials,Metal Fabrication
+TLF,"Tandy Leather Factory, Inc.",Sell,-0.13,6.16,2.38,0.2,0.0,Consumer Cyclical,Specialty Retail
+STR,Sitio Royalties Corp.,Sell,-0.14,43.93,35.48,2.87,0.0,Energy,Oil & Gas E&P
+AHH,"Armada Hoffler Properties, Inc.",Sell,-0.15,27.8,69.5,1.95,0.0,Real Estate,REIT - Diversified
+TDG,Transdigm Group Incorporated,Sell,-0.15,36.95,54.05,11.24,-37.6,Industrials,Aerospace & Defense
+GOOD,Gladstone Commercial Corporatio,Sell,-0.16,44.5,44.5,2.99,0.0,Real Estate,REIT - Diversified
+DX,"Dynex Capital, Inc.",Sell,-0.16,23.04,15.08,0.73,0.0,Real Estate,REIT - Mortgage
+HSTM,"HealthStream, Inc.",Sell,-0.16,41.86,42.52,2.41,1.9,Healthcare,Health Information Services
+OLP,"One Liberty Properties, Inc.",Sell,-0.16,42.26,16.9,2.66,0.0,Real Estate,REIT - Diversified
+SAAB-B.ST,SAAB AB ser. B,Sell,-0.16,52.5,54.19,4.02,0.0,Industrials,Aerospace & Defense
+L,Loews Corporation,Sell,-0.16,31.17,14.82,1.65,-0.4,Financial Services,Insurance - Property & Casualty
+OIS,"Oil States International, Inc.",Sell,-0.16,19.47,73.0,0.81,0.0,Energy,Oil & Gas Equipment & Services
+MRTN,"Marten Transport, Ltd.",Sell,-0.16,25.24,51.48,1.15,0.0,Industrials,Trucking
+LUV,Southwest Airlines Company,Sell,-0.16,20.45,50.81,0.55,0.0,Industrials,Airlines
+CUBA,The Herzfeld Caribbean Basin Fu,Sell,-0.17,,13.26,-0.61,0.0,Financial Services,Asset Management
+BCS,Barclays PLC,Sell,-0.18,18.49,9.66,0.42,0.0,Financial Services,Banks - Diversified
+O,Realty Income Corporation,Sell,-0.18,35.76,51.69,2.18,0.0,Real Estate,REIT - Retail
+NPK,"National Presto Industries, Inc",Sell,-0.19,111.18,16.2,6.88,0.0,Industrials,Aerospace & Defense
+WLFC,Willis Lease Finance Corporatio,Sell,-0.19,114.83,9.86,5.41,10.9,Industrials,Rental & Leasing Services
+ADC,Agree Realty Corporation,Sell,-0.19,39.85,40.97,2.3,0.0,Real Estate,REIT - Retail
+PRA,ProAssurance Corporation,Sell,-0.2,28.67,28.67,0.95,0.0,Financial Services,Insurance - Property & Casualty
+LYV,"Live Nation Entertainment, Inc.",Sell,-0.2,63.26,51.89,4.18,1.0,Communication Services,Entertainment
+KKR,KKR & Co. Inc.,Sell,-0.21,25.07,65.87,1.26,-0.9,Financial Services,Asset Management
+IROQ,"IF Bancorp, Inc.",Sell,-0.21,,24.04,0.37,0.0,Financial Services,Banks - Regional
+IRM,Iron Mountain Incorporated (Del,Sell,-0.21,50.0,239.02,4.16,18.4,Real Estate,REIT - Specialty
+SFBC,"Sound Financial Bancorp, Inc.",Sell,-0.21,,24.63,0.47,0.0,Financial Services,Banks - Regional
+BTT,BlackRock Municipal 2030 Target,Sell,-0.21,,36.73,1.8,0.0,Financial Services,Asset Management
+NTWK,NETSOL Technologies Inc.,Sell,-0.22,11.68,222.0,1.14,0.0,Technology,Software - Application
+MVT,"Blackrock MuniVest Fund II, Inc",Sell,-0.22,,43.48,2.45,0.0,Financial Services,Asset Management
+RLJ,RLJ Lodging Trust,Sell,-0.22,40.95,29.92,1.96,0.0,Real Estate,REIT - Hotel & Motel
+BME,Blackrock Health Sciences Trust,Sell,-0.23,,22.26,0.1,0.0,Financial Services,Asset Management
+SLMBP,SLM Corporation - Floating Rate,Sell,-0.23,,35.29,1.51,0.0,Financial Services,Credit Services
+SRCL,"Stericycle, Inc.",Sell,-0.24,22.22,158.92,2.3,0.0,Industrials,Waste Management
+MYRG,"MYR Group, Inc.",Sell,-0.25,31.36,91.04,2.19,0.0,Industrials,Engineering & Construction
+EVT,Eaton Vance Tax Advantaged Divi,Sell,-0.25,,34.97,1.32,0.0,Financial Services,Asset Management
+BHK,Blackrock Core Bond Trust Black,Sell,-0.26,,53.0,3.13,0.0,Financial Services,Asset Management
+BSET,"Bassett Furniture Industries, I",Sell,-0.26,22.44,61.71,0.33,1.2,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+TYL,"Tyler Technologies, Inc.",Sell,-0.27,51.38,84.06,4.47,-3.5,Technology,Software - Application
+ESLT,Elbit Systems Ltd.,Sell,-0.27,53.19,57.45,3.21,0.0,Industrials,Aerospace & Defense
+RPT,Rithm Property Trust Inc.,Sell,-0.28,13.35,66.75,-0.8,0.0,Real Estate,REIT - Mortgage
+OFED,Oconee Federal Financial Corp.,Sell,-0.29,,30.21,0.59,0.0,Financial Services,Banks - Regional
+WERN,"Werner Enterprises, Inc.",Sell,-0.3,20.44,98.66,0.65,0.0,Industrials,Trucking
+AMD,"Advanced Micro Devices, Inc.",Sell,-0.31,34.05,126.76,2.56,1.4,Technology,Semiconductors
+BKN,BlackRock Investment Quality Mu,Sell,-0.31,,50.0,2.48,0.0,Financial Services,Asset Management
+MHD,"Blackrock MuniHoldings Fund, In",Sell,-0.31,,50.14,2.45,0.0,Financial Services,Asset Management
+JOF,Japan Smaller Capitalization Fu,Sell,-0.31,,35.89,1.07,0.0,Financial Services,Asset Management
+EQIX,"Equinix, Inc.",Sell,-0.31,59.31,82.67,3.12,5.6,Real Estate,REIT - Specialty
+AEG,Aegon Ltd. New York Registry Sh,Sell,-0.31,24.66,16.63,0.07,0.0,Financial Services,Insurance - Diversified
+VICR,Vicor Corporation,Sell,-0.33,44.2,31.49,1.51,0.0,Technology,Electronic Components
+LINC,Lincoln Educational Services Co,Sell,-0.33,36.84,57.62,2.85,-9.9,Consumer Defensive,Education & Training Services
+SYNA,Synaptics Incorporated,Sell,-0.34,14.01,16.18,-1.33,0.0,Technology,Semiconductors
+MUJ,Blackrock MuniHoldings New Jers,Sell,-0.34,,50.86,2.29,0.0,Financial Services,Asset Management
+CMU,MFS High Yield Municipal Trust,Sell,-0.36,,54.33,2.52,0.0,Financial Services,Asset Management
+MHF,Western Asset Municipal High In,Sell,-0.36,,51.62,2.2,0.0,Financial Services,Asset Management
+PCH,PotlatchDeltic Corporation - Co,Sell,-0.36,51.34,66.49,1.23,9.6,Real Estate,REIT - Specialty
+SHO,"Sunstone Hotel Investors, Inc. ",Sell,-0.36,33.26,89.8,1.58,0.0,Real Estate,REIT - Hotel & Motel
+TAL,TAL Education Group,Sell,-0.36,20.92,73.21,-0.04,0.0,Consumer Defensive,Education & Training Services
+AMH,American Homes 4 Rent,Sell,-0.36,56.0,32.67,1.99,1.1,Real Estate,REIT - Residential
+BYM,Blackrock Municipal Income Qual,Sell,-0.37,,54.71,2.48,0.0,Financial Services,Asset Management
+NUV,"Nuveen Municipal Value Fund, In",Sell,-0.39,,56.67,2.45,0.0,Financial Services,Asset Management
+MYI,Blackrock MuniYield Quality Fun,Sell,-0.4,,56.94,2.42,0.0,Financial Services,Asset Management
+MQY,Blackrock MuniYield Quality Fun,Sell,-0.41,,57.16,2.37,0.0,Financial Services,Asset Management
+PANW,"Palo Alto Networks, Inc.",Sell,-0.44,28.4,117.53,3.1,-14.3,Technology,Software - Infrastructure
+MQT,Blackrock MuniYield Quality Fun,Sell,-0.46,,62.45,2.5,0.0,Financial Services,Asset Management
+NXP,Nuveen Select Tax Free Income P,Sell,-0.47,,65.57,2.67,0.0,Financial Services,Asset Management
+PCYO,Pure Cycle Corporation,Sell,-0.48,112.67,18.11,4.07,0.0,Utilities,Utilities - Regulated Water
+LITB,"LightInTheBox Holding Co., Ltd.",Sell,-0.5,65.0,10.83,2.15,0.0,Consumer Cyclical,Apparel Manufacturing
+X,United States Steel Corporation,Sell,-0.5,17.98,148.22,-0.06,0.0,Basic Materials,Steel
+CIEN,Ciena Corporation,Sell,-0.5,33.29,124.04,2.29,-6.9,Technology,Communication Equipment
+DTF,"DTF Tax-Free Income, Inc.",Sell,-0.5,,53.31,1.41,0.0,Financial Services,Asset Management
+HIW,"Highwoods Properties, Inc.",Sell,-0.51,76.23,18.58,2.22,0.0,Real Estate,REIT - Office
+NIM,Nuveen Select Maturities Munici,Sell,-0.51,,60.73,2.0,0.0,Financial Services,Asset Management
+MMYT,MakeMyTrip Limited,Sell,-0.53,52.08,118.09,2.53,0.0,Consumer Cyclical,Travel Services
+SMFG,Sumitomo Mitsui Financial Group,Sell,-0.54,37.88,12.63,0.18,0.0,Financial Services,Banks - Diversified
+MIY,Blackrock MuniYield Michigan Qu,Sell,-0.54,,67.38,2.31,0.0,Financial Services,Asset Management
+BGY,Blackrock Enhanced Internationa,Sell,-0.57,,52.73,0.92,0.0,Financial Services,Asset Management
+CPT,Camden Property Trust,Sell,-0.58,69.28,102.96,2.08,5.6,Real Estate,REIT - Residential
+RVSB,Riverview Bancorp Inc,Sell,-0.6,18.0,23.48,0.32,-26.0,Financial Services,Banks - Regional
+AKR,Acadia Realty Trust,Sell,-0.61,47.69,109.41,1.24,2.3,Real Estate,REIT - Retail
+RDWR,Radware Ltd.,Sell,-0.62,30.09,103.63,0.06,0.0,Technology,Software - Infrastructure
+SE,Sea Limited,Sell,-0.64,76.18,112.41,3.05,0.0,Consumer Cyclical,Internet Retail
+GTIM,Good Times Restaurants Inc.,Sell,-0.67,73.5,16.33,1.13,-0.2,Consumer Cyclical,Restaurants
+UDR,"UDR, Inc.",Sell,-0.68,84.89,110.83,1.8,8.8,Real Estate,REIT - Residential
+DOC,"Healthpeak Properties, Inc.",Sell,-0.68,69.04,71.92,1.52,0.0,Real Estate,REIT - Healthcare Facilities
+SUI,"Sun Communities, Inc.",Sell,-0.69,55.12,141.45,2.08,0.0,Real Estate,REIT - Residential
+ELSE,"Electro-Sensors, Inc.",Sell,-0.69,,44.27,-0.31,0.0,Technology,Scientific & Technical Instruments
+BFZ,BlackRock California Municipal ,Sell,-0.69,,79.92,2.13,0.0,Financial Services,Asset Management
+CCJ,Cameco Corporation,Sell,-0.7,67.07,188.43,3.54,0.0,Energy,Uranium
+CEVA,"CEVA, Inc.",Sell,-0.71,42.36,258.89,-1.42,37.7,Technology,Semiconductors
+TCI,Transcontinental Realty Investo,Sell,-0.71,,46.21,-0.28,0.0,Real Estate,Real Estate Services
+MAG,MAG Silver Corporation,Sell,-0.72,24.94,24.09,-1.71,0.0,Basic Materials,Silver
+BKT,BlackRock Income Trust Inc. (Th,Sell,-0.74,,82.93,1.94,0.0,Financial Services,Asset Management
+TRIFOR.CO,Trifork Group AG,Sell,-0.76,115.75,15.88,1.92,0.0,Technology,Information Technology Services
+AGYS,"Agilysys, Inc.",Sell,-0.76,70.21,235.9,3.79,1.0,Technology,Software - Application
+MAV,Pioneer Municipal High Income A,Sell,-0.78,,101.13,2.79,0.0,Financial Services,Asset Management
+HOV,"Hovnanian Enterprises, Inc.",Sell,-0.78,169.31,4.32,5.48,0.2,Consumer Cyclical,Residential Construction
+COF,Capital One Financial Corporati,Sell,-0.8,13.68,594.94,0.0,6.5,Financial Services,Credit Services
+PERF,Perfect Corp.,Sell,-0.81,49.0,35.0,-0.73,0.0,Technology,Software - Application
+TFSL,TFS Financial Corporation,Sell,-0.85,41.06,45.46,0.48,-17.5,Financial Services,Banks - Regional
+CUZ,Cousins Properties Incorporated,Sell,-0.96,109.2,82.73,1.43,0.0,Real Estate,REIT - Office
+CPHC,Canterbury Park Holding Corpora,Sell,-0.97,,113.65,2.09,0.0,Consumer Cyclical,Resorts & Casinos
+DLR,"Digital Realty Trust, Inc.",Sell,-0.98,145.22,46.12,1.03,3.1,Real Estate,REIT - Specialty
+TSLA,"Tesla, Inc.",Sell,-0.98,100.49,192.66,2.91,0.2,Consumer Cyclical,Auto Manufacturers
+AMSC,American Superconductor Corpora,Sell,-1.01,82.57,273.5,1.7,9.2,Industrials,Specialty Industrial Machinery
+GIFI,"Gulf Island Fabrication, Inc.",Sell,-1.02,336.0,9.08,4.63,0.0,Industrials,Metal Fabrication
+SGI,Somnigroup International Inc.,Sell,-1.04,679.82,47.94,4.67,15.6,Consumer Cyclical,"Furnishings, Fixtures & Appliances"
+KRG,Kite Realty Group Trust,Sell,-1.06,64.46,322.29,1.73,3.9,Real Estate,REIT - Retail
+UMH,"UMH Properties, Inc.",Sell,-1.06,96.82,137.17,1.82,-3.4,Real Estate,REIT - Residential
+CSGP,"CoStar Group, Inc.",Sell,-1.14,83.36,359.08,-0.04,23.8,Real Estate,Real Estate Services
+JOE,St. Joe Company (The),Sell,-1.16,460.0,35.63,4.07,0.0,Real Estate,Real Estate - Diversified
+FUND,"Sprott Focus Trust, Inc. - Clos",Sell,-1.17,,129.83,1.21,2.4,Financial Services,Asset Management
+MTX,Minerals Technologies Inc.,Sell,-1.17,9.0,6128.0,4.88,0.0,Basic Materials,Specialty Chemicals
+DD,"DuPont de Nemours, Inc.",Sell,-1.22,17.1,2502.0,3.36,0.0,Basic Materials,Specialty Chemicals
+ISRL,Israel Acquisitions Corp,Sell,-1.25,,69.72,-1.31,0.0,Financial Services,Shell Companies
+MUC,Blackrock MuniHoldings Californ,Sell,-1.27,,167.67,2.3,0.0,Financial Services,Asset Management
+KTOS,Kratos Defense & Security Solut,Sell,-1.33,100.61,456.62,1.04,14.4,Industrials,Aerospace & Defense
+NAD,Nuveen Quality Municipal Income,Sell,-1.36,,185.17,2.33,0.0,Financial Services,Asset Management
+ANGI,Angi Inc.,Sell,-1.37,334.0,16.21,1.34,0.0,Communication Services,Internet Content & Information
+TAC,TransAlta Corporation,Sell,-1.38,39.35,1220.0,2.62,0.0,Utilities,Utilities - Independent Power Producers
+PDFS,"PDF Solutions, Inc.",Sell,-1.39,24.25,808.33,-0.12,0.0,Technology,Software - Application
+HQH,Tekla Healthcare Investors,Sell,-1.4,,123.46,-0.06,0.0,Financial Services,Asset Management
+CWST,"Casella Waste Systems, Inc.",Sell,-1.41,104.19,492.55,2.22,4.1,Industrials,Waste Management
+CLOUD.OL,CLOUDBERRY CLEAN ENERGY ASA,Sell,-1.43,171.75,59.74,-0.34,0.0,Utilities,Utilities - Renewable
+GLNG,Golar LNG Limited,Sell,-1.44,21.03,1346.0,0.52,0.0,Energy,Oil & Gas Midstream
+SJT,San Juan Basin Royalty Trust,Sell,-1.51,,292.5,4.52,0.0,Energy,Oil & Gas E&P
+BTO,John Hancock Financial Opportun,Sell,-1.52,299.33,5.03,1.28,0.0,Financial Services,Asset Management
+GWRE,"Guidewire Software, Inc.",Sell,-1.74,91.62,554.17,0.6,0.0,Technology,Software - Application
+MYN,Blackrock MuniYield New York Qu,Sell,-1.83,,306.67,2.19,0.0,Financial Services,Asset Management
+TAIT,Taitron Components Incorporated,Sell,-1.88,,222.14,0.12,0.0,Technology,Electronics & Computer Distribution
+TRC,Tejon Ranch Co,Sell,-1.96,169.18,232.63,-1.01,2.5,Industrials,Conglomerates
+HIHO,Highway Holdings Limited,Sell,-2.09,,83.0,-3.2,0.0,Industrials,Metal Fabrication
+USA,Liberty All-Star Equity Fund,Sell,-2.1,666.0,7.32,0.35,0.0,Financial Services,Asset Management
+NC,"NACCO Industries, Inc.",Sell,-2.21,,8.89,-4.56,6.8,Energy,Thermal Coal
+MHN,Blackrock MuniHoldings New York,Sell,-2.23,,473.0,2.27,0.0,Financial Services,Asset Management
+PEO,"Adams Natural Resources Fund, I",Sell,-2.24,362.5,17.13,1.55,-44.0,Financial Services,Asset Management
+GLBZ,Glen Burnie Bancorp,Sell,-2.62,,482.57,0.01,0.0,Financial Services,Banks - Regional
+GROW,"U.S. Global Investors, Inc.",Sell,-2.88,,246.0,-2.94,0.0,Financial Services,Asset Management
+ORBT,Orbit International Corp.,Sell,-3.25,,13.04,-4.8,0.0,Industrials,Electrical Equipment & Parts
+UAN,"CVR Partners, LP",Hold,,-14.23,12.53,7.36,0.0,Basic Materials,Agricultural Inputs
+SOHU,Sohu.com Limited,Hold,,-4.93,4.04,-3.57,0.0,Communication Services,Electronic Gaming & Multimedia
+TNXP,Tonix Pharmaceuticals Holding C,Hold,,-1.53,0.13,-27.59,0.0,Healthcare,Biotechnology
+SQNS,Sequans Communications S.A.,Hold,,-2.01,0.69,-14.96,0.0,Technology,Semiconductors
+SSP,E.W. Scripps Company (The),Hold,,-4.27,3.59,4.92,0.0,Communication Services,Broadcasting
+ASTI,"Ascent Solar Technologies, Inc",Hold,,,0.04,-87.49,0.0,Technology,Solar
+AGEN,Agenus Inc.,Hold,,-0.66,0.21,-28.7,0.0,Healthcare,Biotechnology
+LXP,LXP Industrial Trust,Hold,,-396.5,39.65,1.0,0.0,Real Estate,REIT - Industrial
+NTGR,"NETGEAR, Inc.",Hold,,-24.08,30.38,-4.63,0.0,Technology,Communication Equipment
+GCI,"Gannett Co., Inc.",Hold,,-31.33,10.16,2.11,0.0,Communication Services,Publishing
+PTCT,"PTC Therapeutics, Inc.",Hold,,-12.05,6.81,24.42,-2.4,Healthcare,Biotechnology
+IFN,"India Fund, Inc. (The)",Hold,,-9.96,4.93,-0.36,0.0,Financial Services,Asset Management
+PETS,"PetMed Express, Inc.",Hold,,-118.33,355.0,0.93,6.0,Healthcare,Pharmaceutical Retailers
+TYG,Tortoise Energy Infrastructure ,Hold,,-68.63,2.17,0.67,0.0,Financial Services,Asset Management
+OMEX,"Odyssey Marine Exploration, Inc",Hold,,-1.84,6.58,-32.62,0.0,Basic Materials,Other Industrial Metals & Mining
+NAUH,National American University Ho,Hold,,,1.5,-8.46,0.0,Consumer Defensive,Education & Training Services
+DEI,"Douglas Emmett, Inc.",Hold,,-81.0,48.09,1.35,0.0,Real Estate,REIT - Office
+CBL,"CBL & Associates Properties, In",Hold,,-69.23,12.56,3.15,8.1,Real Estate,REIT - Retail
+MSB,Mesabi Trust,Hold,,-1.62,4.52,53.09,0.0,Basic Materials,Steel
+TR,"Tootsie Roll Industries, Inc.",Hold,,-20.12,31.38,6.61,0.0,Consumer Defensive,Confectioners
+INN,"Summit Hotel Properties, Inc.",Hold,,-50.18,27.6,1.66,0.0,Real Estate,REIT - Hotel & Motel
+CLDT,Chatham Lodging Trust (REIT),Hold,,-58.92,117.83,1.57,0.0,Real Estate,REIT - Hotel & Motel
+RGS,Regis Corporation,Hold,,-7.6,0.53,2.48,0.0,Consumer Cyclical,Personal Services
+GME,GameStop Corporation,Hold,,-2298.0,43.36,0.72,1.6,Consumer Cyclical,Specialty Retail
+SVVC,Firsthand Technology Value Fund,Hold,,0.07,0.6,-19.41,0.0,Financial Services,Asset Management
+AGIO,"Agios Pharmaceuticals, Inc.",Hold,,-6.12,3.22,-22.88,13.9,Healthcare,Biotechnology
+TEO,Telecom Argentina SA,Hold,,-12.59,94.4,0.09,0.0,Communication Services,Telecom Services
+IRS,IRSA Inversiones Y Representaci,Hold,,-5.46,8.94,3.38,0.0,Real Estate,Real Estate Services
+GTN,"Gray Media, Inc.",Hold,,-6.96,2.08,4.96,25.7,Communication Services,Broadcasting
+CYCC,"Cyclacel Pharmaceuticals, Inc.",Hold,,-7.73,0.36,-160.18,0.0,Healthcare,Biotechnology
+NVAX,"Novavax, Inc.",Hold,,-45.5,2.65,19.97,0.0,Healthcare,Biotechnology
+STI,"Solidion Technology, Inc.",Hold,,,0.38,-104.55,0.0,Industrials,Electrical Equipment & Parts
