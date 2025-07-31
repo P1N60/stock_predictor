@@ -34,7 +34,7 @@ class Ticker:
             return 1.00
 
     def recommendation_score(self) -> float:
-        return round(2 + np.log(self.roa+5) - np.log(self.pe+25) + self.insider_buy()*0.02 + np.log(self.forward_vs_current_PE())*0.5, 2)
+        return round(2 + np.log(self.roa+5) - np.log(self.pe+25) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())*0.5, 2)
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.75:
