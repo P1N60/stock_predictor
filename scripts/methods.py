@@ -34,7 +34,10 @@ class Ticker:
             return 1.00
 
     def recommendation_score(self) -> float:
-        return round(2 + np.log(self.roa+5) - np.log(self.pe+25) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())*0.5, 2)
+        try:
+            return round(2 + np.log(self.roa+5) - np.log(self.pe+25) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())*0.5, 2)
+        except:
+            return np.nan
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.75:
@@ -44,7 +47,7 @@ class Ticker:
         else:
             return "Hold"
 
-    def summary(self):
+    def summary(self) -> pd.DataFrame:
         df = pd.DataFrame([{
             "Ticker": self.symbol,
             "Name": self.name,
