@@ -13,6 +13,9 @@ class Ticker:
         self.pe = round(self.info["trailingPE"], 2)
         self.roa = round(self.info["returnOnAssets"]*100, 2)
         self.name = self.info["shortName"]
+        self.expt_pe = 23.5
+        self.expt_roa = 4
+        self.owned_tickers = pd.read_csv("../data/owned_tickers.csv")["Ticker"].to_list()
     
     def insider_buy(self) -> float:
         if 'Shares' in self.insider.columns:
@@ -34,10 +37,9 @@ class Ticker:
             return 1.00
 
     def recommendation_score(self) -> float:
-        try:
-            return round(2 + np.log(self.roa+5) - np.log(self.pe+25) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())*0.5, 2)
-        except:
+        if self.pe+self.expt_pe  <= 0 or self.roa+self.expt_roa <= 0 or self.forward_PE() <= 0:
             return np.nan
+        return round(2 + np.log(self.roa+self.expt_roa) - np.log(self.pe+self.expt_pe) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())*0.5, 2)
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.75:
@@ -46,6 +48,12 @@ class Ticker:
             return "Sell"
         else:
             return "Hold"
+        
+    def owned(self) -> bool:
+        if self.symbol in self.owned_tickers:
+            return True
+        else:
+            return False
 
     def summary(self) -> pd.DataFrame:
         df = pd.DataFrame([{
@@ -53,10 +61,12 @@ class Ticker:
             "Name": self.name,
             "Signal": self.recommendation_signal(),
             "Recommendation Score": self.recommendation_score(),
+            "Owned": self.owned(),
             "Forward P/E": self.forward_PE(),
             "P/E": self.pe,
             "ROA%": self.roa,
             "Insider Buy%": self.insider_buy(),
             "Sector": self.info["sector"],
-            "Industry": self.info["industry"]}])
+            "Industry": self.info["industry"],
+            }])
         return df
