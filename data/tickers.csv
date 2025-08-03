@@ -5779,3 +5779,418 @@ QBTS,
 IONQ,
 QUBT,
 RGTI,
+ASML.AS,ASML Holding N.V.,Euronext Amsterdam
+RDSA.AS,Royal Dutch Shell PLC,Euronext Amsterdam
+NESN.SW,Nestle SA,SIX Swiss Exchange
+TSMC,Taiwan Semiconductor Manufacturing Company Limited,NYSE
+NOVO-B.CO,Novo Nordisk B A/S,Copenhagen Stock Exchange
+SAP.DE,SAP SE,XETRA
+ROCHE.SW,Roche Holding AG,SIX Swiss Exchange
+TM,Toyota Motor Corporation,NYSE
+SHOP.TO,Shopify Inc.,Toronto Stock Exchange
+0700.HK,Tencent Holdings Limited,Hong Kong Stock Exchange
+BABA,Alibaba Group Holding Limited,NYSE
+DSV.CO,DSV A/S,Copenhagen Stock Exchange
+NOKIA.HE,Nokia Corporation,Helsinki Stock Exchange
+SHEL.L,Shell plc,London Stock Exchange
+AZN.L,AstraZeneca PLC,London Stock Exchange
+UL,Unilever PLC,NYSE
+NVO,Novo Nordisk A/S,NYSE
+BP,BP p.l.c.,NYSE
+BHP,BHP Group Limited,NYSE
+RIO,Rio Tinto Group,NYSE
+ABB,ABB Ltd,NYSE
+NTR,Nutrien Ltd.,NYSE
+CNI,Canadian National Railway Company,NYSE
+RY,Royal Bank of Canada,NYSE
+TD,The Toronto-Dominion Bank,NYSE
+BNS,The Bank of Nova Scotia,NYSE
+MUFG,Mitsubishi UFJ Financial Group Inc.,NYSE
+SMFG,Sumitomo Mitsui Financial Group Inc.,NYSE
+MFG,Mizuho Financial Group Inc.,NYSE
+SNY,Sanofi,NASDAQ
+GSK,GlaxoSmithKline plc,NYSE
+DEO,Diageo plc,NYSE
+BTI,British American Tobacco p.l.c.,NYSE
+ING,ING Groep N.V.,NYSE
+PHG,Koninklijke Philips N.V.,NYSE
+UBS,UBS Group AG,NYSE
+CS,Credit Suisse Group AG,NYSE
+DB,Deutsche Bank Aktiengesellschaft,NYSE
+BBVA,Banco Bilbao Vizcaya Argentaria S.A.,NYSE
+SAN,Banco Santander S.A.,NYSE
+BCH,Banco de Chile,NYSE
+IQ,iQIYI Inc.,NASDAQ
+BIDU,Baidu Inc.,NASDAQ
+JD,JD.com Inc.,NASDAQ
+PDD,PinDuoduo Inc.,NASDAQ
+NTES,NetEase Inc.,NASDAQ
+TME,Tencent Music Entertainment Group,NYSE
+NIO,NIO Inc.,NYSE
+XPEV,XPeng Inc.,NYSE
+LI,Li Auto Inc.,NASDAQ
+BILI,Bilibili Inc.,NASDAQ
+EDU,New Oriental Education & Technology Group Inc.,NYSE
+TAL,TAL Education Group,NYSE
+WB,Weibo Corporation,NASDAQ
+SINA,SINA Corporation,NASDAQ
+BZUN,Baozun Inc.,NASDAQ
+VIPS,Vipshop Holdings Limited,NYSE
+YY,JOYY Inc.,NASDAQ
+DOYU,DouYu International Holdings Limited,NASDAQ
+HUYA,HUYA Inc.,NYSE
+TEAM,Atlassian Corporation Plc,NASDAQ
+WIX,Wix.com Ltd.,NASDAQ
+MELI,MercadoLibre Inc.,NASDAQ
+QCOM,QUALCOMM Incorporated,NASDAQ
+TSM,Taiwan Semiconductor Manufacturing Company Limited,NYSE
+UMC,United Microelectronics Corporation,NYSE
+ASX,ASE Technology Holding Co. Ltd.,NYSE
+HIMX,Himax Technologies Inc.,NASDAQ
+SPIL,Siliconware Precision Industries Co. Ltd.,NASDAQ
+VOLV-B.ST,Volvo AB (publ),Stockholm Stock Exchange
+ASSA-B.ST,ASSA ABLOY AB (publ),Stockholm Stock Exchange
+ATCO-A.ST,Atlas Copco AB,Stockholm Stock Exchange
+SEB-A.ST,Skandinaviska Enskilda Banken AB (publ),Stockholm Stock Exchange
+INVE-B.ST,Investor AB,Stockholm Stock Exchange
+SAND.ST,Sandvik AB,Stockholm Stock Exchange
+SKF-B.ST,SKF AB,Stockholm Stock Exchange
+ALFA.ST,Alfa Laval AB,Stockholm Stock Exchange
+TELE2-B.ST,Tele2 AB,Stockholm Stock Exchange
+SWMA.ST,Swedish Match AB,Stockholm Stock Exchange
+MAERSK-A.CO,A.P. Moller - Maersk A/S,Copenhagen Stock Exchange
+CARL-B.CO,Carlsberg A/S,Copenhagen Stock Exchange
+DEMANT.CO,Demant A/S,Copenhagen Stock Exchange
+COLO-B.CO,Coloplast A/S,Copenhagen Stock Exchange
+GMAB.CO,Genmab A/S,Copenhagen Stock Exchange
+UPM.HE,UPM-Kymmene Corporation,Helsinki Stock Exchange
+SAMPO.HE,Sampo Plc,Helsinki Stock Exchange
+FORTUM.HE,Fortum Corporation,Helsinki Stock Exchange
+KESBV.HE,Kesko Corporation,Helsinki Stock Exchange
+ORNBV.HE,Orion Corporation,Helsinki Stock Exchange
+VOD.L,Vodafone Group Plc,London Stock Exchange
+GLEN.L,Glencore plc,London Stock Exchange
+ULVR.L,Unilever PLC,London Stock Exchange
+LGEN.L,Legal & General Group Plc,London Stock Exchange
+BARC.L,Barclays PLC,London Stock Exchange
+LLOY.L,Lloyds Banking Group plc,London Stock Exchange
+PRU.L,Prudential plc,London Stock Exchange
+ANTO.L,Antofagasta plc,London Stock Exchange
+RR.L,Rolls-Royce Holdings plc,London Stock Exchange
+BA.L,BAE Systems plc,London Stock Exchange
+BT-A.L,BT Group plc,London Stock Exchange
+CNR.TO,Canadian National Railway Company,Toronto Stock Exchange
+CP.TO,Canadian Pacific Railway Limited,Toronto Stock Exchange
+CNQ.TO,Canadian Natural Resources Limited,Toronto Stock Exchange
+SU.TO,Suncor Energy Inc.,Toronto Stock Exchange
+IMO.TO,Imperial Oil Limited,Toronto Stock Exchange
+MFC.TO,Manulife Financial Corporation,Toronto Stock Exchange
+SLF.TO,Sun Life Financial Inc.,Toronto Stock Exchange
+BAM-A.TO,Brookfield Asset Management Inc.,Toronto Stock Exchange
+FFH.TO,Fairfax Financial Holdings Limited,Toronto Stock Exchange
+WSP.TO,WSP Global Inc.,Toronto Stock Exchange
+7203.T,Toyota Motor Corporation,Tokyo Stock Exchange
+6758.T,Sony Group Corporation,Tokyo Stock Exchange
+9984.T,SoftBank Group Corp.,Tokyo Stock Exchange
+6861.T,Keyence Corporation,Tokyo Stock Exchange
+8306.T,Mitsubishi UFJ Financial Group Inc.,Tokyo Stock Exchange
+7974.T,Nintendo Co. Ltd.,Tokyo Stock Exchange
+4502.T,Takeda Pharmaceutical Company Limited,Tokyo Stock Exchange
+9432.T,Nippon Telegraph and Telephone Corporation,Tokyo Stock Exchange
+6954.T,Fanuc Corporation,Tokyo Stock Exchange
+4519.T,Chugai Pharmaceutical Co. Ltd.,Tokyo Stock Exchange
+8058.T,Mitsubishi Corporation,Tokyo Stock Exchange
+7267.T,Honda Motor Co. Ltd.,Tokyo Stock Exchange
+6981.T,Murata Manufacturing Co. Ltd.,Tokyo Stock Exchange
+9434.T,SoftBank Corp.,Tokyo Stock Exchange
+4063.T,Shin-Etsu Chemical Co. Ltd.,Tokyo Stock Exchange
+0941.HK,China Mobile Limited,Hong Kong Stock Exchange
+1299.HK,AIA Group Limited,Hong Kong Stock Exchange
+2318.HK,Ping An Insurance (Group) Company of China Ltd.,Hong Kong Stock Exchange
+0005.HK,HSBC Holdings plc,Hong Kong Stock Exchange
+0883.HK,CNOOC Limited,Hong Kong Stock Exchange
+0857.HK,PetroChina Company Limited,Hong Kong Stock Exchange
+2628.HK,China Life Insurance Company Limited,Hong Kong Stock Exchange
+1398.HK,Industrial and Commercial Bank of China Limited,Hong Kong Stock Exchange
+3988.HK,Bank of China Limited,Hong Kong Stock Exchange
+0939.HK,China Construction Bank Corporation,Hong Kong Stock Exchange
+BHP.AX,BHP Group Limited,Australian Securities Exchange
+CBA.AX,Commonwealth Bank of Australia,Australian Securities Exchange
+CSL.AX,CSL Limited,Australian Securities Exchange
+WBC.AX,Westpac Banking Corporation,Australian Securities Exchange
+ANZ.AX,Australia and New Zealand Banking Group Limited,Australian Securities Exchange
+NAB.AX,National Australia Bank Limited,Australian Securities Exchange
+TLS.AX,Telstra Corporation Limited,Australian Securities Exchange
+WOW.AX,Woolworths Group Limited,Australian Securities Exchange
+COL.AX,Coles Group Limited,Australian Securities Exchange
+MQG.AX,Macquarie Group Limited,Australian Securities Exchange
+RMD.AX,ResMed Inc.,Australian Securities Exchange
+FMG.AX,Fortescue Metals Group Ltd,Australian Securities Exchange
+ASME.DE,Atos SE,XETRA
+SIE.DE,Siemens Aktiengesellschaft,XETRA
+ALV.DE,Allianz SE,XETRA
+DTE.DE,Deutsche Telekom AG,XETRA
+MUV2.DE,Munich Re,XETRA
+BAS.DE,BASF SE,XETRA
+VOW3.DE,Volkswagen AG,XETRA
+BMW.DE,Bayerische Motoren Werke Aktiengesellschaft,XETRA
+DAI.DE,Daimler AG,XETRA
+CON.DE,Continental Aktiengesellschaft,XETRA
+LIN.DE,Linde plc,XETRA
+DBK.DE,Deutsche Bank Aktiengesellschaft,XETRA
+CBK.DE,Commerzbank Aktiengesellschaft,XETRA
+IFX.DE,Infineon Technologies AG,XETRA
+MRK.DE,Merck KGaA,XETRA
+TOTF.PA,TotalEnergies SE,Euronext Paris
+MC.PA,LVMH Moët Hennessy - Louis Vuitton SE,Euronext Paris
+OR.PA,L'Oréal S.A.,Euronext Paris
+SAN.PA,Sanofi,Euronext Paris
+AIR.PA,Airbus SE,Euronext Paris
+BNP.PA,BNP Paribas S.A.,Euronext Paris
+ACA.PA,Crédit Agricole S.A.,Euronext Paris
+GLE.PA,Société Générale S.A.,Euronext Paris
+VIV.PA,Vivendi SE,Euronext Paris
+UG.PA,Peugeot S.A.,Euronext Paris
+RNO.PA,Renault S.A.,Euronext Paris
+DG.PA,Vinci S.A.,Euronext Paris
+CAP.PA,Capgemini SE,Euronext Paris
+STM.PA,STMicroelectronics N.V.,Euronext Paris
+SU.PA,Schneider Electric S.E.,Euronext Paris
+ITX.MC,Industria de Diseño Textil S.A.,Bolsa de Madrid
+TEF.MC,Telefónica S.A.,Bolsa de Madrid
+IBE.MC,Iberdrola S.A.,Bolsa de Madrid
+REP.MC,Repsol S.A.,Bolsa de Madrid
+BBVA.MC,Banco Bilbao Vizcaya Argentaria S.A.,Bolsa de Madrid
+SAN.MC,Banco Santander S.A.,Bolsa de Madrid
+AMS.MC,Amadeus IT Group S.A.,Bolsa de Madrid
+FER.MC,Ferrovial S.A.,Bolsa de Madrid
+ACS.MC,Actividades de Construcción y Servicios S.A.,Bolsa de Madrid
+CABK.MC,CaixaBank S.A.,Bolsa de Madrid
+UCG.MI,UniCredit S.p.A.,Borsa Italiana
+ISP.MI,Intesa Sanpaolo S.p.A.,Borsa Italiana
+ENI.MI,Eni S.p.A.,Borsa Italiana
+ENEL.MI,Enel S.p.A.,Borsa Italiana
+TIT.MI,Telecom Italia S.p.A.,Borsa Italiana
+G.MI,Assicurazioni Generali S.p.A.,Borsa Italiana
+RACE.MI,Ferrari N.V.,Borsa Italiana
+LUX.MI,Luxottica Group S.p.A.,Borsa Italiana
+CPR.MI,Davide Campari-Milano S.p.A.,Borsa Italiana
+MB.MI,Mediobanca Banca di Credito Finanziario S.p.A.,Borsa Italiana
+ADYEN.AS,Adyen N.V.,Euronext Amsterdam
+HEIA.AS,Heineken N.V.,Euronext Amsterdam
+UNA.AS,Unilever N.V.,Euronext Amsterdam
+INGA.AS,ING Groep N.V.,Euronext Amsterdam
+KPN.AS,Koninklijke KPN N.V.,Euronext Amsterdam
+PHIA.AS,Koninklijke Philips N.V.,Euronext Amsterdam
+NN.AS,NN Group N.V.,Euronext Amsterdam
+ASM.AS,ASM International N.V.,Euronext Amsterdam
+BESI.AS,BE Semiconductor Industries N.V.,Euronext Amsterdam
+DSM.AS,Koninklijke DSM N.V.,Euronext Amsterdam
+ABN.AS,ABN AMRO Bank N.V.,Euronext Amsterdam
+WKL.AS,Wolters Kluwer N.V.,Euronext Amsterdam
+RELX.AS,RELX PLC,Euronext Amsterdam
+UMG.AS,Universal Music Group N.V.,Euronext Amsterdam
+LIGHT.AS,Signify N.V.,Euronext Amsterdam
+NOVN.SW,Novartis AG,SIX Swiss Exchange
+ROG.SW,Roche Holding AG,SIX Swiss Exchange
+UHR.SW,The Swatch Group AG,SIX Swiss Exchange
+UBSG.SW,UBS Group AG,SIX Swiss Exchange
+CSGN.SW,Credit Suisse Group AG,SIX Swiss Exchange
+ZURN.SW,Zurich Insurance Group AG,SIX Swiss Exchange
+ABB.SW,ABB Ltd,SIX Swiss Exchange
+GIVN.SW,Givaudan SA,SIX Swiss Exchange
+LONN.SW,Lonza Group AG,SIX Swiss Exchange
+SLHN.SW,Swiss Life Holding AG,SIX Swiss Exchange
+BALN.SW,Baloise Holding AG,SIX Swiss Exchange
+SCMN.SW,Swisscom AG,SIX Swiss Exchange
+SREN.SW,Swiss Re AG,SIX Swiss Exchange
+HOLN.SW,Holcim Ltd,SIX Swiss Exchange
+CFR.SW,Compagnie Financiere Richemont SA,SIX Swiss Exchange
+GEBN.SW,Geberit AG,SIX Swiss Exchange
+SIKA.SW,Sika AG,SIX Swiss Exchange
+ADS.SW,Adecco Group AG,SIX Swiss Exchange
+PICK.SW,Partners Group Holding AG,SIX Swiss Exchange
+CLN.SW,Clariant AG,SIX Swiss Exchange
+VAT.SW,VAT Group AG,SIX Swiss Exchange
+1COV.DE,Covestro AG,XETRA
+HEN3.DE,Henkel AG & Co. KGaA,XETRA
+FRE.DE,Fresenius SE & Co. KGaA,XETRA
+FME.DE,Fresenius Medical Care AG & Co. KGaA,XETRA
+MBG.DE,Mercedes-Benz Group AG,XETRA
+1U1.DE,1&1 AG,XETRA
+RWE.DE,RWE AG,XETRA
+EON.DE,E.ON SE,XETRA
+SHL.DE,Siemens Healthineers AG,XETRA
+HEI.DE,HeidelbergCement AG,XETRA
+BEI.DE,Beiersdorf Aktiengesellschaft,XETRA
+MTX.DE,MTU Aero Engines AG,XETRA
+LHA.DE,Deutsche Lufthansa AG,XETRA
+DHER.DE,Delivery Hero SE,XETRA
+QIA.DE,Qiagen N.V.,XETRA
+ZAL.DE,Zalando SE,XETRA
+HNR1.DE,Hannover Re,XETRA
+WDI.DE,Wirecard AG,XETRA
+PSM.DE,ProSiebenSat.1 Media SE,XETRA
+SY1.DE,Symrise AG,XETRA
+DPW.DE,Deutsche Post AG,XETRA
+FPE.DE,Fuchs Petrolub SE,XETRA
+SAX.DE,Ströer SE & Co. KGaA,XETRA
+EVK.DE,Evonik Industries AG,XETRA
+TKA.DE,ThyssenKrupp AG,XETRA
+O2D.DE,Telefónica Deutschland Holding AG,XETRA
+CS.PA,AXA S.A.,Euronext Paris
+KER.PA,Kering S.A.,Euronext Paris
+EL.PA,EssilorLuxottica SA,Euronext Paris
+RMS.PA,Hermès International S.A.,Euronext Paris
+SAF.PA,Safran S.A.,Euronext Paris
+DSY.PA,Dassault Systèmes SE,Euronext Paris
+EDF.PA,Électricité de France S.A.,Euronext Paris
+EN.PA,Bouygues S.A.,Euronext Paris
+SGO.PA,Saint-Gobain S.A.,Euronext Paris
+LR.PA,Legrand S.A.,Euronext Paris
+PUB.PA,Publicis Groupe S.A.,Euronext Paris
+ML.PA,Michelin S.A.,Euronext Paris
+CA.PA,Carrefour S.A.,Euronext Paris
+BN.PA,Danone S.A.,Euronext Paris
+AI.PA,Air Liquide S.A.,Euronext Paris
+ERF.PA,Eurofins Scientific SE,Euronext Paris
+TEP.PA,Teleperformance SE,Euronext Paris
+WLN.PA,Worldline S.A.,Euronext Paris
+ATO.PA,Atos SE,Euronext Paris
+ORA.PA,Orange S.A.,Euronext Paris
+SU.PA,Schneider Electric S.E.,Euronext Paris
+RF.PA,Eurazeo SE,Euronext Paris
+RCO.PA,Rubis SCA,Euronext Paris
+SW.PA,Sodexo S.A.,Euronext Paris
+AC.PA,Accor S.A.,Euronext Paris
+ENGI.PA,ENGIE S.A.,Euronext Paris
+VK.PA,Vallourec S.A.,Euronext Paris
+SOLB.BR,Solvay S.A.,Euronext Brussels
+KBC.BR,KBC Group N.V.,Euronext Brussels
+ABI.BR,Anheuser-Busch InBev SA/NV,Euronext Brussels
+UCB.BR,UCB S.A.,Euronext Brussels
+AGSO.BR,Ageas SA/NV,Euronext Brussels
+COFB.BR,Cofinimmo SA,Euronext Brussels
+PROX.BR,Proximus PLC,Euronext Brussels
+WDP.BR,Warehouses De Pauw NV,Euronext Brussels
+GBLB.BR,Groupe Bruxelles Lambert SA,Euronext Brussels
+COLR.BR,Colruyt Group NV,Euronext Brussels
+UMI.BR,Umicore SA,Euronext Brussels
+APAM.BR,Aperam S.A.,Euronext Brussels
+EVS.BR,EVS Broadcast Equipment SA,Euronext Brussels
+MONT.BR,Montea NV,Euronext Brussels
+AED.BR,Aedifica SA,Euronext Brussels
+ELI.LI,Elisa Oyj,Helsinki Stock Exchange
+NESTE.HE,Neste Corporation,Helsinki Stock Exchange
+TYKS.HE,Tykö Group Oyj,Helsinki Stock Exchange
+KOJAMO.HE,Kojamo Plc,Helsinki Stock Exchange
+QTCOM.HE,Qt Group Oyj,Helsinki Stock Exchange
+METSO.HE,Metso Outotec Corporation,Helsinki Stock Exchange
+KONE.HE,KONE Corporation,Helsinki Stock Exchange
+SRV1V.HE,SRV Group Plc,Helsinki Stock Exchange
+MOCORP.HE,Mondi plc,Helsinki Stock Exchange
+ORNAV.HE,Orion Corporation,Helsinki Stock Exchange
+PUMU.HE,Puuilo Plc,Helsinki Stock Exchange
+TALNOM.HE,Talenom Plc,Helsinki Stock Exchange
+HARVIA.HE,Harvia Plc,Helsinki Stock Exchange
+VERKKO.HE,Verkkokauppa.com Oyj,Helsinki Stock Exchange
+AKTIA.HE,Aktia Bank Plc,Helsinki Stock Exchange
+EVO.ST,Evolution AB,Stockholm Stock Exchange
+KINV-B.ST,Kinnevik AB,Stockholm Stock Exchange
+CAST.ST,Castellum AB,Stockholm Stock Exchange
+FABG.ST,Fabege AB,Stockholm Stock Exchange
+WIHL.ST,Wihlborgs Fastigheter AB,Stockholm Stock Exchange
+HEXA-B.ST,Hexagon AB,Stockholm Stock Exchange
+EPIR-B.ST,Epiroc AB,Stockholm Stock Exchange
+GETB.ST,Getinge AB,Stockholm Stock Exchange
+ELUX-B.ST,Electrolux AB,Stockholm Stock Exchange
+HUSQ-B.ST,Husqvarna AB,Stockholm Stock Exchange
+ERIC-B.ST,Telefonaktiebolaget LM Ericsson,Stockholm Stock Exchange
+TEL2-B.ST,Tele2 AB,Stockholm Stock Exchange
+SINCH.ST,Sinch AB,Stockholm Stock Exchange
+NIBE-B.ST,NIBE Industrier AB,Stockholm Stock Exchange
+PNDX-B.ST,Pandox AB,Stockholm Stock Exchange
+INDT.ST,Indutrade AB,Stockholm Stock Exchange
+LUMI.ST,Luminar Technologies Inc.,Stockholm Stock Exchange
+SWED-A.ST,Swedbank AB,Stockholm Stock Exchange
+HANDELSBANKEN-A.ST,Svenska Handelsbanken AB,Stockholm Stock Exchange
+AXFO.ST,Axfood AB,Stockholm Stock Exchange
+AAK.ST,AAK AB,Stockholm Stock Exchange
+ESSITY-B.ST,Essity Aktiebolag,Stockholm Stock Exchange
+SCA-B.ST,Svenska Cellulosa Aktiebolaget SCA,Stockholm Stock Exchange
+CLAS-B.ST,Clas Ohlson AB,Stockholm Stock Exchange
+MSON-B.ST,Millicom International Cellular S.A.,Stockholm Stock Exchange
+LATO-B.ST,Latour Investment AB,Stockholm Stock Exchange
+LUND-B.ST,Lundbergföretagen AB,Stockholm Stock Exchange
+ALK-B.CO,ALK-Abelló A/S,Copenhagen Stock Exchange
+CHR.CO,Chr. Hansen Holding A/S,Copenhagen Stock Exchange
+AMBU-B.CO,Ambu A/S,Copenhagen Stock Exchange
+PNDORA.CO,Pandora A/S,Copenhagen Stock Exchange
+FLS.CO,FLSmidth & Co. A/S,Copenhagen Stock Exchange
+TRYG.CO,Tryg A/S,Copenhagen Stock Exchange
+JUTBK.CO,Jyske Bank A/S,Copenhagen Stock Exchange
+DANSKE.CO,Danske Bank A/S,Copenhagen Stock Exchange
+SYDB.CO,Sydbank A/S,Copenhagen Stock Exchange
+RBREW.CO,Royal Unibrew A/S,Copenhagen Stock Exchange
+NTG.CO,Netcompany Group A/S,Copenhagen Stock Exchange
+ROCK-B.CO,Rockwool International A/S,Copenhagen Stock Exchange
+VWS.CO,Vestas Wind Systems A/S,Copenhagen Stock Exchange
+ORSTED.CO,Ørsted A/S,Copenhagen Stock Exchange
+ISS.CO,ISS A/S,Copenhagen Stock Exchange
+DLBNK.CO,Netcompany Group A/S,Copenhagen Stock Exchange
+TSLA.L,Tesla Inc.,London Stock Exchange
+NXT.L,Next plc,London Stock Exchange
+EXPN.L,Experian plc,London Stock Exchange
+REL.L,RELX PLC,London Stock Exchange
+LSEG.L,London Stock Exchange Group plc,London Stock Exchange
+III.L,3i Group plc,London Stock Exchange
+CRH.L,CRH plc,London Stock Exchange
+BT.A.L,BT Group plc,London Stock Exchange
+CCH.L,Coca-Cola HBC AG,London Stock Exchange
+ABF.L,Associated British Foods plc,London Stock Exchange
+IMB.L,Imperial Brands PLC,London Stock Exchange
+TSCO.L,Tesco PLC,London Stock Exchange
+SBRY.L,J Sainsbury plc,London Stock Exchange
+MRW.L,Morrison (Wm) Supermarkets PLC,London Stock Exchange
+HSX.L,Hikma Pharmaceuticals PLC,London Stock Exchange
+STAN.L,Standard Chartered PLC,London Stock Exchange
+HSBA.L,HSBC Holdings plc,London Stock Exchange
+NWG.L,NatWest Group plc,London Stock Exchange
+FRES.L,Fresnillo Plc,London Stock Exchange
+AAL.L,Anglo American plc,London Stock Exchange
+EVR.L,Evraz plc,London Stock Exchange
+PSON.L,Pearson plc,London Stock Exchange
+WPP.L,WPP plc,London Stock Exchange
+IPG.L,Interpublic Group of Companies Inc.,London Stock Exchange
+EMG.L,Man Group plc,London Stock Exchange
+SGRO.L,Segro plc,London Stock Exchange
+LAND.L,Land Securities Group plc,London Stock Exchange
+BNZL.L,Bunzl plc,London Stock Exchange
+SKG.L,Smurfit Kappa Group plc,London Stock Exchange
+SPX.L,Spirax-Sarco Engineering plc,London Stock Exchange
+TW.TO,Thomson Reuters Corporation,Toronto Stock Exchange
+BBD-B.TO,Bombardier Inc.,Toronto Stock Exchange
+ATD-B.TO,Alimentation Couche-Tard Inc.,Toronto Stock Exchange
+WCN.TO,Waste Connections Inc.,Toronto Stock Exchange
+CSU.TO,Constellation Software Inc.,Toronto Stock Exchange
+DOL.TO,Dollarama Inc.,Toronto Stock Exchange
+EMP-A.TO,Empire Company Limited,Toronto Stock Exchange
+L.TO,Loblaw Companies Limited,Toronto Stock Exchange
+MG.TO,Magna International Inc.,Toronto Stock Exchange
+PPL.TO,Pembina Pipeline Corporation,Toronto Stock Exchange
+ENB.TO,Enbridge Inc.,Toronto Stock Exchange
+TRP.TO,TC Energy Corporation,Toronto Stock Exchange
+AEM.TO,Agnico Eagle Mines Limited,Toronto Stock Exchange
+K.TO,Kinross Gold Corporation,Toronto Stock Exchange
+ABX.TO,Barrick Gold Corporation,Toronto Stock Exchange
+NTR.TO,Nutrien Ltd.,Toronto Stock Exchange
+POT.TO,Potash Corporation of Saskatchewan Inc.,Toronto Stock Exchange
+CCO.TO,Cameco Corporation,Toronto Stock Exchange
+FM.TO,First Quantum Minerals Ltd.,Toronto Stock Exchange
+HBM.TO,Hudbay Minerals Inc.,Toronto Stock Exchange
+NGT.TO,Newmont Corporation,Toronto Stock Exchange
+AQN.TO,Algonquin Power & Utilities Corp.,Toronto Stock Exchange
+FTS.TO,Fortis Inc.,Toronto Stock Exchange
+EMA.TO,Emera Incorporated,Toronto Stock Exchange
+H.TO,Hydro One Limited,Toronto Stock Exchange
+CU.TO,Canadian Utilities Limited,Toronto Stock Exchange

@@ -32,7 +32,10 @@ class Ticker:
 
     def forward_vs_current_PE(self) -> float:
         try: 
-            return round(self.pe/self.info["forwardPE"], 2)
+            cvf = round(self.pe/self.info["forwardPE"], 2)
+            if cvf > 3 or cvf < 1/3:
+                return 1.00
+            return cvf
         except:
             return 1.00
 
@@ -40,7 +43,6 @@ class Ticker:
         if self.pe+self.expt_pe  <= 0 or self.roa+self.expt_roa <= 0 or self.forward_PE() <= 0:
             return np.nan
         return round(2 + np.log(self.roa+self.expt_roa) - np.log(self.pe+self.expt_pe) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())*0.25, 2)
-
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.75:
@@ -65,6 +67,7 @@ class Ticker:
             "Owned": self.owned(),
             "Forward P/E": self.forward_PE(),
             "P/E": self.pe,
+            "FvC Ratio": self.forward_vs_current_PE(),
             "ROA%": self.roa,
             "Insider Buy%": self.insider_buy(),
             "Sector": self.info["sector"],
