@@ -3,7 +3,7 @@ import numpy as np
 import yfinance as yf
 
 def get_gettables():
-    return display(pd.DataFrame(yf.Ticker("AAPL").info.keys()))
+    return display(pd.DataFrame(yf.Ticker("AAPL").info.values(), yf.Ticker("AAPL").info.keys()))
 
 class Ticker:
     def __init__(self, symbol):
@@ -33,7 +33,7 @@ class Ticker:
     def forward_vs_current_PE(self) -> float:
         try: 
             cvf = round(self.pe/self.info["forwardPE"], 2)
-            if cvf > 3 or cvf < 1/3:
+            if cvf > 2 or cvf < 0.5:
                 return 1.00
             return cvf
         except:
@@ -42,7 +42,7 @@ class Ticker:
     def recommendation_score(self) -> float:
         if self.pe+self.expt_pe  <= 0 or self.roa+self.expt_roa <= 0 or self.forward_PE() <= 0:
             return np.nan
-        return round(2 + np.log(self.roa+self.expt_roa) - np.log(self.pe+self.expt_pe) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())*0.25, 2)
+        return round(2 + np.log(self.roa+self.expt_roa) - np.log(self.pe+self.expt_pe) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())/10, 2)
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.75:
