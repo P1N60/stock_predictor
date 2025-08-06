@@ -1,48 +1,48 @@
 Ticker,Name,Signal,Recommendation Score,Owned,Forward P/E,P/E,FvC Ratio,ROA%,Insider Buy%,Sector,Industry
-NOVO-B.CO,Novo Nordisk B A/S,Buy,1.72,True,11.07,13.41,1.21,23.29,0.0,Healthcare,Drug Manufacturers - General
-NVDA,NVIDIA Corporation,Buy,1.7,False,42.17,56.22,1.33,53.24,-0.4,Technology,Semiconductors
-EQNR,Equinor ASA,Buy,1.38,False,8.87,8.43,0.95,13.32,0.0,Energy,Oil & Gas Integrated
-AAPL,Apple Inc.,Buy,1.38,False,24.35,30.66,1.26,24.55,0.1,Technology,Consumer Electronics
-GOOGL,Alphabet Inc.,Buy,1.25,False,21.11,20.16,0.96,16.79,0.0,Communication Services,Internet Content & Information
-TRMD,TORM plc,Buy,1.21,True,4.26,3.9,0.92,8.48,0.0,Energy,Oil & Gas Midstream
-META,"Meta Platforms, Inc.",Buy,1.18,False,29.64,27.24,0.92,18.46,0.0,Communication Services,Internet Content & Information
-GMAB,Genmab A/S,Buy,1.13,False,15.56,12.81,0.82,11.54,0.0,Healthcare,Biotechnology
-SPG.CO,SP Group A/S,Buy,0.93,False,10.78,11.92,1.11,7.97,0.0,Basic Materials,Specialty Chemicals
-STG.CO,Scandinavian Tobacco Group A/S,Buy,0.87,False,6.16,8.05,1.31,5.91,0.0,Consumer Defensive,Tobacco
-MAERSK-B.CO,A.P. Møller - Mærsk B A/S,Buy,0.87,False,5.6,4.37,0.78,5.21,0.0,Industrials,Marine Shipping
-DEMANT.CO,Demant A/S,Buy,0.81,False,16.81,18.57,1.1,8.66,0.0,Healthcare,Medical Devices
-MSFT,Microsoft Corporation,Buy,0.77,False,35.06,38.45,1.1,14.2,-2.6,Technology,Software - Infrastructure
-NKT.CO,NKT A/S,Buy,0.76,False,19.44,17.35,0.89,7.93,0.0,Industrials,Electrical Equipment & Parts
-BAVA.CO ,Bavarian Nordic A/S,Buy,0.75,False,13.22,14.11,1.07,6.65,0.0,Healthcare,Biotechnology
-RBREW.CO,Royal UNIBREW A/S,Hold,0.69,False,16.16,16.31,1.01,6.69,0.0,Consumer Defensive,Beverages - Brewers
-COLO-B.CO,Coloplast B A/S,Hold,0.68,False,19.91,29.58,1.49,9.64,0.0,Healthcare,Medical Instruments & Supplies
-NFLX,"Netflix, Inc.",Hold,0.64,False,48.72,49.26,1.01,15.05,-4.6,Communication Services,Entertainment
-TER,"Teradyne, Inc.",Hold,0.64,True,24.51,36.29,1.48,9.25,20.8,Technology,Semiconductor Equipment & Materials
-CARL-B.CO,Carlsberg B A/S,Hold,0.64,False,13.63,15.87,1.16,5.92,0.0,Consumer Defensive,Beverages - Brewers
-BRK-B,Berkshire Hathaway Inc. New,Hold,0.63,True,23.55,12.61,0.54,5.79,0.0,Financial Services,Insurance - Diversified
-ISS.CO,ISS A/S,Hold,0.62,True,11.27,12.97,1.15,5.01,0.0,Industrials,Specialty Business Services
-UBER,"Uber Technologies, Inc.",Hold,0.62,False,36.83,15.22,1.0,5.21,10.6,Technology,Software - Application
-ABBN.SW,ABB LTD N,Hold,0.6,False,33.58,28.34,0.84,9.07,0.0,Industrials,Electrical Equipment & Parts
-NETC.CO,Netcompany Group A/S,Hold,0.55,False,14.82,22.8,1.54,6.44,0.0,Technology,Information Technology Services
-CBRAIN.CO,cBrain A/S,Hold,0.52,False,36.45,65.61,1.8,15.06,0.0,Technology,Software - Application
-SCHO.CO,Schouw & Co. A/S,Hold,0.43,True,11.68,15.61,1.34,3.91,0.0,Industrials,Conglomerates
-LLY,Eli Lilly and Company,Hold,0.43,False,33.64,62.13,1.85,16.45,-39.6,Healthcare,Drug Manufacturers - General
-AMZN,"Amazon.com, Inc.",Hold,0.41,False,34.92,32.79,0.94,7.7,-2.6,Consumer Cyclical,Internet Retail
-MATAS.CO,Matas A/S,Hold,0.4,False,11.35,18.29,1.61,4.06,0.0,Consumer Cyclical,Specialty Retail
-GN.CO,GN Store Nord A/S,Hold,0.39,False,8.66,16.74,1.93,3.56,0.0,Healthcare,Medical Devices
-DLTR,"Dollar Tree, Inc.",Hold,0.35,False,18.93,22.63,1.2,4.69,0.0,Consumer Defensive,Discount Stores
-KOG.OL,KONGSBERG GRUPPEN,Hold,0.24,False,8.95,40.42,1.0,7.05,0.0,Industrials,Aerospace & Defense
-BAESY,BAE Systems PLC,Hold,0.18,False,24.23,28.45,1.17,4.27,0.0,Industrials,Aerospace & Defense
-SYDB.CO,Sydbank A/S,Hold,0.17,True,9.62,10.17,1.06,1.36,0.0,Financial Services,Banks - Regional
-DSV.CO,DSV A/S,Hold,0.16,False,23.8,32.19,1.35,4.62,0.0,Industrials,Integrated Freight & Logistics
-TRIFOR.CO,Trifork Group AG,Hold,0.11,False,113.62,15.62,1.0,1.92,0.0,Technology,Information Technology Services
-JYSK.CO,Jyske Bank A/S,Hold,0.08,True,8.74,8.18,0.94,0.68,0.0,Financial Services,Banks - Regional
-LDO.MI,LEONARDO,Hold,0.08,False,28.02,25.86,0.92,3.32,0.0,Industrials,Aerospace & Defense
-DANSKE.CO,Danske Bank A/S,Hold,0.03,True,10.0,9.24,0.92,0.62,0.0,Financial Services,Banks - Regional
-COLUM.CO,Columbus A/S,Sell,-0.04,False,,26.05,1.0,2.46,0.0,Technology,Information Technology Services
-HIMS,"Hims & Hers Health, Inc.",Sell,-0.08,False,135.98,91.99,0.68,10.76,2.7,Consumer Defensive,Household & Personal Products
-CBK.DE,Commerzbank AG                I,Sell,-0.13,False,14.64,14.84,1.01,0.53,0.0,Financial Services,Banks - Regional
-SAAB-B.ST,SAAB AB ser. B,Sell,-0.28,False,53.25,55.02,1.03,4.02,0.0,Industrials,Aerospace & Defense
-RHM.DE,RHEINMETALL AG                I,Sell,-0.31,False,58.22,93.61,1.61,7.06,0.0,Industrials,Aerospace & Defense
-RDDT,"Reddit, Inc.",Sell,-0.65,False,281.55,84.21,1.0,3.49,3.0,Communication Services,Internet Content & Information
-TSLA,"Tesla, Inc.",Sell,-1.31,False,93.4,179.07,1.92,2.91,0.2,Consumer Cyclical,Auto Manufacturers
+NOVO-B.CO,Novo Nordisk B A/S,Buy,1.75,True,10.18,12.32,1.21,23.29,0.0,Healthcare,Drug Manufacturers - General
+NVDA,NVIDIA Corporation,Buy,1.68,False,43.21,57.43,1.33,53.24,-0.4,Technology,Semiconductors
+EQNR,Equinor ASA,Buy,1.38,False,8.83,8.39,0.95,13.32,0.0,Energy,Oil & Gas Integrated
+AAPL,Apple Inc.,Buy,1.35,False,25.81,32.55,1.26,24.55,0.1,Technology,Consumer Electronics
+GOOGL,Alphabet Inc.,Buy,1.24,False,21.9,20.92,0.96,16.79,0.0,Communication Services,Internet Content & Information
+TRMD,TORM plc,Buy,1.19,True,4.58,4.19,0.92,8.48,0.0,Energy,Oil & Gas Midstream
+META,"Meta Platforms, Inc.",Buy,1.16,False,30.54,28.04,0.92,18.46,0.0,Communication Services,Internet Content & Information
+GMAB,Genmab A/S,Buy,1.14,False,15.32,12.62,0.82,11.54,0.0,Healthcare,Biotechnology
+SPG.CO,SP Group A/S,Buy,0.93,False,10.6,11.73,1.11,7.97,0.0,Basic Materials,Specialty Chemicals
+STG.CO,Scandinavian Tobacco Group A/S,Buy,0.87,False,6.21,8.11,1.31,5.91,0.0,Consumer Defensive,Tobacco
+MAERSK-B.CO,A.P. Møller - Mærsk B A/S,Buy,0.86,False,5.72,4.53,0.79,5.21,0.0,Industrials,Marine Shipping
+DEMANT.CO,Demant A/S,Buy,0.81,False,16.96,18.75,1.11,8.66,0.0,Healthcare,Medical Devices
+NKT.CO,NKT A/S,Buy,0.78,False,18.23,16.29,0.89,7.93,0.0,Industrials,Electrical Equipment & Parts
+MSFT,Microsoft Corporation,Buy,0.77,False,35.19,38.62,1.1,14.2,-2.6,Technology,Software - Infrastructure
+BAVA.CO ,Bavarian Nordic A/S,Buy,0.75,False,13.16,14.06,1.07,6.65,0.0,Healthcare,Biotechnology
+RBREW.CO,Royal UNIBREW A/S,Hold,0.69,False,16.19,16.31,1.01,6.69,0.0,Consumer Defensive,Beverages - Brewers
+COLO-B.CO,Coloplast B A/S,Hold,0.69,False,19.67,29.26,1.49,9.64,0.0,Healthcare,Medical Instruments & Supplies
+CARL-B.CO,Carlsberg B A/S,Hold,0.64,False,13.56,15.77,1.16,5.92,0.0,Consumer Defensive,Beverages - Brewers
+NFLX,"Netflix, Inc.",Hold,0.62,False,49.42,50.18,1.02,15.05,-4.9,Communication Services,Entertainment
+ISS.CO,ISS A/S,Hold,0.62,True,11.13,12.81,1.15,5.01,0.0,Industrials,Specialty Business Services
+UBER,"Uber Technologies, Inc.",Hold,0.61,False,37.51,15.5,1.0,5.21,10.8,Technology,Software - Application
+ABBN.SW,ABB LTD N,Hold,0.6,False,33.43,28.68,0.86,9.07,0.0,Industrials,Electrical Equipment & Parts
+TER,"Teradyne, Inc.",Hold,0.56,True,24.41,36.02,1.48,9.25,5.0,Technology,Semiconductor Equipment & Materials
+NETC.CO,Netcompany Group A/S,Hold,0.55,False,14.88,22.9,1.54,6.44,0.0,Technology,Information Technology Services
+CBRAIN.CO,cBrain A/S,Hold,0.53,False,35.77,64.2,1.79,15.06,0.0,Technology,Software - Application
+BRK-B,Berkshire Hathaway Inc. New,Hold,0.45,True,23.27,16.0,0.69,4.68,0.0,Financial Services,Insurance - Diversified
+LLY,Eli Lilly and Company,Hold,0.44,False,32.95,60.9,1.85,16.45,-40.9,Healthcare,Drug Manufacturers - General
+SCHO.CO,Schouw & Co. A/S,Hold,0.43,True,11.66,15.58,1.34,3.91,0.0,Industrials,Conglomerates
+MATAS.CO,Matas A/S,Hold,0.41,False,11.2,18.05,1.61,4.06,0.0,Consumer Cyclical,Specialty Retail
+AMZN,"Amazon.com, Inc.",Hold,0.4,False,35.64,33.41,0.94,7.7,-2.6,Consumer Cyclical,Internet Retail
+GN.CO,GN Store Nord A/S,Hold,0.39,False,8.68,16.78,1.93,3.56,0.0,Healthcare,Medical Devices
+DLTR,"Dollar Tree, Inc.",Hold,0.34,False,19.36,23.14,1.2,4.69,0.0,Consumer Defensive,Discount Stores
+KOG.OL,KONGSBERG GRUPPEN,Hold,0.25,False,8.86,40.03,1.0,7.05,0.0,Industrials,Aerospace & Defense
+BAESY,BAE Systems PLC,Hold,0.17,False,24.67,28.88,1.17,4.27,0.0,Industrials,Aerospace & Defense
+SYDB.CO,Sydbank A/S,Hold,0.17,True,9.7,10.26,1.06,1.36,0.0,Financial Services,Banks - Regional
+DSV.CO,DSV A/S,Hold,0.16,False,24.09,32.58,1.35,4.62,0.0,Industrials,Integrated Freight & Logistics
+TRIFOR.CO,Trifork Group AG,Hold,0.11,False,114.38,15.72,1.0,1.92,0.0,Technology,Information Technology Services
+JYSK.CO,Jyske Bank A/S,Hold,0.08,True,8.8,8.24,0.94,0.68,0.0,Financial Services,Banks - Regional
+LDO.MI,LEONARDO,Hold,0.05,False,29.57,27.29,0.92,3.32,0.0,Industrials,Aerospace & Defense
+DANSKE.CO,Danske Bank A/S,Hold,0.03,True,10.13,9.37,0.93,0.62,0.0,Financial Services,Banks - Regional
+COLUM.CO,Columbus A/S,Sell,-0.04,False,,26.26,1.0,2.46,0.0,Technology,Information Technology Services
+HIMS,"Hims & Hers Health, Inc.",Sell,-0.13,False,111.29,64.8,0.58,6.94,2.1,Consumer Defensive,Household & Personal Products
+CBK.DE,Commerzbank AG                I,Sell,-0.13,False,14.31,14.5,1.01,0.53,0.0,Financial Services,Banks - Regional
+SAAB-B.ST,SAAB AB ser. B,Sell,-0.29,False,54.45,56.32,1.03,4.02,0.0,Industrials,Aerospace & Defense
+RHM.DE,RHEINMETALL AG                I,Sell,-0.33,False,59.61,96.04,1.61,7.06,0.0,Industrials,Aerospace & Defense
+RDDT,"Reddit, Inc.",Sell,-0.73,False,311.85,92.86,1.0,3.49,3.1,Communication Services,Internet Content & Information
+TSLA,"Tesla, Inc.",Sell,-1.36,False,98.0,190.14,1.94,2.91,0.2,Consumer Cyclical,Auto Manufacturers

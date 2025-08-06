@@ -5,7 +5,7 @@ import yfinance as yf
 def get_gettables():
     return display(pd.DataFrame(yf.Ticker("AAPL").info.values(), yf.Ticker("AAPL").info.keys()))
 
-class Ticker:
+class Stock:
     def __init__(self, symbol):
         self.symbol = symbol
         self.info = yf.Ticker(symbol).info

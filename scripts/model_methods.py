@@ -1,21 +1,13 @@
 import pandas as pd
 import numpy as np
 import yfinance as yf
-from stockdex import Ticker
 
 class Stock:
     def __init__(self, symbol):
         self.symbol = symbol
-        
-    def get_key_financials(self):
-        return Ticker(self.symbol).macrotrends_key_financial_ratios
     
-    def get_earning_dates(self):
-        return self.get_key_financials().keys().to_list()
-    
-    def get_data_key(self):
-        key_financials = self.get_key_financials()
-        earn_dates = key_financials.keys().to_list()
+    def get_row(self):
+        earn_dates = yf.Ticker(self.symbol).keys().to_list()
         yf_info = yf.Ticker(self.symbol).info
         df = pd.DataFrame()
         for earn_date in earn_dates:
@@ -35,18 +27,6 @@ class Stock:
                         row_df['3M Future Change'] = (
                         price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset, weeks=13), ('Close', self.symbol)] / 
                         price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] - 1
-                        )
-                        row_df['6M Future Change'] = (
-                            price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset, weeks=26), ('Close', self.symbol)] / 
-                            price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] - 1
-                        )
-                        row_df['9M Future Change'] = (
-                            price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset, weeks=39), ('Close', self.symbol)] / 
-                            price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] - 1
-                        )
-                        row_df['1Y Future Change'] = (
-                            price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset, weeks=52), ('Close', self.symbol)] / 
-                            price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] - 1
                         )
                         got_price = True
                     except:
