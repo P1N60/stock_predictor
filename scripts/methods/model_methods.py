@@ -5,9 +5,9 @@ import yfinance as yf
 class Stock:
     def __init__(self, symbol):
         self.symbol = symbol
-    
+
     def get_row(self):
-        earn_dates = yf.Ticker(self.symbol).keys().to_list()
+        earn_dates = yf.Ticker(self.symbol).earnings.keys().to_list()
         yf_info = yf.Ticker(self.symbol).info
         df = pd.DataFrame()
         for earn_date in earn_dates:
