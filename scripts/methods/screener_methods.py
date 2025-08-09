@@ -15,7 +15,7 @@ class Stock:
         self.name = self.info["shortName"]
         self.expt_pe = 23.5
         self.expt_roa = 4
-        self.owned_tickers = pd.read_csv("../data/owned_tickers.csv")["Ticker"].to_list()
+        self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
     
     def insider_buy(self) -> float:
         if 'Shares' in self.insider.columns:
