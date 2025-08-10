@@ -5,9 +5,12 @@ import yfinance as yf
 class Stock:
     def __init__(self, symbol):
         self.symbol = symbol
+        self.yearly_financials = yf.Ticker(self.symbol).get_financials(freq="yearly")
+        self.quarterly_financials = yf.Ticker(self.symbol).get_financials(freq="quarterly")
+        self.financials = pd.concat([self.yearly_financials, self.quarterly_financials], axis=1).loc[:, ~pd.concat([self.yearly_financials, self.quarterly_financials], axis=1).columns.duplicated()]
+        self.earn_dates = self.financials.keys().to_list()
 
     def get_row(self):
-        earn_dates = yf.Ticker(self.symbol).earnings.keys().to_list()
         yf_info = yf.Ticker(self.symbol).info
         df = pd.DataFrame()
         for earn_date in earn_dates:
