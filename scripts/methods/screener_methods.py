@@ -13,7 +13,7 @@ class Stock:
         self.pe = round(self.info["trailingPE"], 2)
         self.roa = round(self.info["returnOnAssets"]*100, 2)
         self.name = self.info["shortName"]
-        self.expt_pe = 20
+        self.expt_pe = 17.5
         self.expt_roa = 3.25
         self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
     

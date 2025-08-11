@@ -1,14 +1,44 @@
 import pandas as pd
 import numpy as np
 import yfinance as yf
+from sklearn.neural_network import MLPRegressor
+import numpy as np
 
 class Stock:
     def __init__(self, symbol):
         self.symbol = symbol
-        self.yearly_financials = yf.Ticker(self.symbol).get_financials(freq="yearly")
-        self.quarterly_financials = yf.Ticker(self.symbol).get_financials(freq="quarterly")
-        self.financials = pd.concat([self.yearly_financials, self.quarterly_financials], axis=1).loc[:, ~pd.concat([self.yearly_financials, self.quarterly_financials], axis=1).columns.duplicated()]
-        self.earn_dates = self.financials.keys().to_list()
+
+    def get_annual_financials(self) -> pd.DataFrame:
+        annual_financials = yf.Ticker(self.symbol).get_financials(freq="yearly")
+        # Limit to first 4 columns max
+        if annual_financials.shape[1] > 4:
+            annual_financials = annual_financials.iloc[:, :4]
+        return annual_financials
+    
+    def get_quarterly_financials(self) -> pd.DataFrame:
+        quarterly_financials = yf.Ticker(self.symbol).get_financials(freq="quarterly")
+        overlapping_dates = set(self.get_annual_financials().columns).intersection(set(quarterly_financials.columns))
+        if overlapping_dates:
+            quarterly_financials = quarterly_financials.drop(columns=list(overlapping_dates))
+        # Limit to first 4 columns max after removing overlaps
+        if quarterly_financials.shape[1] > 4:
+            quarterly_financials = quarterly_financials.iloc[:, :4]
+        return quarterly_financials
+    
+    def get_financials(self) -> pd.DataFrame:
+        financials = pd.concat([self.get_annual_financials(), self.get_quarterly_financials()], axis=1).loc[:, ~pd.concat([self.get_annual_financials(), self.get_quarterly_financials()], axis=1).columns.duplicated()]
+        # Sort columns by date (assuming columns are datetime objects or date strings)
+        try:
+            # Convert column names to datetime for proper sorting
+            sorted_columns = sorted(financials.columns, key=pd.to_datetime, reverse=True)
+            financials = financials[sorted_columns]
+        except:
+            # If date conversion fails, keep original order
+            pass
+        # Ensure the final result doesn't exceed 8 columns
+        if financials.shape[1] > 8:
+            financials = financials.iloc[:, :8]
+        return financials
 
     def get_row(self):
         yf_info = yf.Ticker(self.symbol).info
@@ -47,15 +77,43 @@ class Stock:
             df = pd.concat([df, row_df])
         return df
 
-# # a must-have
-# display(ticker.macrotrends_key_financial_ratios)
-# # also very good
-# display(ticker.macrotrends_balance_sheet)
-# display(ticker.macrotrends_cash_flow)
-# display(ticker.macrotrends_income_statement)
-# # these are probably harder to include
-# display(ticker.macrotrends_ebitda_margin)
-# display(ticker.macrotrends_gross_margin)
-# display(ticker.macrotrends_net_margin)
-# display(ticker.macrotrends_operating_margin)
-# display(ticker.macrotrends_pre_tax_margin)
+class MLPWrapper:
+    def __init__(self, hidden_layer_amount=999, neuron_amount=999, **kwargs):
+        self.hidden_layer_amount = hidden_layer_amount
+        self.neuron_amount = neuron_amount
+        self.kwargs = kwargs
+        self.iter_no_change = round(2+1000/(np.sqrt(self.neuron_amount*self.hidden_layer_amount)))
+        
+    def fit(self, X, y):
+        # Create tuple of hidden layer sizes
+        hidden_layers = tuple([self.neuron_amount] * self.hidden_layer_amount)
+        print(f"Trying: {self.hidden_layer_amount} layers, {self.neuron_amount} neurons per layer, iter_no_change={self.iter_no_change}")
+        print(f"Hidden layer sizes: {hidden_layers}")
+        self.model = MLPRegressor(
+            hidden_layer_sizes=hidden_layers,
+            learning_rate="adaptive",
+            early_stopping=True,
+            verbose=False,
+            n_iter_no_change=self.iter_no_change,
+            **self.kwargs
+        )
+        result = self.model.fit(X, y)
+        print(f"Training completed. Iterations: {self.model.n_iter_}, Final score: {self.model.score(X, y):.4f} \n {"=" * 65}")
+        return result
+    
+    def predict(self, X):
+        return self.model.predict(X)
+    
+    def score(self, X, y):
+        return self.model.score(X, y)
+    
+    def get_params(self, deep=True):
+        params = {'hidden_layer_amount': self.hidden_layer_amount, 
+                'neuron_amount': self.neuron_amount}
+        params.update(self.kwargs)
+        return params
+    
+    def set_params(self, **params):
+        for key, value in params.items():
+            setattr(self, key, value)
+        return self
