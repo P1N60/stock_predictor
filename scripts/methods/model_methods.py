@@ -10,7 +10,6 @@ class Stock:
 
     def get_annual_financials(self) -> pd.DataFrame:
         annual_financials = yf.Ticker(self.symbol).get_financials(freq="yearly")
-        # Limit to first 4 columns max
         if annual_financials.shape[1] > 4:
             annual_financials = annual_financials.iloc[:, :4]
         return annual_financials
@@ -20,22 +19,16 @@ class Stock:
         overlapping_dates = set(self.get_annual_financials().columns).intersection(set(quarterly_financials.columns))
         if overlapping_dates:
             quarterly_financials = quarterly_financials.drop(columns=list(overlapping_dates))
-        # Limit to first 4 columns max after removing overlaps
-        if quarterly_financials.shape[1] > 4:
             quarterly_financials = quarterly_financials.iloc[:, :4]
         return quarterly_financials
     
     def get_financials(self) -> pd.DataFrame:
         financials = pd.concat([self.get_annual_financials(), self.get_quarterly_financials()], axis=1).loc[:, ~pd.concat([self.get_annual_financials(), self.get_quarterly_financials()], axis=1).columns.duplicated()]
-        # Sort columns by date (assuming columns are datetime objects or date strings)
         try:
-            # Convert column names to datetime for proper sorting
             sorted_columns = sorted(financials.columns, key=pd.to_datetime, reverse=True)
             financials = financials[sorted_columns]
         except:
-            # If date conversion fails, keep original order
             pass
-        # Ensure the final result doesn't exceed 8 columns
         if financials.shape[1] > 8:
             financials = financials.iloc[:, :8]
         return financials
