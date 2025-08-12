@@ -34,16 +34,18 @@ class Stock:
         return financials
 
     def get_row(self):
+        financials = self.get_financials()
         yf_info = yf.Ticker(self.symbol).info
         df = pd.DataFrame()
+        earn_dates = financials.columns.to_list()
         for earn_date in earn_dates:
             row_df = pd.DataFrame([{"Ticker": self.symbol}])
             row_df["Name"] = yf_info["shortName"]
-            row_df["Date"] = earn_date
+            row_df["Date"] = pd.to_datetime(earn_date)
             row_df["Sector"] = yf_info["sector"]
             row_df["Industry"] = yf_info["industry"] 
             if earn_date == earn_dates[0]:
-                row_df["3M Future Change"], row_df["6M Future Change"], row_df["9M Future Change"], row_df["1Y Future Change"] = np.nan, np.nan, np.nan, np.nan
+                row_df["3M Future Change"] = np.nan
             else:
                 price_data = yf.download(self.symbol, period="max", rounding=False, progress=False)
                 got_price = False
@@ -58,13 +60,12 @@ class Stock:
                     except:
                         day_offset += -1
                 if got_price == True:
-                    future_change_cols = ['3M Future Change', '6M Future Change', '9M Future Change', '1Y Future Change']
-                    if row_df[future_change_cols].isna().any().any():
+                    if row_df["3M Future Change"].isna().any().any():
                         continue
                 else:
                     continue
-            for feature in key_financials.index.to_list():
-                row_df[feature] = key_financials[earn_date][feature]
+            for feature in financials.index.to_list():
+                row_df[feature] = financials[earn_date][feature]
                 if row_df.loc[0, feature] == "":
                     row_df.loc[0, feature] = np.nan
             df = pd.concat([df, row_df])
