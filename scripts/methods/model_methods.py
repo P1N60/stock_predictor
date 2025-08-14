@@ -33,7 +33,7 @@ class Stock:
             financials = financials.iloc[:, :8]
         return financials
 
-    def get_row(self):
+    def get_df_financials(self):
         financials = self.get_financials()
         yf_info = yf.Ticker(self.symbol).info
         df = pd.DataFrame()
