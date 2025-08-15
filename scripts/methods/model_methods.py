@@ -38,13 +38,16 @@ class Stock:
         yf_info = yf.Ticker(self.symbol).info
         df = pd.DataFrame()
         earn_dates = financials.columns.to_list()
+        date_index = -1
         for earn_date in earn_dates:
+            date_index += 1
             row_df = pd.DataFrame([{"Ticker": self.symbol}])
             row_df["Name"] = yf_info["shortName"]
             row_df["Date"] = pd.to_datetime(earn_date)
+            row_df["Earn Index"] = date_index
             row_df["Sector"] = yf_info["sector"]
             row_df["Industry"] = yf_info["industry"] 
-            if earn_date == earn_dates[0]:
+            if date_index == 0:
                 row_df["3M Future Change"] = np.nan
             else:
                 price_data = yf.download(self.symbol, period="max", rounding=False, progress=False)
