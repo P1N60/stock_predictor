@@ -82,10 +82,16 @@ class MLPWrapper:
         self.iter_no_change = round(2+1000/(np.sqrt(self.neuron_amount*self.hidden_layer_amount)))
         
     def fit(self, X, y):
+        # Ensure y is 1D to avoid DataConversionWarning
+        if isinstance(y, (pd.DataFrame, pd.Series)):
+            y = y.values
+        y = np.asarray(y)
+        if y.ndim == 2 and y.shape[1] == 1:
+            y = y.ravel()
         # Create tuple of hidden layer sizes
         hidden_layers = tuple([self.neuron_amount] * self.hidden_layer_amount)
-        print(f"Trying: {self.hidden_layer_amount} layers, {self.neuron_amount} neurons per layer, iter_no_change={self.iter_no_change}")
-        print(f"Hidden layer sizes: {hidden_layers}")
+        #print(f"Trying: {self.hidden_layer_amount} layers, {self.neuron_amount} neurons per layer, iter_no_change={self.iter_no_change}")
+        #print(f"Hidden layer sizes: {hidden_layers}")
         self.model = MLPRegressor(
             hidden_layer_sizes=hidden_layers,
             learning_rate="adaptive",
@@ -95,13 +101,19 @@ class MLPWrapper:
             **self.kwargs
         )
         result = self.model.fit(X, y)
-        print(f"Training completed. Iterations: {self.model.n_iter_}, Final score: {self.model.score(X, y):.4f} \n {"=" * 65}")
+        #print(f"Training completed. Iterations: {self.model.n_iter_}, Final score: {self.model.score(X, y):.4f} \n {"=" * 65}")
         return result
     
     def predict(self, X):
         return self.model.predict(X)
     
     def score(self, X, y):
+        # Ensure y is 1D to avoid DataConversionWarning
+        if isinstance(y, (pd.DataFrame, pd.Series)):
+            y = y.values
+        y = np.asarray(y)
+        if y.ndim == 2 and y.shape[1] == 1:
+            y = y.ravel()
         return self.model.score(X, y)
     
     def get_params(self, deep=True):
