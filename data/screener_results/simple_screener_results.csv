@@ -1,51 +1,51 @@
-Ticker,Name,Signal,Recommendation Score,Owned,Forward P/E,P/E,FvC Ratio,ROA%,Insider Buy%,Sector,Industry,CEO Age,CEO Name
-NVDA,NVIDIA Corporation,Buy,1.8,False,42.57,56.58,1.33,53.24,-0.5,Technology,Semiconductors,61.0,Mr. Jen-Hsun  Huang
-NOVO-B.CO,Novo Nordisk B A/S,Buy,1.78,True,12.31,14.03,1.14,21.82,0.0,Healthcare,Drug Manufacturers - General,54.0,Mr. Maziar Mike Doustdar
-EQNR,Equinor ASA,Buy,1.57,False,8.49,8.07,0.95,13.32,0.0,Energy,Oil & Gas Integrated,56.0,Mr. Anders  Opedal
-AAPL,Apple Inc.,Buy,1.46,False,27.2,34.3,1.26,24.55,0.1,Technology,Consumer Electronics,63.0,Mr. Timothy D. Cook
-GMAB,Genmab A/S,Buy,1.43,False,17.19,12.47,0.73,13.26,0.0,Healthcare,Biotechnology,63.0,Dr. Jan G.J. van de Winkel Ph.D.
-GOOGL,Alphabet Inc.,Buy,1.31,False,22.25,21.23,0.95,16.79,0.0,Communication Services,Internet Content & Information,51.0,Mr. Sundar  Pichai
-META,"Meta Platforms, Inc.",Buy,1.16,False,29.55,27.11,0.92,18.46,0.0,Communication Services,Internet Content & Information,40.0,Mr. Mark Elliot Zuckerberg
-TRMD,TORM plc,Buy,1.13,True,4.76,6.27,1.32,6.38,0.0,Energy,Oil & Gas Midstream,56.0,Mr. Jacob Balslev Meldgaard
-STG.CO,Scandinavian Tobacco Group A/S,Buy,1.02,False,6.58,8.59,1.31,5.91,0.0,Consumer Defensive,Tobacco,60.0,Mr. Niels  Frederiksen
-MAERSK-B.CO,A.P. Møller - Mærsk B A/S,Buy,0.98,False,5.96,4.88,0.82,5.19,0.0,Industrials,Marine Shipping,52.0,Mr. Vincent  Clerc
-SPG.CO,SP Group A/S,Buy,0.94,False,10.78,11.93,1.11,7.42,0.0,Basic Materials,Specialty Chemicals,48.0,Mr. Lars Ravn Bering
-MSFT,Microsoft Corporation,Buy,0.87,False,33.83,37.05,1.1,14.2,-2.2,Technology,Software - Infrastructure,57.0,Mr. Satya  Nadella
-BAVA.CO ,Bavarian Nordic A/S,Buy,0.86,False,13.27,14.18,1.07,6.65,0.0,Healthcare,Biotechnology,57.0,"Dr. Paul John Chaplin MSc, Ph.D."
-DEMANT.CO,Demant A/S,Buy,0.79,False,17.42,20.58,1.18,8.02,0.0,Healthcare,Medical Devices,54.0,Mr. Søren  Nielsen
-BRK-B,Berkshire Hathaway Inc. New,Buy,0.78,True,24.34,16.75,0.69,4.68,0.0,Financial Services,Insurance - Diversified,94.0,Mr. Warren E. Buffett
-RBREW.CO,Royal UNIBREW A/S,Buy,0.76,False,15.91,16.04,1.01,6.69,0.0,Consumer Defensive,Beverages - Brewers,51.0,Mr. Lars  Jensen
-UBER,"Uber Technologies, Inc.",Hold,0.74,False,39.72,15.97,1.0,5.78,10.5,Technology,Software - Application,54.0,Mr. Dara  Khosrowshahi
-LLY,Eli Lilly and Company,Hold,0.69,False,31.13,46.08,1.48,16.55,-37.3,Healthcare,Drug Manufacturers - General,56.0,Mr. David A. Ricks
-COLO-B.CO,Coloplast B A/S,Hold,0.67,False,20.71,34.31,1.66,9.82,0.0,Healthcare,Medical Instruments & Supplies,,
-NFLX,"Netflix, Inc.",Hold,0.67,False,51.05,51.81,1.01,15.05,-4.7,Communication Services,Entertainment,59.0,Mr. Theodore A. Sarandos
-CBRAIN.CO,cBrain A/S,Hold,0.66,False,34.6,62.27,1.8,15.06,0.0,Technology,Software - Application,65.0,Mr. Per Tejs Knudsen
-ABBN.SW,ABB LTD N,Hold,0.65,False,34.1,29.1,0.85,9.07,0.0,Industrials,Electrical Equipment & Parts,,
-ISS.CO,ISS A/S,Hold,0.64,True,11.61,12.58,1.08,4.95,0.0,Industrials,Specialty Business Services,45.0,Mr. Kasper  Fangel
-NKT.CO,NKT A/S,Hold,0.64,False,20.38,20.02,0.98,7.32,0.0,Industrials,Electrical Equipment & Parts,42.0,Mr. Claes  Westerlind
-DNORD.CO,D/S Norden,Hold,0.63,False,7.68,7.26,0.95,3.05,0.0,Industrials,Marine Shipping,,
-CARL-B.CO,Carlsberg B A/S,Hold,0.62,False,12.93,15.41,1.19,5.4,0.0,Consumer Defensive,Beverages - Brewers,47.0,Mr. Jacob  Aarup-Andersen
-TER,"Teradyne, Inc.",Hold,0.61,True,25.77,38.03,1.48,9.25,4.7,Technology,Semiconductor Equipment & Materials,60.0,Mr. Gregory Stephen Smith
-SCHO.CO,Schouw & Co. A/S,Hold,0.58,True,11.26,15.19,1.35,3.8,0.0,Industrials,Conglomerates,67.0,Mr. Jens Bjerg Sørensen
-NETC.CO,Netcompany Group A/S,Hold,0.45,False,15.59,27.25,1.75,5.65,0.0,Technology,Information Technology Services,56.0,Mr. Andre  Rogaczewski
-AMZN,"Amazon.com, Inc.",Hold,0.44,False,36.39,34.07,0.94,7.7,-2.6,Consumer Cyclical,Internet Retail,56.0,Mr. Andrew R. Jassy
-MATAS.CO,Matas A/S,Hold,0.43,False,12.17,19.33,1.59,4.03,0.0,Consumer Cyclical,Specialty Retail,,
-DLTR,"Dollar Tree, Inc.",Hold,0.35,False,18.7,22.36,1.2,4.69,0.0,Consumer Defensive,Discount Stores,48.0,Mr. Michael C. Creedon Jr.
-KOG.OL,KONGSBERG GRUPPEN,Hold,0.33,False,8.47,38.15,1.0,7.05,0.0,Industrials,Aerospace & Defense,58.0,Mr. Geir  Haoy
-GN.CO,GN Store Nord A/S,Hold,0.32,False,11.13,21.51,1.93,3.56,0.0,Healthcare,Medical Devices,,
-SOLAR-B.CO,Solar B A/S,Hold,0.31,False,7.35,15.55,1.0,2.81,0.0,Technology,Electronics & Computer Distribution,56.0,Mr. Jens E. Andersen
-BAESY,BAE Systems PLC,Hold,0.23,False,23.17,26.73,1.15,4.27,0.0,Industrials,Aerospace & Defense,53.0,"Dr. Charles Nicholas Woodburn CBE, Ph.D."
-SYDB.CO,Sydbank A/S,Hold,0.17,True,10.66,11.28,1.06,1.36,0.0,Financial Services,Banks - Regional,,
-LDO.MI,LEONARDO,Hold,0.17,False,27.53,25.41,0.92,3.32,0.0,Industrials,Aerospace & Defense,63.0,Mr. Roberto  Cingolani
-DSV.CO,DSV A/S,Hold,0.16,False,24.66,33.32,1.35,4.62,0.0,Industrials,Integrated Freight & Logistics,55.0,Mr. Jens Hesselberg Lund
-TRIFOR.CO,Trifork Group AG,Hold,0.12,False,115.62,15.89,1.0,1.73,0.0,Technology,Information Technology Services,58.0,Mr. Jorn  Larsen
-FLUG-B.CO,Flügger group A/S B,Hold,0.12,False,,18.35,1.0,3.11,0.0,Basic Materials,Specialty Chemicals,34.0,Mr. Sune Dedenroth Schnack
-JYSK.CO,Jyske Bank A/S,Hold,0.07,True,9.36,8.76,0.94,0.68,0.0,Financial Services,Banks - Regional,52.0,Mr. Lars Stensgaard Morch
-DANSKE.CO,Danske Bank A/S,Sell,-0.01,True,10.58,9.78,0.92,0.62,0.0,Financial Services,Banks - Regional,48.0,Mr. Carsten Rasch Egeriis
-COLUM.CO,Columbus A/S,Sell,-0.07,False,,26.32,1.0,2.46,0.0,Technology,Information Technology Services,50.0,Mr. Soren Krogh Knudsen
-HIMS,"Hims & Hers Health, Inc.",Sell,-0.16,False,94.3,54.91,0.58,6.94,-0.9,Consumer Defensive,Household & Personal Products,36.0,Mr. Andrew  Dudum
-SAAB-B.ST,SAAB AB ser. B,Sell,-0.21,False,51.52,53.28,1.03,4.02,0.0,Industrials,Aerospace & Defense,64.0,Mr. Micael  Johansson B.Sc.
-RHM.DE,RHEINMETALL AG                I,Sell,-0.23,False,53.38,86.18,1.61,6.89,0.0,Industrials,Aerospace & Defense,61.0,Mr. Armin Theodor Papperger
-CBK.DE,Commerzbank AG                I,Sell,-0.24,False,16.59,17.62,1.06,0.51,0.0,Financial Services,Banks - Regional,54.0,Dr. Bettina  Orlopp
-RDDT,"Reddit, Inc.",Sell,-0.93,False,325.93,97.05,1.0,3.49,2.9,Communication Services,Internet Content & Information,39.0,Mr. Steven Ladd Huffman
-TSLA,"Tesla, Inc.",Sell,-1.48,False,99.97,192.8,1.93,2.91,0.2,Consumer Cyclical,Auto Manufacturers,53.0,Mr. Elon R. Musk
+Ticker,Name,Signal,Recommendation Score,Owned,P/E,ROA%,CEO Age,Insider Buy%,Sector,Industry,CEO Name
+EQNR,Equinor ASA,Buy,3.27,False,8.21,13.32,56.0,0.0,Energy,Oil & Gas Integrated,Mr. Anders  Opedal
+GMAB,Genmab A/S,Buy,2.97,False,12.64,13.26,63.0,0.0,Healthcare,Biotechnology,Dr. Jan G.J. van de Winkel Ph.D.
+NOVO-B.CO,Novo Nordisk B A/S,Buy,2.69,True,14.27,21.82,54.0,0.0,Healthcare,Drug Manufacturers - General,Mr. Maziar Mike Doustdar
+TRMD,TORM plc,Buy,2.5,True,6.35,6.38,56.0,0.0,Energy,Oil & Gas Midstream,Mr. Jacob Balslev Meldgaard
+MAERSK-B.CO,A.P. Møller - Mærsk B A/S,Buy,2.37,False,4.93,5.19,52.0,0.0,Industrials,Marine Shipping,Mr. Vincent  Clerc
+STG.CO,Scandinavian Tobacco Group A/S,Buy,2.28,False,8.58,5.91,60.0,0.0,Consumer Defensive,Tobacco,Mr. Niels  Frederiksen
+SPG.CO,SP Group A/S,Buy,2.07,False,11.72,7.42,48.0,0.0,Basic Materials,Specialty Chemicals,Mr. Lars Ravn Bering
+GOOGL,Alphabet Inc.,Buy,2.0,False,21.31,16.79,51.0,0.0,Communication Services,Internet Content & Information,Mr. Sundar  Pichai
+BAVA.CO ,Bavarian Nordic A/S,Buy,1.85,False,14.21,6.65,57.0,0.0,Healthcare,Biotechnology,"Dr. Paul John Chaplin MSc, Ph.D."
+DNORD.CO,D/S Norden,Buy,1.84,False,7.39,3.05,,0.0,Industrials,Marine Shipping,
+BRK-B,Berkshire Hathaway Inc. New,Buy,1.83,True,16.73,4.68,94.0,0.0,Financial Services,Insurance - Diversified,Mr. Warren E. Buffett
+UBER,"Uber Technologies, Inc.",Buy,1.61,False,15.92,5.78,54.0,10.8,Technology,Software - Application,Mr. Dara  Khosrowshahi
+RBREW.CO,Royal UNIBREW A/S,Buy,1.6,False,15.97,6.69,51.0,0.0,Consumer Defensive,Beverages - Brewers,Mr. Lars  Jensen
+ISS.CO,ISS A/S,Buy,1.54,True,12.58,4.95,45.0,0.0,Industrials,Specialty Business Services,Mr. Kasper  Fangel
+DEMANT.CO,Demant A/S,Buy,1.46,False,20.43,8.02,54.0,0.0,Healthcare,Medical Devices,Mr. Søren  Nielsen
+SCHO.CO,Schouw & Co. A/S,Buy,1.42,True,15.24,3.8,67.0,0.0,Industrials,Conglomerates,Mr. Jens Bjerg Sørensen
+CARL-B.CO,Carlsberg B A/S,Buy,1.38,False,15.43,5.4,47.0,0.0,Consumer Defensive,Beverages - Brewers,Mr. Jacob  Aarup-Andersen
+META,"Meta Platforms, Inc.",Buy,1.34,False,26.82,18.46,40.0,0.0,Communication Services,Internet Content & Information,Mr. Mark Elliot Zuckerberg
+JYSK.CO,Jyske Bank A/S,Buy,1.27,True,8.85,0.68,52.0,0.0,Financial Services,Banks - Regional,Mr. Lars Stensgaard Morch
+SYDB.CO,Sydbank A/S,Buy,1.2,True,11.3,1.36,,0.0,Financial Services,Banks - Regional,
+NKT.CO,NKT A/S,Buy,1.17,False,20.42,7.32,42.0,0.0,Industrials,Electrical Equipment & Parts,Mr. Claes  Westerlind
+DANSKE.CO,Danske Bank A/S,Buy,1.1,True,9.88,0.62,48.0,0.0,Financial Services,Banks - Regional,Mr. Carsten Rasch Egeriis
+SOLAR-B.CO,Solar B A/S,Buy,1.03,False,15.95,2.81,56.0,0.0,Technology,Electronics & Computer Distribution,Mr. Jens E. Andersen
+AAPL,Apple Inc.,Buy,1.01,False,34.13,24.55,63.0,0.1,Technology,Consumer Electronics,Mr. Timothy D. Cook
+MATAS.CO,Matas A/S,Hold,0.92,False,19.25,4.03,,0.0,Consumer Cyclical,Specialty Retail,
+ABBN.SW,ABB LTD N,Hold,0.88,False,28.99,9.07,,0.0,Industrials,Electrical Equipment & Parts,
+TRIFOR.CO,Trifork Group AG,Hold,0.76,False,17.25,1.73,58.0,0.0,Technology,Information Technology Services,Mr. Jorn  Larsen
+DLTR,"Dollar Tree, Inc.",Hold,0.68,False,22.04,4.69,48.0,0.0,Consumer Defensive,Discount Stores,Mr. Michael C. Creedon Jr.
+MSFT,Microsoft Corporation,Hold,0.63,False,37.13,14.2,57.0,-2.2,Technology,Software - Infrastructure,Mr. Satya  Nadella
+GN.CO,GN Store Nord A/S,Hold,0.58,False,22.19,3.56,,0.0,Healthcare,Medical Devices,
+FLUG-B.CO,Flügger group A/S B,Hold,0.54,False,18.35,3.11,34.0,0.0,Basic Materials,Specialty Chemicals,Mr. Sune Dedenroth Schnack
+COLO-B.CO,Coloplast B A/S,Hold,0.53,False,34.22,9.82,,0.0,Healthcare,Medical Instruments & Supplies,
+NETC.CO,Netcompany Group A/S,Hold,0.44,False,27.65,5.65,56.0,0.0,Technology,Information Technology Services,Mr. Andre  Rogaczewski
+CBK.DE,Commerzbank AG                I,Hold,0.42,False,18.1,0.51,54.0,0.0,Financial Services,Banks - Regional,Dr. Bettina  Orlopp
+LDO.MI,LEONARDO,Hold,0.32,False,25.84,3.32,63.0,0.0,Industrials,Aerospace & Defense,Mr. Roberto  Cingolani
+BAESY,BAE Systems PLC,Hold,0.22,False,27.06,4.27,53.0,0.0,Industrials,Aerospace & Defense,"Dr. Charles Nicholas Woodburn CBE, Ph.D."
+TER,"Teradyne, Inc.",Hold,0.21,True,38.02,9.25,60.0,4.7,Technology,Semiconductor Equipment & Materials,Mr. Gregory Stephen Smith
+AMZN,"Amazon.com, Inc.",Hold,0.2,False,33.79,7.7,56.0,-2.6,Consumer Cyclical,Internet Retail,Mr. Andrew R. Jassy
+CBRAIN.CO,cBrain A/S,Hold,0.15,False,60.48,15.06,65.0,0.0,Technology,Software - Application,Mr. Per Tejs Knudsen
+NVDA,NVIDIA Corporation,Hold,0.08,False,56.48,53.24,61.0,-0.5,Technology,Semiconductors,Mr. Jen-Hsun  Huang
+NFLX,"Netflix, Inc.",Hold,0.01,False,51.61,15.05,59.0,-4.7,Communication Services,Entertainment,Mr. Theodore A. Sarandos
+COLUM.CO,Columbus A/S,Sell,-0.04,False,26.11,2.46,50.0,0.0,Technology,Information Technology Services,Mr. Soren Krogh Knudsen
+DSV.CO,DSV A/S,Sell,-0.24,False,33.16,4.62,55.0,0.0,Industrials,Integrated Freight & Logistics,Mr. Jens Hesselberg Lund
+KOG.OL,KONGSBERG GRUPPEN,Sell,-0.27,False,38.37,7.05,58.0,0.0,Industrials,Aerospace & Defense,Mr. Geir  Haoy
+LLY,Eli Lilly and Company,Sell,-0.36,False,46.78,16.55,56.0,-37.3,Healthcare,Drug Manufacturers - General,Mr. David A. Ricks
+RHM.DE,RHEINMETALL AG                I,Sell,-0.76,False,87.1,6.89,61.0,0.0,Industrials,Aerospace & Defense,Mr. Armin Theodor Papperger
+HIMS,"Hims & Hers Health, Inc.",Sell,-1.13,False,56.05,6.94,36.0,-1.1,Consumer Defensive,Household & Personal Products,Mr. Andrew  Dudum
+SAAB-B.ST,SAAB AB ser. B,Sell,-1.2,False,52.91,4.02,64.0,0.0,Industrials,Aerospace & Defense,Mr. Micael  Johansson B.Sc.
+TSLA,"Tesla, Inc.",Sell,-1.54,False,191.75,2.91,53.0,0.2,Consumer Cyclical,Auto Manufacturers,Mr. Elon R. Musk
+RDDT,"Reddit, Inc.",Sell,-1.61,False,97.59,3.49,39.0,3.7,Communication Services,Internet Content & Information,Mr. Steven Ladd Huffman
