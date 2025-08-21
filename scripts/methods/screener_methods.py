@@ -57,6 +57,13 @@ class Stock:
             return True
         else:
             return False
+        
+    def CEO(self) -> dict:
+        people = self.info["companyOfficers"]
+        for i in range(len(people)):
+            if "CEO" in people[i]["title"]:
+                return {"name": people[i]["name"], "age": people[i]["age"]}
+        return {"name": np.nan, "age": np.nan}
 
     def summary(self) -> pd.DataFrame:
         df = pd.DataFrame([{
@@ -72,5 +79,7 @@ class Stock:
             "Insider Buy%": self.insider_buy(),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
+            "CEO Age": self.CEO()["age"],
+            "CEO Name": self.CEO()["name"]
             }])
         return df
