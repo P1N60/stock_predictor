@@ -39,10 +39,30 @@ class Stock:
         except:
             return 1.00
 
+    def CEO(self) -> dict:
+        people = self.info["companyOfficers"]
+        for i in range(len(people)):
+            if "CEO" in people[i]["title"]:
+                return {"name": people[i]["name"], "age": people[i]["age"]}
+        return {"name": np.nan, "age": np.nan}
+
+    def owned(self) -> bool:
+        if self.symbol in self.owned_tickers:
+            return True
+        else:
+            return False
+        
+    def CEO_age_score(self) -> float:
+        ceo_age = self.CEO()["age"]
+        if np.isnan(ceo_age):
+            return 0
+        else:
+            return (ceo_age/55 - 1) * 0.4
+
     def recommendation_score(self) -> float:
         if self.pe+self.expt_pe  <= 0 or self.roa+self.expt_roa <= 0 or self.forward_PE() <= 0:
             return np.nan
-        return round(2 + np.log(self.roa+self.expt_roa) - np.log(self.pe+self.expt_pe) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())/10, 2)
+        return round(2 + np.log(self.roa+self.expt_roa) - np.log(self.pe+self.expt_pe) + self.insider_buy()*0.005 + np.log(self.forward_vs_current_PE())/10 + self.CEO_age_score(), 2)
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.75:
@@ -52,19 +72,6 @@ class Stock:
         else:
             return "Hold"
         
-    def owned(self) -> bool:
-        if self.symbol in self.owned_tickers:
-            return True
-        else:
-            return False
-        
-    def CEO(self) -> dict:
-        people = self.info["companyOfficers"]
-        for i in range(len(people)):
-            if "CEO" in people[i]["title"]:
-                return {"name": people[i]["name"], "age": people[i]["age"]}
-        return {"name": np.nan, "age": np.nan}
-
     def summary(self) -> pd.DataFrame:
         df = pd.DataFrame([{
             "Ticker": self.symbol,
