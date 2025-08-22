@@ -60,7 +60,7 @@ class Stock:
         if np.isnan(ceo_age):
             return 0
         else:
-            return (ceo_age/55 - 1) * 0.4
+            return (ceo_age/58.15 - 1) * 0.4
 
     def recommendation_score(self) -> float:
         return round((self.PE_score() + self.ROA_score() + self.insider_buy()*0.005 + self.CEO_age_score()) * 2, 2)
