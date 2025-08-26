@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import yfinance as yf
 
-def get_gettables():
-    return display(pd.DataFrame(yf.Ticker("AAPL").info.values(), yf.Ticker("AAPL").info.keys()))
+def get_gettables(symbol: str):
+    return display(pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker("AAPL").info.keys()))
 
 class Stock:
     def __init__(self, symbol):
@@ -86,6 +86,7 @@ class Stock:
             "Insider Buy%": self.insider_buy(),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
+            "Country": self.info["country"],
             "CEO Name": self.CEO()["name"]
             }])
         return df
