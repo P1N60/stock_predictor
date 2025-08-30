@@ -61,9 +61,15 @@ class Stock:
             return 0
         else:
             return (ceo_age/58.15 - 1) * 0.4
+        
+    def value_score(self) -> float:
+        return round((self.PE_score() + self.ROA_score()) * 2, 2)
+    
+    def quality_score(self) -> float:
+        return round((self.insider_buy()*0.005 + self.CEO_age_score()) * 2, 2)
 
     def recommendation_score(self) -> float:
-        return round((self.PE_score() + self.ROA_score() + self.insider_buy()*0.005 + self.CEO_age_score()) * 2, 2)
+        return round(self.value_score() + self.quality_score(), 2)
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 1:
@@ -79,7 +85,8 @@ class Stock:
             "Name": self.name,
             "Signal": self.recommendation_signal(),
             "Recommendation Score": self.recommendation_score(),
-            "Owned": self.owned(),
+            "Value Score": self.value_score(),
+            "Quality Score": self.quality_score(),
             "P/E": self.PE,
             "ROA%": self.ROA,
             "CEO Age": self.CEO()["age"],
@@ -87,6 +94,7 @@ class Stock:
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
             "Country": self.info["country"],
-            "CEO Name": self.CEO()["name"]
+            "CEO Name": self.CEO()["name"],
+            "Owned": self.owned()
             }])
         return df
