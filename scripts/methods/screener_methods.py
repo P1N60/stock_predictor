@@ -36,6 +36,7 @@ class Stock:
                 return {"name": people[i]["name"], "age": people[i]["age"]}
         return {"name": np.nan, "age": np.nan}
 
+    # score calculation
     def PE_score(self) -> float:
         if self.PE >= 0:
             score = (-self.PE+self.exp_PE)/self.exp_PE
@@ -44,7 +45,7 @@ class Stock:
         if score < -1:
             return -1
         else:
-            return score
+            return round(score, 2)
         
     def ROA_score(self) -> float:
         score = self.ROA/12
@@ -53,21 +54,26 @@ class Stock:
         elif score < -1:
             return -1
         else:
-            return score
+            return round(score, 2)
         
-    def CEO_age_score(self) -> float:
+    def leadership_score(self) -> float:
         ceo_age = self.CEO()["age"]
         if np.isnan(ceo_age):
             return 0
         else:
-            return (ceo_age/58.15 - 1) * 0.4
-        
+            return round((ceo_age/58.15 - 1) * 0.4, 2)
+
+    def insider_buy_score(self) -> float:
+        return round(self.insider_buy()*0.005, 2)
+
+    # larger scores for final recommendation score 
     def value_score(self) -> float:
         return round((self.PE_score() + self.ROA_score()) * 2, 2)
     
     def quality_score(self) -> float:
-        return round((self.insider_buy()*0.005 + self.CEO_age_score()) * 2, 2)
+        return round((self.insider_buy_score() + self.leadership_score()) * 2, 2)
 
+    # final score
     def recommendation_score(self) -> float:
         return round(self.value_score() + self.quality_score(), 2)
     
@@ -87,9 +93,12 @@ class Stock:
             "Recommendation Score": self.recommendation_score(),
             "Value Score": self.value_score(),
             "Quality Score": self.quality_score(),
+            "P/E Score": self.PE_score(),
+            "ROA Score": self.ROA_score(),
+            "Leadership Score": self.leadership_score(),
+            "Insider Buy Score": self.insider_buy_score(),
             "P/E": self.PE,
             "ROA%": self.ROA,
-            "CEO Age": self.CEO()["age"],
             "Insider Buy%": self.insider_buy(),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
