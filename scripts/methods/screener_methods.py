@@ -29,13 +29,6 @@ class Stock:
         else:
             return False
 
-    def CEO(self) -> dict:
-        people = self.info["companyOfficers"]
-        for i in range(len(people)):
-            if "CEO" in people[i]["title"]:
-                return {"name": people[i]["name"], "age": people[i]["age"]}
-        return {"name": np.nan, "age": np.nan}
-
     # score calculation
     def PE_score(self) -> float:
         if self.PE >= 0:
@@ -57,11 +50,21 @@ class Stock:
             return round(score, 2)
         
     def leadership_score(self) -> float:
-        ceo_age = self.CEO()["age"]
-        if np.isnan(ceo_age):
-            return 0
-        else:
-            return round((ceo_age/58.15 - 1) * 0.4, 2)
+        score = 0
+        people = self.info["companyOfficers"]
+        for person in range(len(people)):
+            try:
+                title = people[person]["title"]
+                age = people[person]["age"]
+                if "CEO" in title:
+                    score += (age/58.15 - 1)*6
+                elif "CFO" in title or "CTO" in title:
+                    score += (age/58.15 - 1)*4
+                else:
+                    score += (age/58.15 - 1)*1
+            except:
+                continue
+        return round(score/len(people) * 0.4, 2)
 
     def insider_buy_score(self) -> float:
         return round(self.insider_buy()*0.005, 2)
@@ -103,7 +106,6 @@ class Stock:
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
             "Country": self.info["country"],
-            "CEO Name": self.CEO()["name"],
             "Owned": self.owned()
             }])
         return df
