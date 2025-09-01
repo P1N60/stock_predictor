@@ -84,7 +84,7 @@ class Stock:
         return round(self.value_score() + self.quality_score(), 2)
     
     def recommendation_signal(self) -> str:
-        if self.recommendation_score() >= 1:
+        if self.recommendation_score() >= 0.5:
             return "Buy"
         elif self.recommendation_score() < 0:
             return "Sell"
