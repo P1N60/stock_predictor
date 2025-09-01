@@ -30,6 +30,7 @@ class Stock:
             return False
 
     # score calculation
+    # value score 
     def PE_score(self) -> float:
         if self.PE >= 0:
             score = (-self.PE+self.exp_PE)/self.exp_PE
@@ -48,7 +49,8 @@ class Stock:
             return -1
         else:
             return round(score, 2)
-        
+    
+    # quality score
     def leadership_score(self) -> float:
         score = 0
         people = self.info["companyOfficers"]
@@ -56,25 +58,26 @@ class Stock:
             try:
                 title = people[person]["title"]
                 age = people[person]["age"]
+                expected_age = 58.15
                 if "CEO" in title:
-                    score += (age/58.15 - 1)*6
+                    score += (age/expected_age  - 1)*6
                 elif "CFO" in title or "CTO" in title:
-                    score += (age/58.15 - 1)*4
+                    score += (age/expected_age  - 1)*4
                 else:
-                    score += (age/58.15 - 1)*1
+                    score += (age/expected_age  - 1)*1
             except:
                 continue
-        return round(score/len(people) * 0.4, 2)
+        return round(score/len(people) * 1.5, 2)
 
     def insider_buy_score(self) -> float:
         return round(self.insider_buy()*0.005, 2)
 
     # larger scores for final recommendation score 
     def value_score(self) -> float:
-        return round((self.PE_score() + self.ROA_score()) * 2, 2)
+        return round((self.PE_score() + self.ROA_score()), 2)
     
     def quality_score(self) -> float:
-        return round((self.insider_buy_score() + self.leadership_score()) * 2, 2)
+        return round((self.insider_buy_score() + self.leadership_score()), 2)
 
     # final score
     def recommendation_score(self) -> float:
