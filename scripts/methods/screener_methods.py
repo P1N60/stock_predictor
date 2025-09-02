@@ -1,9 +1,24 @@
 import pandas as pd
 import numpy as np
 import yfinance as yf
+from gender_guesser.detector import Detector
 
 def get_gettables(symbol: str):
     return display(pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker("AAPL").info.keys()))
+
+_detector = Detector()
+def g_detector(name: str) -> int:
+    n = name.split()[1] if len(name.split()) > 1 else ""
+    dict = {"male": 1.5, "mostly_male": 1.25, "unknown": 1, "mostly_female": 0.75, "female": 0.5}
+    return dict[_detector.get_gender(n)]
+
+def mult_if_positive(x: float, y: float) -> float:
+    if x > 0:
+        return x * y
+    elif x < 0:
+        return x / y
+    else:
+        return 0
 
 class Stock:
     def __init__(self, symbol):
@@ -58,16 +73,18 @@ class Stock:
             try:
                 title = people[person]["title"]
                 age = people[person]["age"]
+                g_score = g_detector(people[person]["name"])
                 expected_age = 58.15
+                score_ = mult_if_positive((age/expected_age  - 1), g_score)
                 if "CEO" in title:
-                    score += (age/expected_age  - 1)*6
+                    score +=  score_ * 6
                 elif "CFO" in title or "CTO" in title:
-                    score += (age/expected_age  - 1)*4
+                    score += score_ * 4
                 else:
-                    score += (age/expected_age  - 1)*1
+                    score += score_ * 1
             except:
                 continue
-        return round(score/len(people) * 1.5, 2)
+        return round(score/len(people) * 1, 2)
 
     def insider_buy_score(self) -> float:
         return round(self.insider_buy()*0.005, 2)
