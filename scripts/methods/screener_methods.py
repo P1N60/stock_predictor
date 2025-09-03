@@ -77,14 +77,14 @@ class Stock:
                 expected_age = 58.15
                 score_ = mult_if_positive((age/expected_age  - 1), g_score)
                 if "CEO" in title:
-                    score +=  score_ * 6
+                    score +=  score_ * 5
                 elif "CFO" in title or "CTO" in title:
-                    score += score_ * 4
+                    score += score_ * 3.5
                 else:
                     score += score_ * 1
             except:
                 continue
-        return round(score/len(people) * 1, 2)
+        return round(score/len(people) * 1.25, 2)
 
     def insider_buy_score(self) -> float:
         return round(self.insider_buy()*0.005, 2)
