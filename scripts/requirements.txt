@@ -6,3 +6,4 @@ gradio
 scikit-learn
 scikit-optimize
 tqdm
+gender_guesser
