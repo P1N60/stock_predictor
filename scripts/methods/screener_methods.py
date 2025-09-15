@@ -73,8 +73,9 @@ class Stock:
             try:
                 title = people[person]["title"]
                 age = people[person]["age"]
-                g_score = g_detector(people[person]["name"])
-                expected_age = 58.15
+                name = people[person]["name"]
+                g_score = g_detector(name)
+                expected_age = 57.15
                 score_ = mult_if_positive((age/expected_age  - 1), g_score)
                 if "CEO" in title:
                     score +=  score_ * 5
