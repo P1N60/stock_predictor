@@ -27,6 +27,7 @@ class Stock:
         self.insider = yf.Ticker(symbol).insider_purchases
         self.PE = round(self.info["trailingPE"], 2)
         self.ROA = round(self.info["returnOnAssets"]*100, 2)
+        self.PB = round(self.info["priceToBook"], 2)
         self.name = self.info["shortName"]
         self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
         self.exp_PE = 22
@@ -64,6 +65,12 @@ class Stock:
             return -1
         else:
             return round(score, 2)
+
+    def PB_score(self) -> float:
+        mean = 10
+        spread = 20 # 1 at mean-spread and -1 at mean+spread
+        weight = 0.15
+        return round(-np.tanh((self.PB-mean)/(spread/2))*weight, 2)
     
     # quality score
     def leadership_score(self) -> float:
@@ -92,7 +99,7 @@ class Stock:
 
     # larger scores for final recommendation score 
     def value_score(self) -> float:
-        return round((self.PE_score() + self.ROA_score()), 2)
+        return round((self.PE_score() + self.ROA_score()) + self.PB_score(), 2)
     
     def quality_score(self) -> float:
         return round((self.insider_buy_score() + self.leadership_score()), 2)
@@ -119,10 +126,12 @@ class Stock:
             "Quality Score": self.quality_score(),
             "P/E Score": self.PE_score(),
             "ROA Score": self.ROA_score(),
+            "PB Score": self.PB_score(),
             "Leadership Score": self.leadership_score(),
             "Insider Buy Score": self.insider_buy_score(),
             "P/E": self.PE,
             "ROA%": self.ROA,
+            "Price to Book": self.PB,
             "Insider Buy%": self.insider_buy(),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
