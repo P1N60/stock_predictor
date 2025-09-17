@@ -9,7 +9,7 @@ def get_gettables(symbol: str):
 _detector = Detector()
 def g_detector(name: str) -> int:
     n = name.split()[1] if len(name.split()) > 1 else ""
-    dict = {"male": 1.5, "mostly_male": 1.25, "unknown": 1, "mostly_female": 0.75, "female": 0.5}
+    dict = {"female": 1, "mostly_female": 0.5, "unknown": 0, "mostly_male": -0.5, "male": -1}
     return dict[_detector.get_gender(n)]
 
 def mult_if_positive(x: float, y: float) -> float:
@@ -49,51 +49,69 @@ class Stock:
     # score calculation
     # value score 
     def PE_score(self) -> float:
-        mean = 10
-        spread = 20 # 1 at mean-spread and -1 at mean+spread
+        mean = 18.7 # chosen from data by median
+        spread = mean
         weight = 1
-        return round(-np.tanh((self.PE-mean)/(spread/2))*weight, 2)
+        return round(-np.tanh((self.PE-mean)/(spread/2))*weight, 2) # 1 at mean-spread and -1 at mean+spread
         
     def ROA_score(self) -> float:
-        mean = 1
-        spread = 11 # 1 at mean-spread and -1 at mean+spread
+        mean = 4.325 # chosen from data by median
+        spread = mean
         weight = 1
-        return round(np.tanh((self.ROA-mean)/(spread/2))*weight, 2)
+        return round(np.tanh((self.ROA-mean)/(spread/2))*weight, 2) # -1 at mean-spread and 1 at mean+spread
+
+    def EPS_score(self) -> float:
+        mean = 4 # chosen from data by median
+        spread = mean
+        weight = 0.3
+        return round(np.tanh((self.EPS-mean)/(spread/2))*weight, 2) # -1 at mean-spread and 1 at mean+spread
 
     def PB_score(self) -> float:
-        mean = 10
-        spread = 20 # 1 at mean-spread and -1 at mean+spread
-        weight = 0.15
-        return round(-np.tanh((self.PB-mean)/(spread/2))*weight, 2)
-    
+        mean = 1.875 # chosen from data by median
+        spread = 2
+        weight = 0.3
+        return round(-np.tanh((self.PB-mean)/(spread/2))*weight, 2) # 1 at mean-spread and -1 at mean+spread
+
     # quality score
     def leadership_score(self) -> float:
+        mean = 57.15 # chosen from data by median
+        spread = 20
+        weight = 1
+
         score = 0
         people = self.info["companyOfficers"]
         for person in range(len(people)):
+            person_score = 0
+            try:
+                age = people[person]["age"]
+                person_score += np.tanh((age-mean)/(spread/2))
+            except:
+                Exception
+            try:
+                name = people[person]["name"]
+                person_score += -g_detector(name)
+            except:
+                Exception
             try:
                 title = people[person]["title"]
-                age = people[person]["age"]
-                name = people[person]["name"]
-                g_score = g_detector(name)
-                expected_age = 57.15
-                score_ = mult_if_positive((age/expected_age  - 1), g_score)
                 if "CEO" in title:
-                    score +=  score_ * 5
+                    person_score = person_score*5
                 elif "CFO" in title or "CTO" in title:
-                    score += score_ * 3.5
+                    person_score = person_score*3
                 else:
-                    score += score_ * 1
+                    person_score = person_score*1
             except:
-                continue
-        return round(score/len(people) * 1.25, 2)
+                Exception
+            score += person_score
+        score = score/len(people)
+        return round(np.tanh(score/(10/2)) * weight, 2)
 
     def insider_buy_score(self) -> float:
         return round(self.insider_buy()*0.005, 2)
 
     # larger scores for final recommendation score 
     def value_score(self) -> float:
-        return round((self.PE_score() + self.ROA_score()) + self.PB_score(), 2)
+        return round((self.PE_score() + self.ROA_score()) + self.EPS_score() + self.PB_score(), 2)
     
     def quality_score(self) -> float:
         return round((self.insider_buy_score() + self.leadership_score()), 2)
@@ -120,13 +138,14 @@ class Stock:
             "Quality Score": self.quality_score(),
             "P/E Score": self.PE_score(),
             "ROA Score": self.ROA_score(),
+            "EPS Score": self.EPS_score(),
             "PB Score": self.PB_score(),
             "Leadership Score": self.leadership_score(),
             "Insider Buy Score": self.insider_buy_score(),
             "P/E": self.PE,
             "ROA%": self.ROA,
-            "Price to Book": self.PB,
             "Earnings pr. Share": self.EPS,
+            "Price to Book": self.PB,
             "Insider Buy%": self.insider_buy(),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
