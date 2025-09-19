@@ -68,20 +68,20 @@ class Stock:
     def EPS_score(self) -> float:
         mean = 4 # chosen from data by median
         spread = mean
-        weight = 0.4
+        weight = 0.2
         return round(np.tanh((self.EPS-mean)/(spread/2))*weight, 2) # -1 at mean-spread and 1 at mean+spread
 
     def PB_score(self) -> float:
         mean = 1.875 # chosen from data by median
         spread = 2
-        weight = 0.4
+        weight = 0.2
         return round(-np.tanh((self.PB-mean)/(spread/2))*weight, 2) # 1 at mean-spread and -1 at mean+spread
 
     # quality score
     def leadership_score(self) -> float:
         mean = 57.15 # chosen from data by median
         spread = 20
-        weight = 1
+        weight = 1.2
 
         score = 0
         people = self.info["companyOfficers"]
