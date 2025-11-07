@@ -7,6 +7,7 @@ import numpy as np
 class Stock:
     def __init__(self, symbol):
         self.symbol = symbol
+        self.minimum_features_in_row = 0.6
 
     def get_annual_financials(self) -> pd.DataFrame:
         annual_financials = pd.concat([yf.Ticker(self.symbol).get_financials(freq="yearly"), yf.Ticker(self.symbol).get_balance_sheet(freq="yearly")])
@@ -42,7 +43,6 @@ class Stock:
         for earn_date in earn_dates:
             date_index += 1
             
-            # Build row data as a dictionary first
             row_data = {
                 "Ticker": self.symbol,
                 "Name": yf_info["shortName"],
@@ -73,15 +73,17 @@ class Stock:
                 else:
                     continue
             
-            # Add all financial features to the dictionary
             for feature in financials.index.to_list():
                 feature_value = financials[earn_date][feature]
                 row_data[feature] = np.nan if feature_value == "" else feature_value
-            
-            # Create DataFrame from complete dictionary
+
             row_df = pd.DataFrame([row_data])
             rows_list.append(row_df)
         df = pd.concat(rows_list, ignore_index=True) if rows_list else pd.DataFrame()
+        
+        if not df.empty:
+            max_nan_allowed = df.shape[1] * (1 - self.minimum_features_in_row)
+            df = df[df.isna().sum(axis=1) <= max_nan_allowed]
         return df
 
 class MLPWrapper:
