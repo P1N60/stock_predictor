@@ -9,13 +9,13 @@ class Stock:
         self.symbol = symbol
 
     def get_annual_financials(self) -> pd.DataFrame:
-        annual_financials = yf.Ticker(self.symbol).get_financials(freq="yearly")
+        annual_financials = pd.concat([yf.Ticker(self.symbol).get_financials(freq="yearly"), yf.Ticker(self.symbol).get_balance_sheet(freq="yearly")])
         if annual_financials.shape[1] > 4:
             annual_financials = annual_financials.iloc[:, :4]
         return annual_financials
     
     def get_quarterly_financials(self) -> pd.DataFrame:
-        quarterly_financials = yf.Ticker(self.symbol).get_financials(freq="quarterly")
+        quarterly_financials = pd.concat([yf.Ticker(self.symbol).get_financials(freq="quarterly"), yf.Ticker(self.symbol).get_balance_sheet(freq="quarterly")])
         overlapping_dates = set(self.get_annual_financials().columns).intersection(set(quarterly_financials.columns))
         if overlapping_dates:
             quarterly_financials = quarterly_financials.drop(columns=list(overlapping_dates))
@@ -36,26 +36,31 @@ class Stock:
     def get_df_financials(self):
         financials = self.get_financials()
         yf_info = yf.Ticker(self.symbol).info
-        df = pd.DataFrame()
+        rows_list = []
         earn_dates = financials.columns.to_list()
         date_index = -1
         for earn_date in earn_dates:
             date_index += 1
-            row_df = pd.DataFrame([{"Ticker": self.symbol}])
-            row_df["Name"] = yf_info["shortName"]
-            row_df["Date"] = pd.to_datetime(earn_date)
-            row_df["Earn Index"] = date_index
-            row_df["Sector"] = yf_info["sector"]
-            row_df["Industry"] = yf_info["industry"] 
+            
+            # Build row data as a dictionary first
+            row_data = {
+                "Ticker": self.symbol,
+                "Name": yf_info["shortName"],
+                "Date": pd.to_datetime(earn_date),
+                "Earn Index": date_index,
+                "Sector": yf_info["sector"],
+                "Industry": yf_info["industry"]
+            }
+            
             if date_index == 0:
-                row_df["3M Future Change"] = np.nan
+                row_data["3M Future Change"] = np.nan
             else:
                 price_data = yf.download(self.symbol, period="max", rounding=False, progress=False)
                 got_price = False
                 day_offset = 0
                 while(got_price==False and day_offset > -6):
                     try:           
-                        row_df['3M Future Change'] = (
+                        row_data['3M Future Change'] = (
                         price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset, weeks=13), ('Close', self.symbol)] / 
                         price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] - 1
                         )
@@ -63,15 +68,20 @@ class Stock:
                     except:
                         day_offset += -1
                 if got_price == True:
-                    if row_df["3M Future Change"].isna().any().any():
+                    if pd.isna(row_data.get("3M Future Change")):
                         continue
                 else:
                     continue
+            
+            # Add all financial features to the dictionary
             for feature in financials.index.to_list():
-                row_df[feature] = financials[earn_date][feature]
-                if row_df.loc[0, feature] == "":
-                    row_df.loc[0, feature] = np.nan
-            df = pd.concat([df, row_df])
+                feature_value = financials[earn_date][feature]
+                row_data[feature] = np.nan if feature_value == "" else feature_value
+            
+            # Create DataFrame from complete dictionary
+            row_df = pd.DataFrame([row_data])
+            rows_list.append(row_df)
+        df = pd.concat(rows_list, ignore_index=True) if rows_list else pd.DataFrame()
         return df
 
 class MLPWrapper:
