@@ -49,11 +49,14 @@ class Stock:
                 "Date": pd.to_datetime(earn_date),
                 "Earn Index": date_index,
                 "Sector": yf_info["sector"],
-                "Industry": yf_info["industry"]
+                "Industry": yf_info["industry"],
+                "Price": np.nan
             }
             
             if date_index == 0:
                 row_data["3M Future Change"] = np.nan
+                price_data = yf.download(self.symbol, period="1y", rounding=False, progress=False)
+                row_data["Price"] = price_data.loc[pd.Timestamp(earn_date), ('Close', self.symbol)]
             else:
                 price_data = yf.download(self.symbol, period="max", rounding=False, progress=False)
                 got_price = False
@@ -70,6 +73,7 @@ class Stock:
                 if got_price == True:
                     if pd.isna(row_data.get("3M Future Change")):
                         continue
+                    row_data["Price"] = price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)]
                 else:
                     continue
             
