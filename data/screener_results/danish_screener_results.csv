@@ -1,59 +1,58 @@
 Ticker,Name,Signal,Recommendation Score,Value Score,Quality Score,P/E Score,ROA Score,EPS Score,PB Score,Leadership Score,Insider Buy Score,P/E,ROA%,Earnings pr. Share,Price to Book,Insider Buy%,Sector,Industry,Country,Owned
-ZEAL.CO,Zealand Pharma A/S,Buy,2.09,2.06,0.03,0.9,1.0,0.2,-0.04,0.03,0.0,4.97,32.86,92.8,2.08,0.0,Healthcare,Biotechnology,Denmark,False
-BAVA.CO ,Bavarian Nordic A/S,Buy,2.0,1.6,0.4,0.51,0.83,0.2,0.06,0.4,0.0,13.43,6.88,17.99,1.56,0.0,Healthcare,Biotechnology,Denmark,False
-STG.CO,Scandinavian Tobacco Group A/S,Buy,1.95,1.7,0.25,0.79,0.55,0.2,0.16,0.25,0.0,8.76,5.65,9.9,0.84,0.0,Consumer Defensive,Tobacco,Denmark,False
-GUBRA.CO,Gubra A/S,Buy,1.93,1.92,0.01,0.92,1.0,0.2,-0.2,0.01,0.0,3.99,78.15,106.11,5.69,0.0,Healthcare,Biotechnology,Denmark,False
-PNDORA.CO,Pandora A/S,Buy,1.86,1.55,0.31,0.55,1.0,0.2,-0.2,0.31,0.0,12.97,19.44,67.61,19.26,0.0,Consumer Cyclical,Luxury Goods,Denmark,False
-ROCK-B.CO,Rockwool A/S ser. B,Buy,1.78,1.57,0.21,0.58,0.99,0.2,-0.2,0.21,0.0,12.57,10.43,18.45,15.55,0.0,Industrials,Building Products & Equipment,Denmark,False
-NOVO-B.CO,Novo Nordisk B A/S,Buy,1.65,1.49,0.16,0.49,1.0,0.2,-0.2,0.16,0.0,13.68,21.82,24.93,9.01,0.0,Healthcare,Drug Manufacturers - General,Denmark,True
-SPG.CO,SP Group A/S,Buy,1.51,1.58,-0.07,0.51,0.89,0.2,-0.02,-0.07,0.0,13.38,7.42,20.85,1.97,0.0,Basic Materials,Specialty Chemicals,Denmark,False
-GMAB.CO,Genmab A/S,Buy,1.48,1.33,0.15,0.33,1.0,0.2,-0.2,0.15,0.0,15.5,13.26,124.42,22.37,0.0,Healthcare,Biotechnology,Denmark,True
-RBREW.CO,Royal UNIBREW A/S,Buy,1.39,1.08,0.31,0.26,0.82,0.2,-0.2,0.31,0.0,16.18,6.85,31.12,4.1,0.0,Consumer Defensive,Beverages - Brewers,Denmark,False
-MAERSK-B.CO,A.P. Møller - Mærsk B A/S,Buy,1.38,1.3,0.08,0.91,0.38,0.2,-0.19,0.08,0.0,4.66,5.19,2813.19,3.56,0.0,Industrials,Marine Shipping,Denmark,False
-PARKEN.CO,PARKEN Sport & Entertainment A/,Buy,1.35,0.82,0.53,0.65,-0.14,0.2,0.11,0.53,0.0,11.42,4.01,13.09,1.24,0.0,Communication Services,Entertainment,Denmark,False
-DEMANT.CO,Demant A/S,Buy,1.06,0.92,0.14,-0.02,0.94,0.2,-0.2,0.14,0.0,18.89,8.02,12.47,5.3,0.0,Healthcare,Medical Devices,Denmark,False
-NTG.CO,NTG Nordic Transport Group A/S,Buy,0.83,0.47,0.36,-0.16,0.6,0.2,-0.17,0.36,0.0,20.25,5.83,9.63,3.05,0.0,Industrials,Integrated Freight & Logistics,Denmark,False
-LASP.CO,Lån og Spar Bank A/S,Buy,0.78,0.26,0.52,0.82,-0.9,0.2,0.14,0.52,0.0,7.8,1.16,126.28,1.0,0.0,Financial Services,Banks - Regional,Denmark,True
-ISS.CO,ISS A/S,Buy,0.78,0.78,0.0,0.49,0.28,0.2,-0.19,0.0,0.0,13.68,4.95,15.29,3.65,0.0,Industrials,Specialty Business Services,Denmark,True
-CARL-B.CO,Carlsberg B A/S,Buy,0.65,0.77,-0.12,0.31,0.46,0.2,-0.2,-0.12,0.0,15.72,5.4,50.41,4.19,0.0,Consumer Defensive,Beverages - Brewers,Denmark,False
-LOLB.CO,Lollands Bank A/S,Buy,0.55,0.45,0.1,0.95,-0.85,0.2,0.15,0.1,0.0,1.87,1.64,417.26,0.9,0.0,Financial Services,Banks - Regional,Denmark,False
-HVID.CO,Hvidbjerg Bank A/S,Buy,0.53,0.43,0.1,0.95,-0.87,0.2,0.15,0.1,0.0,1.64,1.46,97.79,0.95,0.0,Financial Services,Banks - Regional,Denmark,True
-SCHO.CO,Schouw & Co. A/S,Buy,0.52,0.35,0.17,0.29,-0.24,0.2,0.1,0.17,0.0,15.88,3.8,39.24,1.33,0.0,Industrials,Conglomerates,Denmark,True
-GRLA.CO,Grønlandsbanken A/S,Hold,0.42,0.34,0.08,0.77,-0.77,0.2,0.14,0.08,0.0,9.24,2.12,96.29,1.05,0.0,Financial Services,Banks - Regional,Greenland,False
-NKT.CO,NKT A/S,Hold,0.39,0.33,0.06,-0.55,0.88,0.2,-0.2,0.06,0.0,24.52,7.32,29.85,21.94,0.0,Industrials,Electrical Equipment & Parts,Denmark,False
-PAAL-B.CO,Per Aarsleff Holding A/S B,Hold,0.38,0.23,0.15,0.1,0.08,0.2,-0.15,0.15,0.0,17.78,4.49,42.92,2.83,0.0,Industrials,Engineering & Construction,Denmark,False
-JYSK.CO,Jyske Bank A/S,Hold,0.36,0.18,0.18,0.77,-0.93,0.2,0.14,0.18,0.0,9.18,0.68,80.57,0.97,0.0,Financial Services,Banks - Regional,Denmark,True
-SKJE.CO,Skjern Bank A/S,Hold,0.36,0.29,0.07,0.78,-0.81,0.2,0.12,0.07,0.0,9.02,1.87,25.71,1.22,0.0,Financial Services,Banks - Regional,Denmark,False
-NLFSK.CO,Nilfisk Holding A/S,Hold,0.32,0.23,0.09,-0.06,0.35,0.14,-0.2,0.09,0.0,19.23,5.11,5.68,9.65,0.0,Industrials,Specialty Industrial Machinery,Denmark,False
-SOLAR-B.CO,Solar B A/S,Hold,0.29,0.06,0.23,0.31,-0.6,0.2,0.15,0.23,0.0,15.67,2.81,13.75,0.92,0.0,Technology,Electronics & Computer Distribution,Denmark,False
-DNORD.CO,D/S Norden,Hold,0.29,0.28,0.01,0.81,-0.53,0.2,-0.2,0.01,0.0,8.24,3.05,30.26,5.53,0.0,Industrials,Marine Shipping,Denmark,False
-MATAS.CO,Matas A/S,Hold,0.28,0.32,-0.04,0.17,-0.14,0.19,0.1,-0.04,0.0,17.14,4.03,7.48,1.33,0.0,Consumer Cyclical,Specialty Retail,Denmark,False
-MNBA.CO,Møns Bank A/S,Hold,0.22,0.3,-0.08,0.8,-0.85,0.2,0.15,-0.08,0.0,8.4,1.62,39.98,0.94,0.0,Financial Services,Banks - Regional,Denmark,False
-COLO-B.CO,Coloplast B A/S,Hold,0.21,0.08,0.13,-0.91,0.99,0.2,-0.2,0.13,0.0,33.12,9.82,18.07,8.19,0.0,Healthcare,Medical Instruments & Supplies,Denmark,False
-RILBA.CO,Ringkjøbing Landbobank A/S,Hold,0.2,-0.21,0.41,0.33,-0.58,0.2,-0.16,0.41,0.0,15.45,2.89,90.72,3.03,0.0,Financial Services,Banks - Regional,Denmark,False
-GABR.CO,Gabriel Holding A/S,Hold,0.19,-0.1,0.29,0.2,-0.55,0.2,0.05,0.29,0.0,16.81,2.99,13.8,1.6,0.0,Consumer Cyclical,Textile Manufacturing,Denmark,False
-VJBA.CO,Vestjysk Bank A/S,Hold,0.17,-0.07,0.24,0.79,-0.85,-0.19,0.18,0.24,0.0,8.68,1.64,0.6,0.5,0.0,Financial Services,Banks - Regional,Denmark,False
-DJUR.CO,Djurslands Bank A/S,Hold,0.16,0.23,-0.07,0.77,-0.86,0.2,0.12,-0.07,0.0,9.19,1.5,84.86,1.16,0.0,Financial Services,Banks - Regional,Denmark,False
-GJ.CO,Glunz & Jensen Holding A/S,Hold,0.16,0.2,-0.04,0.12,-0.03,-0.01,0.12,-0.04,0.0,17.56,4.26,3.9,1.15,0.0,Industrials,Specialty Industrial Machinery,Denmark,False
-DAB.CO,Danske Andelskassers Bank A/S,Hold,0.16,-0.31,0.47,0.6,-0.85,-0.18,0.12,0.47,0.0,12.29,1.62,1.2,1.16,0.0,Financial Services,Banks - Regional,Denmark,False
-DANSKE.CO,Danske Bank A/S,Hold,0.15,0.1,0.05,0.74,-0.94,0.2,0.1,0.05,0.0,9.77,0.62,27.91,1.31,0.0,Financial Services,Banks - Regional,Denmark,False
-CBRAIN.CO,cBrain A/S,Hold,0.15,-0.3,0.45,-1.0,1.0,-0.1,-0.2,0.45,0.0,65.14,12.17,2.92,12.67,0.0,Technology,Software - Application,Denmark,False
-FLS.CO,FLSmidth & Co. A/S,Hold,0.14,0.04,0.1,-0.32,0.3,0.2,-0.14,0.1,0.0,21.77,5.0,22.89,2.76,0.0,Industrials,Specialty Industrial Machinery,Denmark,False
-SYDB.CO,Sydbank A/S,Hold,0.08,-0.04,0.12,0.64,-0.89,0.2,0.01,0.12,0.0,11.67,1.21,44.68,1.83,0.0,Financial Services,Banks - Regional,Denmark,False
-CHEMM.CO,ChemoMetec A/S,Hold,0.07,0.0,0.07,-1.0,1.0,0.2,-0.2,0.07,0.0,63.62,19.65,10.72,17.63,0.0,Healthcare,Medical Devices,Denmark,False
-ORSTED.CO,ORSTED A/S,Hold,0.05,0.1,-0.05,0.37,-0.62,0.19,0.16,-0.05,0.0,15.08,2.74,7.83,0.75,0.0,Utilities,Utilities - Renewable,Denmark,False
-FLUG-B.CO,Flügger group A/S B,Hold,0.01,-0.03,0.04,0.16,-0.51,0.2,0.12,0.04,0.0,17.22,3.11,19.4,1.21,0.0,Basic Materials,Specialty Chemicals,Denmark,False
-NRDF.CO,Nordfyns Bank A/S,Hold,0.01,-0.23,0.24,0.37,-0.9,0.2,0.1,0.24,0.0,15.09,1.1,40.08,1.33,0.0,Financial Services,Banks - Regional,Denmark,False
-GN.CO,GN Store Nord A/S,Sell,-0.08,-0.08,0.0,-0.07,-0.21,0.15,0.05,0.0,0.0,19.39,3.87,6.0,1.62,0.0,Healthcare,Medical Devices,Denmark,False
-TRYG.CO,Tryg A/S,Sell,-0.09,-0.19,0.1,-0.17,-0.09,0.19,-0.12,0.1,0.0,20.29,4.14,7.97,2.6,0.0,Financial Services,Insurance - Diversified,Denmark,False
-NETC.CO,Netcompany Group A/S,Sell,-0.1,-0.31,0.21,-0.87,0.55,0.2,-0.19,0.21,0.0,31.24,5.65,9.04,3.55,0.0,Technology,Information Technology Services,Denmark,False
-KBHL.CO,Københavns Lufthavne A/S,Sell,-0.12,-0.24,0.12,-1.0,0.76,0.2,-0.2,0.12,0.0,49.26,6.47,139.26,13.05,0.0,Industrials,Airports & Air Services,Denmark,False
-ALK-B.CO,ALK-Abelló B A/S,Sell,-0.14,-0.15,0.01,-1.0,1.0,0.05,-0.2,0.01,0.0,47.71,11.11,4.49,8.1,0.0,Healthcare,Biotechnology,Denmark,False
-CEMAT.CO,Cemat A/S,Sell,-0.28,-0.18,-0.1,0.79,-0.89,-0.19,0.11,-0.1,0.0,8.75,1.29,0.11,1.26,0.0,Real Estate,Real Estate Services,Denmark,False
-TRIFOR.CO,Trifork Group AG,Sell,-0.36,-0.44,0.08,0.47,-0.83,0.12,-0.2,0.08,0.0,13.98,1.73,5.45,11.1,0.0,Technology,Information Technology Services,Switzerland,False
-DSV.CO,DSV A/S,Sell,-0.47,-0.7,0.23,-0.88,0.14,0.2,-0.16,0.23,0.0,31.49,4.62,44.42,2.91,0.0,Industrials,Integrated Freight & Logistics,Denmark,False
-AMBU-B.CO,Ambu A/S,Sell,-0.62,-0.58,-0.04,-1.0,0.79,-0.17,-0.2,-0.04,0.0,79.48,6.67,1.34,4.82,0.0,Healthcare,Medical Devices,Denmark,False
-VWS.CO,Vestas Wind Systems A/S,Sell,-0.81,-0.98,0.17,-0.28,-0.64,0.14,-0.2,0.17,0.0,21.4,2.7,5.68,41.73,0.0,Industrials,Specialty Industrial Machinery,Denmark,False
-ALMB.CO,Alm. Brand A/S,Sell,-1.01,-1.22,0.21,-0.63,-0.34,-0.19,-0.06,0.21,0.0,25.7,3.57,0.7,2.21,0.0,Financial Services,Insurance - Diversified,Denmark,False
-COLUM.CO,Columbus A/S,Sell,-1.04,-1.09,0.05,-0.52,-0.41,-0.19,0.03,0.05,0.0,24.05,3.38,0.42,1.74,0.0,Technology,Information Technology Services,Denmark,False
-DANT.CO,Dantax A/S,Sell,-1.75,-1.79,0.04,-1.0,-0.93,0.18,-0.04,0.04,0.0,73.51,0.68,6.72,2.06,0.0,Technology,Consumer Electronics,Denmark,False
+BAVA.CO ,Bavarian Nordic A/S,Buy,2.24,1.84,0.4,0.7,0.83,0.2,0.11,0.4,0.0,10.66,6.88,18.01,1.24,0.0,Healthcare,Biotechnology,Denmark,False
+ZEAL.CO,Zealand Pharma A/S,Buy,2.11,2.08,0.03,0.9,1.0,0.2,-0.02,0.03,0.0,4.75,32.86,92.83,1.99,0.0,Healthcare,Biotechnology,Denmark,True
+STG.CO,Scandinavian Tobacco Group A/S,Buy,1.95,1.7,0.25,0.79,0.55,0.2,0.16,0.25,0.0,8.73,5.65,9.9,0.84,0.0,Consumer Defensive,Tobacco,Denmark,True
+GUBRA.CO,Gubra A/S,Buy,1.93,1.92,0.01,0.92,1.0,0.2,-0.2,0.01,0.0,3.65,78.15,106.1,5.21,0.0,Healthcare,Biotechnology,Denmark,True
+PNDORA.CO,Pandora A/S,Buy,1.93,1.62,0.31,0.62,1.0,0.2,-0.2,0.31,0.0,11.97,18.43,66.37,21.1,0.0,Consumer Cyclical,Luxury Goods,Denmark,False
+ROCK-B.CO,Rockwool A/S ser. B,Buy,1.84,1.63,0.21,0.64,0.99,0.2,-0.2,0.21,0.0,11.55,10.43,18.46,14.3,0.0,Industrials,Building Products & Equipment,Denmark,True
+NOVO-B.CO,Novo Nordisk B A/S,Buy,1.72,1.56,0.16,0.56,1.0,0.2,-0.2,0.16,0.0,12.74,20.43,23.33,7.78,0.0,Healthcare,Drug Manufacturers - General,Denmark,True
+GMAB.CO,Genmab A/S,Buy,1.71,1.56,0.15,0.56,1.0,0.2,-0.2,0.15,0.0,12.74,13.38,147.8,20.16,0.0,Healthcare,Biotechnology,Denmark,True
+SPG.CO,SP Group A/S,Buy,1.52,1.59,-0.07,0.52,0.89,0.2,-0.02,-0.07,0.0,13.33,7.42,20.86,1.96,0.0,Basic Materials,Specialty Chemicals,Denmark,True
+PARKEN.CO,PARKEN Sport & Entertainment A/,Buy,1.44,0.91,0.53,0.72,-0.14,0.2,0.13,0.53,0.0,10.12,4.01,13.09,1.1,0.0,Communication Services,Entertainment,Denmark,False
+RBREW.CO,Royal UNIBREW A/S,Buy,1.41,1.1,0.31,0.28,0.82,0.2,-0.2,0.31,0.0,16.06,6.85,31.12,4.07,0.0,Consumer Defensive,Beverages - Brewers,Denmark,False
+DEMANT.CO,Demant A/S,Buy,1.17,1.03,0.14,0.09,0.94,0.2,-0.2,0.14,0.0,17.82,8.02,12.48,5.01,0.0,Healthcare,Medical Devices,Denmark,False
+NTG.CO,NTG Nordic Transport Group A/S,Buy,1.01,0.65,0.36,0.0,0.6,0.2,-0.15,0.36,0.0,18.67,5.83,9.62,2.8,0.0,Industrials,Integrated Freight & Logistics,Denmark,False
+ISS.CO,ISS A/S,Buy,0.78,0.78,0.0,0.49,0.28,0.2,-0.19,0.0,0.0,13.73,4.95,15.29,3.67,0.0,Industrials,Specialty Business Services,Denmark,True
+LASP.CO,Lån og Spar Bank A/S,Buy,0.68,0.16,0.52,0.74,-0.91,0.2,0.13,0.52,0.0,9.71,1.08,119.49,1.14,0.0,Financial Services,Banks - Regional,Denmark,True
+CARL-B.CO,Carlsberg B A/S,Buy,0.67,0.79,-0.12,0.33,0.46,0.2,-0.2,-0.12,0.0,15.53,5.4,50.41,4.14,0.0,Consumer Defensive,Beverages - Brewers,Denmark,False
+SCHO.CO,Schouw & Co. A/S,Buy,0.62,0.45,0.17,0.38,-0.24,0.2,0.11,0.17,0.0,14.93,3.8,39.24,1.25,0.0,Industrials,Conglomerates,Denmark,True
+MAERSK-B.CO,A.P. Møller - Mærsk B A/S,Buy,0.61,0.53,0.08,0.87,-0.36,0.2,-0.18,0.08,0.0,6.31,3.52,2023.5,3.38,0.0,Industrials,Marine Shipping,Denmark,False
+LOLB.CO,Lollands Bank A/S,Buy,0.55,0.45,0.1,0.95,-0.85,0.2,0.15,0.1,0.0,1.97,1.64,417.29,0.94,0.0,Financial Services,Banks - Regional,Denmark,False
+HVID.CO,Hvidbjerg Bank A/S,Buy,0.52,0.42,0.1,0.95,-0.87,0.2,0.14,0.1,0.0,1.74,1.46,97.79,1.01,0.0,Financial Services,Banks - Regional,Denmark,True
+PAAL-B.CO,Per Aarsleff Holding A/S B,Hold,0.47,0.32,0.15,0.18,0.08,0.2,-0.14,0.15,0.0,17.02,4.49,42.96,2.71,0.0,Industrials,Engineering & Construction,Denmark,False
+NKT.CO,NKT A/S,Hold,0.46,0.4,0.06,-0.48,0.88,0.2,-0.2,0.06,0.0,23.59,7.32,29.87,21.12,0.0,Industrials,Electrical Equipment & Parts,Denmark,False
+NLFSK.CO,Nilfisk Holding A/S,Hold,0.46,0.37,0.09,0.08,0.35,0.14,-0.2,0.09,0.0,17.95,5.11,5.67,9.0,0.0,Industrials,Specialty Industrial Machinery,Denmark,False
+GRLA.CO,Grønlandsbanken A/S,Hold,0.4,0.32,0.08,0.79,-0.81,0.2,0.14,0.08,0.0,8.58,1.88,101.94,0.99,0.0,Financial Services,Banks - Regional,Greenland,False
+JYSK.CO,Jyske Bank A/S,Hold,0.35,0.17,0.18,0.76,-0.93,0.2,0.14,0.18,0.0,9.37,0.7,82.09,0.98,0.0,Financial Services,Banks - Regional,Denmark,False
+SKJE.CO,Skjern Bank A/S,Hold,0.3,0.23,0.07,0.75,-0.83,0.2,0.11,0.07,0.0,9.6,1.78,25.21,1.23,0.0,Financial Services,Banks - Regional,Denmark,False
+FLS.CO,FLSmidth & Co. A/S,Hold,0.28,0.18,0.1,-0.2,0.3,0.2,-0.12,0.1,0.0,20.55,5.0,22.9,2.6,0.0,Industrials,Specialty Industrial Machinery,Denmark,False
+MATAS.CO,Matas A/S,Hold,0.25,0.29,-0.04,0.14,-0.14,0.19,0.1,-0.04,0.0,17.35,4.03,7.48,1.35,0.0,Consumer Cyclical,Specialty Retail,Denmark,False
+MNBA.CO,Møns Bank A/S,Hold,0.18,0.26,-0.08,0.77,-0.85,0.2,0.14,-0.08,0.0,9.15,1.62,40.0,1.03,0.0,Financial Services,Banks - Regional,Denmark,False
+DJUR.CO,Djurslands Bank A/S,Hold,0.17,0.24,-0.07,0.78,-0.86,0.2,0.12,-0.07,0.0,8.95,1.5,90.24,1.22,0.0,Financial Services,Banks - Regional,Denmark,False
+GABR.CO,Gabriel Holding A/S,Hold,0.17,-0.12,0.29,0.18,-0.55,0.2,0.05,0.29,0.0,16.96,2.99,13.8,1.61,0.0,Consumer Cyclical,Textile Manufacturing,Denmark,False
+SOLAR-B.CO,Solar B A/S,Hold,0.16,-0.07,0.23,0.4,-0.82,0.2,0.15,0.23,0.0,14.69,1.8,13.75,0.86,0.0,Technology,Electronics & Computer Distribution,Denmark,False
+RILBA.CO,Ringkjøbing Landbobank A/S,Hold,0.15,-0.26,0.41,0.29,-0.58,0.2,-0.17,0.41,0.0,15.91,2.89,90.76,3.12,0.0,Financial Services,Banks - Regional,Denmark,False
+CBRAIN.CO,cBrain A/S,Hold,0.15,-0.3,0.45,-1.0,1.0,-0.1,-0.2,0.45,0.0,50.07,12.17,2.94,9.81,0.0,Technology,Software - Application,Denmark,False
+COLO-B.CO,Coloplast B A/S,Hold,0.15,0.02,0.13,-0.97,0.99,0.2,-0.2,0.13,0.0,37.74,10.01,16.1,8.49,0.0,Healthcare,Medical Instruments & Supplies,Denmark,False
+GJ.CO,Glunz & Jensen Holding A/S,Hold,0.13,0.17,-0.04,0.09,-0.03,-0.01,0.12,-0.04,0.0,17.82,4.26,3.9,1.16,0.0,Industrials,Specialty Industrial Machinery,Denmark,False
+DNORD.CO,D/S Norden,Hold,0.12,0.11,0.01,0.82,-0.71,0.2,-0.2,0.01,0.0,7.83,2.4,31.05,5.45,0.0,Industrials,Marine Shipping,Denmark,False
+DANSKE.CO,Danske Bank A/S,Hold,0.09,0.04,0.05,0.69,-0.94,0.2,0.09,0.05,0.0,10.79,0.61,27.3,1.38,0.0,Financial Services,Banks - Regional,Denmark,False
+FLUG-B.CO,Flügger group A/S B,Hold,0.07,0.03,0.04,0.22,-0.51,0.2,0.12,0.04,0.0,16.61,3.11,19.39,1.16,0.0,Basic Materials,Specialty Chemicals,Denmark,False
+SYDB.CO,Sydbank A/S,Hold,0.07,-0.05,0.12,0.63,-0.9,0.2,0.02,0.12,0.0,11.79,1.18,44.09,1.75,0.0,Financial Services,Banks - Regional,Denmark,False
+CHEMM.CO,ChemoMetec A/S,Hold,0.07,0.0,0.07,-1.0,1.0,0.2,-0.2,0.07,0.0,69.41,19.65,10.69,19.18,0.0,Healthcare,Medical Devices,Denmark,False
+VJBA.CO,Vestjysk Bank A/S,Hold,0.03,-0.21,0.24,0.66,-0.85,-0.19,0.17,0.24,0.0,11.22,1.64,0.6,0.64,0.0,Financial Services,Banks - Regional,Denmark,False
+DAB.CO,Danske Andelskassers Bank A/S,Hold,0.02,-0.45,0.47,0.48,-0.85,-0.18,0.1,0.47,0.0,13.75,1.62,1.2,1.3,0.0,Financial Services,Banks - Regional,Denmark,False
+TRYG.CO,Tryg A/S,Sell,-0.07,-0.17,0.1,-0.15,-0.09,0.19,-0.12,0.1,0.0,20.16,4.14,7.97,2.58,0.0,Financial Services,Insurance - Diversified,Denmark,False
+NETC.CO,Netcompany Group A/S,Sell,-0.12,-0.55,0.43,-1.0,0.58,0.07,-0.2,0.43,0.0,65.31,5.77,4.78,4.09,0.0,Technology,Information Technology Services,Denmark,False
+KBHL.CO,Københavns Lufthavne A/S,Sell,-0.12,-0.24,0.12,-1.0,0.76,0.2,-0.2,0.12,0.0,49.55,6.47,139.26,13.13,0.0,Industrials,Airports & Air Services,Denmark,False
+ALK-B.CO,ALK-Abelló B A/S,Sell,-0.13,-0.14,0.01,-0.99,1.0,0.05,-0.2,0.01,0.0,46.12,11.11,4.48,7.82,0.0,Healthcare,Biotechnology,Denmark,False
+DANT.CO,Dantax A/S,Sell,-0.14,-0.18,0.04,0.46,-0.95,0.2,0.11,0.04,0.0,14.07,0.33,21.89,1.25,0.0,Technology,Consumer Electronics,Denmark,False
+CEMAT.CO,Cemat A/S,Sell,-0.28,-0.18,-0.1,0.79,-0.89,-0.19,0.11,-0.1,0.0,8.64,1.29,0.11,1.24,0.0,Real Estate,Real Estate Services,Denmark,False
+DSV.CO,DSV A/S,Sell,-0.43,-0.67,0.24,-0.95,0.24,0.2,-0.16,0.24,0.0,35.44,4.85,40.02,2.91,0.0,Industrials,Integrated Freight & Logistics,Denmark,False
+TRIFOR.CO,Trifork Group AG,Sell,-0.47,-0.55,0.08,0.29,-0.76,0.12,-0.2,0.08,0.0,15.93,2.18,5.38,12.31,0.0,Technology,Information Technology Services,Switzerland,False
+AMBU-B.CO,Ambu A/S,Sell,-0.52,-0.51,-0.01,-0.96,0.78,-0.14,-0.19,-0.01,0.0,36.89,6.61,2.28,3.71,0.0,Healthcare,Medical Devices,Denmark,False
+GN.CO,GN Store Nord A/S,Sell,-0.53,-0.53,0.0,-0.37,-0.3,0.06,0.08,0.0,0.0,22.28,3.66,4.64,1.43,0.0,Healthcare,Medical Devices,Denmark,False
+VWS.CO,Vestas Wind Systems A/S,Sell,-0.67,-0.84,0.17,-0.34,-0.48,0.18,-0.2,0.17,0.0,22.02,3.19,6.94,43.97,0.0,Industrials,Specialty Industrial Machinery,Denmark,False
+ALMB.CO,Alm. Brand A/S,Sell,-1.03,-1.24,0.21,-0.64,-0.34,-0.19,-0.07,0.21,0.0,25.79,3.57,0.7,2.22,0.0,Financial Services,Insurance - Diversified,Denmark,False
+NRDF.CO,Nordfyns Bank A/S,Sell,-1.39,-1.63,0.24,-0.97,-0.95,0.2,0.09,0.24,0.0,37.6,0.42,16.09,1.36,0.0,Financial Services,Banks - Regional,Denmark,False
+COLUM.CO,Columbus A/S,Sell,-1.5,-1.55,0.05,-0.78,-0.71,-0.19,0.13,0.05,0.0,28.47,2.39,0.34,1.06,0.0,Technology,Information Technology Services,Denmark,False
