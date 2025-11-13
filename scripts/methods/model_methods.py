@@ -16,10 +16,24 @@ class Stock:
         return annual_financials
     
     def get_quarterly_financials(self) -> pd.DataFrame:
-        quarterly_financials = pd.concat([yf.Ticker(self.symbol).get_financials(freq="quarterly"), yf.Ticker(self.symbol).get_balance_sheet(freq="quarterly")])
+        fin = yf.Ticker(self.symbol).get_financials(freq="quarterly")
+        bal = yf.Ticker(self.symbol).get_balance_sheet(freq="quarterly")
+        
+        # Only keep columns (dates) that exist in both financials and balance sheet
+        common_dates = fin.columns.intersection(bal.columns)
+        fin = fin[common_dates]
+        bal = bal[common_dates]
+        
+        # Concatenate them
+        quarterly_financials = pd.concat([fin, bal])
+        
+        # Remove any dates that overlap with annual financials
         overlapping_dates = set(self.get_annual_financials().columns).intersection(set(quarterly_financials.columns))
         if overlapping_dates:
             quarterly_financials = quarterly_financials.drop(columns=list(overlapping_dates))
+        
+        # Get the 4 most recent remaining quarters
+        if quarterly_financials.shape[1] > 4:
             quarterly_financials = quarterly_financials.iloc[:, :4]
         return quarterly_financials
     
@@ -89,42 +103,11 @@ class Stock:
             max_nan_allowed = df.shape[1] * (1 - self.minimum_features_in_row)
             df = df[df.isna().sum(axis=1) <= max_nan_allowed]
         return df
-
-class MLPWrapper:
-    def __init__(self, hidden_layer_amount=999, neuron_amount=999, **kwargs):
-        self.hidden_layer_amount = hidden_layer_amount
-        self.neuron_amount = neuron_amount
-        self.kwargs = kwargs
-        self.iter_no_change = round(2+1000/(np.sqrt(self.neuron_amount*self.hidden_layer_amount)))
-        
-    def fit(self, X, y):
-        # Ensure y is 1D to avoid DataConversionWarning
-        if isinstance(y, (pd.DataFrame, pd.Series)):
-            y = y.values
-        y = np.asarray(y)
-        if y.ndim == 2 and y.shape[1] == 1:
-            y = y.ravel()
-        # Create tuple of hidden layer sizes
-        hidden_layers = tuple([self.neuron_amount] * self.hidden_layer_amount)
-        #print(f"Trying: {self.hidden_layer_amount} layers, {self.neuron_amount} neurons per layer, iter_no_change={self.iter_no_change}")
-        #print(f"Hidden layer sizes: {hidden_layers}")
-        self.model = MLPRegressor(
-            hidden_layer_sizes=hidden_layers,
-            learning_rate="adaptive",
-            early_stopping=True,
-            verbose=False,
-            n_iter_no_change=self.iter_no_change,
-            **self.kwargs
-        )
-        result = self.model.fit(X, y)
-        #print(f"Training completed. Iterations: {self.model.n_iter_}, Final score: {self.model.score(X, y):.4f} \n {"=" * 65}")
-        return result
     
     def predict(self, X):
         return self.model.predict(X)
     
     def score(self, X, y):
-        # Ensure y is 1D to avoid DataConversionWarning
         if isinstance(y, (pd.DataFrame, pd.Series)):
             y = y.values
         y = np.asarray(y)
