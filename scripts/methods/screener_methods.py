@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import yfinance as yf
+import matplotlib.pyplot as plt
 from gender_guesser.detector import Detector
 
 def get_gettables(symbol: str):
@@ -32,6 +33,19 @@ class Stock:
         self.name = self.info["shortName"]
         self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
         self.exp_PE = 22
+
+    def price_history(self, range):
+        price = yf.download(self.symbol, period=range, rounding=False, progress=False)[('Close', self.symbol)]
+        return price
+    
+    def price_graph(self, range):
+        price = self.price_history(range)
+        plt.figure(figsize=[14, 6])
+        plt.title(f"{self.symbol} ({self.name}) {range} price history")
+        plt.grid(True, alpha=0.6)
+        plt.plot(price)
+        plt.xticks(price.index[np.linspace(0, len(price) - 1, 10, dtype=int)])
+        plt.show()
     
     def insider_buy(self) -> float:
         if 'Shares' in self.insider.columns:
