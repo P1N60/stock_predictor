@@ -65,7 +65,7 @@ class Stock:
     def PE_score(self) -> float:
         mean = 18.7 # chosen from data by median
         spread = mean
-        weight = 1.15
+        weight = 1.2
 
         score = round(-np.tanh((self.PE-mean)/(spread/2))*weight, 2) # 1 at mean-spread and -1 at mean+spread
         if self.PE >= 0:
@@ -76,7 +76,7 @@ class Stock:
     def ROA_score(self) -> float:
         mean = 4.325 # chosen from data by median
         spread = mean
-        weight = 1.15
+        weight = 1.0
         return round(np.tanh((self.ROA-mean)/(spread/2))*weight, 2) # -1 at mean-spread and 1 at mean+spread
 
     def EPS_score(self) -> float:
@@ -95,7 +95,7 @@ class Stock:
     def leadership_score(self) -> float:
         mean = 57.15 # chosen from data by median
         spread = 20
-        weight = 1.1
+        weight = 1.2
 
         score = 0
         people = self.info["companyOfficers"]
