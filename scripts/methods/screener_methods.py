@@ -26,10 +26,10 @@ class Stock:
         self.symbol = symbol
         self.info = yf.Ticker(symbol).info
         self.insider = yf.Ticker(symbol).insider_purchases
-        self.PE = round(self.info["trailingPE"], 2)
-        self.ROA = round(self.info["returnOnAssets"]*100, 2)
-        self.EPS = round(self.info["epsTrailingTwelveMonths"], 2)
-        self.PB = round(self.info["priceToBook"], 2)
+        self.PE = self.info["trailingPE"]
+        self.ROA = self.info["returnOnAssets"]*100
+        self.EPS = self.info["epsTrailingTwelveMonths"]
+        self.PB = self.info["priceToBook"]
         self.name = self.info["shortName"]
         self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
         self.exp_PE = 22
@@ -52,7 +52,7 @@ class Stock:
             insider_buy = self.insider.loc[self.insider.index[4], "Shares"]*100
             if pd.isna(insider_buy) or insider_buy > 50 or insider_buy < -50:
                 insider_buy = 0
-        return round(float(insider_buy), 2)
+        return float(insider_buy)
 
     def owned(self) -> bool:
         if self.symbol in self.owned_tickers:
@@ -63,33 +63,33 @@ class Stock:
     # score calculation
     # value score 
     def PE_score(self) -> float:
-        mean = 18.7 # chosen from data by median
-        spread = mean
+        median = 18.7 # chosen from data by median
+        spread = median
         weight = 1.2
 
-        score = round(-np.tanh((self.PE-mean)/(spread/2))*weight, 2) # 1 at mean-spread and -1 at mean+spread
+        score = -np.tanh((self.PE-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
         if self.PE >= 0:
             return score 
         else:
             return -score
         
     def ROA_score(self) -> float:
-        mean = 4.325 # chosen from data by median
-        spread = mean
+        median = 4.325 # chosen from data by median
+        spread = median
         weight = 1.0
-        return round(np.tanh((self.ROA-mean)/(spread/2))*weight, 2) # -1 at mean-spread and 1 at mean+spread
+        return np.tanh((self.ROA-median)/(spread/2))*weight # -1 at mean-spread and 1 at mean+spread
 
     def EPS_score(self) -> float:
-        mean = 4 # chosen from data by median
-        spread = mean
+        median = 4 # chosen from data by median
+        spread = median
         weight = 0.0
-        return round(np.tanh((self.EPS-mean)/(spread/2))*weight, 2) # -1 at mean-spread and 1 at mean+spread
+        return np.tanh((self.EPS-median)/(spread/2))*weight # -1 at mean-spread and 1 at mean+spread
 
     def PB_score(self) -> float:
-        mean = 1.875 # chosen from data by median
+        median = 1.875 # chosen from data by median
         spread = 2
         weight = 0.2
-        return round(-np.tanh((self.PB-mean)/(spread/2))*weight, 2) # 1 at mean-spread and -1 at mean+spread
+        return -np.tanh((self.PB-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
 
     # quality score
     def leadership_score(self) -> float:
@@ -123,21 +123,21 @@ class Stock:
                 Exception
             score += person_score
         score = score/len(people)
-        return round(np.tanh(score/(10/2)) * weight, 2)
+        return np.tanh(score/(10/2)) * weight
 
     def insider_buy_score(self) -> float:
-        return round(self.insider_buy()*0.005, 2)
+        return self.insider_buy()*0.005
 
     # larger scores for final recommendation score 
     def value_score(self) -> float:
-        return round((self.PE_score() + self.ROA_score()) + self.EPS_score() + self.PB_score(), 2)
+        return self.PE_score() + self.ROA_score() + self.EPS_score() + self.PB_score()
     
     def quality_score(self) -> float:
-        return round((self.insider_buy_score() + self.leadership_score()), 2)
+        return self.insider_buy_score() + self.leadership_score()
 
     # final score
     def recommendation_score(self) -> float:
-        return round(self.value_score() + self.quality_score(), 2)
+        return self.value_score() + self.quality_score()
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.5:
@@ -152,19 +152,19 @@ class Stock:
             "Ticker": self.symbol,
             "Name": self.name,
             "Signal": self.recommendation_signal(),
-            "Recommendation Score": self.recommendation_score(),
-            "Value Score": self.value_score(),
-            "Quality Score": self.quality_score(),
-            "P/E Score": self.PE_score(),
-            "ROA Score": self.ROA_score(),
-            "PB Score": self.PB_score(),
-            "Leadership Score": self.leadership_score(),
-            "Insider Buy Score": self.insider_buy_score(),
-            "P/E": self.PE,
-            "ROA%": self.ROA,
-            "Earnings pr. Share": self.EPS,
-            "Price to Book": self.PB,
-            "Insider Buy%": self.insider_buy(),
+            "Recommendation Score": round(self.recommendation_score(), 2),
+            "Value Score": round(self.value_score(), 2),
+            "Quality Score": round(self.quality_score(), 2),
+            "P/E Score": round(self.PE_score(), 2),
+            "ROA Score": round(self.ROA_score(), 2),
+            "PB Score": round(self.PB_score(), 2),
+            "Leadership Score": round(self.leadership_score(), 2),
+            "Insider Buy Score": round(self.insider_buy_score(), 2),
+            "P/E": round(self.PE, 2),
+            "ROA%": round(self.ROA, 2),
+            "Earnings pr. Share": round(self.EPS, 2),
+            "Price to Book": round(self.PB, 2),
+            "Insider Buy%": round(self.insider_buy(), 2),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
             "Country": self.info["country"],
