@@ -34,11 +34,11 @@ class Stock:
         self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
         self.exp_PE = 22
 
-    def price_history(self, range):
+    def price_history(self, range="ytd"):
         price = yf.download(self.symbol, period=range, rounding=False, progress=False)[('Close', self.symbol)]
         return price
     
-    def price_graph(self, range):
+    def price_graph(self, range="ytd"):
         price = self.price_history(range)
         plt.figure(figsize=[14, 6])
         plt.title(f"{self.symbol} ({self.name}) {range} price history")
