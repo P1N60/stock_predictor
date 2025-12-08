@@ -35,7 +35,7 @@ class Stock:
         self.exp_PE = 22
 
     def price_history(self, range="ytd"):
-        price = yf.download(self.symbol, period=range, rounding=False, progress=False)[('Close', self.symbol)]
+        price = yf.download(self.symbol, period=range, rounding=False, progress=False, auto_adjust=True)[('Close', self.symbol)]
         return price
     
     def price_graph(self, range="ytd"):
