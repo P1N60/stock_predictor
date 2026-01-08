@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from gender_guesser.detector import Detector
 
 def get_gettables(symbol: str):
-    return display(pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker("AAPL").info.keys()))
+    display(pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys()))
 
 _detector = Detector()
 def g_detector(name: str) -> int:
