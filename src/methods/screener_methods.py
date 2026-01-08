@@ -33,6 +33,7 @@ class Stock:
         self.name = self.info["shortName"]
         self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
         self.exp_PE = 22
+        self.momentum = self.info["fiftyDayAverageChangePercent"]
 
     def price_history(self, range="ytd"):
         price = yf.download(self.symbol, period=range, rounding=False, progress=False, auto_adjust=True)[('Close', self.symbol)]
@@ -95,7 +96,7 @@ class Stock:
     def leadership_score(self) -> float:
         mean = 57.15 # chosen from data by median
         spread = 20
-        weight = 1.2
+        weight = 1.0
 
         score = 0
         people = self.info["companyOfficers"]
@@ -127,7 +128,7 @@ class Stock:
 
     def insider_buy_score(self) -> float:
         return self.insider_buy()*0.005
-
+    
     # larger scores for final recommendation score 
     def value_score(self) -> float:
         return self.PE_score() + self.ROA_score() + self.EPS_score() + self.PB_score()
@@ -135,9 +136,18 @@ class Stock:
     def quality_score(self) -> float:
         return self.insider_buy_score() + self.leadership_score()
 
+    def momentum_score(self) -> float:
+        median = 0 # chosen from data by median
+        spread = 0.25
+        weight = 0.2
+        try:
+            return np.tanh((self.momentum-median)/(spread/2)) * weight
+        except:
+            return 0
+
     # final score
     def recommendation_score(self) -> float:
-        return self.value_score() + self.quality_score()
+        return self.value_score() + self.quality_score() + self.momentum_score()
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.5:
@@ -155,6 +165,7 @@ class Stock:
             "Recommendation Score": round(self.recommendation_score(), 2),
             "Value Score": round(self.value_score(), 2),
             "Quality Score": round(self.quality_score(), 2),
+            "Momentum Score": round(self.momentum_score(), 2),
             "P/E Score": round(self.PE_score(), 2),
             "ROA Score": round(self.ROA_score(), 2),
             "PB Score": round(self.PB_score(), 2),
@@ -165,6 +176,7 @@ class Stock:
             "Earnings pr. Share": round(self.EPS, 2),
             "Price to Book": round(self.PB, 2),
             "Insider Buy%": round(self.insider_buy(), 2),
+            "50d Average Change%": round(self.momentum, 2),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
             "Country": self.info["country"],
