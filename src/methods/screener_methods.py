@@ -4,8 +4,8 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 from gender_guesser.detector import Detector
 
-def get_gettables(symbol: str):
-    display(pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys()))
+def get_gettables(symbol="AAPL"):
+    return pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys())
 
 _detector = Detector()
 def g_detector(name: str) -> int:
@@ -60,13 +60,19 @@ class Stock:
             return True
         else:
             return False
+    
+    def DE(self):
+        try:
+            return self.info["debtToEquity"]/100
+        except:
+            return np.nan
 
     # score calculation
     # value score 
     def PE_score(self) -> float:
         median = 18.7 # chosen from data by median
         spread = median
-        weight = 1.2
+        weight = 1.1
 
         score = -np.tanh((self.PE-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
         if self.PE >= 0:
@@ -77,7 +83,7 @@ class Stock:
     def ROA_score(self) -> float:
         median = 4.325 # chosen from data by median
         spread = median
-        weight = 1.0
+        weight = 0.9
         return np.tanh((self.ROA-median)/(spread/2))*weight # -1 at mean-spread and 1 at mean+spread
 
     def EPS_score(self) -> float:
@@ -91,7 +97,16 @@ class Stock:
         spread = 2
         weight = 0.2
         return -np.tanh((self.PB-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
-
+    
+    def DE_score(self) -> float:
+        median = 0.58
+        spread = 0.58
+        weight = 0.2
+        if (np.isnan(self.DE())):
+            return 0
+        else:
+            return -np.tanh((self.DE()-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
+    
     # quality score
     def leadership_score(self) -> float:
         mean = 57.15 # chosen from data by median
@@ -131,7 +146,7 @@ class Stock:
     
     # larger scores for final recommendation score 
     def value_score(self) -> float:
-        return self.PE_score() + self.ROA_score() + self.EPS_score() + self.PB_score()
+        return self.PE_score() + self.ROA_score() + self.EPS_score() + self.PB_score() + self.DE_score()
     
     def quality_score(self) -> float:
         return self.insider_buy_score() + self.leadership_score()
@@ -168,13 +183,15 @@ class Stock:
             "Momentum Score": round(self.momentum_score(), 2),
             "P/E Score": round(self.PE_score(), 2),
             "ROA Score": round(self.ROA_score(), 2),
-            "PB Score": round(self.PB_score(), 2),
+            "P/B Score": round(self.PB_score(), 2),
+            "D/E Score": round(self.DE_score(), 2),
             "Leadership Score": round(self.leadership_score(), 2),
             "Insider Buy Score": round(self.insider_buy_score(), 2),
             "P/E": round(self.PE, 2),
             "ROA%": round(self.ROA, 2),
-            "Earnings pr. Share": round(self.EPS, 2),
-            "Price to Book": round(self.PB, 2),
+            "EPS": round(self.EPS, 2),
+            "P/B": round(self.PB, 2),
+            "D/E": round(self.DE(), 2),
             "Insider Buy%": round(self.insider_buy(), 2),
             "50d Average Change%": round(self.momentum, 2),
             "Sector": self.info["sector"],
