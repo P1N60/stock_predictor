@@ -7,12 +7,6 @@ from gender_guesser.detector import Detector
 def get_gettables(symbol="AAPL"):
     return pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys())
 
-_detector = Detector()
-def g_detector(name: str) -> int:
-    n = name.split()[1] if len(name.split()) > 1 else ""
-    dict = {"female": 1, "mostly_female": 0.5, "unknown": 0, "mostly_male": -0.5, "male": -1}
-    return dict[_detector.get_gender(n)]
-
 def mult_if_positive(x: float, y: float) -> float:
     if x > 0:
         return x * y
@@ -20,6 +14,12 @@ def mult_if_positive(x: float, y: float) -> float:
         return x / y
     else:
         return 0
+
+_detector = Detector()
+def g_detector(name: str) -> int:
+    n = name.split()[1] if len(name.split()) > 1 else ""
+    dict = {"female": 1, "mostly_female": 0.5, "unknown": 0, "mostly_male": -0.5, "male": -1}
+    return dict[_detector.get_gender(n)]
 
 class Stock:
     def __init__(self, symbol):
