@@ -4,6 +4,8 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 from gender_guesser.detector import Detector
 
+momentum_method = "mult" #add or mult
+
 def get_gettables(symbol="AAPL"):
     return pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys())
 
@@ -154,7 +156,10 @@ class Stock:
     def momentum_score(self) -> float:
         median = 0 # chosen from data by median
         spread = 0.25
-        weight = 0.3
+        if momentum_method == "mult": # add or mult
+            weight = abs(self.value_score() + self.quality_score())
+        else:
+            weight = 0.3
         try:
             return np.tanh((self.momentum-median)/(spread/2)) * weight
         except:
