@@ -109,7 +109,6 @@ class Stock:
         else:
             return -np.tanh((self.DE()-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
     
-    # quality score
     def leadership_score(self) -> float:
         mean = 57.15 # chosen from data by median
         spread = 20
@@ -148,16 +147,19 @@ class Stock:
     
     # larger scores for final recommendation score 
     def value_score(self) -> float:
-        return self.PE_score() + self.ROA_score() + self.EPS_score() + self.PB_score() + self.DE_score()
+        return np.sum([self.PE_score(), 
+                       self.ROA_score(),
+                       self.EPS_score(),
+                       self.PB_score(),
+                       self.DE_score(),
+                       self.leadership_score(),
+                       self.insider_buy_score()])
     
-    def quality_score(self) -> float:
-        return self.insider_buy_score() + self.leadership_score()
-
     def momentum_score(self) -> float:
         median = 0 # chosen from data by median
         spread = 0.25
         if momentum_method == "mult": # add or mult
-            weight = abs(self.value_score() + self.quality_score())
+            weight = abs(self.value_score())
         else:
             weight = 0.3
         try:
@@ -167,7 +169,7 @@ class Stock:
 
     # final score
     def recommendation_score(self) -> float:
-        return self.value_score() + self.quality_score() + self.momentum_score()
+        return self.value_score()+self.momentum_score()
     
     def recommendation_signal(self) -> str:
         if self.recommendation_score() >= 0.5:
@@ -184,13 +186,12 @@ class Stock:
             "Signal": self.recommendation_signal(),
             "Recommendation Score": round(self.recommendation_score(), 2),
             "Value Score": round(self.value_score(), 2),
-            "Quality Score": round(self.quality_score(), 2),
             "Momentum Score": round(self.momentum_score(), 2),
+            "Leadership Score": round(self.leadership_score(), 2),
             "P/E Score": round(self.PE_score(), 2),
             "ROA Score": round(self.ROA_score(), 2),
             "P/B Score": round(self.PB_score(), 2),
             "D/E Score": round(self.DE_score(), 2),
-            "Leadership Score": round(self.leadership_score(), 2),
             "Insider Buy Score": round(self.insider_buy_score(), 2),
             "P/E": round(self.PE, 2),
             "ROA%": round(self.ROA, 2),
