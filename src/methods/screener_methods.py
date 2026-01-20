@@ -36,6 +36,8 @@ class Stock:
         self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
         self.exp_PE = 22
         self.momentum = self.info["fiftyDayAverageChangePercent"]
+        if symbol in ["HVID.CO", "LOLB.CO"]:
+            self.PE = 11.3
 
     def price_history(self, range="ytd"):
         price = yf.download(self.symbol, period=range, rounding=False, progress=False, auto_adjust=True)[('Close', self.symbol)]
