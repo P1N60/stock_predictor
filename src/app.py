@@ -17,7 +17,7 @@ st.title("Stock Screener")
 # Sidebar for settings
 with st.sidebar:
     st.header("Settings")
-    debug = st.checkbox("Debug Mode", value=True)
+    debug = st.checkbox("Debug Mode", value=False)
     sb_symbol_list = st.selectbox(
         "Select Ticker List",
         options=["Interesting", "Danish", "Filtered"],
@@ -126,11 +126,10 @@ if st.session_state.df_results is not None:
     st.subheader("Results")
 
     # Search bar
-    search_term = st.text_input("Search (Ticker or Name)", "")
+    search_term = st.text_input("Search (Ticker, Name, or other columns)", "")
     if search_term:
         df = df[
-            df["Ticker"].astype(str).str.contains(search_term, case=False) |
-            df["Name"].astype(str).str.contains(search_term, case=False)
+            df.astype(str).apply(lambda x: x.str.contains(search_term, case=False)).any(axis=1)
         ]
     
     # Styling the dataframe
