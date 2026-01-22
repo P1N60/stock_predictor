@@ -65,8 +65,8 @@ if run_button:
             summary = stock.summary()
             df = pd.concat([df, summary])
         except Exception as e:
-            # st.error(f"Error processing {symbol}: {e}") # Uncomment to debug
-            pass
+            st.error(f"Error processing {symbol}: {e}") # Uncomment to debug
+            # pass
         finally:
             sys.stderr = old_stderr
         
