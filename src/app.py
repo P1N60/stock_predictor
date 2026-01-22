@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import sys
 import io
+import time
 from methods.screener_methods import Stock
 
 # Page config
@@ -35,6 +36,15 @@ def load_symbols(list_type):
         symbols = pd.read_csv(os.path.join(base_path, "simple_tickers.csv"))["Ticker"].tolist()
     return list(set(symbols))
 
+@st.cache_data(ttl=86400, show_spinner=False)
+def fetch_stock_data(symbol):
+    """
+    Fetches stock data with caching. 
+    If this symbol was fetched in the last 24h, it returns the cached version 
+    instead of hitting the API.
+    """
+    return Stock(symbol).summary()
+
 if 'df_results' not in st.session_state:
     st.session_state.df_results = None
 
@@ -52,9 +62,12 @@ if run_button:
         old_stderr = sys.stderr
         sys.stderr = io.StringIO()
         try:
-            stock = Stock(symbol)
-            summary = stock.summary()
+            # Use the cached function
+            summary = fetch_stock_data(symbol)
             df = pd.concat([df, summary])
+            
+            # Tiny sleep to avoid hitting API rate limits (only happens on cache miss)
+            time.sleep(0.1) 
         except Exception as e:
             st.error(f"Error processing {symbol}: {e}") # Uncomment to debug
             # pass
