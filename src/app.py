@@ -6,7 +6,11 @@ import time
 from methods.screener_methods import Stock
 
 # Page config
-st.set_page_config(page_title="Stock Screener", layout="wide")
+st.set_page_config(
+    page_title="Stock Screener", 
+    layout="wide", 
+    initial_sidebar_state="expanded"
+)
 
 st.title("Stock Screener")
 
