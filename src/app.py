@@ -7,14 +7,14 @@ from methods.screener_methods import Stock
 # Page config
 st.set_page_config(page_title="Stock Screener", layout="wide")
 
-st.title("Stock Screener Analysis")
+st.title("Stock Screener")
 
 # Sidebar for settings
 with st.sidebar:
     st.header("Settings")
     symbol_list = st.selectbox(
         "Select Ticker List",
-        options=["simple", "danish", "filtered", "all"],
+        options=["Interesting", "Danish", "Filtered"],
         index=0
     )
     
@@ -27,18 +27,9 @@ def load_symbols(list_type):
     current_dir = os.path.dirname(os.path.abspath(__file__))
     base_path = os.path.join(current_dir, "..", "data", "tickers")
     
-    if list_type == "all":
-        try:
-            l1 = pd.read_csv(os.path.join(base_path, "tickers.csv"))["Ticker"].tolist()
-            l2 = pd.read_csv(os.path.join(base_path, "danish_tickers.csv"))["Ticker"].tolist()
-            l3 = pd.read_csv(os.path.join(base_path, "simple_tickers.csv"))["Ticker"].to_list()
-            symbols = l1 + l2 + l3
-        except Exception as e:
-            st.error(f"Error reading sticker files: {e}")
-            return []
-    elif list_type == "filtered":
+    if list_type == "Filtered":
         symbols = pd.read_csv(os.path.join(base_path, "screener_filtered_tickers.csv"))["Ticker"].tolist()
-    elif list_type == "danish":
+    elif list_type == "Danish":
         symbols = pd.read_csv(os.path.join(base_path, "danish_tickers.csv"))["Ticker"].tolist()
     else:
         symbols = pd.read_csv(os.path.join(base_path, "simple_tickers.csv"))["Ticker"].tolist()
