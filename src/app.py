@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st # type: ignore
 import pandas as pd
 import sys
 import io
@@ -64,12 +64,9 @@ def load_symbols(list_type):
         symbols = pd.read_csv(os.path.join(base_path, "simple_tickers.csv"))["Ticker"].tolist()
     return list(set(symbols))
 
-@st.cache_data(ttl=86400, show_spinner=False)
 def fetch_stock_data(symbol):
     """
-    Fetches stock data with caching. 
-    If this symbol was fetched in the last 24h, it returns the cached version 
-    instead of hitting the API.
+    Fetches stock data.
     """
     return Stock(symbol).summary()
 
