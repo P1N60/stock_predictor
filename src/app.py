@@ -113,7 +113,7 @@ if should_run:
     status_text.text("Done!")
     
     if not df.empty:
-        df = df.sort_values(by="Recommendation Score", ascending=False).reset_index(drop=True)
+        df = df.sort_values(by="Final Score", ascending=False).reset_index(drop=True)
         st.session_state.df_results = df
     else:
         st.warning("No data found or all fetches failed.")
@@ -130,29 +130,20 @@ if st.session_state.df_results is not None:
         ]
     
     # Styling the dataframe
-    def get_signal_color(val):
-        color = '#ffc107' # Hold (Yellow)
-        if val == 'Buy':
-            color = '#28a745'
-        elif val == 'Sell': 
-            color = '#dc3545'
-        return f'color: {color}; font-weight: bold'
-
     def get_score_color(row):
-        # Determine color based on the Signal column in the same row
-        signal = row['Signal']
+        # Determine color based on the Score
+        score = row['Final Score']
         color = '#ffc107'
-        if signal == 'Buy':
+        if score >= 0.5:
             color = '#28a745'
-        elif signal == 'Sell':
+        elif score < 0:
             color = '#dc3545'
-        # Apply color only to the Recommendation Score column
-        return [f'color: {color}; font-weight: bold' if col == 'Recommendation Score' else '' for col in row.index]
+        # Apply color only to the Final Score column
+        return [f'color: {color}; font-weight: bold' if col == 'Final Score' else '' for col in row.index]
 
     st.dataframe(
         df.style
         .format(precision=2)
-        .map(get_signal_color, subset=["Signal"])
         .apply(get_score_color, axis=1),
         use_container_width=True
     )
@@ -182,15 +173,13 @@ if st.session_state.df_results is not None:
                 # Re-fetching is safer for a fresh view.
                 stock_detail = Stock(selected_ticker)
                 
-                col1, col2, col3, col4 = st.columns(4)
+                col1, col2, col3 = st.columns(3)
                 with col1:
                     st.metric("Name", stock_detail.name)
                 with col2:
                     st.metric("Symbol", stock_detail.symbol)
                 with col3:
-                    st.metric("Score", round(stock_detail.recommendation_score(), 2))
-                with col4:
-                     st.metric("Signal", stock_detail.recommendation_signal())
+                    st.metric("Score", round(stock_detail.final_score(), 2))
 
                 st.subheader("Price History (YTD)")
                 hist = stock_detail.price_history("ytd")

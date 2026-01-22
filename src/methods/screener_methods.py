@@ -151,7 +151,7 @@ class Stock:
     def insider_buy_score(self) -> float:
         return self.insider_buy()*0.005
     
-    # larger scores for final recommendation score 
+    # larger scores for final score calculation
     def value_score(self) -> float:
         return np.sum([self.PE_score(), 
                        self.ROA_score(),
@@ -174,13 +174,13 @@ class Stock:
             return 0
 
     # final score
-    def recommendation_score(self) -> float:
+    def final_score(self) -> float:
         return self.value_score()+self.momentum_score()
     
-    def recommendation_signal(self) -> str:
-        if self.recommendation_score() >= 0.5:
+    def signal(self) -> str:
+        if self.final_score() >= 0.5:
             return "Buy"
-        elif self.recommendation_score() < 0:
+        elif self.final_score() < 0:
             return "Sell"
         else:
             return "Hold"
@@ -189,8 +189,7 @@ class Stock:
         df = pd.DataFrame([{
             "Ticker": self.symbol,
             "Name": self.name,
-            "Signal": self.recommendation_signal(),
-            "Recommendation Score": round(self.recommendation_score(), 2),
+            "Final Score": round(self.final_score(), 2),
             "Value Score": round(self.value_score(), 2),
             "Momentum Score": round(self.momentum_score(), 2),
             "Leadership Score": round(self.leadership_score(), 2),
