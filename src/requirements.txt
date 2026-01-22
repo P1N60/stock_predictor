@@ -2,7 +2,7 @@ yfinance
 pandas
 numpy
 matplotlib
-gradio
+altair<5
 scikit-learn
 scikit-optimize
 tqdm
