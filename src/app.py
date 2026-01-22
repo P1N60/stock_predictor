@@ -34,7 +34,7 @@ if 'df_results' not in st.session_state or st.session_state.df_results is None:
     st.write("### Quick Start")
     col1, col2 = st.columns([2, 1])
     with col1:
-        mobile_list = st.selectbox("Select List", options=["Interesting", "Danish", "Filtered"], label_visibility="collapsed")
+        mobile_list = st.selectbox("Select List", options=["Most interesting", "Danish", "Filtered"], label_visibility="collapsed")
     with col2:
         mobile_run = st.button("Run Model", type="primary", use_container_width=True)
     
