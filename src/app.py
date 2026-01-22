@@ -25,30 +25,12 @@ with st.sidebar:
     )
     sb_run_button = st.button("Run Model", type="primary")
 
-# Logic to handle run triggers from either Sidebar (Desktop) or Main (Mobile)
+# Logic to handle run triggers
 should_run = False
-symbol_list = sb_symbol_list # Default to sidebar selection
+symbol_list = sb_symbol_list
 
-if 'df_results' not in st.session_state or st.session_state.df_results is None:
-    # Show Quick Controls in main area for mobile users
-    st.write("### Quick Start")
-    col1, col2 = st.columns([2, 1])
-    with col1:
-        mobile_list = st.selectbox("Select List", options=["Most interesting", "Danish", "Filtered"], label_visibility="collapsed")
-    with col2:
-        mobile_run = st.button("Run Model", type="primary", use_container_width=True)
-    
-    if mobile_run:
-        should_run = True
-        symbol_list = mobile_list
-    elif sb_run_button:
-        should_run = True
-        symbol_list = sb_symbol_list
-else:
-    # Results already exist, controls move to sidebar to save space
-    if sb_run_button:
-        should_run = True
-        symbol_list = sb_symbol_list
+if sb_run_button:
+    should_run = True
 
 import os
 
