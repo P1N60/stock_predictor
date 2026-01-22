@@ -76,8 +76,19 @@ if st.session_state.df_results is not None:
     st.subheader("Results")
     
     # Styling the dataframe
+    def get_signal_color(val):
+        if val == 'Buy':
+            return 'color: #28a745; font-weight: bold'
+        elif val == 'Sell':
+            return 'color: #dc3545; font-weight: bold'
+        else:
+            return 'color: #ffc107; font-weight: bold'
+
     st.dataframe(
-        df.style.background_gradient(subset=["Recommendation Score"], cmap="RdYlGn"), 
+        df.style
+        .background_gradient(subset=["Recommendation Score"], cmap="RdYlGn")
+        .format(precision=2)
+        .map(get_signal_color, subset=["Signal"]),
         use_container_width=True
     )
     
