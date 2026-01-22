@@ -7,4 +7,5 @@ scikit-learn
 scikit-optimize
 tqdm
 gender_guesser
-streamlit
+streamlit>=1.30.0
+pyarrow
