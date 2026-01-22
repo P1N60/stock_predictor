@@ -17,13 +17,37 @@ st.title("Stock Screener")
 # Sidebar for settings
 with st.sidebar:
     st.header("Settings")
-    symbol_list = st.selectbox(
+    sb_symbol_list = st.selectbox(
         "Select Ticker List",
         options=["Interesting", "Danish", "Filtered"],
         index=0
     )
+    sb_run_button = st.button("Run Screener", type="primary")
+
+# Logic to handle run triggers from either Sidebar (Desktop) or Main (Mobile)
+should_run = False
+symbol_list = sb_symbol_list # Default to sidebar selection
+
+if 'df_results' not in st.session_state or st.session_state.df_results is None:
+    # Show Quick Controls in main area for mobile users
+    st.write("### Quick Start")
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        mobile_list = st.selectbox("Select List", options=["Interesting", "Danish", "Filtered"], label_visibility="collapsed")
+    with col2:
+        mobile_run = st.button("Run Analysis", type="primary", use_container_width=True)
     
-    run_button = st.button("Run Screener", type="primary")
+    if mobile_run:
+        should_run = True
+        symbol_list = mobile_list
+    elif sb_run_button:
+        should_run = True
+        symbol_list = sb_symbol_list
+else:
+    # Results already exist, controls move to sidebar to save space
+    if sb_run_button:
+        should_run = True
+        symbol_list = sb_symbol_list
 
 import os
 
@@ -52,7 +76,7 @@ def fetch_stock_data(symbol):
 if 'df_results' not in st.session_state:
     st.session_state.df_results = None
 
-if run_button:
+if should_run:
     st.write(f"Fetching data for **{symbol_list}** list...")
     
     symbols = load_symbols(symbol_list)
