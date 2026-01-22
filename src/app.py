@@ -66,11 +66,21 @@ if run_button:
             summary = fetch_stock_data(symbol)
             df = pd.concat([df, summary])
             
-            # Tiny sleep to avoid hitting API rate limits (only happens on cache miss)
-            time.sleep(0.1) 
+            # Politeness buffer
+            time.sleep(0.25) 
         except Exception as e:
-            st.error(f"Error processing {symbol}: {e}") # Uncomment to debug
-            # pass
+            # If we get blocked (Too Many Requests), wait it out
+            if "429" in str(e) or "Too Many Requests" in str(e):
+                status_text.text(f"Rate limited on {symbol}. Cooling down for 5s...")
+                time.sleep(5)
+                # Optional: try one more time?
+                try:
+                    summary = fetch_stock_data(symbol)
+                    df = pd.concat([df, summary])
+                except:
+                    pass
+            else:
+                st.error(f"Error processing {symbol}: {e}")
         finally:
             sys.stderr = old_stderr
         
