@@ -67,12 +67,12 @@ if run_button:
             df = pd.concat([df, summary])
             
             # Politeness buffer
-            time.sleep(0.25) 
+            time.sleep(0.5) 
         except Exception as e:
             # If we get blocked (Too Many Requests), wait it out
             if "429" in str(e) or "Too Many Requests" in str(e):
-                status_text.text(f"Rate limited on {symbol}. Cooling down for 5s...")
-                time.sleep(5)
+                status_text.text(f"Rate limited on {symbol}. Cooling down for 1s...")
+                time.sleep(1)
                 # Optional: try one more time?
                 try:
                     summary = fetch_stock_data(symbol)
