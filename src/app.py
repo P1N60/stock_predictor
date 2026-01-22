@@ -14,7 +14,7 @@ st.set_page_config(
 
 st.title("Stock Screener")
 
-TICKER_LIST_OPTIONS = ["Most interesting", "Danish", "Filtered"]
+TICKER_LIST_OPTIONS = ["Most interesting (Recommended)", "Danish", "All"]
 
 # Sidebar for settings
 with st.sidebar:
@@ -54,7 +54,7 @@ def load_symbols(list_type):
     current_dir = os.path.dirname(os.path.abspath(__file__))
     base_path = os.path.join(current_dir, "..", "data", "tickers")
     
-    if list_type == "Filtered":
+    if list_type == "All":
         symbols = pd.read_csv(os.path.join(base_path, "screener_filtered_tickers.csv"))["Ticker"].tolist()
     elif list_type == "Danish":
         symbols = pd.read_csv(os.path.join(base_path, "danish_tickers.csv"))["Ticker"].tolist()
