@@ -17,6 +17,7 @@ st.title("Stock Screener")
 # Sidebar for settings
 with st.sidebar:
     st.header("Settings")
+    debug = st.checkbox("Debug Mode", value=True)
     sb_symbol_list = st.selectbox(
         "Select Ticker List",
         options=["Interesting", "Danish", "Filtered"],
@@ -105,7 +106,8 @@ if should_run:
                 except:
                     pass
             else:
-                st.error(f"Error processing {symbol}: {e}")
+                if debug:
+                    st.error(f"Error processing {symbol}: {e}")
         finally:
             sys.stderr = old_stderr
         
