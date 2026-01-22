@@ -20,7 +20,7 @@ with st.sidebar:
     debug = st.checkbox("Debug Mode", value=False)
     sb_symbol_list = st.selectbox(
         "Select Ticker List",
-        options=["Interesting", "Danish", "Filtered"],
+        options=["Most interesting", "Danish", "Filtered"],
         index=0
     )
     sb_run_button = st.button("Run Screener", type="primary")
