@@ -20,23 +20,28 @@ with st.sidebar:
     
     run_button = st.button("Run Screener", type="primary")
 
+import os
+
 def load_symbols(list_type):
-    base_path = "../data/tickers"
+    # Construct absolute path to data directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    base_path = os.path.join(current_dir, "..", "data", "tickers")
+    
     if list_type == "all":
         try:
-            l1 = pd.read_csv(f"{base_path}/tickers.csv")["Ticker"].tolist()
-            l2 = pd.read_csv(f"{base_path}/danish_tickers.csv")["Ticker"].tolist()
-            l3 = pd.read_csv(f"{base_path}/simple_tickers.csv")["Ticker"].to_list()
+            l1 = pd.read_csv(os.path.join(base_path, "tickers.csv"))["Ticker"].tolist()
+            l2 = pd.read_csv(os.path.join(base_path, "danish_tickers.csv"))["Ticker"].tolist()
+            l3 = pd.read_csv(os.path.join(base_path, "simple_tickers.csv"))["Ticker"].to_list()
             symbols = l1 + l2 + l3
         except Exception as e:
             st.error(f"Error reading sticker files: {e}")
             return []
     elif list_type == "filtered":
-        symbols = pd.read_csv(f"{base_path}/screener_filtered_tickers.csv")["Ticker"].tolist()
+        symbols = pd.read_csv(os.path.join(base_path, "screener_filtered_tickers.csv"))["Ticker"].tolist()
     elif list_type == "danish":
-        symbols = pd.read_csv(f"{base_path}/danish_tickers.csv")["Ticker"].tolist()
+        symbols = pd.read_csv(os.path.join(base_path, "danish_tickers.csv"))["Ticker"].tolist()
     else:
-        symbols = pd.read_csv(f"{base_path}/simple_tickers.csv")["Ticker"].tolist()
+        symbols = pd.read_csv(os.path.join(base_path, "simple_tickers.csv"))["Ticker"].tolist()
     return list(set(symbols))
 
 if 'df_results' not in st.session_state:
