@@ -122,6 +122,14 @@ if should_run:
 if st.session_state.df_results is not None:
     df = st.session_state.df_results
     st.subheader("Results")
+
+    # Search bar
+    search_term = st.text_input("Search (Ticker or Name)", "")
+    if search_term:
+        df = df[
+            df["Ticker"].astype(str).str.contains(search_term, case=False) |
+            df["Name"].astype(str).str.contains(search_term, case=False)
+        ]
     
     # Styling the dataframe
     def get_signal_color(val):
