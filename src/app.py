@@ -100,18 +100,29 @@ if st.session_state.df_results is not None:
     
     # Styling the dataframe
     def get_signal_color(val):
+        color = '#ffc107' # Hold (Yellow)
         if val == 'Buy':
-            return 'color: #28a745; font-weight: bold'
-        elif val == 'Sell':
-            return 'color: #dc3545; font-weight: bold'
-        else:
-            return 'color: #ffc107; font-weight: bold'
+            color = '#28a745'
+        elif val == 'Sell': 
+            color = '#dc3545'
+        return f'color: {color}; font-weight: bold'
+
+    def get_score_color(row):
+        # Determine color based on the Signal column in the same row
+        signal = row['Signal']
+        color = '#ffc107'
+        if signal == 'Buy':
+            color = '#28a745'
+        elif signal == 'Sell':
+            color = '#dc3545'
+        # Apply color only to the Recommendation Score column
+        return [f'color: {color}; font-weight: bold' if col == 'Recommendation Score' else '' for col in row.index]
 
     st.dataframe(
         df.style
-        .background_gradient(subset=["Recommendation Score"], cmap="RdYlGn")
         .format(precision=2)
-        .map(get_signal_color, subset=["Signal"]),
+        .map(get_signal_color, subset=["Signal"])
+        .apply(get_score_color, axis=1),
         use_container_width=True
     )
     
