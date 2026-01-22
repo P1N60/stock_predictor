@@ -7,7 +7,7 @@ from gender_guesser.detector import Detector
 momentum_method = "mult" #add or mult
 
 def get_gettables(symbol="AAPL"):
-    return pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys())
+    return pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys()) # type: ignore
 
 def mult_if_positive(x: float, y: float) -> float:
     if x > 0:
@@ -40,7 +40,7 @@ class Stock:
             self.PE = 11.3
 
     def price_history(self, range="ytd"):
-        price = yf.download(self.symbol, period=range, rounding=False, progress=False, auto_adjust=True)[('Close', self.symbol)]
+        price = yf.download(self.symbol, period=range, rounding=False, progress=False, auto_adjust=True)[('Close', self.symbol)] # type: ignore
         return price
     
     def price_graph(self, range="ytd"):
@@ -54,10 +54,10 @@ class Stock:
     
     def insider_buy(self) -> float:
         if 'Shares' in self.insider.columns:
-            insider_buy = self.insider.loc[self.insider.index[4], "Shares"]*100
-            if pd.isna(insider_buy) or insider_buy > 50 or insider_buy < -50:
+            insider_buy = self.insider.loc[self.insider.index[4], "Shares"]*100 # type: ignore
+            if pd.isna(insider_buy) or insider_buy > 50 or insider_buy < -50: # type: ignore
                 insider_buy = 0
-        return float(insider_buy)
+        return float(insider_buy) # type: ignore
 
     def owned(self) -> bool:
         if self.symbol in self.owned_tickers:
