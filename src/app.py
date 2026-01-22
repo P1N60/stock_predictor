@@ -66,7 +66,7 @@ if run_button:
     status_text.text("Done!")
     
     if not df.empty:
-        df = df.sort_values(by="Recommendation Score", ascending=False)
+        df = df.sort_values(by="Recommendation Score", ascending=False).reset_index(drop=True)
         st.session_state.df_results = df
     else:
         st.warning("No data found or all fetches failed.")
