@@ -14,7 +14,7 @@ st.set_page_config(
 
 st.title("Stock Screener")
 
-TICKER_LIST_OPTIONS = ["Most interesting (Recommended)", "Danish", "All"]
+TICKER_LIST_OPTIONS = ["Most interesting (Default)", "Danish", "All"]
 
 # Sidebar for settings
 with st.sidebar:
