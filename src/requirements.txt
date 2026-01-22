@@ -1,4 +1,4 @@
-yfinance==0.2.64
+yfinance>=0.2.54
 pandas
 numpy
 matplotlib
