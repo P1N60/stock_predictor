@@ -14,13 +14,15 @@ st.set_page_config(
 
 st.title("Stock Screener")
 
+TICKER_LIST_OPTIONS = ["Most interesting", "Danish", "Filtered"]
+
 # Sidebar for settings
 with st.sidebar:
     st.header("Settings")
     debug = st.checkbox("Debug Mode", value=False)
     sb_symbol_list = st.selectbox(
         "Select Ticker List",
-        options=["Most interesting", "Danish", "Filtered"],
+        options=TICKER_LIST_OPTIONS,
         index=0
     )
     sb_run_button = st.button("Run Model", type="primary")
@@ -29,8 +31,21 @@ with st.sidebar:
 should_run = False
 symbol_list = sb_symbol_list
 
+if 'df_results' not in st.session_state or st.session_state.df_results is None:
+    st.write("### Quick Start")
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        qs_list = st.selectbox("Select List", options=TICKER_LIST_OPTIONS, label_visibility="collapsed")
+    with col2:
+        qs_run = st.button("Run Model", type="primary", use_container_width=True)
+    
+    if qs_run:
+        should_run = True
+        symbol_list = qs_list
+
 if sb_run_button:
     should_run = True
+    symbol_list = sb_symbol_list
 
 import os
 
