@@ -58,15 +58,14 @@ if run_button:
     
     for i, symbol in enumerate(symbols):
         status_text.text(f"Processing {symbol} ({i+1}/{len(symbols)})...")
-        
-        # Suppress stderr to avoid clutter (e.g. yfinance errors)
         old_stderr = sys.stderr
         sys.stderr = io.StringIO()
         try:
             stock = Stock(symbol)
             summary = stock.summary()
             df = pd.concat([df, summary])
-        except Exception:
+        except Exception as e:
+            # st.error(f"Error processing {symbol}: {e}") # Uncomment to debug
             pass
         finally:
             sys.stderr = old_stderr

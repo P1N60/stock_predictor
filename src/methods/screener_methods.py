@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import yfinance as yf
 import matplotlib.pyplot as plt
+import os
 from gender_guesser.detector import Detector
 
 momentum_method = "mult" #add or mult
@@ -23,6 +24,9 @@ def g_detector(name: str) -> int:
     dict = {"female": 1, "mostly_female": 0.5, "unknown": 0, "mostly_male": -0.5, "male": -1}
     return dict[_detector.get_gender(n)]
 
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.join(current_dir, "..", "..", "data", "tickers", "owned_tickers.csv")
 class Stock:
     def __init__(self, symbol):
         self.symbol = symbol
@@ -33,11 +37,11 @@ class Stock:
         self.EPS = self.info["epsTrailingTwelveMonths"]
         self.PB = self.info["priceToBook"]
         self.name = self.info["shortName"]
-        self.owned_tickers = pd.read_csv("../data/tickers/owned_tickers.csv")["Ticker"].to_list()
         self.exp_PE = 22
         self.momentum = self.info["fiftyDayAverageChangePercent"]
         if symbol in ["HVID.CO", "LOLB.CO"] and self.PE < 3:
             self.PE = 11.3
+        self.owned_tickers = pd.read_csv(data_path)["Ticker"].to_list()
 
     def price_history(self, range="ytd"):
         price = yf.download(self.symbol, period=range, rounding=False, progress=False, auto_adjust=True)[('Close', self.symbol)] # type: ignore
