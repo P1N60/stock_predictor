@@ -64,6 +64,8 @@ if sb_run_single:
         should_run = True
         execution_mode = "single"
         selected_ticker = sb_single_ticker
+    else:
+        st.warning("Please enter a ticker symbol.")
 
 import os
 
