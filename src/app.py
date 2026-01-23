@@ -20,16 +20,26 @@ TICKER_LIST_OPTIONS = ["Most interesting (Default)", "Danish", "All"]
 with st.sidebar:
     st.header("Settings")
     debug = st.checkbox("Debug Mode", value=False)
+    
+    st.subheader("Batch Analysis")
     sb_symbol_list = st.selectbox(
         "Select Ticker List",
         options=TICKER_LIST_OPTIONS,
         index=0
     )
-    sb_run_button = st.button("Run Model", type="primary")
+    sb_run_button = st.button("Run Batch", type="primary")
+
+    st.divider()
+    
+    st.subheader("Single Ticker")
+    sb_single_ticker = st.text_input("Enter Symbol", placeholder="e.g. AAPL").upper()
+    sb_run_single = st.button("Run Single Ticker")
 
 # Logic to handle run triggers
 should_run = False
-symbol_list = sb_symbol_list
+execution_mode = "list"
+selected_list = sb_symbol_list
+selected_ticker = ""
 
 if 'df_results' not in st.session_state or st.session_state.df_results is None:
     st.write("### Quick Start")
@@ -37,15 +47,25 @@ if 'df_results' not in st.session_state or st.session_state.df_results is None:
     with col1:
         qs_list = st.selectbox("Select List", options=TICKER_LIST_OPTIONS, label_visibility="collapsed")
     with col2:
-        qs_run = st.button("Run Model", type="primary", use_container_width=True)
+        qs_run = st.button("Run Batch", type="primary", use_container_width=True)
     
     if qs_run:
         should_run = True
-        symbol_list = qs_list
+        execution_mode = "list"
+        selected_list = qs_list
 
 if sb_run_button:
     should_run = True
-    symbol_list = sb_symbol_list
+    execution_mode = "list"
+    selected_list = sb_symbol_list
+
+if sb_run_single:
+    if sb_single_ticker:
+        should_run = True
+        execution_mode = "single"
+        selected_ticker = sb_single_ticker
+    else:
+        st.warning("Please enter a ticker symbol.")
 
 import os
 
@@ -71,10 +91,19 @@ def fetch_stock_data(symbol):
 if 'df_results' not in st.session_state:
     st.session_state.df_results = None
 
+if 'results_label' not in st.session_state:
+    st.session_state.results_label = "results"
+
 if should_run:
-    st.write(f"Fetching data for **{symbol_list}** list...")
-    
-    symbols = load_symbols(symbol_list)
+    if execution_mode == "list":
+        st.write(f"Fetching data for **{selected_list}** list...")
+        symbols = load_symbols(selected_list)
+        st.session_state.results_label = selected_list
+    else:
+        st.write(f"Analyzing **{selected_ticker}**...")
+        symbols = [selected_ticker]
+        st.session_state.results_label = selected_ticker
+
     progress_bar = st.progress(0)
     status_text = st.empty()
     
@@ -153,7 +182,7 @@ if st.session_state.df_results is not None:
     st.download_button(
         label="Download Results as CSV",
         data=csv,
-        file_name=f"{symbol_list}_screener_results.csv",
+        file_name=f"{st.session_state.results_label}_screener_results.csv",
         mime="text/csv",
     )
     
