@@ -10,7 +10,7 @@ class Stock:
         self.minimum_features_in_row = 0.6
 
     def get_annual_financials(self) -> pd.DataFrame:
-        annual_financials = pd.concat([yf.Ticker(self.symbol).get_financials(freq="yearly"), yf.Ticker(self.symbol).get_balance_sheet(freq="yearly")])
+        annual_financials = pd.concat([yf.Ticker(self.symbol).get_financials(freq="yearly"), yf.Ticker(self.symbol).get_balance_sheet(freq="yearly")]) # type: ignore
         if annual_financials.shape[1] > 4:
             annual_financials = annual_financials.iloc[:, :4]
         return annual_financials
@@ -20,9 +20,9 @@ class Stock:
         bal = yf.Ticker(self.symbol).get_balance_sheet(freq="quarterly")
         
         # Only keep columns (dates) that exist in both financials and balance sheet
-        common_dates = fin.columns.intersection(bal.columns)
-        fin = fin[common_dates]
-        bal = bal[common_dates]
+        common_dates = fin.columns.intersection(bal.columns) # type: ignore
+        fin = fin[common_dates] # type: ignore
+        bal = bal[common_dates] # type: ignore
         
         # Concatenate them
         quarterly_financials = pd.concat([fin, bal])
@@ -70,7 +70,7 @@ class Stock:
             if date_index == 0:
                 row_data["3M Future Change"] = np.nan
                 price_data = yf.download(self.symbol, period="1y", rounding=False, progress=False)
-                row_data["Price"] = price_data.loc[pd.Timestamp(earn_date), ('Close', self.symbol)]
+                row_data["Price"] = price_data.loc[pd.Timestamp(earn_date), ('Close', self.symbol)] # type: ignore
             else:
                 price_data = yf.download(self.symbol, period="max", rounding=False, progress=False)
                 got_price = False
@@ -78,8 +78,8 @@ class Stock:
                 while(got_price==False and day_offset > -6):
                     try:           
                         row_data['3M Future Change'] = (
-                        price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset, weeks=13), ('Close', self.symbol)] / 
-                        price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] - 1
+                        price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset, weeks=13), ('Close', self.symbol)] / # type: ignore
+                        price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] - 1 # type: ignore
                         )
                         got_price = True
                     except:
@@ -87,7 +87,7 @@ class Stock:
                 if got_price == True:
                     if pd.isna(row_data.get("3M Future Change")):
                         continue
-                    row_data["Price"] = price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)]
+                    row_data["Price"] = price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] # type: ignore
                 else:
                     continue
             
@@ -105,7 +105,7 @@ class Stock:
         return df
     
     def predict(self, X):
-        return self.model.predict(X)
+        return self.model.predict(X) # type: ignore
     
     def score(self, X, y):
         if isinstance(y, (pd.DataFrame, pd.Series)):
@@ -113,12 +113,12 @@ class Stock:
         y = np.asarray(y)
         if y.ndim == 2 and y.shape[1] == 1:
             y = y.ravel()
-        return self.model.score(X, y)
+        return self.model.score(X, y) # type: ignore
     
     def get_params(self, deep=True):
-        params = {'hidden_layer_amount': self.hidden_layer_amount, 
-                'neuron_amount': self.neuron_amount}
-        params.update(self.kwargs)
+        params = {'hidden_layer_amount': self.hidden_layer_amount, # type: ignore 
+                'neuron_amount': self.neuron_amount} # type: ignore
+        params.update(self.kwargs) # type: ignore
         return params
     
     def set_params(self, **params):
