@@ -54,7 +54,7 @@ class Ticker:
         if "popup_icon" in data.columns:
             data.drop(columns=["popup_icon"], inplace=True)
 
-        return data
+        return data.transpose()
 
     def _find_table_in_url(self, text_to_look_for: str, soup: BeautifulSoup) -> pd.DataFrame:
         """
