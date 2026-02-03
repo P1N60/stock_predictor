@@ -43,6 +43,12 @@ class Stock:
             self.PE = 11.3
         self.owned_tickers = pd.read_csv(data_path)["Ticker"].to_list()
 
+    def latest_earnings_date(self):
+        try:
+            return yf.Ticker(self.symbol).calendar.get("Earnings Date")[0].strftime("%d-%m-%Y") # type: ignore
+        except:
+            return np.nan
+
     def price_history(self, range="ytd"):
         price = yf.download(self.symbol, period=range, rounding=False, progress=False, auto_adjust=True)[('Close', self.symbol)] # type: ignore
         return price
@@ -189,6 +195,7 @@ class Stock:
         df = pd.DataFrame([{
             "Ticker": self.symbol,
             "Name": self.name,
+            "Earnings": self.latest_earnings_date(),
             "Final Score": round(self.final_score(), 2),
             "Value Score": round(self.value_score(), 2),
             "Momentum Score": round(self.momentum_score(), 2),
