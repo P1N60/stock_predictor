@@ -3,6 +3,7 @@ import pandas as pd
 import sys
 import io
 import time
+from datetime import datetime
 from methods.screener_methods import Stock
 
 # Page config
@@ -214,7 +215,27 @@ if st.session_state.df_results is not None:
                 with col3:
                     st.metric("Score", round(stock_detail.final_score(), 2))
                 with col4:
-                    st.metric("Earnings", stock_detail.latest_earnings_date())
+                    earnings_date = stock_detail.latest_earnings_date()
+                    try:
+                        date_obj = datetime.strptime(earnings_date, "%d-%m-%Y").date() # type: ignore
+                        today = datetime.now().date()
+                        
+                        if date_obj < today:
+                            color = "#28a745"   # Green (past)
+                        elif date_obj == today:
+                            color = "#dc3545"   # Red (today)
+                        else:
+                            color = "#ffc107"   # Yellow (future)
+                            
+                        st.markdown(
+                            f"""
+                            <p style="font-size: 14px; margin-bottom: 0px;">Earnings</p>
+                            <p style="font-size: 34px; font-weight: 600; color: {color}; margin-top: -15px;">{earnings_date}</p>
+                            """, 
+                            unsafe_allow_html=True
+                        )
+                    except:
+                        st.metric("Earnings", earnings_date)
 
                 st.subheader("Price History (YTD)")
                 hist = stock_detail.price_history("ytd")
