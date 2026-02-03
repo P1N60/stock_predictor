@@ -175,7 +175,7 @@ if st.session_state.df_results is not None:
                     color = '#28a745'
                 elif score < 0:
                     color = '#dc3545'
-                style = f'color: {color}; font-weight: bold'
+                style = f'color: {color}'
             elif col == 'Earnings':
                 try:
                     date_str = str(row['Earnings'])
@@ -184,9 +184,9 @@ if st.session_state.df_results is not None:
                     days_diff = (date_obj - today).days
                     
                     if days_diff == 0:
-                        style = 'color: #dc3545; font-weight: bold' # Red for today
+                        style = 'color: #dc3545' # Red for today
                     elif 0 < days_diff < 7:
-                        style = 'color: #ffc107; font-weight: bold' # Yellow for upcoming week
+                        style = 'color: #ffc107' # Yellow for upcoming week
                 except:
                     pass
             styles.append(style)
