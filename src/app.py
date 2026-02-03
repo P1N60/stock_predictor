@@ -175,7 +175,7 @@ if st.session_state.df_results is not None:
                     color = '#28a745'
                 elif score < 0:
                     color = '#dc3545'
-                style = f'color: {color}'
+                style = f'color: {color}; font-weight: bold'
             elif col == 'Earnings':
                 try:
                     date_str = str(row['Earnings'])
