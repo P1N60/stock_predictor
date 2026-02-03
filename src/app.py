@@ -235,15 +235,17 @@ if st.session_state.df_results is not None:
                         st.markdown(
                             f"""
                             <div style="line-height: 1.2;">
-                                <p style="font-size: 14px; margin-bottom: 0px; color: inherit;">Earnings</p>
+                                <p style="font-size: 14px; margin-bottom: 0px; color: rgb(250, 250, 250);">Earnings</p>
                                 <p style="font-size: 34px; font-weight: 600; {color_style} margin-top: -5px;">{earnings_date}</p>
                             </div>
                             """, 
                             unsafe_allow_html=True
                         )
-                    except Exception:
+                    except Exception as e:
                         # Fallback for invalid dates or parsing errors
-                        st.metric("Earnings", earnings_date)
+                        st.metric("Earnings", f"{earnings_date}")
+                        if debug:
+                            st.write(f"Date error: {e}")
 
                 st.subheader("Price History (YTD)")
                 hist = stock_detail.price_history("ytd")
