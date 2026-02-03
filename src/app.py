@@ -206,13 +206,15 @@ if st.session_state.df_results is not None:
                 # Re-fetching is safer for a fresh view.
                 stock_detail = Stock(selected_ticker)
                 
-                col1, col2, col3 = st.columns(3)
+                col1, col2, col3, col4 = st.columns(4)
                 with col1:
                     st.metric("Name", stock_detail.name)
                 with col2:
                     st.metric("Symbol", stock_detail.symbol)
                 with col3:
                     st.metric("Score", round(stock_detail.final_score(), 2))
+                with col4:
+                    st.metric("Earnings", stock_detail.latest_earnings_date())
 
                 st.subheader("Price History (YTD)")
                 hist = stock_detail.price_history("ytd")
