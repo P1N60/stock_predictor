@@ -215,9 +215,12 @@ if st.session_state.df_results is not None:
                 with col3:
                     st.metric("Score", round(stock_detail.final_score(), 2))
                 with col4:
-                    earnings_date = stock_detail.latest_earnings_date()
+                    earnings_date = str(stock_detail.latest_earnings_date())
+                    color_style = "" 
+                    
                     try:
-                        date_obj = datetime.strptime(earnings_date, "%d-%m-%Y").date() # type: ignore
+                        # Parsing the date
+                        date_obj = datetime.strptime(earnings_date, "%d-%m-%Y").date()
                         today = datetime.now().date()
                         
                         if date_obj < today:
@@ -226,15 +229,20 @@ if st.session_state.df_results is not None:
                             color = "#dc3545"   # Red (today)
                         else:
                             color = "#ffc107"   # Yellow (future)
-                            
+                        
+                        color_style = f"color: {color} !important;"
+                        
                         st.markdown(
                             f"""
-                            <p style="font-size: 14px; margin-bottom: 0px;">Earnings</p>
-                            <p style="font-size: 34px; font-weight: 600; color: {color}; margin-top: -15px;">{earnings_date}</p>
+                            <div style="line-height: 1.2;">
+                                <p style="font-size: 14px; margin-bottom: 0px; color: inherit;">Earnings</p>
+                                <p style="font-size: 34px; font-weight: 600; {color_style} margin-top: -5px;">{earnings_date}</p>
+                            </div>
                             """, 
                             unsafe_allow_html=True
                         )
-                    except:
+                    except Exception:
+                        # Fallback for invalid dates or parsing errors
                         st.metric("Earnings", earnings_date)
 
                 st.subheader("Price History (YTD)")
