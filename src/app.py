@@ -164,21 +164,38 @@ if st.session_state.df_results is not None:
         ]
     
     # Styling the dataframe
-    def get_score_color(row):
-        # Determine color based on the Score
-        score = row['Final Score']
-        color = '#ffc107'
-        if score >= 0.5:
-            color = '#28a745'
-        elif score < 0:
-            color = '#dc3545'
-        # Apply color only to the Final Score column
-        return [f'color: {color}; font-weight: bold' if col == 'Final Score' else '' for col in row.index]
+    def style_rows(row):
+        styles = []
+        for col in row.index:
+            style = ''
+            if col == 'Final Score':
+                score = row['Final Score']
+                color = '#ffc107'
+                if score >= 0.5:
+                    color = '#28a745'
+                elif score < 0:
+                    color = '#dc3545'
+                style = f'color: {color}; font-weight: bold'
+            elif col == 'Earnings':
+                try:
+                    date_str = str(row['Earnings'])
+                    date_obj = datetime.strptime(date_str, "%d-%m-%Y").date()
+                    today = datetime.now().date()
+                    if date_obj == today:
+                        style = 'color: #dc3545' # Red
+                    elif date_obj > today:
+                        style = 'color: #ffc107' # Yellow
+                    else:
+                        style = 'color: #28a745' # Green
+                except:
+                    pass
+            styles.append(style)
+        return styles
 
     st.dataframe(
         df.style
         .format(precision=2)
-        .apply(get_score_color, axis=1),
+        .apply(style_rows, axis=1),
         use_container_width=True
     )
     
