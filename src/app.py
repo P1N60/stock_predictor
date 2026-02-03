@@ -215,37 +215,25 @@ if st.session_state.df_results is not None:
                 with col3:
                     st.metric("Score", round(stock_detail.final_score(), 2))
                 with col4:
-                    earnings_date = str(stock_detail.latest_earnings_date())
-                    color_style = "" 
-                    
+                    earnings_date = stock_detail.latest_earnings_date()
                     try:
-                        # Parsing the date
-                        date_obj = datetime.strptime(earnings_date, "%d-%m-%Y").date()
-                        today = datetime.now().date()
-                        
-                        if date_obj < today:
-                            color = "#28a745"   # Green (past)
-                        elif date_obj == today:
-                            color = "#dc3545"   # Red (today)
-                        else:
-                            color = "#ffc107"   # Yellow (future)
-                        
-                        color_style = f"color: {color} !important;"
-                        
+                        date_obj = datetime.strptime(earnings_date, "%d-%m-%Y").date() # type: ignore
+                        color = "#ffc107" if date_obj >= datetime.now().date() else "#28a745" # Yellow for future, Green for past
                         st.markdown(
                             f"""
-                            <div style="line-height: 1.2;">
-                                <p style="font-size: 14px; margin-bottom: 0px; color: rgb(250, 250, 250);">Earnings</p>
-                                <p style="font-size: 34px; font-weight: 600; {color_style} margin-top: -5px;">{earnings_date}</p>
+                            <div data-testid="stMetric" class="stMetric">
+                                <label data-testid="stMetricLabel" class="css-1qq0486 e1i5pmia2">
+                                    <div class="css-1w5b27 e1i5pmia1" style="font-size: 14px;">Earnings</div>
+                                </label>
+                                <div data-testid="stMetricValue" class="css-1xarl3l e1i5pmia3" style="color: {color}; font-size: 34px; font-weight: 600;">
+                                    {earnings_date}
+                                </div>
                             </div>
-                            """, 
+                            """,
                             unsafe_allow_html=True
                         )
-                    except Exception as e:
-                        # Fallback for invalid dates or parsing errors
-                        st.metric("Earnings", f"{earnings_date}")
-                        if debug:
-                            st.write(f"Date error: {e}")
+                    except:
+                        st.metric("Earnings", earnings_date)
 
                 st.subheader("Price History (YTD)")
                 hist = stock_detail.price_history("ytd")
