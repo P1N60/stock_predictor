@@ -22,36 +22,39 @@ class PatchedSeleniumInterface(stockdex.selenium_interface.selenium_interface):
         self.chrome_options.add_argument("--disable-dev-shm-usage")
         self.chrome_options.add_argument("--disable-gpu")
         
-        # Point to the system installed chromium
-        if os.path.exists("/usr/bin/chromium-browser"):
-            self.chrome_options.binary_location = "/usr/bin/chromium-browser"
-        elif os.path.exists("/usr/bin/chromium"):
-             self.chrome_options.binary_location = "/usr/bin/chromium"
+        # Point to the system installed chromium only on Linux
+        if sys.platform != "win32":
+            if os.path.exists("/usr/bin/chromium-browser"):
+                self.chrome_options.binary_location = "/usr/bin/chromium-browser"
+            elif os.path.exists("/usr/bin/chromium"):
+                 self.chrome_options.binary_location = "/usr/bin/chromium"
 
         if use_custom_user_agent:
             from stockdex.lib import get_user_agent
             self.chrome_options.add_argument(f"user-agent={get_user_agent}")
 
     def _get_service(self):
-        # 1. Check system locations for chromedriver (best for aarch64)
-        system_driver_paths = [
-            "/usr/bin/chromedriver",
-            "/usr/local/bin/chromedriver",
-            "/usr/lib/chromium-browser/chromedriver",
-            "/usr/lib64/chromium-browser/chromedriver",
-            "/usr/bin/chromium-driver"
-        ]
-        for path in system_driver_paths:
-            if os.path.exists(path):
-                return Service(executable_path=path)
+        # 1. Check system locations for chromedriver (best for aarch64 Linux)
+        if sys.platform != "win32":
+            system_driver_paths = [
+                "/usr/bin/chromedriver",
+                "/usr/local/bin/chromedriver",
+                "/usr/lib/chromium-browser/chromedriver",
+                "/usr/lib64/chromium-browser/chromedriver",
+                "/usr/bin/chromium-driver"
+            ]
+            for path in system_driver_paths:
+                if os.path.exists(path):
+                    return Service(executable_path=path)
         
-        # 2. Try webdriver-manager (might download x86 on arm64, but worth a try as fallback)
-        try:
-            return Service(ChromeDriverManager().install())
-        except Exception as e:
-            print(f"WebDriverManager failed: {e}")
+        # 2. Try webdriver-manager on non-Windows (fallback for Linux)
+        if sys.platform != "win32":
+            try:
+                return Service(ChromeDriverManager().install())
+            except Exception as e:
+                print(f"WebDriverManager failed: {e}")
         
-        # 3. If nothing works, let Selenium try to find it (will likely fail on aarch64)
+        # 3. If nothing works, let Selenium try to find it (for Linux/PATH)
         return Service()
 
     def get_html_content(self, url: str) -> str:
@@ -61,6 +64,8 @@ class PatchedSeleniumInterface(stockdex.selenium_interface.selenium_interface):
         except Exception as e:
             if "executable needs to be in PATH" in str(e) or "Service" in str(e) or "Unsupported platform" in str(e):
                  raise Exception("Could not find a valid chromedriver. Please run 'sudo dnf install chromedriver' (Fedora) or 'sudo apt install chromium-driver' (Debian/Ubuntu) to install it for aarch64.") from e
+            if "SessionNotCreatedException" in str(e) or "session not created" in str(e).lower():
+                 print(f"Session creation failed. Service path: {service.path if service.path else 'default'}")
             raise e
 
         try:
