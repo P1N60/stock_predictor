@@ -230,7 +230,7 @@ if st.session_state.df_results is not None:
                 with col2:
                     st.metric("Symbol", stock_detail.symbol)
                 with col3:
-                    st.metric("Score", round(stock_detail.final_score(), 2))
+                    st.metric("Score", round(stock_detail.final_score, 2))
                 with col4:
                     st.metric("Earnings", stock_detail.latest_earnings_date())
 
