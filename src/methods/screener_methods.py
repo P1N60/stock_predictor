@@ -6,6 +6,7 @@ import os
 from gender_guesser.detector import Detector
 
 momentum_method = "mult" #add or mult
+BUY_THRESHOLD = 0.6
 
 def get_gettables(symbol="AAPL") -> pd.DataFrame:
     return pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys()) # type: ignore
@@ -43,6 +44,7 @@ class Stock:
             self.PE = 11.3
         self.owned_tickers = pd.read_csv(data_path)["Ticker"].to_list()
 
+    @property
     def latest_earnings_date(self):
         try:
             return yf.Ticker(self.symbol).calendar.get("Earnings Date")[0].strftime("%d-%m-%Y") # type: ignore
@@ -62,6 +64,7 @@ class Stock:
         plt.xticks(price.index[np.linspace(0, len(price) - 1, 10, dtype=int)])
         plt.show()
     
+    @property
     def insider_buy(self) -> float:
         if 'Shares' in self.insider.columns:
             insider_buy = self.insider.loc[self.insider.index[4], "Shares"]*100 # type: ignore
@@ -69,12 +72,14 @@ class Stock:
                 insider_buy = 0
         return float(insider_buy) # type: ignore
 
+    @property
     def owned(self) -> bool:
         if self.symbol in self.owned_tickers:
             return True
         else:
             return False
     
+    @property
     def DE(self) -> float:
         try:
             return self.info["debtToEquity"]/100
@@ -83,6 +88,7 @@ class Stock:
 
     # score calculation
     # value score 
+    @property
     def PE_score(self) -> float:
         median = 18.7 # chosen from data by median
         spread = median
@@ -94,33 +100,38 @@ class Stock:
         else:
             return -score
         
+    @property
     def ROA_score(self) -> float:
         median = 4.325 # chosen from data by median
         spread = median
         weight = 0.9
         return np.tanh((self.ROA-median)/(spread/2))*weight # -1 at mean-spread and 1 at mean+spread
 
+    @property
     def EPS_score(self) -> float:
         median = 4 # chosen from data by median
         spread = median
         weight = 0.0
         return np.tanh((self.EPS-median)/(spread/2))*weight # -1 at mean-spread and 1 at mean+spread
 
+    @property
     def PB_score(self) -> float:
         median = 1.875 # chosen from data by median
         spread = 2
         weight = 0.15
         return -np.tanh((self.PB-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
     
+    @property
     def DE_score(self) -> float:
         median = 0.58
         spread = 0.58
         weight = 0.15
-        if (np.isnan(self.DE())):
+        if (np.isnan(self.DE)):
             return 0
         else:
-            return -np.tanh((self.DE()-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
+            return -np.tanh((self.DE-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
     
+    @property
     def leadership_score(self) -> float:
         mean = 57.15 # chosen from data by median
         spread = 20
@@ -154,24 +165,27 @@ class Stock:
         score = score/len(people)
         return np.tanh(score/(10/2)) * weight
 
+    @property
     def insider_buy_score(self) -> float:
-        return self.insider_buy()*0.005
+        return self.insider_buy*0.005
     
     # larger scores for final score calculation
+    @property
     def value_score(self) -> float:
-        return np.sum([self.PE_score(), 
-                       self.ROA_score(),
-                       self.EPS_score(),
-                       self.PB_score(),
-                       self.DE_score(),
-                       self.leadership_score(),
-                       self.insider_buy_score()])
+        return np.sum([self.PE_score, 
+                       self.ROA_score,
+                       self.EPS_score,
+                       self.PB_score,
+                       self.DE_score,
+                       self.leadership_score,
+                       self.insider_buy_score])
     
+    @property
     def momentum_score(self) -> float:
         median = 0 # chosen from data by median
         spread = 0.25
         if momentum_method == "mult": # add or mult
-            weight = abs(self.value_score())
+            weight = abs(self.value_score)
         else:
             weight = 0.3
         try:
@@ -182,12 +196,12 @@ class Stock:
     # final score
     @property
     def final_score(self) -> float:
-        return self.value_score()+self.momentum_score()
+        return self.value_score+self.momentum_score
     
     @property
     def signal(self) -> str:
         _final_score = self.final_score
-        if _final_score >= 0.60:
+        if _final_score >= BUY_THRESHOLD:
             return "Buy"
         elif _final_score < 0:
             return "Sell"
@@ -198,27 +212,27 @@ class Stock:
         df = pd.DataFrame([{
             "Ticker": self.symbol,
             "Name": self.name,
-            "Earnings": self.latest_earnings_date(),
+            "Earnings": self.latest_earnings_date,
             "Signal": self.signal,
             "Final Score": round(self.final_score, 2),
-            "Value Score": round(self.value_score(), 2),
-            "Momentum Score": round(self.momentum_score(), 2),
-            "Leadership Score": round(self.leadership_score(), 2),
-            "P/E Score": round(self.PE_score(), 2),
-            "ROA Score": round(self.ROA_score(), 2),
-            "P/B Score": round(self.PB_score(), 2),
-            "D/E Score": round(self.DE_score(), 2),
-            "Insider Buy Score": round(self.insider_buy_score(), 2),
+            "Value Score": round(self.value_score, 2),
+            "Momentum Score": round(self.momentum_score, 2),
+            "Leadership Score": round(self.leadership_score, 2),
+            "P/E Score": round(self.PE_score, 2),
+            "ROA Score": round(self.ROA_score, 2),
+            "P/B Score": round(self.PB_score, 2),
+            "D/E Score": round(self.DE_score, 2),
+            "Insider Buy Score": round(self.insider_buy_score, 2),
             "P/E": round(self.PE, 2),
             "ROA%": round(self.ROA, 2),
             "EPS": round(self.EPS, 2),
             "P/B": round(self.PB, 2),
-            "D/E": round(self.DE(), 2),
-            "Insider Buy%": round(self.insider_buy(), 2),
+            "D/E": round(self.DE, 2),
+            "Insider Buy%": round(self.insider_buy, 2),
             "50d Average Change%": round(self.momentum, 2),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
             "Country": self.info["country"],
-            "Owned": self.owned()
+            "Owned": self.owned
             }])
         return df
