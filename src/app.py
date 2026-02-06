@@ -218,37 +218,40 @@ if st.session_state.df_results is not None:
     )
     
     # Detail View section
-    st.divider()
-    st.header("Stock Details")
-    
-    col_sel, _ = st.columns([1, 2])
-    with col_sel:
-        selected_ticker = st.selectbox("Select a Ticker for detailed view", df["Ticker"].unique())
-    
-    if selected_ticker:
-        with st.spinner(f"Loading details for {selected_ticker}..."):
-            try:
-                # We re-fetch or reuse if we could store objects, 
-                # but storing objects in session state might use too much memory.
-                # Re-fetching is safer for a fresh view.
-                stock_detail = Stock(selected_ticker)
-                
-                col1, col2, col3, col4 = st.columns(4)
-                with col1:
-                    st.metric("Name", stock_detail.name)
-                with col2:
-                    st.metric("Symbol", stock_detail.symbol)
-                with col3:
-                    st.metric("Score", round(stock_detail.final_score, 2))
-                with col4:
-                    st.metric("Earnings", stock_detail.latest_earnings_date)
+    if not df.empty:
+        st.divider()
+        st.header("Stock Details")
+        
+        col_sel, _ = st.columns([1, 2])
+        with col_sel:
+            # unique() returns numpy array, convert to list for safety or keep as is.
+            # However, if df is empty, unique() is empty, and we already guarded against that.
+            selected_ticker = st.selectbox("Select a Ticker for detailed view", df["Ticker"].unique())
+        
+        if selected_ticker:
+            with st.spinner(f"Loading details for {selected_ticker}..."):
+                try:
+                    # We re-fetch or reuse if we could store objects, 
+                    # but storing objects in session state might use too much memory.
+                    # Re-fetching is safer for a fresh view.
+                    stock_detail = Stock(selected_ticker)
+                    
+                    col1, col2, col3, col4 = st.columns(4)
+                    with col1:
+                        st.metric("Name", stock_detail.name)
+                    with col2:
+                        st.metric("Symbol", stock_detail.symbol)
+                    with col3:
+                        st.metric("Score", round(stock_detail.final_score, 2))
+                    with col4:
+                        st.metric("Earnings", stock_detail.latest_earnings_date)
 
-                st.subheader("Price History (YTD)")
-                hist = stock_detail.price_history("ytd")
-                st.line_chart(hist)
-                
-                st.subheader("Full Data")
-                st.json(stock_detail.summary().to_dict(orient="records")[0])
-                
-            except Exception as e:
-                st.error(f"Could not load details for {selected_ticker}: {e}")
+                    st.subheader("Price History (YTD)")
+                    hist = stock_detail.price_history("ytd")
+                    st.line_chart(hist)
+                    
+                    st.subheader("Full Data")
+                    st.json(stock_detail.summary().to_dict(orient="records")[0])
+                    
+                except Exception as e:
+                    st.error(f"Could not load details for {selected_ticker}: {e}")
