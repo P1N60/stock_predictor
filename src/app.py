@@ -161,7 +161,7 @@ if st.session_state.df_results is not None:
     search_term = st.text_input("Search (Ticker, Name, or other columns)", "")
     if search_term:
         df = df[
-            df.astype(str).apply(lambda x: x.str.contains(search_term, case=False)).any(axis=1)
+            df.astype(str).apply(lambda x: x.str.contains(search_term, case=False, regex=False)).any(axis=1)
         ]
     
     # Styling the dataframe
