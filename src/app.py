@@ -49,7 +49,7 @@ if 'df_results' not in st.session_state or st.session_state.df_results is None:
     with col1:
         qs_list = st.selectbox("Select List", options=TICKER_LIST_OPTIONS, label_visibility="collapsed")
     with col2:
-        qs_run = st.button("Run Batch", type="primary", width="stretch")
+        qs_run = st.button("Run Batch", type="primary", use_container_width=True)
     
     if qs_run:
         should_run = True
@@ -226,7 +226,15 @@ if st.session_state.df_results is not None:
         with col_sel:
             # unique() returns numpy array, convert to list for safety or keep as is.
             # However, if df is empty, unique() is empty, and we already guarded against that.
-            selected_ticker = st.selectbox("Select a Ticker for detailed view", df["Ticker"].unique())
+            ticker_options = df["Ticker"].unique().tolist()
+            # Add a placeholder to prevent auto-fetching the first result
+            ticker_options.insert(0, None)
+            
+            selected_ticker = st.selectbox(
+                "Select a Ticker for detailed view", 
+                ticker_options,
+                format_func=lambda x: "Select a ticker..." if x is None else x
+            )
         
         if selected_ticker:
             with st.spinner(f"Loading details for {selected_ticker}..."):
