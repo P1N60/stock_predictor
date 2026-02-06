@@ -49,7 +49,7 @@ if 'df_results' not in st.session_state or st.session_state.df_results is None:
     with col1:
         qs_list = st.selectbox("Select List", options=TICKER_LIST_OPTIONS, label_visibility="collapsed")
     with col2:
-        qs_run = st.button("Run Batch", type="primary", use_container_width=True)
+        qs_run = st.button("Run Batch", type="primary", width="stretch")
     
     if qs_run:
         should_run = True
@@ -205,7 +205,7 @@ if st.session_state.df_results is not None:
         df.style
         .format(precision=2)
         .apply(style_rows, axis=1),
-        use_container_width=True
+        width='stretch'
     )
     
     # Download button
