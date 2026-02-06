@@ -171,7 +171,7 @@ if st.session_state.df_results is not None:
             if col == 'Final Score':
                 score = row['Final Score']
                 color = '#ffc107'
-                if score >= 0.5:
+                if score >= 0.60:
                     color = '#28a745'
                 elif score < 0:
                     color = '#dc3545'
@@ -183,8 +183,8 @@ if st.session_state.df_results is not None:
                     today = datetime.now().date()
                     days_diff = (date_obj - today).days
                     
-                    if days_diff == 0:
-                        style = 'color: #dc3545' # Red for today
+                    if days_diff == 0 or days_diff == -1:
+                        style = 'color: #dc3545' # Red for today and yesterday
                     elif 0 < days_diff < 7:
                         style = 'color: #ffc107' # Yellow for upcoming week
                 except:
