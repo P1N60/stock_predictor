@@ -7,7 +7,7 @@ from gender_guesser.detector import Detector
 
 momentum_method = "mult" #add or mult
 
-def get_gettables(symbol="AAPL"):
+def get_gettables(symbol="AAPL") -> pd.DataFrame:
     return pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys()) # type: ignore
 
 def mult_if_positive(x: float, y: float) -> float:
@@ -75,7 +75,7 @@ class Stock:
         else:
             return False
     
-    def DE(self):
+    def DE(self) -> float:
         try:
             return self.info["debtToEquity"]/100
         except:
@@ -180,13 +180,16 @@ class Stock:
             return 0
 
     # final score
+    @property
     def final_score(self) -> float:
         return self.value_score()+self.momentum_score()
     
+    @property
     def signal(self) -> str:
-        if self.final_score() >= 0.5:
+        _final_score = self.final_score
+        if _final_score >= 0.60:
             return "Buy"
-        elif self.final_score() < 0:
+        elif _final_score < 0:
             return "Sell"
         else:
             return "Hold"
@@ -196,7 +199,8 @@ class Stock:
             "Ticker": self.symbol,
             "Name": self.name,
             "Earnings": self.latest_earnings_date(),
-            "Final Score": round(self.final_score(), 2),
+            "Signal": self.signal,
+            "Final Score": round(self.final_score, 2),
             "Value Score": round(self.value_score(), 2),
             "Momentum Score": round(self.momentum_score(), 2),
             "Leadership Score": round(self.leadership_score(), 2),
