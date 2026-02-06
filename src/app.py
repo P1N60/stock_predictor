@@ -5,6 +5,7 @@ import io
 import time
 from datetime import datetime
 from methods.screener_methods import Stock
+from methods.screener_methods import BUY_THRESHOLD
 
 # Page config
 st.set_page_config(
@@ -171,9 +172,17 @@ if st.session_state.df_results is not None:
             if col == 'Final Score':
                 score = row['Final Score']
                 color = '#ffc107'
-                if score >= 0.60:
+                if score >= BUY_THRESHOLD:
                     color = '#28a745'
                 elif score < 0:
+                    color = '#dc3545'
+                style = f'color: {color}; font-weight: bold'
+            elif col == 'Signal':
+                signal = row['Signal']
+                color = '#ffc107'
+                if signal == 'Buy':
+                    color = '#28a745'
+                elif signal == 'Sell':
                     color = '#dc3545'
                 style = f'color: {color}; font-weight: bold'
             elif col == 'Earnings':
@@ -232,7 +241,7 @@ if st.session_state.df_results is not None:
                 with col3:
                     st.metric("Score", round(stock_detail.final_score, 2))
                 with col4:
-                    st.metric("Earnings", stock_detail.latest_earnings_date())
+                    st.metric("Earnings", stock_detail.latest_earnings_date)
 
                 st.subheader("Price History (YTD)")
                 hist = stock_detail.price_history("ytd")
