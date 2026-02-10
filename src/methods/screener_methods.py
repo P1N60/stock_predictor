@@ -6,7 +6,7 @@ import os
 from gender_guesser.detector import Detector
 
 momentum_method = "mult" #add or mult
-BUY_THRESHOLD = 0.6
+BUY_THRESHOLD = 0.5
 
 def get_gettables(symbol="AAPL") -> pd.DataFrame:
     return pd.DataFrame(yf.Ticker(symbol).info.values(), yf.Ticker(symbol).info.keys()) # type: ignore
