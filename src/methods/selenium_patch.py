@@ -16,8 +16,6 @@ import time
 
 from selenium.webdriver.common.by import By 
 
-print("Patching stockdex selenium interface for aarch64 Linux compatibility...")
-
 class PatchedSeleniumInterface(stockdex.selenium_interface.selenium_interface):
     def __init__(self, use_custom_user_agent: bool = False):
         self.chrome_options = Options()
@@ -193,5 +191,3 @@ stockdex.macrotrends_interface.selenium_interface = PatchedSeleniumInterface
 stockdex.justetf_interface.selenium_interface = PatchedSeleniumInterface
 if hasattr(stockdex.digrin_interface, 'selenium_interface'):
     stockdex.digrin_interface.selenium_interface = PatchedSeleniumInterface # type: ignore
-
-print("Patch applied: Selenium configured and Parsing logic updated.")
