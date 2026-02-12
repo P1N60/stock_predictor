@@ -12,6 +12,10 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import warnings
 
+import time
+
+from selenium.webdriver.common.by import By 
+
 print("Patching stockdex selenium interface for aarch64 Linux compatibility...")
 
 class PatchedSeleniumInterface(stockdex.selenium_interface.selenium_interface):
@@ -70,6 +74,72 @@ class PatchedSeleniumInterface(stockdex.selenium_interface.selenium_interface):
 
         try:
             driver.get(url)
+            time.sleep(2) # Allow page to render
+            page_source = driver.page_source
+        finally:
+            driver.quit()
+        
+        return BeautifulSoup(page_source, "html.parser") # type: ignore
+
+    def get_html_content_with_quarterly_toggle(self, url: str) -> BeautifulSoup:
+        service = self._get_service()
+        try:
+            driver = webdriver.Chrome(service=service, options=self.chrome_options)
+        except Exception as e:
+            raise Exception(f"Failed to create Chrome driver: {e}")
+
+        try:
+            driver.get(url)
+            time.sleep(2) # Initial load
+
+            # Try to handle consent banner first
+            # Common text: "Consent", "Agreed", "Accept", "Allow all"
+            consent_texts = ["Consent", "Agreed", "Accept", "Allow all", "I agree"]
+            for text in consent_texts:
+                try:
+                    buttons = driver.find_elements(By.XPATH, f"//button[contains(text(), '{text}')]")
+                    for btn in buttons:
+                        if btn.is_displayed():
+                            try:
+                                btn.click()
+                            except:
+                                driver.execute_script("arguments[0].click();", btn)
+                            time.sleep(1)
+                            break
+                except:
+                    pass
+            
+            # Also try class for Google Funding Choices
+            try:
+                fc_buttons = driver.find_elements(By.CLASS_NAME, "fc-cta-consent")
+                if fc_buttons:
+                    for btn in fc_buttons:
+                        driver.execute_script("arguments[0].click();", btn)
+                    time.sleep(1)
+            except:
+                pass
+
+
+            # Try to click "Quarterly" button
+            # 1. Look for <button>Quarterly</button>
+            buttons = driver.find_elements(By.XPATH, "//button[contains(text(), 'Quarterly')]")
+            target_btn = buttons[0] if buttons else None
+            
+            if not target_btn:
+                # 2. Look for input/label structure or styled div
+                divs = driver.find_elements(By.XPATH, "//div[contains(text(), 'Quarterly')]")
+                # Filter to exclude huge text blocks/descriptions
+                divs = [d for d in divs if len(d.text) < 20]
+                if divs:
+                    target_btn = divs[0]
+
+            if target_btn:
+                try:
+                    target_btn.click()
+                except:
+                    driver.execute_script("arguments[0].click();", target_btn)
+                time.sleep(2)
+
             page_source = driver.page_source
         finally:
             driver.quit()
@@ -122,6 +192,6 @@ stockdex.macrotrends_interface.MacrotrendsInterface._find_table_in_url = patched
 stockdex.macrotrends_interface.selenium_interface = PatchedSeleniumInterface
 stockdex.justetf_interface.selenium_interface = PatchedSeleniumInterface
 if hasattr(stockdex.digrin_interface, 'selenium_interface'):
-    stockdex.digrin_interface.selenium_interface = PatchedSeleniumInterface
+    stockdex.digrin_interface.selenium_interface = PatchedSeleniumInterface # type: ignore
 
 print("Patch applied: Selenium configured and Parsing logic updated.")
