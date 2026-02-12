@@ -1,127 +1,97 @@
 import pandas as pd
 import numpy as np
-import yfinance as yf
-from sklearn.neural_network import MLPRegressor
-import numpy as np
+from methods.scraper import *
 
-class Stock:
-    def __init__(self, symbol):
-        self.symbol = symbol
-        self.minimum_features_in_row = 0.6
+def get_raw_data(ticker: str, frequency: str="quarterly") -> pd.DataFrame:
+    data = Ticker(ticker).key_financial_ratios(frequency=frequency)
+    return data
 
-    def get_annual_financials(self) -> pd.DataFrame:
-        annual_financials = pd.concat([yf.Ticker(self.symbol).get_financials(freq="yearly"), yf.Ticker(self.symbol).get_balance_sheet(freq="yearly")]) # type: ignore
-        if annual_financials.shape[1] > 4:
-            annual_financials = annual_financials.iloc[:, :4]
-        return annual_financials
+def imputer(df: pd.DataFrame, max_nans_share: float) -> pd.DataFrame:
+    symbol = df.loc[df.index[0], "Ticker"]
+    df = df.drop("Ticker", axis=1)
     
-    def get_quarterly_financials(self) -> pd.DataFrame:
-        fin = yf.Ticker(self.symbol).get_financials(freq="quarterly")
-        bal = yf.Ticker(self.symbol).get_balance_sheet(freq="quarterly")
-        
-        # Only keep columns (dates) that exist in both financials and balance sheet
-        common_dates = fin.columns.intersection(bal.columns) # type: ignore
-        fin = fin[common_dates] # type: ignore
-        bal = bal[common_dates] # type: ignore
-        
-        # Concatenate them
-        quarterly_financials = pd.concat([fin, bal])
-        
-        # Remove any dates that overlap with annual financials
-        overlapping_dates = set(self.get_annual_financials().columns).intersection(set(quarterly_financials.columns))
-        if overlapping_dates:
-            quarterly_financials = quarterly_financials.drop(columns=list(overlapping_dates))
-        
-        # Get the 4 most recent remaining quarters
-        if quarterly_financials.shape[1] > 4:
-            quarterly_financials = quarterly_financials.iloc[:, :4]
-        return quarterly_financials
-    
-    def get_financials(self) -> pd.DataFrame:
-        financials = pd.concat([self.get_annual_financials(), self.get_quarterly_financials()], axis=1).loc[:, ~pd.concat([self.get_annual_financials(), self.get_quarterly_financials()], axis=1).columns.duplicated()]
-        try:
-            sorted_columns = sorted(financials.columns, key=pd.to_datetime, reverse=True)
-            financials = financials[sorted_columns]
-        except:
-            pass
-        if financials.shape[1] > 8:
-            financials = financials.iloc[:, :8]
-        return financials
-
-    def get_df_financials(self):
-        financials = self.get_financials()
-        yf_info = yf.Ticker(self.symbol).info
-        rows_list = []
-        earn_dates = financials.columns.to_list()
-        date_index = -1
-        for earn_date in earn_dates:
-            date_index += 1
-            
-            row_data = {
-                "Ticker": self.symbol,
-                "Name": yf_info["shortName"],
-                "Date": pd.to_datetime(earn_date),
-                "Earn Index": date_index,
-                "Sector": yf_info["sector"],
-                "Industry": yf_info["industry"],
-                "Price": np.nan
-            }
-            
-            if date_index == 0:
-                row_data["3M Future Change"] = np.nan
-                price_data = yf.download(self.symbol, period="1y", rounding=False, progress=False)
-                row_data["Price"] = price_data.loc[pd.Timestamp(earn_date), ('Close', self.symbol)] # type: ignore
+    # go through all data points and count nans
+    row_nans = [0 for _ in df.index]
+    col_nans = [0 for _ in df.columns]
+    i = 0
+    for row in df.index:
+        j = 0
+        for column in df.columns:
+            val = df.loc[row, column]
+            if type(val) == str:
+                val = val.replace("%", "") # type: ignore
+                val = val.replace("-", "") # type: ignore
+            if val == '':
+                val = np.nan
+                df.loc[row, column] = np.nan
+            if np.isnan(float(val)): # type: ignore
+                row_nans[i] += 1
+                col_nans[j] += 1
             else:
-                price_data = yf.download(self.symbol, period="max", rounding=False, progress=False)
-                got_price = False
-                day_offset = 0
-                while(got_price==False and day_offset > -6):
-                    try:           
-                        row_data['3M Future Change'] = (
-                        price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset, weeks=13), ('Close', self.symbol)] / # type: ignore
-                        price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] - 1 # type: ignore
-                        )
-                        got_price = True
-                    except:
-                        day_offset += -1
-                if got_price == True:
-                    if pd.isna(row_data.get("3M Future Change")):
-                        continue
-                    row_data["Price"] = price_data.loc[pd.Timestamp(earn_date) + pd.Timedelta(days=day_offset), ('Close', self.symbol)] # type: ignore
-                else:
-                    continue
-            
-            for feature in financials.index.to_list():
-                feature_value = financials[earn_date][feature]
-                row_data[feature] = np.nan if feature_value == "" else feature_value
+                df.loc[row, column] = float(val) # type: ignore
+            j += 1
+        i += 1
+                
+    # delete rows and columns with too many nans or missing price
+    drop_rows = []
+    for i in range(len(df.index)):
+        if row_nans[i]/len(df.columns) > max_nans_share or np.isnan(df.loc[df.index[i], "Close Price"]): # type: ignore
+            drop_rows.append(df.index[i])
+    drop_cols = []
+    for j in range(len(df.columns)):
+        if col_nans[j]/len(df.index) > max_nans_share:
+            drop_cols.append(df.columns[j])
+    df = df.drop(drop_rows)
+    df = df.drop(drop_cols, axis=1)
 
-            row_df = pd.DataFrame([row_data])
-            rows_list.append(row_df)
-        df = pd.concat(rows_list, ignore_index=True) if rows_list else pd.DataFrame()
-        
-        if not df.empty:
-            max_nan_allowed = df.shape[1] * (1 - self.minimum_features_in_row)
-            df = df[df.isna().sum(axis=1) <= max_nan_allowed]
-        return df
-    
-    def predict(self, X):
-        return self.model.predict(X) # type: ignore
-    
-    def score(self, X, y):
-        if isinstance(y, (pd.DataFrame, pd.Series)):
-            y = y.values
-        y = np.asarray(y)
-        if y.ndim == 2 and y.shape[1] == 1:
-            y = y.ravel()
-        return self.model.score(X, y) # type: ignore
-    
-    def get_params(self, deep=True):
-        params = {'hidden_layer_amount': self.hidden_layer_amount, # type: ignore 
-                'neuron_amount': self.neuron_amount} # type: ignore
-        params.update(self.kwargs) # type: ignore
-        return params
-    
-    def set_params(self, **params):
-        for key, value in params.items():
-            setattr(self, key, value)
-        return self
+    # impute last nan values
+    for j in range(len(df.columns)):
+        if df.columns[j] in ["Future Change%"]:
+            continue
+        impute_indices = []
+        for i in range(len(df.index)):
+            if np.isnan(df.iloc[i, j]): # type: ignore
+                impute_indices = [i]
+                u = i-1 if i != 0 else 0
+                l = i+1 if i != len(df.index)-1 else len(df.index)-1
+                while np.isnan(df.iloc[i, j]): # type: ignore
+                    if np.isnan(df.iloc[u, j]) == False and np.isnan(df.iloc[l, j]) == False: # type: ignore
+                        for k in impute_indices:
+                            df.iloc[k, j] = round((df.iloc[u, j]+df.iloc[l, j])/2, 2) # type: ignore
+                    if np.isnan(df.iloc[u, j]) == False and l == len(df.index)-1: # type: ignore
+                        for k in impute_indices:
+                            df.iloc[k, j] = round(df.iloc[u, j], 2) # type: ignore
+                    if u == 0 and np.isnan(df.iloc[l, j]) == False: # type: ignore
+                        for k in impute_indices:
+                            df.iloc[k, j] = round(df.iloc[l, j], 2) # type: ignore
+                    if np.isnan(df.iloc[u, j]): # type: ignore
+                        impute_indices.append(u) # type: ignore
+                        if u != 0:
+                            u += -1 
+                    if np.isnan(df.iloc[l, j]): # type: ignore
+                        impute_indices.append(l) # type: ignore
+                        if l != len(df.index)-1:
+                            l += 1
+
+    df.insert(0, "Ticker", symbol)
+    return df
+
+def get_data(ticker: str, frequency: str="quarterly") -> pd.DataFrame:
+    data = get_raw_data(ticker=ticker, frequency=frequency)
+
+    # get future pice change targets
+    earning_prices = []
+    for row in data.index:
+        earning_prices.append(float(data.loc[row, "Last Close Price"])) # type: ignore
+    earning_changes = [np.nan]
+    for i in range(1, len(earning_prices)):
+        earning_changes.append((earning_prices[i-1]/earning_prices[i]-1)*100)
+
+    data.insert(0, "Future Change%", earning_changes)
+    data.insert(0, "Close Price", earning_prices)
+    data.insert(0, "Ticker", ticker)
+    data = data.drop("Last Close Price", axis=1)
+
+    data = imputer(data, max_nans_share=0.3)
+
+    return data
