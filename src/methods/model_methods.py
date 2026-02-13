@@ -82,7 +82,11 @@ def get_data(ticker: str, frequency: str="quarterly") -> pd.DataFrame:
     # get future pice change targets
     earning_prices = []
     for row in data.index:
-        earning_prices.append(float(data.loc[row, "Last Close Price"])) # type: ignore
+        price = data.loc[row, "Last Close Price"] # type: ignore
+        price = price.replace("-", "") # type: ignore
+        if price == "":
+            price = np.nan
+        earning_prices.append(float(price)) # type: ignore
     earning_changes = [np.nan]
     for i in range(1, len(earning_prices)):
         earning_changes.append((earning_prices[i-1]/earning_prices[i]-1)*100)

@@ -1,0 +1,28 @@
+{
+  "os": "Linux-6.17.12-400.asahi.fc42.aarch64+16k-aarch64-with-glibc2.41",
+  "python": "CPython 3.13.11",
+  "startedAt": "2026-02-13T10:02:58.119244Z",
+  "program": "/home/victorvj/Documents/stock_predictor/src/lstm.ipynb",
+  "codePath": "/home/victorvj/Documents/stock_predictor/src/lstm.ipynb",
+  "codePathLocal": "lstm.ipynb",
+  "git": {
+    "remote": "https://github.com/P1N60/stock_predictor.git",
+    "commit": "70b30c758d79f06699d7925e72a1e6a13892dfa1"
+  },
+  "email": "victor.guldregn@gmail.com",
+  "root": "/home/victorvj/Documents/stock_predictor/src",
+  "host": "linus",
+  "executable": "/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "133807734784",
+      "used": "74111610880"
+    }
+  },
+  "memory": {
+    "total": "7870234624"
+  },
+  "writerId": "78rgx4aqqn1f4wsxpb1i5hf5fedbxiew"
+}

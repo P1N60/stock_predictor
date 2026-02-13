@@ -9,3 +9,4 @@ tqdm
 gender_guesser
 streamlit>=1.30.0
 pyarrow
+wandb

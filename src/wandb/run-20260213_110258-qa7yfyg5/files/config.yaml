@@ -1,0 +1,66 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            78rgx4aqqn1f4wsxpb1i5hf5fedbxiew:
+                codePath: /home/victorvj/Documents/stock_predictor/src/lstm.ipynb
+                codePathLocal: lstm.ipynb
+                cpu_count: 8
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "133807734784"
+                        used: "74111610880"
+                email: victor.guldregn@gmail.com
+                executable: /bin/python
+                git:
+                    commit: 70b30c758d79f06699d7925e72a1e6a13892dfa1
+                    remote: https://github.com/P1N60/stock_predictor.git
+                host: linus
+                memory:
+                    total: "7870234624"
+                os: Linux-6.17.12-400.asahi.fc42.aarch64+16k-aarch64-with-glibc2.41
+                program: /home/victorvj/Documents/stock_predictor/src/lstm.ipynb
+                python: CPython 3.13.11
+                root: /home/victorvj/Documents/stock_predictor/src
+                startedAt: "2026-02-13T10:02:58.119244Z"
+                writerId: 78rgx4aqqn1f4wsxpb1i5hf5fedbxiew
+        m: []
+        python_version: 3.13.11
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+                - 105
+            "2":
+                - 1
+                - 5
+                - 53
+                - 105
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.13.11
+            "5": 0.23.0
+            "8":
+                - 1
+            "12": 0.23.0
+            "13": linux-aarch64
+dropout:
+    value: 0.3
+epochs:
+    value: 25
+hidden_size:
+    value: 30
+learning_rate:
+    value: 0.001
+num_datasets:
+    value: 73
+num_layers:
+    value: 2
+target_col:
+    value: Future Change%
+weight_decay:
+    value: 0.0001
