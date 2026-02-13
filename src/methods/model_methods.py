@@ -20,8 +20,7 @@ def imputer(df: pd.DataFrame, max_nans_share: float) -> pd.DataFrame:
             val = df.loc[row, column]
             if type(val) == str:
                 val = val.replace("%", "") # type: ignore
-                val = val.replace("-", "") # type: ignore
-            if val == '':
+            if val == '' or val == "-":
                 val = np.nan
                 df.loc[row, column] = np.nan
             if np.isnan(float(val)): # type: ignore
@@ -83,8 +82,7 @@ def get_data(ticker: str, frequency: str="quarterly") -> pd.DataFrame:
     earning_prices = []
     for row in data.index:
         price = data.loc[row, "Last Close Price"] # type: ignore
-        price = price.replace("-", "") # type: ignore
-        if price == "":
+        if price == "" or price == "-":
             price = np.nan
         earning_prices.append(float(price)) # type: ignore
     earning_changes = [np.nan]
