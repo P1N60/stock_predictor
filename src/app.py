@@ -3,7 +3,13 @@ import pandas as pd
 import sys
 import io
 import time
+import os
 from datetime import datetime
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
+
 from methods.screener_methods import Stock
 from methods.screener_methods import BUY_THRESHOLD
 
@@ -68,8 +74,6 @@ if sb_run_single:
         selected_ticker = sb_single_ticker
     else:
         st.warning("Please enter a ticker symbol.")
-
-import os
 
 def load_symbols(list_type):
     # Construct absolute path to data directory
