@@ -6,6 +6,24 @@ from bs4 import BeautifulSoup
 from .selenium_patch import PatchedSeleniumInterface
 
 class Ticker:
+    EXCHANGE_SUFFIX_MAP = {
+        ".CO": "cph",  # Copenhagen
+        ".OL": "osl",  # Oslo
+        ".DE": "etr",  # Xetra
+        ".HE": "hel",  # Helsinki
+        ".ST": "sto",  # Stockholm
+        ".SW": "sto",  # Swiss dual-listed symbols often routed to Stockholm naming on stockanalysis
+        ".MI": "bit",  # Borsa Italiana
+        ".L": "lon",   # London
+        ".PA": "epa",  # Euronext Paris
+        ".AS": "ams",  # Euronext Amsterdam
+        ".BR": "bru",  # Euronext Brussels
+        ".LS": "lis",  # Euronext Lisbon
+        ".MC": "bme",  # Bolsa de Madrid
+        ".IR": "ise",  # Euronext Dublin
+        ".WA": "wse",  # Warsaw
+    }
+
     def __init__(self, ticker: str) -> None:
         self.ticker = ticker
         self.selenium_interface = None
@@ -16,29 +34,17 @@ class Ticker:
         # Or US: https://stockanalysis.com/stocks/{ticker}/financials/ratios/
         
         base = "https://stockanalysis.com"
-        
-        if ticker.endswith('.CO'):
-            clean_ticker = ticker[:-3].replace('-', '.')
-            return f"{base}/quote/cph/{clean_ticker}/financials/ratios/"
-        elif ticker.endswith('.OL'):
-            clean_ticker = ticker[:-3].replace('-', '.')
-            return f"{base}/quote/osl/{clean_ticker}/financials/ratios/"
-        elif ticker.endswith('.DE'):
-            # Xetra
-            clean_ticker = ticker[:-3].replace('-', '.')
-            return f"{base}/quote/etr/{clean_ticker}/financials/ratios/"
-        elif ticker.endswith('.HE'):
-            # Helsinki
-            clean_ticker = ticker[:-3].replace('-', '.')
-            return f"{base}/quote/hel/{clean_ticker}/financials/ratios/"
-        elif ticker.endswith('.ST'):
-            # Stockholm
-            clean_ticker = ticker[:-3].replace('-', '.')
-            return f"{base}/quote/sto/{clean_ticker}/financials/ratios/"
-            
+        normalized_ticker = ticker.strip().upper()
+
+        for suffix, exchange in self.EXCHANGE_SUFFIX_MAP.items():
+            if normalized_ticker.endswith(suffix):
+                clean_ticker = normalized_ticker[: -len(suffix)].replace('-', '.')
+                return f"{base}/quote/{exchange}/{clean_ticker}/financials/ratios/"
+
         # Default to US stocks logic
         # If it doesn't have a recognized suffix, assume US (e.g. AAPL)
-        return f"{base}/stocks/{ticker}/financials/ratios/"
+        us_symbol = normalized_ticker.replace('-', '.')
+        return f"{base}/stocks/{us_symbol}/financials/ratios/"
 
     def key_financial_ratios(self, frequency: str = "annual") -> pd.DataFrame:
         """
