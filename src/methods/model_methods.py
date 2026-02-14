@@ -36,11 +36,11 @@ def imputer(df: pd.DataFrame, max_nans_share: float) -> pd.DataFrame:
     for i in range(len(df.index)):
         if row_nans[i]/len(df.columns) > max_nans_share or np.isnan(df.loc[df.index[i], "Close Price"]): # type: ignore
             drop_rows.append(df.index[i])
+    df = df.drop(drop_rows)
     drop_cols = []
     for j in range(len(df.columns)):
-        if col_nans[j]/len(df.index) > max_nans_share:
+        if (col_nans[j]-len(drop_rows))/len(df.index) > max_nans_share:
             drop_cols.append(df.columns[j])
-    df = df.drop(drop_rows)
     df = df.drop(drop_cols, axis=1)
 
     # impute last nan values
