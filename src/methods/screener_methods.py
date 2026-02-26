@@ -185,7 +185,7 @@ class Stock:
         median = 0 # chosen from data by median
         spread = 0.25
         if momentum_method == "mult": # add or mult
-            weight = abs(self.value_score)
+            weight = abs(self.value_score) * 1.1
         else:
             weight = 0.3
         try:
