@@ -183,7 +183,7 @@ class Stock:
     @property
     def momentum_score(self) -> float:
         median = 0 # chosen from data by median
-        spread = 0.25
+        spread = 0.3
         if momentum_method == "mult": # add or mult
             weight = abs(self.value_score) * 1.1
         else:
