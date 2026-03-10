@@ -174,8 +174,7 @@ if st.session_state.df_results is not None:
         for col in row.index:
             style = ''
             if col == '1d Change':
-                if col == 'Final Score':
-                change = row['1d Change'] # type: ignore
+                change = row['1d Change']
                 color = '#ffc107'
                 if change > 0:
                     color = '#28a745'
