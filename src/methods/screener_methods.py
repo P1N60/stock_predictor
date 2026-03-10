@@ -43,7 +43,7 @@ class Stock:
         if symbol in ["HVID.CO", "LOLB.CO"] and self.PE < 3:
             self.PE = 11.3
         self.owned_tickers = pd.read_csv(data_path)["Ticker"].to_list()
-        self.change = self.info["currentPrice"]/self.info["previousClose"]
+        self.change = (self.info["currentPrice"]/self.info["previousClose"]-1)*100
 
     @property
     def latest_earnings_date(self):
