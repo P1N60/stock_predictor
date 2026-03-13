@@ -212,11 +212,15 @@ class Stock:
             return np.tanh((self.d200_momentum-median)/(spread/2)) * weight
         except:
             return 0
+        
+    @property
+    def momentum_score(self) -> float:
+        return self.d50_momentum_score+self.d200_momentum_score
 
     # final score
     @property
     def final_score(self) -> float:
-        return self.value_score+self.d50_momentum_score+self.d200_momentum_score
+        return self.value_score+self.momentum_score
     
     @property
     def signal(self) -> str:
@@ -237,6 +241,7 @@ class Stock:
             "Signal": self.signal,
             "Final Score": round(self.final_score, 2),
             "Value Score": round(self.value_score, 2),
+            "Momentum Score": round(self.momentum_score, 2),
             "50d Momentum Score": round(self.d50_momentum_score, 2),
             "200d Momentum Score": round(self.d200_momentum_score, 2),
             "Momentum Score": round(self.d50_momentum_score, 2),
