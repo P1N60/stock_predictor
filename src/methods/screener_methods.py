@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 from gender_guesser.detector import Detector
 
-momentum_method = "mult" #add or mult
+momentum_method = "none" #add or mult or none
 BUY_THRESHOLD = 0.5
 
 def get_gettables(symbol="AAPL") -> pd.DataFrame:
@@ -185,7 +185,9 @@ class Stock:
     def momentum_score(self) -> float:
         median = 0 # chosen from data by median
         spread = 0.3
-        if momentum_method == "mult": # add or mult
+        if momentum_method == "none":
+            return 0
+        elif momentum_method == "mult": # add or mult
             weight = abs(self.value_score) * 0.65
         else:
             weight = 0.3
