@@ -201,7 +201,7 @@ class Stock:
     @property
     def d200_momentum_score(self) -> float:
         median = 0 # chosen from data by median
-        spread = 0.5
+        spread = 0.3
         if momentum_method == "none":
             return 0
         elif momentum_method == "mult": # add or mult
