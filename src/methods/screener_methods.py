@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 from gender_guesser.detector import Detector
 
-momentum_method = "none" #add or mult or none
+momentum_method = "mult" #add or mult or none
 BUY_THRESHOLD = 0.5
 
 def get_gettables(symbol="AAPL") -> pd.DataFrame:
@@ -39,11 +39,12 @@ class Stock:
         self.PB = self.info["priceToBook"]
         self.name = self.info["shortName"]
         self.exp_PE = 22
-        self.momentum = self.info["fiftyDayAverageChangePercent"]
         if symbol in ["HVID.CO", "LOLB.CO"] and self.PE < 3:
             self.PE = 11.3
         self.owned_tickers = pd.read_csv(data_path)["Ticker"].to_list()
         self.change = (self.info["currentPrice"]/self.info["previousClose"]-1)*100
+        self.d50_momentum = self.info["fiftyDayAverageChangePercent"]
+        self.d200_momentum = self.info["twoHundredDayAverageChangePercent"]
 
     @property
     def latest_earnings_date(self):
@@ -182,24 +183,40 @@ class Stock:
                        self.insider_buy_score])
     
     @property
-    def momentum_score(self) -> float:
+    def d50_momentum_score(self) -> float:
         median = 0 # chosen from data by median
         spread = 0.3
         if momentum_method == "none":
             return 0
         elif momentum_method == "mult": # add or mult
-            weight = abs(self.value_score) * 0.65
+            weight = abs(self.value_score) * 0.125
         else:
             weight = 0.3
         try:
-            return np.tanh((self.momentum-median)/(spread/2)) * weight
+            return np.tanh((self.d50_momentum-median)/(spread/2)) * weight
+        except:
+            return 0
+        
+       
+    @property
+    def d200_momentum_score(self) -> float:
+        median = 0 # chosen from data by median
+        spread = 0.5
+        if momentum_method == "none":
+            return 0
+        elif momentum_method == "mult": # add or mult
+            weight = abs(self.value_score) * 0.4
+        else:
+            weight = 0.3
+        try:
+            return np.tanh((self.d200_momentum-median)/(spread/2)) * weight
         except:
             return 0
 
     # final score
     @property
     def final_score(self) -> float:
-        return self.value_score+self.momentum_score
+        return self.value_score+self.d50_momentum_score+self.d200_momentum_score
     
     @property
     def signal(self) -> str:
@@ -220,7 +237,9 @@ class Stock:
             "Signal": self.signal,
             "Final Score": round(self.final_score, 2),
             "Value Score": round(self.value_score, 2),
-            "Momentum Score": round(self.momentum_score, 2),
+            "50d Momentum Score": round(self.d50_momentum_score, 2),
+            "200d Momentum Score": round(self.d200_momentum_score, 2),
+            "Momentum Score": round(self.d50_momentum_score, 2),
             "Leadership Score": round(self.leadership_score, 2),
             "P/E Score": round(self.PE_score, 2),
             "ROA Score": round(self.ROA_score, 2),
@@ -233,7 +252,8 @@ class Stock:
             "P/B": round(self.PB, 2),
             "D/E": round(self.DE, 2),
             "Insider Buy%": round(self.insider_buy, 2),
-            "50d Average Change%": round(self.momentum, 2),
+            "50d Average Change%": round(self.d50_momentum, 2),
+            "200d Average Change%": round(self.d200_momentum, 2),
             "Sector": self.info["sector"],
             "Industry": self.info["industry"],
             "Country": self.info["country"],
