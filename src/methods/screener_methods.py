@@ -244,7 +244,6 @@ class Stock:
             "Momentum Score": round(self.momentum_score, 2),
             "50d Momentum Score": round(self.d50_momentum_score, 2),
             "200d Momentum Score": round(self.d200_momentum_score, 2),
-            "Momentum Score": round(self.d50_momentum_score, 2),
             "Leadership Score": round(self.leadership_score, 2),
             "P/E Score": round(self.PE_score, 2),
             "ROA Score": round(self.ROA_score, 2),
