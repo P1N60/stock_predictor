@@ -139,11 +139,10 @@ if should_run:
                 try:
                     summary = fetch_stock_data(symbol)
                     df = pd.concat([df, summary])
-                except:
-                    pass
+                except Exception as retry_error:
+                    st.error(f"Failed processing {symbol} after retry: {retry_error}")
             else:
-                if debug:
-                    st.error(f"Error processing {symbol}: {e}")
+                st.error(f"Error processing {symbol}: {e}")
         finally:
             sys.stderr = old_stderr
         
