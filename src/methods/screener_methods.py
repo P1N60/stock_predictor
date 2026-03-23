@@ -205,7 +205,7 @@ class Stock:
         if momentum_method == "none":
             return 0
         elif momentum_method == "mult": # add or mult
-            weight = abs(self.value_score)*0.6 + 0.1
+            weight = abs(self.value_score)*0.9 + 0.1
         else:
             weight = 0.3
         try:
