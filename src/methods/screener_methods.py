@@ -94,7 +94,7 @@ class Stock:
     def PE_score(self) -> float:
         median = 18.7 # chosen from data by median
         spread = median
-        weight = 1.1
+        weight = 1.0
 
         score = -np.tanh((self.PE-median)/(spread/2))*weight # 1 at mean-spread and -1 at mean+spread
         if self.PE >= 0:
@@ -106,7 +106,7 @@ class Stock:
     def ROA_score(self) -> float:
         median = 4.325 # chosen from data by median
         spread = median
-        weight = 0.9
+        weight = 1.1
         return np.tanh((self.ROA-median)/(spread/2))*weight # -1 at mean-spread and 1 at mean+spread
 
     @property
