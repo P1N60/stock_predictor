@@ -185,11 +185,11 @@ class Stock:
     @property
     def d50_momentum_score(self) -> float:
         median = 0 # chosen from data by median
-        spread = 0.3
+        spread = 0.1
         if momentum_method == "none":
             return 0
         elif momentum_method == "mult": # add or mult
-            weight = abs(self.value_score)*0.1 + 0.025
+            weight = abs(self.value_score)*0.33 + 0.025
         else:
             weight = 0.3
         try:
@@ -201,11 +201,11 @@ class Stock:
     @property
     def d200_momentum_score(self) -> float:
         median = 0 # chosen from data by median
-        spread = 0.3
+        spread = 0.2
         if momentum_method == "none":
             return 0
         elif momentum_method == "mult": # add or mult
-            weight = abs(self.value_score)*0.9 + 0.1
+            weight = abs(self.value_score)*0.45 + 0.1
         else:
             weight = 0.3
         try:
