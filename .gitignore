@@ -3,3 +3,5 @@ models/best_model_results.csv
 models/best_model.pkl
 src/wandb
 .cache
+src/methods/analyze_screener.py
+src/methods/run_screener_cli.py
